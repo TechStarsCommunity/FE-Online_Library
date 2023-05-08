@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Practice from './Practice'
+import React from 'react';
+import './App.css';
+
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
-    <>
+    <React.Fragment>
       <div>
         <h1>Tech Stars Community</h1>
       </div>
-    </>
+    </React.Fragment>
   )
 }
 
