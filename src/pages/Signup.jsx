@@ -5,9 +5,7 @@ const Signup = () => {
     return (
         <React.Fragment>
             {/* Write Your Normal HTml Here */}
-            <div>
-                <h1>My name is Kennedy</h1>
-            </div>
+            
         </React.Fragment>
     )
 }

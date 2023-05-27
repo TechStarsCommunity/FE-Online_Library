@@ -1,0 +1,93 @@
+.page {
+    background-color: #d7e0ff;
+}
+
+.one {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 50px;
+    height: 30px;
+    left: 211px;
+    top: 149px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 0px;
+    color: black;
+}
+
+.two {
+    margin-top: 100px;
+    width: 141;
+    height: 19px;
+    left: 211px;
+    top: 199px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+
+    color: black;
+}
+
+
+
+.three {
+    margin-top: 100px;
+    width: 63;
+    height: 25px;
+    left: 211px;
+    top: 298px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: black;
+}
+
+input {
+    box-sizing: border-box;
+
+    margin-top: 100px;
+    width: 586px;
+    height: 69px;
+    left: 0px;
+    top: 25px;
+
+    background: #ffffff;
+    border: 1px solid #696969;
+    border-radius: 8px;
+}
+
+.four {
+    margin-top: 100px;
+    width: 114;
+    height: 29px;
+    left: 211px;
+    top: 472px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: black;
+
+}
+
+.login-button {
+    margin-top: 100px;
+    width: 586px;
+    height: 80px; 
+
+}
+
+
