@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import '../styles/Login.css'
 // change the name of the function to match the name of the file
