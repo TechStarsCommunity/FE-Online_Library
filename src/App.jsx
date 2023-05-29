@@ -1,14 +1,18 @@
 import React from 'react';
 // import './App.css';
-
-
+import Signup from '../src/pages/Signup';
+import Login from '../src/pages/Login'
 function App() {
 
   return (
     <React.Fragment>
       <div>
-        <h1>Tech Stars Community</h1>
+        <Login />
       </div>
+      <div>
+        <Signup />
+      </div>
+      
     </React.Fragment>
   )
 }
