@@ -25,30 +25,25 @@ const Login = () => {
         <React.Fragment>
             {/* Write Your Normal HTml Here */}
             <div className='page'>
-                <form onSubmit={handleSubmit(onSubmit)} >
-                    <div className='one'>
-                        <h1>WELCOME!</h1>
-                    </div>
-                    <div className='two'>
-                        <p>Sign in to continue</p>
-                    </div>
-                    <div className='three'>
-                        <label htmlFor="email">Email</label>
-                        <input type="text" placeholder='Type your email' {...register("email")} />
-                        <p> {errors.email?.message} </p>
-                    </div>
-                    <div className='four'>
-                        <label htmlFor="password">Password</label>
-                        <input type="password" placeholder='8+ characters' {...register("password")} />
-                        <p> {errors.password?.message} </p>
-                    </div>
-                    <div>
-                        <input type="submit" />
-                        {/* <button className='login-button'>
-                            <span className='login-button-text'>Login</span>
-                        </button> */}
-                    </div>
-                </form>
+                <div className='one'>
+                    <h1>WELCOME!</h1>
+                </div>
+                <div className='two'>
+                    <p>Sign in to continue</p>
+                </div>
+                <div className='three'>
+                    <label htmlFor="email">Email</label>
+                    <input type="text" placeholder='Type your email' />
+                </div>
+                <div className='four'>
+                    <label htmlFor="password">Password</label>
+                    <input type="password" placeholder='8+ characters' />
+                </div>
+                <div>
+                    <button className='login-button'>
+                        <span className='login-button-text'>Login</span>
+                    </button>
+                </div>
                 <div>
                     <p>Don't have an Account? Sign Up</p>
                 </div>
@@ -56,8 +51,7 @@ const Login = () => {
             </div>
 
         </React.Fragment>
-    )
-}
+    );
+};
 
-// Also change the name of the function here
 export default Login;
