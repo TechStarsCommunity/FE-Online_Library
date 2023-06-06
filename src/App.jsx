@@ -1,20 +1,20 @@
-import React from 'react';
-// import './App.css';
-import Signup from '../src/pages/Signup';
-import Login from '../src/pages/Login'
-function App() {
+import React, { lazy } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-  return (
-    <React.Fragment>
-      <div>
-        <Login />
-      </div>
-      <div>
-        <Signup />
-      </div>
-      
-    </React.Fragment>
-  )
+const Signup = lazy(() => import("../src/pages/Signup"));
+const Login = lazy(() => import("../src/pages/Login"));
+
+function App() {
+    return (
+        <React.Fragment>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Login />} />
+                    <Route path="/signup" element={<Signup />} />
+                </Routes>
+            </BrowserRouter>
+        </React.Fragment>
+    );
 }
 
 export default App;
