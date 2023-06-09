@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    /* height: 580px; */
+    /* width: 400px; */
+    background: #e8e6e6;
+    border-radius: 0px 44px 44px 0px;
+}
+
+.imgg {
+    padding: 190px 70px;
+}
+
+.imge {
+    position: relative;
+    width: 200px;
+}
+
+.vector {
+    position: absolute;
+    top: 240px;
+    left: 90px;
+}
+
+.vector img {
+    width: 150px;
+}
+
+.right-section {
+    width: flex 1;
+}
+
+.hdngs h2 {
+    position: relative;
+    top: 30px;
+    left: 100px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.hdngs p {
+    position: relative;
+    top: 40px;
+    left: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5b5b5b;
+    margin-bottom: 20px;
+}
+
+.forms {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 100px;
+    top: 50px;
+}
+
+input[type="text"],
+input[type="email"] {
+    max-width: 96%;
+    padding: 10px 0px 10px 25px;
+    margin: 5px 0 22px 0;
+    background: #ffffff;
+    border: 1px solid #696969;
+    border-radius: 8px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+.forms2 {
+    display: flex;
+    /* width: 600px; */
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+.forms2-00 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+input[type="password"] {
+    padding: 10px 80px 10px 25px;
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #696969;
+}
+
+.forms2-00 p,
+.forms b {
+    margin: 2px;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.btn-sgnup {
+    position: relative;
+    top: 70px;
+    left: 100px;
+}
+
+.btn {
+    width: 96%;
+    background: #afafaf;
+    border-radius: 8px;
+    padding: 10px 0;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.btn-sgnup p {
+    text-align: center;
+    color: #8b8b8b;
+    padding-top: 10px;
+}
+
+.btn-sgnup p a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+::placeholder {
+    font-size: 16px;
+}
