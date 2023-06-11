@@ -17,7 +17,8 @@ function App() {
       </div>
     </React.Fragment>
   );
-  
+}
+
 import React, { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
