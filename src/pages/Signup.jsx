@@ -5,8 +5,8 @@ import * as yup from "yup";
 import "../styles/signup.css";
 import Image from "../assets/image.png";
 import Vector from "../assets/vector.png";
-import { useAppDispatch } from "../redux/store";
-import { loginSuccess } from "../redux/authSlice";
+import { useAppDispatch } from "../Redux/store";
+import { loginSuccess } from "../Redux/authSlice";
 
 const Signup = () => {
     const dispatch = useAppDispatch();
