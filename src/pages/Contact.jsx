@@ -53,11 +53,13 @@ const Contact = () => {
                         </div>
                     </div>
                     <div class="w-full md:w-1/2">
-                        <div class="mb-4">
-                            <label for="message" class="block mb-2">Message:</label>
-                            <textarea id="message" name="message" rows="10" placeholder="Message" class="border border-gray-300 rounded-md py-2 px-4 w-full"></textarea>
-                        </div>
-                        <button class="bg-blue-500 text-white py-2 px-4 rounded-md">Send</button>
+                        <form action="">
+                            <div class="mb-4">
+                                <label for="message" class="block mb-2">Message:</label>
+                                <textarea id="message" name="message" rows="10" placeholder="Message" class="border border-gray-300 rounded-md py-2 px-4 w-full"></textarea>
+                            </div>
+                            <button class="bg-blue-500 text-white py-2 px-4 rounded-md">Send</button>
+                        </form>
                     </div>
                 </div>
             </section>
