@@ -1,10 +1,9 @@
 import React from "react";
-import '../styles/RightSidebar.css'
-
+import "../styles/RightSidebar.css";
 const RightSidebar = () => {
     return (
         <React.Fragment>
-            RightSidebar
+            <div className="right__sidebar">RightSidebar</div>
         </React.Fragment>
     );
 };

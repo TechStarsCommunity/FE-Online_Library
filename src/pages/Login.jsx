@@ -3,7 +3,7 @@
 // import * as yup from "yup";
 import React from "react";
 import MyImage from "../assets/image_icon.png";
-import "../styles/Login.css";
+import "../styles/login.css";
 
 const Login = () => {
     // const schema = yup.object().shape({
@@ -26,15 +26,25 @@ const Login = () => {
                     <div className="left-content">
                         <h1>Welcome!</h1>
                         <p>Sign in to continue</p>
-                        <div>
-                            <label htmlFor="email">Email</label>
-                            <input type="text" placeholder="Type your email" />
-                        </div>
-                        <div>
-                            <label htmlFor="password">Password</label>
-                            <input type="password" placeholder="8+ characters" />
-                        </div>
-                        <button>Login</button>
+                        <form>
+                            <div>
+                                <label htmlFor="email">Email</label>
+                                <input
+                                    type="text"
+                                    placeholder="Type your email"
+                                    autoComplete="email"
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor="password">Password</label>
+                                <input
+                                    type="password"
+                                    placeholder="8+ characters"
+                                    autoComplete="current-password"
+                                />
+                            </div>
+                            <button>Login</button>
+                        </form>
                         <h5>
                             Don{`'`}t have an Account? <a href="register.html">Sign Up</a>
                         </h5>

@@ -1,8 +1,11 @@
 import React, { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./styles/App.css";
 
-const Signup = lazy(() => import("./pages/Signup"));
-const Login = lazy(() => import("./pages/Login"));
+const Login = lazy(() => import("./pages/login"));
+const Signup = lazy(() => import("./pages/signup"));
+const Uploads = lazy(() => import("./pages/uploads"));
+const Contact = lazy(() => import("./pages/contact"));
 
 function App() {
     return (
@@ -22,6 +25,30 @@ function App() {
                         element={
                             <React.Suspense fallback={<div>Loading...</div>}>
                                 <Signup />
+                            </React.Suspense>
+                        }
+                    />
+                    <Route
+                        path="/uploads"
+                        element={
+                            <React.Suspense fallback={<div>Loading...</div>}>
+                                <Uploads />
+                            </React.Suspense>
+                        }
+                    />
+                    <Route
+                        path="/contact"
+                        element={
+                            <React.Suspense fallback={<div>Loading...</div>}>
+                                <Contact />
+                            </React.Suspense>
+                        }
+                    />
+                    <Route
+                        path="*"
+                        element={
+                            <React.Suspense fallback={<div>Loading...</div>}>
+                                <Login />
                             </React.Suspense>
                         }
                     />
