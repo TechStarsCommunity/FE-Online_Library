@@ -1,8 +1,6 @@
 import React from "react";
 import "../styles/LeftSidebar.css";
-
 import Image from "../assets/image_icon.png";
-
 const LeftSidebar = () => {
     return (
         <React.Fragment>

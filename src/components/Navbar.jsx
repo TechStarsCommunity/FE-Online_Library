@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Navbar.css";
-
 import Image from "../assets/image_icon.png";
 
 const Navbar = () => {

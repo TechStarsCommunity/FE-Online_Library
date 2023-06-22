@@ -7,6 +7,7 @@ import Image from "../assets/image.png";
 import Vector from "../assets/vector.png";
 import { useAppDispatch } from "../Redux/store";
 import { loginSuccess } from "../Redux/authSlice";
+import "../styles/signup.css"
 
 const Signup = () => {
     const dispatch = useAppDispatch();
@@ -56,14 +57,15 @@ const Signup = () => {
                     <p> {errors.name?.message} </p>
                     <input type="text" placeholder="Username ..." {...register("username")} />
                     <p> {errors.username?.message} </p>
-                    <input type="text" placeholder="Email ..." {...register("email")} />
+                    <input type="text" placeholder="Email ..." {...register("email")} autoComplete="email" />
                     <p> {errors.email?.message} </p>
-                    <input type="password" placeholder="Password ..." {...register("password")} />
+                    <input type="password" placeholder="Password ..." {...register("password")} autoComplete="new-password" />
                     <p> {errors.password?.message} </p>
                     <input
                         type="password"
                         placeholder="Confirm Password ..."
                         {...register("confirmPassword")}
+                        autoComplete="new-password"
                     />
                     <p> {errors.confirmPassword?.message} </p>
                     <input type="submit" />

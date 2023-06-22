@@ -1,6 +1,5 @@
 import "../styles/UploadContents.css";
-
-import Navbar from "../components/Navbar";
+import Navbar from "./Navbar";
 
 const UploadContents = () => {
     return (
