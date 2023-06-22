@@ -1,3 +1,9 @@
 .uploadContents {
     background-color: whitesmoke;
+    justify-content: center;
+}
+
+.uploadContents__contents {
+    background-color: white;
+    margin: 50px;
 }

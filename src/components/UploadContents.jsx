@@ -4,9 +4,14 @@ import Navbar from "../components/Navbar";
 
 const UploadContents = () => {
     return (
-        <div className='uploadContents'>
+        <div className="uploadContents">
             <Navbar />
-            Hey There!
+            <div className="uploadContents__contents">
+                <div className="uploadContents__contents-content">
+                jskacmkkj
+                </div>
+               
+            </div>
         </div>
     );
 };
