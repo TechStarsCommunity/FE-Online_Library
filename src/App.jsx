@@ -1,5 +1,6 @@
 import React, { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Uploads from "./pages/Uploads";
 
 const Signup = lazy(() => import("./pages/Signup"));
 const Login = lazy(() => import("./pages/Login"));
@@ -22,6 +23,14 @@ function App() {
                         element={
                             <React.Suspense fallback={<div>Loading...</div>}>
                                 <Signup />
+                            </React.Suspense>
+                        }
+                    />
+                    <Route
+                        path="/uploads"
+                        element={
+                            <React.Suspense fallback={<div>Loading...</div>}>
+                                <Uploads />
                             </React.Suspense>
                         }
                     />

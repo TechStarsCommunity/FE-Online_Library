@@ -1,10 +1,18 @@
 import React from "react";
-import '../styles/Uploads.css'
+import "../styles/Uploads.css";
+// import Navbar from "../components/Navbar";
+import LeftSidebar from "../components/LeftSidebar";
+import RightSidebar from "../components/RightSidebar";
+import UploadContents from "../components/UploadContents";
 
 const Uploads = () => {
     return (
         <React.Fragment>
-            Uploads
+            <div className="uploads">
+                <LeftSidebar/>
+                <UploadContents/>
+                <RightSidebar/>
+            </div>
         </React.Fragment>
     );
 };
