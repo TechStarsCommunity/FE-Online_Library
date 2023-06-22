@@ -72,22 +72,26 @@ const Contact = () => {
                             </form>
                         </div>
                     </div>
+
                     <div className="w-full md:w-1/2">
-                        <div className="mb-4">
-                            <label htmlFor="message" className="block mb-2">
-                                Message:
-                            </label>
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="10"
-                                placeholder="Message"
-                                className="border border-gray-300 rounded-md py-2 px-4 w-full"
-                            ></textarea>
-                        </div>
-                        <button className="bg-blue-500 text-white py-2 px-4 rounded-md">
-                            Send
-                        </button>
+                        <form action="">
+                            <div className="mb-4">
+                                <label htmlFor="message" className="block mb-2">
+                                    Message:
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="10"
+                                    placeholder="Message"
+                                    className="border border-gray-300 rounded-md py-2 px-4 w-full"
+                                ></textarea>
+                            </div>
+                            <button className="bg-blue-500 text-white py-2 px-4 rounded-md">
+                                Send
+                            </button>
+                        </form>
+
                     </div>
                 </div>
             </section>
