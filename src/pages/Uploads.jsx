@@ -9,9 +9,9 @@ const Uploads = () => {
     return (
         <React.Fragment>
             <div className="uploads">
-                <LeftSidebar/>
-                <UploadContents/>
-                <RightSidebar/>
+                <LeftSidebar />
+                <UploadContents />
+                <RightSidebar />
             </div>
         </React.Fragment>
     );

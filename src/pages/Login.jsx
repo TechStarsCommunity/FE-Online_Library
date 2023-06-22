@@ -29,11 +29,19 @@ const Login = () => {
                         <form>
                             <div>
                                 <label htmlFor="email">Email</label>
-                                <input type="text" placeholder="Type your email" autoComplete="email" />
+                                <input
+                                    type="text"
+                                    placeholder="Type your email"
+                                    autoComplete="email"
+                                />
                             </div>
                             <div>
                                 <label htmlFor="password">Password</label>
-                                <input type="password" placeholder="8+ characters" autoComplete="current-password" />
+                                <input
+                                    type="password"
+                                    placeholder="8+ characters"
+                                    autoComplete="current-password"
+                                />
                             </div>
                             <button>Login</button>
                         </form>

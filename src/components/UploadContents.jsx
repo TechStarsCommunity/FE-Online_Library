@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const UploadContents = () => {
     return (
-        <div className='uploadContents'>
+        <div className="uploadContents">
             <Navbar />
             Hey There!
         </div>
