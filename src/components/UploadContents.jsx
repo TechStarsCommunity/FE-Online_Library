@@ -1,8 +1,7 @@
 import "../styles/UploadContents.css";
-import Navbar from "./Navbar";
+import Navbar from "./navbar";
 
 import Image from "../assets/image_icon.png";
-
 const UploadContents = () => {
     return (
         <div className="uploadContents">
