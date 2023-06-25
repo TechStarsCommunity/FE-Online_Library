@@ -2,10 +2,10 @@ import React, { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 
-const Login = lazy(() => import("./pages/login"));
-const Signup = lazy(() => import("./pages/signup"));
-const Uploads = lazy(() => import("./pages/uploads"));
-const Contact = lazy(() => import("./pages/contact"));
+const Login = lazy(() => import("./pages/Login"));
+const Signup = lazy(() => import("./pages/Signup"));
+const Uploads = lazy(() => import("./pages/Uploads"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 function App() {
     return (

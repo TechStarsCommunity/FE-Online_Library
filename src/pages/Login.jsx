@@ -3,7 +3,7 @@
 // import * as yup from "yup";
 import React from "react";
 import MyImage from "../assets/image_icon.png";
-import "../styles/login.css";
+import "../styles/Login.css";
 
 const Login = () => {
     // const schema = yup.object().shape({
