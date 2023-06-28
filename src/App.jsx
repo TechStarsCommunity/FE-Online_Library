@@ -1,6 +1,7 @@
 import React, { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
+import Search from "./pages/Search";
 
 const Login = lazy(() => import("./pages/Login"));
 const Signup = lazy(() => import("./pages/Signup"));
@@ -41,6 +42,14 @@ function App() {
                         element={
                             <React.Suspense fallback={<div>Loading...</div>}>
                                 <Contact />
+                            </React.Suspense>
+                        }
+                    />
+                    <Route
+                        path="/search"
+                        element={
+                            <React.Suspense fallback={<div>Loading...</div>}>
+                                <Search />
                             </React.Suspense>
                         }
                     />
