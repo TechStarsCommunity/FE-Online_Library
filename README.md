@@ -65,7 +65,7 @@ Here is a breakdown of the project structure:
 ```
 
 - `node_modules`: contains all the project dependencies.
-- `public`: contains the HTML file and any other static assets that will be served by the development server or included in the production build.
+- `public`: contains any other static assets that will be served by the development server or included in the production build.
 - `src`: contains the application code, including the entry point (`main.jsx`), the root component (`App.jsx`), and any other components or styles.
 - `.eslintrc.cjs`: contains configuration options for ESLint.
 - `.gitignore`: specifies files and directories that should be ignored by Git.

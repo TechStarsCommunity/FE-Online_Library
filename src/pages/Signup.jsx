@@ -19,7 +19,7 @@ const Signup = () => {
             .string()
             .email()
             .required("Your Email is Required, ensure it is the Correct Format"),
-        password: yup.string().min(4).max(20).required(),
+        password: yup.string().min(8).required(),
         confirmPassword: yup
             .string()
             .oneOf([yup.ref("password"), null], "Passwords Don't Match")
