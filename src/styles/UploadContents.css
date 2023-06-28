@@ -7,7 +7,6 @@
 .uploadContents__contents {
     background-color: white;
     margin: 50px;
-    height: 877px;
     flex-shrink: 0;
     border-radius: 16px;
     display: flex;
@@ -16,9 +15,7 @@
 
 .uploadContents__contents-content {
     display: flex;
-    /* justify-content: space-between; */
     margin: 30px 20px;
-    margin-bottom: 0px;
     height: 192px;
     flex-shrink: 0;
     border-radius: 16px;
@@ -37,7 +34,6 @@
 .uploadContents__contents-content-details {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     flex: 2.5;
     padding-left: 25px;
     padding-top: 50px;
