@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import MyImage from "../assets/image_icon.png";
 
 const SearchCard = () => {

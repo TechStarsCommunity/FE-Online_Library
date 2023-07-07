@@ -2,6 +2,7 @@ import "../styles/UploadContents.css";
 import Navbar from "../components/Navbar";
 
 import Image from "../assets/image_icon.png";
+
 const UploadContents = () => {
     return (
         <div className="uploadContents">
