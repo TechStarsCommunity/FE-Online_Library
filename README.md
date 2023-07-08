@@ -1,4 +1,4 @@
-# Vite + ReactJS Project
+# Vite + ReactJS Projects
 
 This is a starter template for building ReactJS applications using Vite.
 
