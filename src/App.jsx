@@ -2,11 +2,13 @@ import React, { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 import Search from "./pages/Search";
+// import About from "./pages/About";
 
 const Login = lazy(() => import("./pages/Login"));
 const Signup = lazy(() => import("./pages/Signup"));
 const Uploads = lazy(() => import("./pages/Uploads"));
 const Contact = lazy(() => import("./pages/Contact"));
+const About = lazy(() => import("./pages/About"));
 
 function App() {
     return (
@@ -45,6 +47,16 @@ function App() {
                             </React.Suspense>
                         }
                     />
+
+                    <Route
+                        path="/about"
+                        element={
+                            <React.Suspense fallback={<div>Loading...</div>}>
+                                <About />
+                            </React.Suspense>
+                        }
+                    />
+
                     <Route
                         path="/search"
                         element={
