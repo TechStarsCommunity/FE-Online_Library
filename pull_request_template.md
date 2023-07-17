@@ -14,9 +14,9 @@ Please provide a brief description of the changes introduced by this pull reques
 - [ ] I have tested the changes locally and they work as expected.
 - [ ] The code follows the project's coding standards and conventions.
 - [ ] I have added appropriate comments and documentation where necessary.
-- [ ] All tests pass successfully.
+- [ ] All tests passed successfully.
 - [ ] I have updated the necessary dependencies.
-- [ ] I have updated the README/documentation if needed.
+- [ ] I ran ``` npm run build ``` and it built without errors
 
 ## Changes Made
 
