@@ -2,6 +2,7 @@ import React, { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 import Search from "./pages/Search";
+import Loading from "./components/loading";
 // import About from "./pages/About";
 
 const Login = lazy(() => import("./pages/Login"));
@@ -18,7 +19,7 @@ function App() {
                     <Route
                         path="/"
                         element={
-                            <React.Suspense fallback={<div>Loading...</div>}>
+                            <React.Suspense fallback={<Loading />}>
                                 <Login />
                             </React.Suspense>
                         }
@@ -26,7 +27,7 @@ function App() {
                     <Route
                         path="/signup"
                         element={
-                            <React.Suspense fallback={<div>Loading...</div>}>
+                            <React.Suspense fallback={<Loading />}>
                                 <Signup />
                             </React.Suspense>
                         }
@@ -34,7 +35,7 @@ function App() {
                     <Route
                         path="/uploads"
                         element={
-                            <React.Suspense fallback={<div>Loading...</div>}>
+                            <React.Suspense fallback={<Loading />}>
                                 <Uploads />
                             </React.Suspense>
                         }
@@ -42,7 +43,7 @@ function App() {
                     <Route
                         path="/contact"
                         element={
-                            <React.Suspense fallback={<div>Loading...</div>}>
+                            <React.Suspense fallback={<Loading />}>
                                 <Contact />
                             </React.Suspense>
                         }
@@ -51,7 +52,7 @@ function App() {
                     <Route
                         path="/about"
                         element={
-                            <React.Suspense fallback={<div>Loading...</div>}>
+                            <React.Suspense fallback={<Loading />}>
                                 <About />
                             </React.Suspense>
                         }
@@ -60,7 +61,7 @@ function App() {
                     <Route
                         path="/search"
                         element={
-                            <React.Suspense fallback={<div>Loading...</div>}>
+                            <React.Suspense fallback={<Loading />}>
                                 <Search />
                             </React.Suspense>
                         }
@@ -68,7 +69,7 @@ function App() {
                     <Route
                         path="*"
                         element={
-                            <React.Suspense fallback={<div>Loading...</div>}>
+                            <React.Suspense fallback={<Loading />}>
                                 <Login />
                             </React.Suspense>
                         }
