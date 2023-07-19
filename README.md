@@ -105,8 +105,12 @@ Thank you for considering contributing to our project! Here are the guidelines f
    git add .
    git commit -m "commit message"
    ```
+6. Make sure you run build:
+   ```
+   npm run build
+   ```
 
-6. Push your changes to your branch:
+7. Push your changes to your branch:
 
     ```
     git push origin nickname-team-name
@@ -114,7 +118,7 @@ Thank you for considering contributing to our project! Here are the guidelines f
 
 8. Create a pull request on the GitHub repository. Be sure to include a descriptive title and a detailed description of the changes you made.
 
-9. Wait for a maintainer to review your changes and merge them into the main branch.
+9.  Wait for a maintainer to review your changes and merge them into the main branch.
 
 ### FIGMA LINK
 

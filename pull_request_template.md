@@ -26,9 +26,9 @@ Please provide a list of the main changes made in this pull request.
 
 If applicable, add screenshots or GIFs to showcase the changes visually.
 
-## Dependencies
+## Dependencies or File Changes
 
-Please list any new dependencies added or updated in this pull request.
+Please list any new dependencies or files added or updated in this pull request.
 
 ## Testing Instructions
 

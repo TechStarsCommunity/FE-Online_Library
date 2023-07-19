@@ -3,11 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 import Search from "./pages/Search";
 import Loading from "./components/loading";
-// import Home from "./pages/home";
-// import About from "./pages/About";
 
 const Login = lazy(() => import("./pages/Login"));
-const Signup = lazy(() => import("./pages/Signup"));
+const Signup = lazy(() => import("./pages/signup"));
 const Uploads = lazy(() => import("./pages/Uploads"));
 const Contact = lazy(() => import("./pages/Contact"));
 const About = lazy(() => import("./pages/About"));
@@ -72,22 +70,6 @@ function App() {
                         element={
                             <React.Suspense fallback={<Loading />}>
                                 <Login />
-                            </React.Suspense>
-                        }
-                    />
-                    <Route
-                        path="/searchResult"
-                        element={
-                            <React.Suspense fallback={<div>Loading...</div>}>
-                                <SearchResult />
-                            </React.Suspense>
-                        }
-                    />
-                    <Route
-                        path="/onboarding"
-                        element={
-                            <React.Suspense fallback={<div>Loading...</div>}>
-                                <Onboarding />
                             </React.Suspense>
                         }
                     />
