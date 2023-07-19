@@ -104,16 +104,21 @@ Thank you for considering contributing to our project! Here are the guidelines f
    git add .
    git commit -m "commit message"
    ```
+6. Run build and if you encounter any errors ensure you fix them before pushing your changes.
 
-6. Push your changes to your branch:
+   ```
+   npm run build
+   ```
+
+7. Push your changes to your branch:
 
    ```
    git push origin nickname-team-name
    ```
 
-7. Create a pull request on the GitHub repository. Be sure to include a descriptive title and a detailed description of the changes you made.
+8. Create a pull request on the GitHub repository. Be sure to include a descriptive title and a detailed description of the changes you made.
 
-8. Wait for a maintainer to review your changes and merge them into the main branch.
+9. Wait for a maintainer to review your changes and merge them into the main branch.
 
 ### FIGMA LINK
 [Low Fidelity Design](https://www.figma.com/file/mX7juDzXo4p0qdkuR0VDbL/BooksLab?type=design&node-id=157-184&t=KcvQZIkJeMPElOWT-0)
