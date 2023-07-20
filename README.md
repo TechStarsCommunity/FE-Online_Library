@@ -79,7 +79,7 @@ Here is a breakdown of the project structure:
 
 Thank you for considering contributing to our project! Here are the guidelines for contributing:
 
-1. Each contributor must create a branch using the following template for the branch name: "nickname-team name". For example, if your nickname is John and you belong to the Red team, your branch name should be "john-red".
+1. Each contributor must create a branch, you can use your nickname as the branch name.
 
 2. Clone the repository to your local machine:
 
