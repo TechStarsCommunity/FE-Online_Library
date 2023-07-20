@@ -113,7 +113,7 @@ Thank you for considering contributing to our project! Here are the guidelines f
 7. Push your changes to your branch:
 
     ```
-    git push origin nickname-team-name
+    git push origin your-branch-name
     ```
 
 8. Create a pull request on the GitHub repository. Be sure to include a descriptive title and a detailed description of the changes you made.
