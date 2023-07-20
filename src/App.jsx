@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 import Loading from "./components/loading";
 
+const Home = lazy(() => import("./pages/home"));
 const Login = lazy(() => import("./pages/login"));
 const Signup = lazy(() => import("./pages/signup"));
 const Uploads = lazy(() => import("./pages/uploads"));
@@ -20,7 +21,7 @@ function App() {
                         path="/"
                         element={
                             <React.Suspense fallback={<Loading />}>
-                                <Login />
+                                <Home />
                             </React.Suspense>
                         }
                     />
