@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -5,7 +6,7 @@ import * as yup from "yup";
 import "../styles/signup.css";
 import { useAppDispatch } from "../redux/store";
 import "../styles/signup.css";
-import { loginSuccess } from "../Redux/authSlice";
+import { loginSuccess } from "../redux/authSlice";
 
 const Signup = () => {
     const dispatch = useAppDispatch();

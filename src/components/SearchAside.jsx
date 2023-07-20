@@ -1,15 +1,16 @@
-import React from 'react'
-import MyImage from "../assets/image_icon.png";
+import React from "react";
 
 const SearchAside = () => {
     return (
-        <div className='flex gap-2 flex-wrap w-40 items-center'>
-            <div className='w-1/3 '>
-                <img src={MyImage} alt="" className='w-full h-full' />
+        <React.Fragment>
+            <div className="flex gap-2 flex-wrap w-40 items-center">
+                <div className="w-1/3 ">
+                    <img src={"../assets/image_icon.png"} alt="" className="w-full h-full" />
+                </div>
+                <p>Editors Peak</p>
             </div>
-            <p>Editors Peak</p>
-        </div>
-    )
-}
+        </React.Fragment>
+    );
+};
 
-export default SearchAside
+export default SearchAside;

@@ -1,7 +1,15 @@
-import styles from './loading.module.css'
+// @ts-nocheck
+import React from "react";
+import styles from "../styles/loading.module.css";
 
-export default function Loading() {
-  return (
-    <div className={styles.container}><div className={styles.loader} /></div>
-  )
-}
+const Loading = () => {
+    return (
+        <React.Fragment>
+            <div className={styles.container}>
+                <div className={styles.loader} />
+            </div>
+        </React.Fragment>
+    );
+};
+
+export default Loading;

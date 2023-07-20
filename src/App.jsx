@@ -1,14 +1,14 @@
 import React, { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
-import Search from "./pages/Search";
 import Loading from "./components/loading";
 
-const Login = lazy(() => import("./pages/Login"));
+const Login = lazy(() => import("./pages/login"));
 const Signup = lazy(() => import("./pages/signup"));
-const Uploads = lazy(() => import("./pages/Uploads"));
-const Contact = lazy(() => import("./pages/Contact"));
-const About = lazy(() => import("./pages/About"));
+const Uploads = lazy(() => import("./pages/uploads"));
+const Contact = lazy(() => import("./pages/contact"));
+const About = lazy(() => import("./pages/about"));
+const Search = lazy(() => import("./pages/search"));
 
 function App() {
     return (

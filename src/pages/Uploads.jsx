@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/Uploads.css";
-import LeftSidebar from "../components/LeftSidebar";
-import RightSidebar from "../components/RightSidebar";
-import UploadContents from "../components/UploadContents";
+import "../styles/uploads.css";
+import LeftSidebar from "../components/leftSideBar";
+import RightSidebar from "../components/rightSideBar";
+import UploadContents from "../components/uploadContents";
 
 const Uploads = () => {
     return (

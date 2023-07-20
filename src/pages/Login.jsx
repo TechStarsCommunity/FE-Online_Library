@@ -1,24 +1,7 @@
-// import { useForm } from "react-hook-form";
-// import { yupResolver } from "@hookform/resolvers/yup"
-// import * as yup from "yup";
 import React from "react";
-import MyImage from "../assets/image_icon.png";
-import "../styles/Login.css";
+import "../styles/login.css";
 
 const Login = () => {
-    // const schema = yup.object().shape({
-    //     email: yup.string().email().required("Email is required"),
-    //     password: yup.string().required("Password Is Required")
-    // })
-
-    // const { register, handleSubmit, formState: { errors } } = useForm({
-    //     resolver: yupResolver(schema)
-    // })
-
-    // const onSubmit = (data) => {
-    //     console.log(data);
-    // }
-
     return (
         <React.Fragment>
             <div className="page">
@@ -52,7 +35,7 @@ const Login = () => {
                     </div>
                 </div>
                 <div className="right">
-                    <img src={MyImage} alt="image" />
+                    <img src={"../assets/image_icon.png"} alt="image" />
                 </div>
             </div>
         </React.Fragment>

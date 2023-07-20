@@ -1,7 +1,5 @@
 import React from "react";
-import "../styles/RightSidebar.css";
-
-import Image from "../assets/image_icon.png";
+import "../styles/rightSideBar.css";
 
 const RightSidebar = () => {
     return (
@@ -14,21 +12,21 @@ const RightSidebar = () => {
                     <h2>Recently Approved</h2>
 
                     <div className="container-details">
-                        <img src={Image} alt="" />
+                        <img src={"../assets/image_icon.png"} alt="" />
                         <div className="container-details-detail">
                             <h4>Starting a successful Career in Tech</h4>
                             <span>Oluwaben Akeem</span>
                         </div>
                     </div>
                     <div className="container-details">
-                        <img src={Image} alt="" />
+                        <img src={"../assets/image_icon.png"} alt="" />
                         <div className="container-details-detail">
                             <h4>Starting a successful Career in Tech</h4>
                             <span>Oluwaben Akeem</span>
                         </div>
                     </div>
                     <div className="container-details">
-                        <img src={Image} alt="" />
+                        <img src={"../assets/image_icon.png"} alt="" />
                         <div className="container-details-detail">
                             <h4>Starting a successful Career in Tech</h4>
                             <span>Oluwaben Akeem</span>
@@ -40,21 +38,21 @@ const RightSidebar = () => {
                         <h2>Recently Rejected</h2>
 
                         <div className="container-details">
-                            <img src={Image} alt="" />
+                            <img src={"../assets/image_icon.png"} alt="" />
                             <div className="container-details-detail">
                                 <h4>Starting a successful Career in Tech</h4>
                                 <span>Oluwaben Akeem</span>
                             </div>
                         </div>
                         <div className="container-details">
-                            <img src={Image} alt="" />
+                            <img src={"../assets/image_icon.png"} alt="" />
                             <div className="container-details-detail">
                                 <h4>Starting a successful Career in Tech</h4>
                                 <span>Oluwaben Akeem</span>
                             </div>
                         </div>
                         <div className="container-details">
-                            <img src={Image} alt="" />
+                            <img src={"../assets/image_icon.png"} alt="" />
                             <div className="container-details-detail">
                                 <h4>Starting a successful Career in Tech</h4>
                                 <span>Oluwaben Akeem</span>
