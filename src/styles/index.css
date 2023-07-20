@@ -23,6 +23,39 @@
     /* grid-template-columns: 0.2fr 1fr; */
 }
 
+.categriesHeader {
+    color: var(--primary, #001E50);
+    font-family: Montserrat;
+}
+
+.categriesHeader p {
+    color: var(--secondary, #8D8D8D);
+}
+
+.categriesHeader h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.categriesHeader h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.categoriesCard {
+    /* width: 100%; */
+    width: 300px;
+    background-color: red;
+}
+
+.categoriesCard img {
+    width: 100%;
+}
+
 @media (max-width: 880px) {
     .searchGrid {
         grid-template-columns: 1fr;
@@ -43,5 +76,9 @@
     .myCollapse {
         /* display: ; */
         flex-direction: column;
+    }
+
+    .categriesHeader h2 {
+        font-size: 20px;
     }
 }
