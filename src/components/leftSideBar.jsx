@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/LeftSidebar.css";
-import Image from "../assets/image_icon.png";
+import "../styles/leftSidebar.css";
+
 const LeftSidebar = () => {
     return (
         <React.Fragment>
@@ -9,12 +9,20 @@ const LeftSidebar = () => {
 
                 <div className="left__sidebar-options">
                     <div className="left__sidebar-option">
-                        <img src={Image} alt="" className="left__sidebar-optionImg" />
+                        <img
+                            src={"../assets/image.png"}
+                            alt="image"
+                            className="left__sidebar-optionImg"
+                        />
                         Dashboard
                     </div>
 
                     <div className="left__sidebar-option">
-                        <img src={Image} alt="" className="left__sidebar-optionImg" />
+                        <img
+                            src={"../assets/image.png"}
+                            alt="image"
+                            className="left__sidebar-optionImg"
+                        />
                         Uploads
                     </div>
                 </div>

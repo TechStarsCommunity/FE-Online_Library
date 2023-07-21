@@ -1,6 +1,5 @@
 import React from "react";
-import "../styles/Navbar.css";
-import Image from "../assets/image_icon.png";
+import "../styles/navbar.css";
 
 const Navbar = () => {
     return (
@@ -10,7 +9,7 @@ const Navbar = () => {
                     <h2>Uploads</h2>
                 </div>
                 <div className="navbar__input">
-                    <img src={Image} alt="" className="navbar__input-logo" />
+                    <img src={"../assets/image_icon.png"} alt="" className="navbar__input-logo" />
                     <input type="text" placeholder="Search" />
                 </div>
                 <div className="navbar__detail-2">User Dashboard</div>

@@ -83,7 +83,7 @@ const Contact = () => {
                                 <textarea
                                     id="message"
                                     name="message"
-                                    rows="10"
+                                    rows={10}
                                     placeholder="Message"
                                     className="border border-gray-300 rounded-md py-2 px-4 w-full"
                                 ></textarea>
@@ -92,7 +92,6 @@ const Contact = () => {
                                 Send
                             </button>
                         </form>
-
                     </div>
                 </div>
             </section>

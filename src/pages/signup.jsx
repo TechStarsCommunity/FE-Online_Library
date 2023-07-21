@@ -1,13 +1,12 @@
+// @ts-nocheck
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import "../styles/signup.css";
-import Image from "../assets/image.png";
-import Vector from "../assets/vector.png";
-import { useAppDispatch } from "../Redux/store";
-import { loginSuccess } from "../Redux/authSlice";
+import { useAppDispatch } from "../redux/store";
 import "../styles/signup.css";
+import { loginSuccess } from "../redux/authSlice";
 
 const Signup = () => {
     const dispatch = useAppDispatch();
@@ -42,9 +41,9 @@ const Signup = () => {
             <div className="main">
                 <div className="left-section">
                     <div className="imgg">
-                        <img src={Image} className="imge" />
+                        <img src={"../assets/image.png"} className="imge" alt="image" />
                         <div className="vector">
-                            <img src={Vector} />
+                            <img src={"../assets/vector.png"} alt="vector" />
                         </div>
                     </div>
                 </div>
