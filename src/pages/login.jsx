@@ -29,7 +29,7 @@ const Login = () => {
                             <button>Login</button>
                         </form>
                         <h5>
-                            Don{`'`}t have an Account? <a href="register.html">Sign Up</a>
+                            Don{`'`}t have an Account? <a href="register">Sign Up</a>
                         </h5>
                         <button>Login as Admin</button>
                     </div>

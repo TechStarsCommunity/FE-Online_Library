@@ -1,50 +1,68 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../styles/footer.css'
+
+const FOOTER_LOGO = 'https://s3-alpha-sig.figma.com/img/dfa8/f436/60bda4ffec12dc122ee9e310de4bdbcb?Expires=1690761600&Signature=mn9RzOFqYFLosX5UEeEoyyULI8pP61FP-JjxvvBQY8IIp85rBpDBABrJpw3SlcEZbqr8x6bUXpcni3wBh7qVNimkW7xUtRjthj2KbvmAJqezEP2eXiAajfRxdWsQcWbrcmnVWSemGpKooI1edXHZC~WnvvkhBpWtP1Sdne4DP4fZDx8NmbR7JYjlgUML1TH-FPUjiPH7fktGBdd4mApHF6ro4986MPMP1~1tNOMoe5IUzVq8VPeL-jc9LhLuCV7w0o9t6blk--e5GFIwuAaWJqn2t2AT6Mv9teRsQhSmFBfEEgoKnInKyOwv9pWyeaoJzMw1ysaMbkTOIy2dm3HaNQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
 
 const Footer = () => {
     return (
         <React.Fragment>
-            <footer className="bg-[#E6E6E6] flex flex-col gap-12 pt-[5rem] pb-6 pl-12">
-                <div className="flex justify-between gap-12">
-                    <div className="w-[5rem] h-[3rem]">
-                        <img src="src/assets/logo.png" alt="footer logo" />
+            <footer className="bg-[#dffcf4] pt-[2rem] sm:pt-[5rem] pl-3 pb-[100px] sm:pl-12 overflow-x-hidden">
+                <div className="lg:flex  g-x-12">
+                    <div className="md:basis-1/3 lg:basis-1/2 mb-[1rem] col-start-1 col-end-2 sm:my-[10px] md:text-start text-center">
+                      <div className="mb-[1rem] lg:mb-[6rem]">
+                        <div className="footer_logo w-[200px] mx-auto md:ml-[0]"><img  src={FOOTER_LOGO} alt="footer logo" /></div>
+                        <p className="text-sm md:text-md lg:text-lg mt-4 font-medium"> Copyright 2023 BooksLab. All right reserved!</p>
+                      </div>
+                      <p className="text-[14px] font-semibold tracking-normal">Subscribe to our newsletter</p>
+                      <div className="flex mt-[1rem] w-full md:w-[50%] ml-[20px] md:ml-[0]">
+                        <input type="text" placeholder="Email address" className="w-[75%] h-[40px] border-b-2 focus:outline-none focus:border-[#10B2F3] border-[#10B2F3]"/>
+                        <button><span className="material-symbols-outlined text-[#fff] bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] place-self-center p-2">keyboard_arrow_right</span></button>
+                      </div>
                     </div>
-                    <div className="flex flex-col gap-4">
-                        <h4 className="font-bold text-2xl">Navigation</h4>
-                        <Link to="/categories" className="text-[#636363]">
-                            Top Categories
-                        </Link>
-                        <Link to="/road-map" className="text-[#636363]">
-                            Road Map
-                        </Link>
-                        <Link to="/about" className="text-[#636363]">
-                            About
-                        </Link>
-                        <Link to="/contact" className="text-[#636363]">
-                            Contact Us
-                        </Link>
+                    <div className="mt-[20px] md:[40px] ml-5 md:basis-1/2 lg:basis-1/3 md:flex md:justify-between pr-12 grow">
+                            <div className="flex flex-col gap-3">
+                                <h4 className="font-bold text-[17px]">Navigation</h4>
+                                <Link to="/categories" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
+                                    Top Categories
+                                </Link>
+                                <Link to="/road-map" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
+                                    Road Map
+                                </Link>
+                                <Link to="/about" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
+                                    About
+                                </Link>
+                                <Link to="/contact" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
+                                    Contact Us
+                                </Link>
+                            </div>
+                            <div className="mt-[20px] flex flex-col gap-3">
+                                <h4 className="font-bold text-[17px]">About</h4>
+                                <Link to="/about" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
+                                    About Bookslab
+                                </Link>
+                                <Link to="/terms" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
+                                    Terms & Conditions
+                                </Link>
+                                <Link to="/uploads" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
+                                    Books upload policy
+                                </Link>
+                                <Link to="/policies" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
+                                    Privacy Policies
+                                </Link>
+                            </div>
+                            <div className="flex flex-row-reverse mt-[20px] md:flex-col justify-between">
+                              <Link to={`#top`} className="text-center text-[#fff]"><span class="material-symbols-outlined bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] p-3 rounded-full">keyboard_arrow_up</span></Link>
+                              <div className="flex flex-row gap-4">
+                                <button><i class="fa-brands fa-facebook-f"></i></button>
+                                <button><i class="fa-brands fa-twitter"></i></button>
+                                <button><i class="fa-brands fa-instagram"></i></button>
+                              </div>
+                            </div>
                     </div>
-                    <div className="flex flex-col gap-4">
-                        <h4 className="font-bold text-2xl">About</h4>
-                        <Link to="/about" className="text-[#636363]">
-                            About Bookslab
-                        </Link>
-                        <Link to="/terms" className="text-[#636363]">
-                            Terms & Conditions
-                        </Link>
-                        <Link to="/uploads" className="text-[#636363]">
-                            Books upload policy
-                        </Link>
-                        <Link to="/policies" className="text-[#636363]">
-                            Privacy Policies
-                        </Link>
-                    </div>
-                    <div>
-                        <img src="src/assets/image.png" alt="footer logo" />
-                    </div>
-                </div>
-                <div>
-                    <p className="text-center">2023 BooksLab. All right reserved!</p>
+                        {/* <div>
+                            <p className="text-center">2023 BooksLab. All right reserved!</p>
+                        </div> */}
                 </div>
             </footer>
         </React.Fragment>

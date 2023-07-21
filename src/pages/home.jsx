@@ -2,6 +2,7 @@
 import React from "react";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
+import Footer from '../components/footer'
 
 // change the name of the function to match the name of the file
 
@@ -23,6 +24,8 @@ const home = () => {
                     <h3>Your Virtual Gateway to Boundless Resources</h3>
                 </div>
             </section>
+            home
+            <Footer />
         </React.Fragment>
     );
 };
