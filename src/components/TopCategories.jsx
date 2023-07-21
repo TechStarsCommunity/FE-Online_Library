@@ -1,115 +1,53 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useRef, useState } from "react";
+import CategoriesCard from "./CategoriesCard";
+import tech from "../assets/tech.png";
+import fruit from "../assets/fruit.png";
+import women from "../assets/women.png";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-
-import { Pagination } from 'swiper/modules';
-import tech from "../assets/tech.png"
+import "swiper/css";
+import "swiper/css/pagination";
 
 const TopCategories = () => {
+    const categories = [
+        {
+            image: tech,
+            title: "Tech",
+            description: "All distributions of tech books",
+        },
+        {
+            image: fruit,
+            title: "Nutrition",
+            description: "Boost your Nutrition and Health with these books",
+        },
+        {
+            image: women,
+            title: "Sports",
+            description: "For Athletes, get in the zone and aim for the summit.",
+        },
+        {
+            image: tech,
+            title: "Tech",
+            description: "All distributions of tech books",
+        },
+    ];
+
     return (
-        <div className="bg-[#35EAB9] w-full px-10 py-5 categriesHeader" >
-            <h2 className="">
-                Top Categories
-            </h2>
-            <div className="w-full flex items-center pt-3 overflow-x-auto gap-8">
-                <Swiper
-                    slidesPerView={2.5}
-                    spaceBetween={10}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                        },
-                        768: {
-                            slidesPerView: 4,
-                            spaceBetween: 40,
-                        },
-                        1024: {
-                            slidesPerView: 5,
-                            spaceBetween: 50,
-                        },
-                    }}
-                    modules={[Pagination]}
-                    className="mySwiper"
-                >
-                    <div className="categoriesCard grid gap-2" >
-                        <figure>
-                            <img src={tech} alt="" />
-                        </figure>
-                        <figcaption>
-                            <h3>Tech</h3>
-                            <p>
-                                All distributions of tech books
-                            </p>
-                        </figcaption>
-                    </div>
-                    <div className="categoriesCard grid gap-2" >
-                        <figure>
-                            <img src={tech} alt="" />
-                        </figure>
-                        <figcaption>
-                            <h3>Tech</h3>
-                            <p>
-                                All distributions of tech books
-                            </p>
-                        </figcaption>
-                    </div>
-                    <div className="categoriesCard grid gap-2" >
-                        <figure>
-                            <img src={tech} alt="" />
-                        </figure>
-                        <figcaption>
-                            <h3>Tech</h3>
-                            <p>
-                                All distributions of tech books
-                            </p>
-                        </figcaption>
-                    </div>
-                </Swiper>
-                {/* <div className="categoriesCard grid gap-2" >
-                    <figure>
-                        <img src={tech} alt="" />
-                    </figure>
-                    <figcaption>
-                        <h3>Tech</h3>
-                        <p>
-                            All distributions of tech books
-                        </p>
-                    </figcaption>
-                </div>
-                <div className="categoriesCard grid gap-2" >
-                    <figure>
-                        <img src={tech} alt="" />
-                    </figure>
-                    <figcaption>
-                        <h3>Tech</h3>
-                        <p>
-                            All distributions of tech books
-                        </p>
-                    </figcaption>
-                </div>
-                <div className="categoriesCard grid gap-2" >
-                    <figure>
-                        <img src={tech} alt="" />
-                    </figure>
-                    <figcaption>
-                        <h3>Tech</h3>
-                        <p>
-                            All distributions of tech books
-                        </p>
-                    </figcaption>
-                </div> */}
+        <div className="bg-[#35EAB9] w-full px-10 py-5 categriesHeader">
+            <h2 className="">Top Categories</h2>
+            <div className="w-full flex items-start pt-3 overflow-x-auto gap-8 custom-bar">
+                {categories.map((category) => {
+                    return (
+                        <CategoriesCard
+                            src={category.image}
+                            title={category.title}
+                            description={category.description}
+                        />
+                    );
+                })}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default TopCategories
+export default TopCategories;

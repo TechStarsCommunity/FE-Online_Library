@@ -24,12 +24,15 @@
 }
 
 .categriesHeader {
-    color: var(--primary, #001E50);
+    color: var(--primary, #001e50);
     font-family: Montserrat;
+}
+.custom-bar::-webkit-scrollbar {
+    display: none;
 }
 
 .categriesHeader p {
-    color: var(--secondary, #8D8D8D);
+    color: var(--secondary, #8d8d8d);
 }
 
 .categriesHeader h2 {
@@ -44,12 +47,10 @@
     font-weight: 700;
 }
 
-
-
 .categoriesCard {
     /* width: 100%; */
-    width: 300px;
-    background-color: red;
+    min-width: 250px;
+    /* background-color: red; */
 }
 
 .categoriesCard img {
