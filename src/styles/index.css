@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.searchGrid {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 35px;
+}
+
+.myCollapse {
+    display: flex;
+}
+
+.searchCard {
+    background: #7a6f6f;
+    padding: 15px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+    /* grid-template-columns: 0.2fr 1fr; */
+}
+
+@media (max-width: 880px) {
+    .searchGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 675px) {
+    .searchGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .searchCard img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 562px) {
+    .myCollapse {
+        /* display: ; */
+        flex-direction: column;
+    }
+}
