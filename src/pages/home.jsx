@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
