@@ -1,4 +1,4 @@
-import useSWr, { preload } from "swr";
+import { useQuery } from "react-query";
 
 const fetcher = async (url) => {
     const res = await fetch(url);
@@ -6,9 +6,7 @@ const fetcher = async (url) => {
 };
 
 const useFetch = (url) => {
-    preload(url, fetcher);
-
-    const { data, error, isValidating: isLoading } = useSWr(url, fetcher);
+    const { data, error, isLoading } = useQuery(url, fetcher);
 
     return { data, error, isLoading };
 };

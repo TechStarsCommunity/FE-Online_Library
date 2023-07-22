@@ -33,9 +33,10 @@ const TopCategories = () => {
         <div className="bg-[#35EAB9] w-full px-10 py-5 categriesHeader">
             <h2 className="">Top Categories</h2>
             <div className="w-full flex items-start pt-3 overflow-x-auto gap-8 custom-bar">
-                {categories.map((category) => {
+                {categories.map((category, key) => {
                     return (
                         <CategoriesCard
+                            key={key}
                             src={category.image}
                             title={category.title}
                             description={category.description}
