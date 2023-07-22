@@ -4,9 +4,6 @@ import tech from "../assets/tech.png";
 import fruit from "../assets/fruit.png";
 import women from "../assets/women.png";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
 
 const TopCategories = () => {
     const categories = [
