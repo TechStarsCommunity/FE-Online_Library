@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/footer.css'
-
-const FOOTER_LOGO = 'https://s3-alpha-sig.figma.com/img/dfa8/f436/60bda4ffec12dc122ee9e310de4bdbcb?Expires=1690761600&Signature=mn9RzOFqYFLosX5UEeEoyyULI8pP61FP-JjxvvBQY8IIp85rBpDBABrJpw3SlcEZbqr8x6bUXpcni3wBh7qVNimkW7xUtRjthj2KbvmAJqezEP2eXiAajfRxdWsQcWbrcmnVWSemGpKooI1edXHZC~WnvvkhBpWtP1Sdne4DP4fZDx8NmbR7JYjlgUML1TH-FPUjiPH7fktGBdd4mApHF6ro4986MPMP1~1tNOMoe5IUzVq8VPeL-jc9LhLuCV7w0o9t6blk--e5GFIwuAaWJqn2t2AT6Mv9teRsQhSmFBfEEgoKnInKyOwv9pWyeaoJzMw1ysaMbkTOIy2dm3HaNQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
+import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
+import Logo from '../assets/logo.png'
 
 const Footer = () => {
     return (
         <React.Fragment>
+        <img src='../assets/logo.png' alt="" />
             <footer className="bg-[#dffcf4] pt-[2rem] sm:pt-[5rem] pl-3 pb-[100px] sm:pl-12 overflow-x-hidden">
                 <div className="lg:flex  g-x-12">
                     <div className="md:basis-1/3 lg:basis-1/2 mb-[1rem] col-start-1 col-end-2 sm:my-[10px] md:text-start text-center">
                       <div className="mb-[1rem] lg:mb-[6rem]">
-                        <div className="footer_logo w-[200px] mx-auto md:ml-[0]"><img  src={FOOTER_LOGO} alt="footer logo" /></div>
+                        <div className="footer_logo w-[200px] mx-auto md:ml-[0]"><img src={Logo} alt="" /></div>
                         <p className="text-sm md:text-md lg:text-lg mt-4 font-medium"> Copyright 2023 BooksLab. All right reserved!</p>
                       </div>
                       <p className="text-[14px] font-semibold tracking-normal">Subscribe to our newsletter</p>
@@ -52,11 +53,11 @@ const Footer = () => {
                                 </Link>
                             </div>
                             <div className="flex flex-row-reverse mt-[20px] lg:mt-[0] md:flex-col justify-between">
-                              <Link to={`#top`} className="text-center text-[#fff]"><span class="material-symbols-outlined bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] p-3 rounded-full">keyboard_arrow_up</span></Link>
+                              <Link to={`#top`} className="text-center text-[#fff]"><span className="material-symbols-outlined bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] p-3 rounded-full">keyboard_arrow_up</span></Link>
                               <div className="flex flex-row gap-4">
-                                <button><i class="fa-brands fa-facebook-f"></i></button>
-                                <button><i class="fa-brands fa-twitter"></i></button>
-                                <button><i class="fa-brands fa-instagram"></i></button>
+                                <button><BsFacebook /></button>
+                                <button><BsTwitter /></button>
+                                <button><BsInstagram /></button>
                               </div>
                             </div>
                     </div>
