@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/footer.css'
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
-import Logo from '../assets/logo.png'
+import Logo from '../assets/footer_logo.png'
 
 const Footer = () => {
     return (
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
                     <div className="mt-[20px] md:[40px] ml-5 md:basis-1/2 lg:basis-1/3 md:flex md:justify-between pr-12 grow">
                             <div className="flex flex-col gap-3">
-                                <h4 className="font-bold text-[17px]">Navigation</h4>
+                                <h4 className="font-bold text-[#10B2F3] text-[17px]">Navigation</h4>
                                 <Link to="/categories" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
                                     Top Categories
                                 </Link>
@@ -38,7 +38,7 @@ const Footer = () => {
                                 </Link>
                             </div>
                             <div className="mt-[20px] lg:mt-[0] flex flex-col gap-3">
-                                <h4 className="font-bold text-[17px]">About</h4>
+                                <h4 className="font-bold text-[17px] text-[#10B2F3]">About</h4>
                                 <Link to="/about" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
                                     About Bookslab
                                 </Link>
