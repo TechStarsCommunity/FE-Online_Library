@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/header.css";
+import "./button/button.jsx"
 
 // change the name of the function to match the name of the file
 const Header = () => {
@@ -10,9 +12,9 @@ const Header = () => {
                 </div>
                 <div className="header-links-parent">
                     <ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Contact US</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
                 <button className="">Get Started</button>
