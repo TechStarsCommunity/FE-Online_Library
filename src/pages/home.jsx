@@ -2,6 +2,7 @@
 import React from "react";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
+import AboutComponent from "../components/about";
 import Footer from '../components/footer'
 
 // change the name of the function to match the name of the file
@@ -25,6 +26,7 @@ const home = () => {
                 </div>
             </section>
             home
+            <AboutComponent/>
             <Footer />
         </React.Fragment>
     );

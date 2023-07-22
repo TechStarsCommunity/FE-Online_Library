@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/footer.css'
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
-import Logo from '../assets/logo.png'
+import Logo from '../assets/footer_logo.png'
 
 const Footer = () => {
     return (
