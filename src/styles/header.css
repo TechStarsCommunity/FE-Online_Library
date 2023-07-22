@@ -1,10 +1,6 @@
-body{
-    background:#35EAB9;
-    margin: 0;
-}
-
 header{
     display:flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
@@ -19,18 +15,27 @@ header{
 
 .header-links-parent{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    float: left;
 }
+
+.header-links-parent ul{
+    display: flex;
+    flex-direction: row;
+}
+
 
 .header-links-parent li{
     list-style: none;
     padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .header-links-parent li a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     color: #10B2F3;
     transition: 0.3s ease;

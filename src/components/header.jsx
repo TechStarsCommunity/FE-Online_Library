@@ -1,6 +1,7 @@
 import React from "react";
-import "../styles/header.css";
-import "./button/button.jsx"
+import "../styles/header.css"
+import Button from "./button/button.jsx"
+import logo from "../assets/booksLab_logo.png"
 
 // change the name of the function to match the name of the file
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
         <React.Fragment>
             <header>
             <div className="header-logo-parent">
-                <img src={"../assets/booksLab_logo"} alt="" className="header-logo" />
+                <img src={logo} alt="" className="header-logo" />
                 </div>
                 <div className="header-links-parent">
                     <ul>
@@ -17,7 +18,7 @@ const Header = () => {
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                <button className="">Get Started</button>
+                <Button/>
                 <button className="">Login</button>
                 </header>
         </React.Fragment>
