@@ -36,7 +36,7 @@ const Footer = () => {
                                     Contact Us
                                 </Link>
                             </div>
-                            <div className="mt-[20px] flex flex-col gap-3">
+                            <div className="mt-[20px] lg:mt-[0] flex flex-col gap-3">
                                 <h4 className="font-bold text-[17px]">About</h4>
                                 <Link to="/about" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
                                     About Bookslab
@@ -51,7 +51,7 @@ const Footer = () => {
                                     Privacy Policies
                                 </Link>
                             </div>
-                            <div className="flex flex-row-reverse mt-[20px] md:flex-col justify-between">
+                            <div className="flex flex-row-reverse mt-[20px] lg:mt-[0] md:flex-col justify-between">
                               <Link to={`#top`} className="text-center text-[#fff]"><span class="material-symbols-outlined bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] p-3 rounded-full">keyboard_arrow_up</span></Link>
                               <div className="flex flex-row gap-4">
                                 <button><i class="fa-brands fa-facebook-f"></i></button>
