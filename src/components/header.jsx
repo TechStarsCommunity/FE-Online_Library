@@ -5,19 +5,19 @@ const Header = () => {
     return (
         <React.Fragment>
             <header>
-                <div className="header-logo-parent"> <img src={"../assets/booksLab_logo"} alt="" className="header-logo" /></div>
+            <div className="header-logo-parent">
+                <img src={"../assets/booksLab_logo"} alt="" className="header-logo" />
+                </div>
                 <div className="header-links-parent">
                     <ul>
                         <li>Home</li>
                         <li>About Us</li>
-                        <li>Contact Us</li>
+                        <li>Contact US</li>
                     </ul>
-                    <div>
-                    <button className="">Get Started</button>
-                    <button className="">Login</button>
-                    </div>
                 </div>
-             </header>
+                <button className="">Get Started</button>
+                <button className="">Login</button>
+                </header>
         </React.Fragment>
     );
 };
