@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 90vh;
-    width: 100vw;
+    width: 100%;
     background-image: url("../assets/hero_bg.jpg");
     background-size: cover;
     object-fit: cover;

@@ -2,7 +2,7 @@
 import React from "react";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
-import Footer from '../components/footer'
+import Footer from "../components/footer";
 
 // change the name of the function to match the name of the file
 
@@ -10,7 +10,6 @@ const home = () => {
     return (
         <React.Fragment>
             {/* Write Your Normal HTML Here */}
-
             <section className="hero__section">
                 <div className="hero__section-details">
                     <h1>BooksLab</h1>
@@ -24,7 +23,6 @@ const home = () => {
                     <h3>Your Virtual Gateway to Boundless Resources</h3>
                 </div>
             </section>
-            home
             <Footer />
         </React.Fragment>
     );
