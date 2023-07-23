@@ -1,9 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
-import TopCategories from "../components/topCategories";
+// import TopCategories from "../components/topCategories";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
 import Footer from "../components/footer";
+import Header from "../components/header"
 
 // change the name of the function to match the name of the file
 
@@ -11,6 +12,7 @@ const home = () => {
     return (
         <React.Fragment>
             {/* Write Your Normal HTML Here */}
+            <Header/>
             <section className="hero__section">
                 <div className="hero__section-details">
                     <h1>BooksLab</h1>

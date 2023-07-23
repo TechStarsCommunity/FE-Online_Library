@@ -26,7 +26,7 @@ const Header = () => {
                     </ul>
 
                     <div className="btn-parent">
-                        <Button className="get-started-btn">Get Started</Button> 
+                        <Button>Get Started</Button> 
                         <button className="login-btn">Login</button>
                     </div>
                 </div>

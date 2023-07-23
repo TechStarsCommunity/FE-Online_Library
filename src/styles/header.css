@@ -6,7 +6,7 @@ a {
     color: black;
     text-decoration: none;
 }
-
+/* header -flex space-btw */
 header {
     display: flex;
     flex-direction: row;
@@ -15,15 +15,15 @@ header {
     padding: 10px 25px;
     background-color: #fff;
     z-index: 999;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
 }
 .header-links-parent{
     display: flex;
     flex-direction: row;
-    float: left;
+    /* float: left; */
     align-items: center;
    justify-content: space-between;
    width:50%;
