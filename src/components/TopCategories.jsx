@@ -30,7 +30,7 @@ const TopCategories = () => {
     ];
 
     return (
-        <div className="bg-[#35EAB9] w-full px-10 py-5 categriesHeader">
+        <div className="bg-[#E9FCF4] w-full px-10 py-5 categriesHeader">
             <h2 className="">Top Categories</h2>
             <div className="w-full flex items-start pt-3 overflow-x-auto gap-8 custom-bar">
                 {categories.map((category, key) => {
