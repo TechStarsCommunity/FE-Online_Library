@@ -11,7 +11,6 @@ const home = () => {
     return (
         <React.Fragment>
             {/* Write Your Normal HTML Here */}
-
             <section className="hero__section">
                 <div className="hero__section-details">
                     <h1>BooksLab</h1>

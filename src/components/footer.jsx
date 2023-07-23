@@ -1,25 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../styles/footer.css'
+import "../styles/footer.css";
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
-import Logo from '../assets/footer_logo.png'
+import Logo from "../assets/booksLab_logo.png";
 
 const Footer = () => {
     return (
         <React.Fragment>
-        <img src='../assets/logo.png' alt="" />
+            <img src="../assets/logo.png" alt="" />
             <footer className="bg-[#dffcf4] pt-[2rem] sm:pt-[5rem] pl-3 pb-[100px] sm:pl-12 overflow-x-hidden">
                 <div className="lg:flex  g-x-12">
                     <div className="md:basis-1/3 lg:basis-1/2 mb-[1rem] col-start-1 col-end-2 sm:my-[10px] md:text-start text-center">
-                      <div className="mb-[1rem] lg:mb-[6rem]">
-                        <div className="footer_logo w-[200px] mx-auto md:ml-[0]"><img src={Logo} alt="" /></div>
-                        <p className="text-sm md:text-md lg:text-lg mt-4 font-medium"> Copyright 2023 BooksLab. All right reserved!</p>
-                      </div>
-                      <p className="text-[14px] font-semibold tracking-normal">Subscribe to our newsletter</p>
-                      <div className="flex mt-[1rem] w-full md:w-[50%] ml-[20px] md:ml-[0]">
-                        <input type="text" placeholder="Email address" className="w-[75%] h-[40px] border-b-2 focus:outline-none focus:border-[#10B2F3] border-[#10B2F3]"/>
-                        <button><span className="material-symbols-outlined text-[#fff] bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] place-self-center p-2">keyboard_arrow_right</span></button>
-                      </div>
+                        <div className="mb-[1rem] lg:mb-[6rem]">
+                            <div className="footer_logo w-[200px] mx-auto md:ml-[0]">
+                                <img src={Logo} alt="" />
+                            </div>
+                            <p className="text-sm md:text-md lg:text-lg mt-4 font-medium">
+                                {" "}
+                                Copyright 2023 BooksLab. All right reserved!
+                            </p>
+                        </div>
+                        <p className="text-[14px] font-semibold tracking-normal">
+                            Subscribe to our newsletter
+                        </p>
+                        <div className="flex mt-[1rem] w-full md:w-[50%] ml-[20px] md:ml-[0]">
+                            <input
+                                type="text"
+                                placeholder="Email address"
+                                className="w-[75%] h-[40px] border-b-2 focus:outline-none focus:border-[#10B2F3] border-[#10B2F3]"
+                            />
+                            <button>
+                                <span className="material-symbols-outlined text-[#fff] bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] place-self-center p-2">
+                                    keyboard_arrow_right
+                                </span>
+                            </button>
+                        </div>
                     </div>
                     <div className="mt-[20px] md:[40px] ml-5 md:basis-1/2 lg:basis-1/3 md:flex md:justify-between pr-12 grow">
                             <div className="flex flex-col gap-3">
@@ -60,11 +75,11 @@ const Footer = () => {
                                 <button><BsInstagram /></button>
                               </div>
                             </div>
+                        </div>
                     </div>
-                        {/* <div>
+                    {/* <div>
                             <p className="text-center">2023 BooksLab. All right reserved!</p>
                         </div> */}
-                </div>
             </footer>
         </React.Fragment>
     );
