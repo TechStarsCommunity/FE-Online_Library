@@ -12,7 +12,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 25px;
+    padding: 10px 25px;
     background-color: #fff;
     z-index: 999;
     position: fixed;
@@ -62,13 +62,10 @@ header {
     background-color: white;
     transition: 0.3s ease;
 }
-.login-btn:hover, .get-started-btn:hover {
+.login-btn:hover {
     transform: scale(1.1);
 }
-.get-started-btn{
-    background: linear-gradient(96.05deg, #10b2f3 0%, #35eab9 100%);
-    transition: 0.3s ease;
-}
+
 .btn-parent {
     display: inline-flex;
     flex-direction: row;
