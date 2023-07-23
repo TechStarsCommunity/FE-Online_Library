@@ -3,8 +3,9 @@ import React from "react";
 import TopCategories from "../components/topCategories";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
-import Footer from "../components/footer";
 import Header from "../components/header";
+import AboutComponent from "../components/about";
+import Footer from '../components/footer'
 
 // change the name of the function to match the name of the file
 
@@ -33,6 +34,8 @@ const home = () => {
                 <TopCategories />
             </main>
 
+
+            <AboutComponent/>
             <Footer />
         </React.Fragment>
     );

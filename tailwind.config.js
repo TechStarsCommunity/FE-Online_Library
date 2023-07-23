@@ -5,6 +5,9 @@ export default {
     './index.html',
   ],
   theme: {
+    fontFamily: {
+      'serif': ['Montserrat', 'ui-serif'],
+    },
     extend: {},
   },
   plugins: [],
