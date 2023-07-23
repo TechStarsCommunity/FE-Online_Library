@@ -3,7 +3,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 10px 20px;
     background-color: #fff;
     z-index: 999;
     position:sticky;
@@ -12,29 +12,34 @@ header{
     height:100px;
     margin-top: 0;
   }
-
+a{color:black;text-decoration: none;}
   .header-links-parent{
-    float: left;
-}
-
-.header-links-parent ul,.header-links-parent{
     display: flex;
     flex-direction: row;
+    float: left;
+    align-items: center;
+    gap:10px;
 }
 
+.header-links-parent ul{
+    display: flex;
+    flex-direction: row;
+    gap:10px
+}
+.header-logo-parent img{
+    max-width:150px
+}
 
 .header-links-parent li{
     list-style: none;
    gap:10px;
-    display: flex;
-    flex-direction: row;
+  
     
 }
 
 .header-links-parent li a:not(.active){
     text-decoration: none;
     font-size: 17px;
-    font-weight: 600;
     background: linear-gradient(96.05deg, #10B2f3 0%, #35EAB9 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -49,7 +54,10 @@ header{
     cursor: pointer;
     color:#10B2F3;
     transition: 0.3s ease;
+    background-color: white;
 }
 .btn-parent{
+    display: inline-flex;
+    flex-direction: row;
     gap:10px;
 }
