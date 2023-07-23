@@ -62,11 +62,12 @@ header {
     background-color: white;
     transition: 0.3s ease;
 }
-.login-btn:hover {
+.login-btn:hover, .get-started-btn:hover {
     transform: scale(1.1);
 }
 .get-started-btn{
     background: linear-gradient(96.05deg, #10b2f3 0%, #35eab9 100%);
+    transition: 0.3s ease;
 }
 .btn-parent {
     display: inline-flex;
