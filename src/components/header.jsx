@@ -8,6 +8,8 @@ const Header = () => {
         <React.Fragment>
             <header>
                 <div className="header-logo-parent">
+
+                    <img src={"../assets/booksLab_logo"} alt="" className="header-logo" />
                     <img src={logo} alt="" className="header-logo" />
                 </div>
                 <div className="header-links-parent">
@@ -30,6 +32,9 @@ const Header = () => {
                         <button className="login-btn">Login</button>
                     </div>
                 </div>
+                <button className="">Get Started</button>
+                <button className="">Login</button>
+
             </header>
         </React.Fragment>
     );
