@@ -65,6 +65,9 @@ header {
 .login-btn:hover {
     transform: scale(1.1);
 }
+.get-started-btn{
+    background: linear-gradient(96.05deg, #10b2f3 0%, #35eab9 100%);
+}
 .btn-parent {
     display: inline-flex;
     flex-direction: row;
