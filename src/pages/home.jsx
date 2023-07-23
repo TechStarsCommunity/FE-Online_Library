@@ -3,6 +3,7 @@ import React from "react";
 import TopCategories from "../components/topCategories";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
+
 import Header from "../components/header";
 import AboutComponent from "../components/about";
 import Footer from '../components/footer'
