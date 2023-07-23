@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
-import TopCategories from "../components/TopCategories";
+import TopCategories from "../components/topCategories";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
 import Footer from "../components/footer";

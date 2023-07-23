@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import CategoriesCard from "./CategoriesCard";
+import CategoriesCard from "./categoriesCard";
 import tech from "../assets/tech.png";
 import fruit from "../assets/fruit.png";
 import women from "../assets/women.png";
