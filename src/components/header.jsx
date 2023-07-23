@@ -17,9 +17,13 @@ const Header = () => {
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
+
+                    <div className="btn-parent">
+                <Button name="Get Started"/>
+                <button className="login-btn">Login</button>
                 </div>
-                <Button/>
-                <button className="">Login</button>
+                </div>
+                
                 </header>
         </React.Fragment>
     );

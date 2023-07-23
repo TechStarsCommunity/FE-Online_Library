@@ -13,13 +13,11 @@ header{
     margin-top: 0;
   }
 
-.header-links-parent{
-    display: flex;
-    flex-direction: row;
+  .header-links-parent{
     float: left;
 }
 
-.header-links-parent ul{
+.header-links-parent ul,.header-links-parent{
     display: flex;
     flex-direction: row;
 }
@@ -27,20 +25,31 @@ header{
 
 .header-links-parent li{
     list-style: none;
-    padding: 0 20px;
+   gap:10px;
     display: flex;
     flex-direction: row;
     
 }
 
-.header-links-parent li a{
+.header-links-parent li a:not(.active){
     text-decoration: none;
     font-size: 17px;
     font-weight: 600;
-    color: #10B2F3;
+    background: linear-gradient(96.05deg, #10B2f3 0%, #35EAB9 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: margin-box;
     transition: 0.3s ease;
 }
-.header-links-parent li a:hover,
-.header-links-parent li a.active{
-    color: #35EAB9;   
+.login-btn{
+    border:1px solid #10B2F3;
+    padding: 8px 20px;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    color:#10B2F3;
+    transition: 0.3s ease;
+}
+.btn-parent{
+    gap:10px;
 }
