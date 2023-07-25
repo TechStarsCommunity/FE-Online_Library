@@ -15,12 +15,12 @@ const Footer = () => {
                             <div className="footer_logo w-[200px] mx-auto md:ml-[0]">
                                 <img src={Logo} alt="" />
                             </div>
-                            <p className="text-sm md:text-md lg:text-lg mt-4 font-medium">
+                            <p className="text-[13px] md:text-md lg:text-lg mt-4 font-medium ">
                                 {" "}
                                 Copyright 2023 BooksLab. All right reserved!
                             </p>
                         </div>
-                        <p className="text-[14px] font-semibold tracking-normal">
+                        <p className="text-[17px] font-bold tracking-normal">
                             Subscribe to our newsletter
                         </p>
                         <div className="flex mt-[1rem] w-full md:w-[50%] ml-[20px] md:ml-[0]">
@@ -37,8 +37,8 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="mt-[20px] md:[40px] ml-5 md:basis-1/2 lg:basis-1/3 md:flex md:justify-between pr-12 grow">
-                            <div className="flex flex-col gap-3">
-                                <h4 className="font-bold text-[#10B2F3] text-[17px]">Navigation</h4>
+                            <div className="flex flex-col gap-3 font-light">
+                                <h4 className="font-medium text-[#10B2F3] text-[17px]">Navigation</h4>
                                 <Link to="/categories" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
                                     Top Categories
                                 </Link>
@@ -52,8 +52,8 @@ const Footer = () => {
                                     Contact Us
                                 </Link>
                             </div>
-                            <div className="mt-[20px] lg:mt-[0] flex flex-col gap-3">
-                                <h4 className="font-bold text-[17px] text-[#10B2F3]">About</h4>
+                            <div className="mt-[20px] lg:mt-[0] flex flex-col gap-3 font-light">
+                                <h4 className="font-medium text-[17px] text-[#10B2F3]">About</h4>
                                 <Link to="/about" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
                                     About Bookslab
                                 </Link>
