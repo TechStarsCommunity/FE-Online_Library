@@ -8,6 +8,7 @@ import Header from "../components/header";
 import AboutComponent from "../components/about";
 import Footer from "../components/footer";
 import Button from "../components/button/button";
+import { Roadmap } from "../components/roadmap";
 
 // change the name of the function to match the name of the file
 
@@ -47,6 +48,7 @@ const home = () => {
                 </section>
                 <TopCategories />
             </main>
+            <Roadmap />
             <AboutComponent />
             <Footer />
         </React.Fragment>
