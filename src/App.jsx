@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/filename-case */
+// eslint-disable unicorn/filename-case 
 import React, { lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";

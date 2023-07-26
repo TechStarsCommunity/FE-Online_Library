@@ -23,7 +23,6 @@
     /* grid-template-columns: 0.2fr 1fr; */
 }
 
-
 @media (max-width: 880px) {
     .searchGrid {
         grid-template-columns: 1fr;

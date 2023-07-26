@@ -6,7 +6,7 @@ import * as yup from "yup";
 import "../styles/signup.css";
 import { useAppDispatch } from "../redux/store";
 import "../styles/signup.css";
-import { loginSuccess } from "../redux/authSlice";
+import { loginSuccess } from "../redux/features/authSlice";
 
 const Signup = () => {
     const dispatch = useAppDispatch();

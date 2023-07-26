@@ -3,13 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 const authSlice = createSlice({
     name: "auth",
     initialState: {
-        currentUser: null,
+        currentUser: 'null',
         isFetching: false,
         error: false,
         message: null,
     },
     reducers: {
-        loginStart: (state) => {
+        logIn: (state) => {
             state.isFetching = true;
         },
         loginSuccess: (state, action) => {
