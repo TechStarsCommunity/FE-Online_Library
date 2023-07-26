@@ -82,7 +82,7 @@ const dummybooks = {
     ],
 }
 
-export const allBooks = () => {
+const allBooks = () => {
     return dummybooks.allBooks
 }
 
@@ -114,4 +114,5 @@ export const removeBook = (id) => {
     return removedBook
 }
 
-export default dummybooks
+
+export default allBooks
