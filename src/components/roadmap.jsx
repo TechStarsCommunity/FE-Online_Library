@@ -62,23 +62,13 @@ const roadmap = () => {
     }
   ]
 
-  const handleIconClick = (id) => {
+  const toggleIcon2 = (id) => {
     setIcons((prevIcons) =>
     prevIcons.map((icon) => {
         if (icon.id === id) {
             return { ...icon, show: !icon.show};
         }
-        return {...icon, show: false };
-    })
-    );
-  };
-  const handleIcon2Click = (id) => {
-    setIcons((prevIcons) =>
-    prevIcons.map((icon) => {
-        if (icon.id === id) {
-            return { ...icon, show: !icon.show};
-        }
-        return {...icon, show: false };
+        return icon;
     })
     );
   };
@@ -86,29 +76,21 @@ const roadmap = () => {
   return (
       <React.Fragment>
           <div className='w-full inline-block bg-emerald-50 p-12'>
-                <div className='text-sky-950'>
-                    <div className='left-0 top-0 text-5xl font-bold leading-normal'>
+              <div className='left-0 top-0 text-sky-950 text-5xl font-bold leading-normal'>
                         Roadmap
-                    </div>
-                    <div className='flex mt-20 overflow-x-auto overflow-y-hidden justify-start items-center gap-48'>
-                        {icons.map (({id,src,title, show }) => (
-                        <div key={id} onClick={() => handleIconClick(id)}>
-                            <img src={src} alt="" />
-                            <p className='text-4xl text-center font-semibold leading-9'>{title}</p>
-                        </div>
-                        ))}
-                    </div>
-                    <div className="flex mt-5 gap-48">
-            {icons.map(({ id, show }) => (
-                    <div>
-                            {show && (
-                                <img src={icons2[id -1].src} alt=""  onClick={() => handleIcon2Click(id)}/>
-                            )}
-                    </div>
+              </div>
+              <div className='flex mt-20 overflow-x-auto overflow-y-hidden justify-start gap-48'>
+                        {icons.map (({id,src, show }) => (
+                  <div key={id} onClick={() => toggleIcon2(id)}>
+                          {show ?(
+                    <img src={icons2[id -1].src} alt="" />
+                          ):(
+                    <img src={src} alt="" />
+                          )}
+                  </div>
                     ))}    
-                </div>
-            </div>
-            </div>
+              </div>
+          </div>
       </React.Fragment>
   );
 };
