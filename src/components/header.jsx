@@ -32,9 +32,6 @@ const Header = () => {
                         <button className="login-btn">Login</button>
                     </div>
                 </div>
-                <button className="">Get Started</button>
-                <button className="">Login</button>
-
             </header>
         </React.Fragment>
     );
