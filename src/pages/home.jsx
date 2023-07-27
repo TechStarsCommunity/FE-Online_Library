@@ -6,7 +6,8 @@ import { BsSearch } from "react-icons/bs";
 
 import Header from "../components/header";
 import AboutComponent from "../components/about";
-import Footer from '../components/footer'
+import Footer from "../components/footer";
+import Button from "../components/button/button";
 
 // change the name of the function to match the name of the file
 
@@ -30,13 +31,23 @@ const home = () => {
                             </button>
                         </div>
                         <h3>Your Virtual Gateway to Boundless Resources</h3>
+                        <div
+                            className="btn-parent"
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                marginTop: "40px",
+                            }}
+                        >
+                            <Button className="get-started-btn">Get Started</Button>
+                            <Button className="login-btn">Login</Button>
+                        </div>
                     </div>
                 </section>
                 {/* <TopCategories /> */}
             </main>
-
-
-            <AboutComponent/>
+            <AboutComponent />
             <Footer />
         </React.Fragment>
     );
