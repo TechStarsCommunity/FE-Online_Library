@@ -1,14 +1,14 @@
 import React, {useState} from 'react'
-import frontendicon from "../assets/frontendicon.png"
-import backendicon from "../assets/backendicon.png"
-import designicon from "../assets/designicon.png"
-import writericon from "../assets/writericon.png"
-import dataanalysisicon from "../assets/dataanalysisicon.png"
-import frontendicon2 from "../assets/frontendicon2.png"
-import backendicon2 from "../assets/backendicon2.png"
-import designicon2 from "../assets/designicon2.png"
-import writericon2 from "../assets/writericon2.png"
-import dataanalysisicon2 from "../assets/dataanalysisicon2.png"
+import frontendicon from "../assets/frontendicon.svg"
+import backendicon from "../assets/backendicon.svg"
+import designicon from "../assets/designicon.svg"
+import writericon from "../assets/writericon.svg"
+import dataanalysisicon from "../assets/dataanalysisicon.svg"
+import frontendicon2 from "../assets/frontendicon2.svg"
+import backendicon2 from "../assets/backendicon2.svg"
+import designicon2 from "../assets/designicon2.svg"
+import writericon2 from "../assets/writericon2.svg"
+import dataanalysisicon2 from "../assets/dataanalysisicon2.svg"
 
 
 const roadmap = () => {
@@ -16,31 +16,26 @@ const roadmap = () => {
     {
       id: 1,
       src: frontendicon,
-      title: "Frontend",
       show: false,
     },
     {
       id: 2,
       src: backendicon,
-      title: "Backend",
       show: false,
     },
     {
       id: 3,
       src: designicon,
-      title: "Design",
       show: false,
     },
     {
       id: 4,
       src: writericon,
-      title: "Writer",
       show: false,
     },
     {
       id: 5,
       src: dataanalysisicon,
-      title: "Data Analysis",
       show: false,
     }
   ]);
