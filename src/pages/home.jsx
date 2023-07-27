@@ -3,12 +3,11 @@ import React from "react";
 import TopCategories from "../components/topCategories";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
-
 import Header from "../components/header";
+import Roadmap from "../components/roadmap";
 import AboutComponent from "../components/about";
 import Footer from "../components/footer";
 import Button from "../components/button/button";
-import { Roadmap } from "../components/roadmap";
 
 // change the name of the function to match the name of the file
 
