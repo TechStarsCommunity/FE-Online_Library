@@ -75,13 +75,13 @@ const roadmap = () => {
 
   return (
       <React.Fragment>
-          <div className='w-full inline-block bg-emerald-50 p-12'>
+          <div className='w-full bg-emerald-50 p-12'>
               <div className='left-0 top-0 text-sky-950 text-5xl font-bold leading-normal'>
                         Roadmap
               </div>
-              <div className='flex mt-20 overflow-x-auto overflow-y-hidden justify-start gap-48'>
+              <div className='flex mt-20 overflow-x-auto overflow-y-hidden gap-20 lg:gap-48'>
                         {icons.map (({id,src, show }) => (
-                  <div key={id} onClick={() => toggleIcon2(id)}>
+                  <div key={id} className='flex-shrink-0' onClick={() => toggleIcon2(id)}>
                           {show ?(
                     <img src={icons2[id -1].src} alt="" />
                           ):(
