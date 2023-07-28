@@ -39,14 +39,16 @@ a {
     gap: 10px;
 } */
 
- li a:not(.active) {
-    text-decoration: none;
-    font-size: 17px;
-    background: linear-gradient(96.05deg, #10b2f3 0%, #35eab9 100%);
+ li a:not(.active){
+    background: var(
+        --gradient,
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+    );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: margin-box;
-    transition: 0.3s ease;
+    
 }
 /* .login-btn {
     border: 1px solid #10b2f3;
@@ -67,8 +69,21 @@ a {
     flex-direction: row;
     gap: 10px;
 } */
+.get-started-btn{
+    background: var(
+        --gradient,
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+    );
+}
+
 @media only screen and (max-width:760px){
-    .header-links-parent ul{
+    .header-links-parent ul, .get-started-btn{
         display:none;
     }
+    .header-logo-parent{
+        width:100px;
+        height: auto; 
+    }
+   
 }
