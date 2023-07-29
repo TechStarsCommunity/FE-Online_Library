@@ -39,7 +39,7 @@ a {
     gap: 10px;
 } */
 
- li a:not(.active){
+li a:not(.active) {
     background: var(
         --gradient,
         linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
@@ -48,7 +48,6 @@ a {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: margin-box;
-    
 }
 /* .login-btn {
     border: 1px solid #10b2f3;
@@ -69,7 +68,7 @@ a {
     flex-direction: row;
     gap: 10px;
 } */
-.get-started-btn{
+.get-started-btn {
     background: var(
         --gradient,
         linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),

@@ -14,7 +14,7 @@ const Header = () => {
                     {/* <img src={"../assets/booksLab_logo"} alt="" className="header-logo " /> */}
                     <img src={logo} alt="" className="max-w-[100%] w-[6rem] md:w-[9rem]" />
                 </div>
-                <div className=" flex flex-row items-center justify-between md:w-1/2 header-links-parent">
+                <div className="flex flex-row items-center justify-between md:w-1/2 header-links-parent">
                     <ul className="md:flex hidden flex-row gap-2.5">
                         <li>
                             <a
