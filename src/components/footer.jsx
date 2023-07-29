@@ -27,7 +27,7 @@ const Footer = () => {
                             <input
                                 type="text"
                                 placeholder="Email address"
-                                className="w-[75%] h-[40px] border-b-2 focus:outline-none focus:border-[#10B2F3] border-[#10B2F3]"
+                                className="w-[75%] h-[40px] bg-transparent border-b-2 focus:outline-none focus:border-[#10B2F3] border-[#10B2F3]"
                             />
                             <button>
                                 <span className="material-symbols-outlined text-[#fff] bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] place-self-center p-2">
