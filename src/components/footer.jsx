@@ -8,26 +8,26 @@ const Footer = () => {
     return (
         <React.Fragment>
             <img src="../assets/logo.png" alt="" />
-            <footer className="bg-[#dffcf4] pt-[2rem] sm:pt-[5rem] pl-3 pb-[100px] sm:pl-12 overflow-x-hidden">
+            <footer className="bg-background pt-[2rem] sm:pt-[5rem] pl-3 pb-[100px] sm:pl-12 overflow-x-hidden">
                 <div className="lg:flex  g-x-12">
                     <div className="md:basis-1/3 lg:basis-1/2 mb-[1rem] col-start-1 col-end-2 sm:my-[10px] md:text-start text-center">
                         <div className="mb-[1rem] lg:mb-[6rem]">
                             <div className="footer_logo w-[200px] mx-auto md:ml-[0]">
                                 <img src={Logo} alt="" />
                             </div>
-                            <p className="text-sm md:text-md lg:text-lg mt-4 font-medium">
+                            <p className="text-[13px] md:text-md lg:text-lg mt-4 font-medium ">
                                 {" "}
                                 Copyright 2023 BooksLab. All right reserved!
                             </p>
                         </div>
-                        <p className="text-[14px] font-semibold tracking-normal">
+                        <p className="text-[17px] font-bold tracking-normal">
                             Subscribe to our newsletter
                         </p>
                         <div className="flex mt-[1rem] w-full md:w-[50%] ml-[20px] md:ml-[0]">
                             <input
                                 type="text"
                                 placeholder="Email address"
-                                className="w-[75%] h-[40px] border-b-2 focus:outline-none focus:border-[#10B2F3] border-[#10B2F3]"
+                                className="w-[75%] h-[40px] bg-background border-b-2 focus:outline-none focus:border-[#10B2F3] border-[#10B2F3]"
                             />
                             <button>
                                 <span className="material-symbols-outlined text-[#fff] bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] place-self-center p-2">
@@ -37,8 +37,8 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="mt-[20px] md:[40px] ml-5 md:basis-1/2 lg:basis-1/3 md:flex md:justify-between pr-12 grow">
-                            <div className="flex flex-col gap-3">
-                                <h4 className="font-bold text-[#10B2F3] text-[17px]">Navigation</h4>
+                            <div className="flex flex-col gap-3 font-light">
+                                <h4 className="font-medium text-[#10B2F3] text-[17px]">Navigation</h4>
                                 <Link to="/categories" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
                                     Top Categories
                                 </Link>
@@ -52,8 +52,8 @@ const Footer = () => {
                                     Contact Us
                                 </Link>
                             </div>
-                            <div className="mt-[20px] lg:mt-[0] flex flex-col gap-3">
-                                <h4 className="font-bold text-[17px] text-[#10B2F3]">About</h4>
+                            <div className="mt-[20px] lg:mt-[0] flex flex-col gap-3 font-light">
+                                <h4 className="font-medium text-[17px] text-[#10B2F3]">About</h4>
                                 <Link to="/about" className="text-[#001E50] text-[15px] hover:text-[#10B2F3]">
                                     About Bookslab
                                 </Link>

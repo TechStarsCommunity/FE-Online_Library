@@ -8,6 +8,9 @@ export default {
     fontFamily: {
       'serif': ['Montserrat', 'ui-serif'],
     },
+    backgroundColor: {
+      'background': '#dffcf4',
+    },
     extend: {},
   },
   plugins: [],
