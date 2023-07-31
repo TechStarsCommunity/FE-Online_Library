@@ -118,10 +118,11 @@ Thank you for considering contributing to our project! Here are the guidelines f
 
 8. Create a pull request on the GitHub repository. Be sure to include a descriptive title and a detailed description of your changes.
 
-9.  Wait for a maintainer to review your changes and merge them into the main branch.
+9.  Wait for a maintainer to review your changes and merge them into the develop branch.
+10.  PLEASE ENSURE YOU MAKE YOUR PULL REQUEST TO THE DEVELOP BRANCH, DON'T INTERACT WITH THE MASTER BRANCH.
 
 ### FIGMA LINK
 
-[Low Fidelity Design](https://www.figma.com/file/mX7juDzXo4p0qdkuR0VDbL/BooksLab?type=design&node-id=157-184&t=KcvQZIkJeMPElOWT-0)
+[Fidelity Design](https://www.figma.com/file/mX7juDzXo4p0qdkuR0VDbL/BooksLab?type=design&node-id=157-184&t=KcvQZIkJeMPElOWT-0)
 
 Thank you again for your contributions!
