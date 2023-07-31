@@ -66,8 +66,4 @@ header {
     transform: scale(1.1);
 }
 
-.btn-parent {
-    display: inline-flex;
-    flex-direction: row;
-    gap: 10px;
-}
+

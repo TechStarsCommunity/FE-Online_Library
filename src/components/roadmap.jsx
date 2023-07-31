@@ -79,7 +79,7 @@ const roadmap = () => {
               <div className='left-0 top-0 text-sky-950 text-5xl font-bold leading-normal'>
                         Roadmap
               </div>
-              <div className='flex mt-20 overflow-x-auto overflow-y-hidden gap-20 lg:gap-48'>
+              <div className='flex mt-20 overflow-x-auto overflow-y-hidden gap-20 lg:gap-40'>
                         {icons.map (({id,src, show }) => (
                   <div key={id} className='flex-shrink-0' onClick={() => toggleIcon2(id)}>
                           {show ?(

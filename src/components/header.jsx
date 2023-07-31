@@ -27,8 +27,8 @@ const Header = () => {
                         </li>
                     </ul>
 
-                    <div className="btn-parent">
-                        <Button className="get-started-btn">Get Started</Button> 
+                    <div className="flex gap-2.5">
+                        <button className=" hover:bg-sky-950 bg-gradient-to-r from-blue-400 to-teal-400 text-white px-5 py-2 rounded-full  ">Get Started </button> 
                         <button className="login-btn">Login</button>
                     </div>
                 </div>
