@@ -5,6 +5,7 @@ import fruit from "../assets/fruit.png";
 import women from "../assets/women.png";
 import "../styles/categories.css";
 
+<<<<<<< HEAD
 
 const categories = [
     {
@@ -28,6 +29,8 @@ const categories = [
         description: "All distributions of tech books",
     },
 ];
+=======
+>>>>>>> 739ebb5a3edbb56ce845538743174f123a55276f
 const TopCategories = () => {
 
     return (
