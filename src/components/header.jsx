@@ -8,7 +8,6 @@ const Header = () => {
         <React.Fragment>
             <header>
                 <div className="header-logo-parent">
-
                     <img src={"../assets/booksLab_logo"} alt="" className="header-logo" />
                     <img src={logo} alt="" className="header-logo" />
                 </div>
@@ -27,11 +26,13 @@ const Header = () => {
                         </li>
                     </ul>
 
-                    <div className="flex gap-2.5">
-                        <button className=" hover:bg-sky-950 bg-gradient-to-r from-blue-400 to-teal-400 text-white px-5 py-2 rounded-full  ">Get Started </button> 
-                        <button className="login-btn">Login</button>
+                    <div className="btn-parent">
+                        <Button className="get-started-btn">Get Started</Button>
+
                     </div>
                 </div>
+                <button className="">Get Started</button>
+                <button className="">Login</button>
             </header>
         </React.Fragment>
     );

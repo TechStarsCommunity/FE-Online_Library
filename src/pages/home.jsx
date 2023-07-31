@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import TopCategories from "../components/topCategories";
 import "../styles/home.css";
@@ -9,12 +8,9 @@ import AboutComponent from "../components/about";
 import Footer from "../components/footer";
 import Button from "../components/button/button";
 
-// change the name of the function to match the name of the file
-
 const home = () => {
     return (
         <React.Fragment>
-            {/* Write Your Normal HTML Here */}
             <Header />
             <main className="w-full">
                 <section className="hero__section">
@@ -54,5 +50,4 @@ const home = () => {
     );
 };
 
-// Also change the name of the function here
 export default home;

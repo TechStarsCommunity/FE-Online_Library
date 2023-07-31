@@ -4,7 +4,6 @@ import tech from "../assets/tech.png";
 import fruit from "../assets/fruit.png";
 import women from "../assets/women.png";
 
-
 const TopCategories = () => {
     const categories = [
         {
