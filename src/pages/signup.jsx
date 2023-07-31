@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -21,7 +20,7 @@ const Signup = () => {
         password: yup.string().min(8).required(),
         confirmPassword: yup
             .string()
-            .oneOf([yup.ref("password"), null], "Passwords Don't Match")
+            .oneOf([yup.ref("password"), undefined], "Passwords Don't Match")
             .required(),
     });
 
@@ -33,7 +32,6 @@ const Signup = () => {
         resolver: yupResolver(schema),
     });
     const onSubmit = (data) => {
-        console.log(data);
         dispatch(loginSuccess(data));
     };
     return (
