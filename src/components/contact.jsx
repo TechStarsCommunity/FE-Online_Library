@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+const ContactComponent = () => {
     return (
         <React.Fragment>
             <section className="py-10 px-4">
@@ -98,4 +98,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ContactComponent;
