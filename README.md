@@ -66,9 +66,9 @@ Here is a breakdown of the project structure:
 
 -   `node_modules`: contains all the project dependencies.
 -   `public`: contains any other static assets that will be served by the development server or included in the production build.
--   `src`: contains the application code, including the entry point (`main.jsx`), the root component (`App.jsx`), and any other components or styles.
+-   `src`: contains the application code, including the entry point (`main.jsx`), the root component (`App.jsx`), and other components or styles.
 -   `.eslintrc.cjs`: contains configuration options for ESLint.
--   `.gitignore`: specifies files and directories that should be ignored by Git.
+-   `.gitignore`: specifies files and directories that Git should ignore.
 -   `package.json`: contains project metadata and specifies dependencies and scripts.
 -   `README.md`: contains project documentation.
 -   `vite.config.js`: contains configuration options for Vite.
@@ -116,7 +116,7 @@ Thank you for considering contributing to our project! Here are the guidelines f
     git push origin your-branch-name
     ```
 
-8. Create a pull request on the GitHub repository. Be sure to include a descriptive title and a detailed description of the changes you made.
+8. Create a pull request on the GitHub repository. Be sure to include a descriptive title and a detailed description of your changes.
 
 9.  Wait for a maintainer to review your changes and merge them into the main branch.
 
