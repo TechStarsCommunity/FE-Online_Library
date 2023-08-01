@@ -1,5 +1,5 @@
 import React from "react";
-import TopCategories from "../components/topCategories";
+// import TopCategories from "../components/topCategories";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
 import Header from "../components/header";
@@ -40,7 +40,7 @@ const home = () => {
                         </div>
                     </div>
                 </section>
-                <TopCategories />
+                {/* <TopCategories /> */}
             </main>
             <AboutComponent />
             <Footer />
