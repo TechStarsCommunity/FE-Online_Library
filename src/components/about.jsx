@@ -19,12 +19,12 @@ const AboutComponent = () => {
                             latest trends and technologies.
                         </p>
                         <p className="my-[10px] md:my-[20px] lg:my-[30px]">
-                            At BooksLab, we believe knowledge should be accessible to all.
-                            That`&apos;`s why our platform is completely free and features
-                            user-generated resources that undergo thorough verification by our
-                            expert community. As part of the Techstars network, we benefit from a
-                            global community of tech enthusiasts, developers, and mentors, allowing
-                            us to continually enhance your learning experience.
+                            At BooksLab, we believe knowledge should be accessible to all. That's
+                            why our platform is completely free and features user-generated
+                            resources that undergo thorough verification by our expert community. As
+                            part of the Techstars network, we benefit from a global community of
+                            tech enthusiasts, developers, and mentors, allowing us to continually
+                            enhance your learning experience.
                         </p>
                         <p className="my-[10px] md:my-[20px] lg:my-[30px]">
                             Choose BooksLab as your go-to platform for books and resources, and let
