@@ -6,6 +6,7 @@ import Header from "../components/header";
 import AboutComponent from "../components/about";
 import Footer from "../components/footer";
 import Button from "../components/button/button";
+import ContactComponent from "../components/contact";
 
 const home = () => {
     return (
@@ -43,6 +44,7 @@ const home = () => {
                 <TopCategories />
             </main>
             <AboutComponent />
+            <ContactComponent />
             <Footer />
         </React.Fragment>
     );
