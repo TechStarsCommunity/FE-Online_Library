@@ -5,7 +5,6 @@ import fruit from "../assets/fruit.png";
 import women from "../assets/women.png";
 import "../styles/categories.css";
 
-
 const categories = [
     {
         image: tech,
@@ -51,7 +50,10 @@ const TopCategories = () => {
     return (
         <div className="bg-[#E9FCF4] w-full px-10 py-5 categriesHeader">
             <h2 className="">Top Categories</h2>
-            <div className="w-full flex items-start pt-3 overflow-x-auto gap-8 custom-bar" ref={parentRef}>
+            <div
+                className="w-full flex items-start pt-3 overflow-x-auto gap-8 custom-bar"
+                ref={parentRef}
+            >
                 {categories.map((category, key) => {
                     return (
                         <CategoriesCard
