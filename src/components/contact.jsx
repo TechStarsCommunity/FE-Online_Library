@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./button/button";
+import "../styles/contacts.css";
 
 const ContactComponent = () => {
     return (
@@ -20,22 +20,34 @@ const ContactComponent = () => {
                             </a>
                         </div>
                         <div className="flex items-center space-x-4 mb-10">
-                            <img src="src/assets/phone.png" alt="" className="w-12 h-12" />
+                            <img
+                                src="src/assets/phone.png"
+                                alt="image of phone"
+                                className="w-12 h-12"
+                            />
                             <a href="tel:+00018494724745" className="text-[#727272] text-[24px]">
                                 +000 184 947 24745
                             </a>
                         </div>
-                        <div className="flex items-center space-x-4 mb-10">
-                            <img src="src/assets/location-pin.png" alt="" className="w-12 h-12" />
+                        <div className="flex items-center space-x-4 ">
+                            <img
+                                src="src/assets/location-pin.png"
+                                alt="image of location"
+                                className="w-12 h-12"
+                            />
                             <a href="#" className="text-[#727272] text-[24px]">
                                 285 Office Address, LGA, State, Country
                             </a>
                         </div>
+                        <button className="buttn buttn-primary ">Contact Us</button>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <img src="src/assets/contact_us_illustration.png" className="w-144 h-144"/>
+                        <img
+                            src="src/assets/contact_us_illustration.png"
+                            alt="image of frontdesk personnel"
+                            className="w-144 h-144"
+                        />
                     </div>
-                    <Button>Contact Us</Button>
                 </div>
             </section>
         </React.Fragment>
