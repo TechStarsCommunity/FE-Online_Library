@@ -1,0 +1,26 @@
+:root {
+    --primary: #10b2f3;
+}
+
+.buttn {
+    padding: 16px 32px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 100px;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+.buttn-primary {
+    background-color: var(--primary);
+    background: var(
+        --gradient,
+        linear-gradient(0deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.16) 100%),
+        linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+    );
+    color: #fff;
+    border: 1px solid var(--primary);
+}
