@@ -49,7 +49,7 @@ const Header = () => {
                         <button className=" border-[#10b2f3] border-solid border py-1.5 px-2.5 rounded-[3.125rem]  outline-none cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  text-[#10b2f3] bg-white ease-in duration-300 hover:scale-[1.1]">
                             Login
                         </button>
-                        
+
                         <BsList className="menu-icon w-7 h-7 md:hidden" />
                     </div>
                 </div>

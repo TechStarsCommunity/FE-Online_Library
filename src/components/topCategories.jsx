@@ -5,8 +5,6 @@ import fruit from "../assets/fruit.png";
 import women from "../assets/women.png";
 import "../styles/categories.css";
 
-<<<<<<< HEAD
-
 const categories = [
     {
         image: tech,
@@ -29,10 +27,7 @@ const categories = [
         description: "All distributions of tech books",
     },
 ];
-=======
->>>>>>> 739ebb5a3edbb56ce845538743174f123a55276f
 const TopCategories = () => {
-
     return (
         <div className="bg-[#E9FCF4] w-full px-10 py-5 categriesHeader">
             <h2 className="">Top Categories</h2>
