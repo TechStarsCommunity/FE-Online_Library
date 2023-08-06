@@ -43,6 +43,7 @@
     margin-right: 0.625rem;
     color: #888;
     font-size: 1.125rem;
+    cursor: pointer;
 }
 
 .search-container input {
@@ -73,6 +74,15 @@
 .hero__section-details > h3 {
     font-size: 0.9375rem;
     font-weight: 500;
+}
+
+get-started-btn {
+    background: var(
+        --gradient,
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+    );
+    color: #fff;
 }
 
 /* Media queries for responsiveness */
@@ -107,7 +117,9 @@
     .search-container {
         height: 2.125rem;
         padding-left: 0.625rem;
-        /* width: fit-content; */
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 11px;
     }
 
     .hero__section-details {
