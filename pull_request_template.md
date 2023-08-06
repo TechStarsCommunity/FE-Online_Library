@@ -11,19 +11,17 @@ Please provide a brief description of the changes introduced by this pull reques
 
 ## Checklist
 
-- [x] I have tested the changes locally and they work as expected.
-- [x] The code follows the project's coding standards and conventions.
-- [x] I have added appropriate comments and documentation where necessary.
-- [x] All tests passed successfully.
-- [x] I have updated the necessary dependencies.
-- [x] I ran ``` npm run build ``` and it built without errors
+- [ ] I have tested the changes locally and they work as expected.
+- [ ] The code follows the project's coding standards and conventions.
+- [ ] I have added appropriate comments and documentation where necessary.
+- [ ] All tests passed successfully.
+- [ ] I have updated the necessary dependencies.
+- [ ] I ran ``` npm run build ``` and it built without errors
 
 ## Changes Made
 
 Please provide a list of the main changes made in this pull request.
 
-added the Roadmap component
-made it mobile responsive
 
 ## Screenshots
 
