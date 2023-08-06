@@ -83,9 +83,9 @@ const Roadmap = () => {
                         {icons.map (({id,src, show }) => (
                   <div key={id} className='flex-shrink-0' onClick={() => toggleIcon2(id)}>
                           {show ?(
-                    <img src={icons2[id -1].src} alt="" />
+                    <img src={icons2[id -1].src} alt="career path" />
                           ):(
-                    <img src={src} alt="" />
+                    <img src={src} alt="career path1" />
                           )}
                   </div>
                     ))}    
