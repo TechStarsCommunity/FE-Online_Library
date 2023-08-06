@@ -1,5 +1,5 @@
 import React from "react";
-import TopCategories from "../components/topCategories";
+// import TopCategories from "../components/topCategories";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
 import Header from "../components/header";
@@ -7,6 +7,8 @@ import Roadmap from "../components/roadmap";
 import AboutComponent from "../components/about";
 import Footer from "../components/footer";
 import Button from "../components/button/button";
+import ContactComponent from "../components/contact";
+import { Link } from "react-router-dom";
 
 const home = () => {
     return (
@@ -36,15 +38,20 @@ const home = () => {
                                 marginTop: "40px",
                             }}
                         >
-                            <Button className="get-started-btn">Get Started</Button>
-                            <Button className="login-btn">Login</Button>
+                            <Link to="/signup">
+                                <Button variant="primary">Get Started</Button>
+                            </Link>
+                            <Link to="/login">
+                                <Button variant="secondary">Login</Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
-                <TopCategories />
+                {/* <TopCategories /> */}
             </main>
             <Roadmap />
             <AboutComponent />
+            <ContactComponent />
             <Footer />
         </React.Fragment>
     );
