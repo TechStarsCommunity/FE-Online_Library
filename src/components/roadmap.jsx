@@ -1,64 +1,64 @@
 import React, {useState} from 'react'
-import frontendicon from "../assets/frontendicon.svg"
-import backendicon from "../assets/backendicon.svg"
-import designicon from "../assets/designicon.svg"
-import writericon from "../assets/writericon.svg"
-import dataanalysisicon from "../assets/dataanalysisicon.svg"
-import frontendicon2 from "../assets/frontendicon2.svg"
-import backendicon2 from "../assets/backendicon2.svg"
-import designicon2 from "../assets/designicon2.svg"
-import writericon2 from "../assets/writericon2.svg"
-import dataanalysisicon2 from "../assets/dataanalysisicon2.svg"
+import frontendIcon from "../assets/frontendicon.svg"
+import backendIcon from "../assets/backendicon.svg"
+import designIcon from "../assets/designicon.svg"
+import writerIcon from "../assets/writericon.svg"
+import dataanalysisIcon from "../assets/dataanalysisicon.svg"
+import frontendIcon2 from "../assets/frontendicon2.svg"
+import backendIcon2 from "../assets/backendicon2.svg"
+import designIcon2 from "../assets/designicon2.svg"
+import writerIcon2 from "../assets/writericon2.svg"
+import dataanalysisIcon2 from "../assets/dataanalysisicon2.svg"
 
 
-const roadmap = () => {
+const Roadmap = () => {
   const [icons, setIcons] = useState([
     {
       id: 1,
-      src: frontendicon,
+      src: frontendIcon,
       show: false,
     },
     {
       id: 2,
-      src: backendicon,
+      src: backendIcon,
       show: false,
     },
     {
       id: 3,
-      src: designicon,
+      src: designIcon,
       show: false,
     },
     {
       id: 4,
-      src: writericon,
+      src: writerIcon,
       show: false,
     },
     {
       id: 5,
-      src: dataanalysisicon,
+      src: dataanalysisIcon,
       show: false,
     }
   ]);
   const icons2 = [
     {
       id: 1,
-      src: frontendicon2,
+      src: frontendIcon2,
     },
     {
       id: 2,
-      src: backendicon2,
+      src: backendIcon2,
     },
     {
       id: 3,
-      src: designicon2,
+      src: designIcon2,
     },
     {
       id: 4,
-      src: writericon2,
+      src: writerIcon2,
     },
     {
       id: 5,
-      src: dataanalysisicon2,
+      src: dataanalysisIcon2,
     }
   ]
 
@@ -95,4 +95,4 @@ const roadmap = () => {
   );
 };
 
-export default roadmap;
+export default Roadmap;
