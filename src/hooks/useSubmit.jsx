@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
@@ -10,7 +10,7 @@ const useSubmit = (schema) => {
     } = useForm({
         resolver: yupResolver(schema),
     });
-    return { register, handleSubmit, errors }
-}
+    return { register, handleSubmit, errors };
+};
 
-export default useSubmit
+export default useSubmit;

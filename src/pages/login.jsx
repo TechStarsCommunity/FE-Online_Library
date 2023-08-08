@@ -26,7 +26,9 @@ const Login = () => {
                                     autoComplete="email"
                                     {...register("email")}
                                 />
-                                {errors.email && <p className="text-red-600">{errors.email.message}</p>}
+                                {errors.email && (
+                                    <p className="text-red-600">{errors.email.message}</p>
+                                )}
                             </div>
                             <div>
                                 <label htmlFor="password">Password</label>
@@ -36,7 +38,9 @@ const Login = () => {
                                     autoComplete="current-password"
                                     {...register("password")}
                                 />
-                                {errors.password && <p className="text-red-600">{errors.password.message}</p>}
+                                {errors.password && (
+                                    <p className="text-red-600">{errors.password.message}</p>
+                                )}
                             </div>
                             <button type="submit">Login</button>
                         </form>
