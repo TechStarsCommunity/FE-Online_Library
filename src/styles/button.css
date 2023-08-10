@@ -27,3 +27,6 @@
             linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
         );
 }
+.btn-radius{
+    border-radius: 5px;
+}

@@ -5,6 +5,7 @@ import * as yup from "yup";
 import "../styles/signup.css";
 import { useAppDispatch } from "../redux/store";
 import "../styles/signup.css";
+import Button from "../components/button/button";
 import { loginSuccess } from "../redux/authSlice";
 
 const Signup = () => {
@@ -38,10 +39,10 @@ const Signup = () => {
         <React.Fragment>
             <div className="main">
                 <div className="left-section">
-                    <div className="imgg">
-                        <img src={"../assets/image.png"} className="imge" alt="image" />
+                    <div className="imgg"> 
+                        {/* <img src={"../assets/authPage_bg.png"} className="imge" alt="image" /> */}
                         <div className="vector">
-                            <img src={"../assets/vector.png"} alt="vector" />
+                            {/* <img src={"../assets/booksLab_logo.png"} alt="vector" /> */}
                         </div>
                     </div>
                 </div>
@@ -50,32 +51,51 @@ const Signup = () => {
                         <h2>WELCOME TO BOOKSLAB</h2>
                         <p>Register your account</p>
                     </div>
-                    <input type="text" placeholder="Name ..." {...register("name")} />
+                    <label htmlFor="name">Name</label>
+                    <input type="text" placeholder="Name ..." id="name" {...register("name")} />
                     <p> {errors.name?.message} </p>
-                    <input type="text" placeholder="Username ..." {...register("username")} />
+                    <p></p>
+                    <label htmlFor="username">Username</label>
+                    <input
+                        type="text"
+                        placeholder="Username ..."
+                        id="username"
+                        {...register("username")}
+                    />
                     <p> {errors.username?.message} </p>
+                    <label htmlFor="email">Email</label>
                     <input
                         type="text"
                         placeholder="Email ..."
                         {...register("email")}
+                        id="email"
                         autoComplete="email"
                     />
                     <p> {errors.email?.message} </p>
-                    <input
-                        type="password"
-                        placeholder="Password ..."
-                        {...register("password")}
-                        autoComplete="new-password"
-                    />
-                    <p> {errors.password?.message} </p>
-                    <input
-                        type="password"
-                        placeholder="Confirm Password ..."
-                        {...register("confirmPassword")}
-                        autoComplete="new-password"
-                    />
-                    <p> {errors.confirmPassword?.message} </p>
-                    <input type="submit" />
+                    {/* container for passwords */}
+                    <div>
+                        <label htmlFor="password">Password</label>
+                        <input
+                            type="password"
+                            placeholder="Password ..."
+                            id="password"
+                            {...register("password")}
+                            autoComplete="new-password"
+                        />
+                        <p> {errors.password?.message} </p>
+                        <label htmlFor="confirmPassword">Confirm Password</label>
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm Password ..."
+                            {...register("confirmPassword")}
+                            autoComplete="new-password"
+                        />
+                        <p> {errors.confirmPassword?.message} </p>
+                    </div>
+                    <Button borderVariant="noRadius" variant="primary">
+                        Sign Up
+                    </Button>
                 </form>
             </div>
         </React.Fragment>
