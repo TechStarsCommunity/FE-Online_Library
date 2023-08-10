@@ -51,27 +51,31 @@ const Signup = () => {
                         id="email"
                         autoComplete="email"
                     />
-                    <p> {errors.email?.message} </p>
+                    <p className="text-red-600"> {errors.email?.message} </p>
                     {/* container for passwords */}
-                    <div>
-                        <label htmlFor="password">Password</label>
-                        <input
-                            type="password"
-                            placeholder="Password ..."
-                            id="password"
-                            {...register("password")}
-                            autoComplete="new-password"
-                        />
-                        <p className="text-red-600"> {errors.password?.message} </p>
-                        <label htmlFor="confirmPassword">Confirm Password</label>
-                        <input
-                            type="password"
-                            id="confirmPassword"
-                            placeholder="Confirm Password ..."
-                            {...register("confirmPassword")}
-                            autoComplete="new-password"
-                        />
-                        <p className="text-red-600"> {errors.confirmPassword?.message} </p>
+                    <div className="password-container">
+                        <div className="password-child">
+                            <label htmlFor="password">Password</label>
+                            <input
+                                type="password"
+                                placeholder="Password ..."
+                                id="password"
+                                {...register("password")}
+                                autoComplete="new-password"
+                            />
+                            <p className="text-red-600"> {errors.password?.message} </p>
+                        </div>
+                        <div className="password-child">
+                            <label htmlFor="confirmPassword">Confirm Password</label>
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Confirm Password ..."
+                                {...register("confirmPassword")}
+                                autoComplete="new-password"
+                            />
+                            <p className="text-red-600"> {errors.confirmPassword?.message} </p>
+                        </div>
                     </div>
                     <Button borderVariant="noRadius" variant="primary">
                         Sign Up
