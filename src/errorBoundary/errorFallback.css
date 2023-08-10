@@ -1,0 +1,45 @@
+.error__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.error__content {
+    text-align: center;
+}
+
+.error__content > p {
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-bottom: 0.75em;
+}
+
+.error__content > pre {
+    color: red;
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 0, 75em;
+}
+
+.error__button {
+    width: 12.5em;
+}
+
+/* Media Query for All Screen Sizes */
+@media (max-width: 768px) {
+    .error__content > p {
+        font-size: 2em; /* Adjust as needed */
+        margin-bottom: 0.5em; /* Adjust as needed */
+    }
+
+    .error__content > pre {
+        font-size: 1.5em; /* Adjust as needed */
+        margin-bottom: 0.5em; /* Adjust as needed */
+    }
+
+    .error__button {
+        width: 10em; /* Adjust as needed */
+    }
+}
