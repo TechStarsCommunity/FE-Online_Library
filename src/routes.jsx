@@ -22,7 +22,7 @@ const BrowserRouter = createBrowserRouter([
           ),
         children: [
             {
-                path: "login",
+                path: "/login",
                 element: (
                   <React.Suspense fallback={<Loading />}>
                     <Login />
@@ -30,7 +30,7 @@ const BrowserRouter = createBrowserRouter([
                 )
             },
             {
-                path: "signup",
+                path: "/signup",
                 element: (
                   <React.Suspense fallback={<Loading />}>
                     <Signup />
@@ -38,7 +38,7 @@ const BrowserRouter = createBrowserRouter([
                 )
             },
             {
-                path: "uploads",
+                path: "/uploads",
                 element: (
                   <React.Suspense fallback={<Loading />}>
                     <Uploads />
@@ -46,7 +46,7 @@ const BrowserRouter = createBrowserRouter([
                 )
             },
             {
-                path: "contact",
+                path: "/contact",
                 element: (
                   <React.Suspense fallback={<Loading />}>
                     <Contact />
@@ -54,7 +54,7 @@ const BrowserRouter = createBrowserRouter([
                 )
             },
             {
-                path: "about",
+                path: "/about",
                 element: (
                   <React.Suspense fallback={<Loading />}>
                     <About />
@@ -62,7 +62,7 @@ const BrowserRouter = createBrowserRouter([
                 )
             },
             {
-                path: "search",
+                path: "/search",
                 element: (
                   <React.Suspense fallback={<Loading />}>
                     <Search />
