@@ -6,6 +6,7 @@ import Button from "../components/button/button";
 import { loginSuccess } from "../redux/authSlice";
 import { signUpSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
+import Input from "../components/input/input";
 
 const Signup = () => {
     const { errors, register, handleSubmit } = useSubmit(signUpSchema);
@@ -43,6 +44,7 @@ const Signup = () => {
                         {...register("username")}
                     />
                     <p className="text-red-600"> {errors.username?.message} </p>
+                    
                     <label htmlFor="email">Email</label>
                     <input
                         type="text"
@@ -80,6 +82,9 @@ const Signup = () => {
                     <Button borderVariant="noRadius" variant="primary">
                         Sign Up
                     </Button>
+                    <h5>
+                        Don{`'`}t have an Account? <a href="register">Sign Up</a>
+                    </h5>
                 </form>
             </div>
         </React.Fragment>
