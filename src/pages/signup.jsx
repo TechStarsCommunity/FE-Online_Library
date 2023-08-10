@@ -19,7 +19,7 @@ const Signup = () => {
         <React.Fragment>
             <div className="main">
                 <div className="left-section">
-                    <div className="imgg"> 
+                    <div className="imgg">
                         {/* <img src={"../assets/authPage_bg.png"} className="imge" alt="image" /> */}
                         <div className="vector">
                             {/* <img src={"../assets/booksLab_logo.png"} alt="vector" /> */}
