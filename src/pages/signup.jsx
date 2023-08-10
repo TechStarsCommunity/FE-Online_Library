@@ -7,6 +7,7 @@ import { loginSuccess } from "../redux/authSlice";
 import { signUpSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
 import Input from "../components/input/input";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
     const { errors, register, handleSubmit } = useSubmit(signUpSchema);
@@ -32,58 +33,72 @@ const Signup = () => {
                         <h2>WELCOME TO BOOKSLAB</h2>
                         <p>Register your account</p>
                     </div>
-                    <label htmlFor="name">Name</label>
-                    <input type="text" placeholder="Name ..." id="name" {...register("name")} />
-                    <p className="text-red-600"> {errors.name?.message} </p>
-                    <p></p>
-                    <label htmlFor="username">Username</label>
-                    <input
+                    <Input
+                        label="Name"
+                        name="name"
                         type="text"
-                        placeholder="Username ..."
-                        id="username"
-                        {...register("username")}
+                        register={register}
+                        errors={errors}
+                        autoComplete="name"
+                        placeholder="Name..."
                     />
-                    <p className="text-red-600"> {errors.username?.message} </p>
-                    
-                    <label htmlFor="email">Email</label>
-                    <input
+                    <Input
+                        label="Username"
+                        name="username"
                         type="text"
-                        placeholder="Email ..."
-                        {...register("email")}
-                        id="email"
+                        register={register}
+                        errors={errors}
+                        placeholder="Username..."
+                    />
+                    <Input
+                        label="Email"
+                        name="email"
+                        type="email"
+                        register={register}
+                        errors={errors}
                         autoComplete="email"
+                        placeholder="Email..."
                     />
-                    <p className="text-red-600"> {errors.email?.message} </p>
+
                     {/* container for passwords */}
                     <div className="password-container">
                         <div className="password-child">
-                            <label htmlFor="password">Password</label>
-                            <input
+                            <Input
+                                label="Password"
+                                name="password"
                                 type="password"
-                                placeholder="Password ..."
+                                register={register}
+                                errors={errors}
+                                placeholder="Password..."
                                 id="password"
-                                {...register("password")}
-                                autoComplete="new-password"
                             />
-                            <p className="text-red-600"> {errors.password?.message} </p>
                         </div>
                         <div className="password-child">
-                            <label htmlFor="confirmPassword">Confirm Password</label>
-                            <input
+                            <Input
+                                label=" Confirm Password"
+                                name="confirm-password"
                                 type="password"
-                                id="confirmPassword"
-                                placeholder="Confirm Password ..."
-                                {...register("confirmPassword")}
+                                register={register}
+                                errors={errors}
                                 autoComplete="new-password"
+                                placeholder="Confirm Password..."
+                                id="confirmPassword"
                             />
-                            <p className="text-red-600"> {errors.confirmPassword?.message} </p>
                         </div>
                     </div>
-                    <Button borderVariant="noRadius" variant="primary">
-                        Sign Up
-                    </Button>
+
+                    <Link to="/">
+                        <Button borderVariant="noRadius" variant="primary">
+                            Sign Up
+                        </Button>{" "}
+                    </Link>
+
                     <h5>
-                        Don{`'`}t have an Account? <a href="register">Sign Up</a>
+                        Have an Account?
+                        <Link to="/login">
+                            {" "}
+                            <a href="">Login</a>
+                        </Link>
                     </h5>
                 </form>
             </div>
