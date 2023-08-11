@@ -1,5 +1,5 @@
-import React from "react";
-import "../styles/contacts.css";
+import React, { Component } from "react";
+import Button from "./button/button";
 
 const ContactComponent = () => {
     return (
@@ -39,7 +39,9 @@ const ContactComponent = () => {
                                 285 Office Address, LGA, State, Country
                             </a>
                         </div>
-                        <button className="buttn buttn-primary ">Contact Us</button>
+                        <div className="mt-12">
+                            <Button> Contact Us</Button>
+                        </div>
                     </div>
                     <div className="w-full md:w-1/2">
                         <img
