@@ -4,10 +4,10 @@ import Button from "./button/button";
 const ContactComponent = () => {
     return (
         <React.Fragment>
-            <section className="py-10 px-4">
-                <div className="container mx-auto w-90% flex flex-wrap">
+            <section className="py-2 px-2">
+                <div className="container mx-auto w-90% flex flex-wrap py-[24px] px-[48px]">
                     <div className=" w-full md:w-1/2">
-                        <h1 className="text-[48px] md:text-[30px] my-[20px] text-[#001E50] font-bold lg:text-[36px] mb-16 mt-0">
+                        <h1 className="text-[24px] md:text-[30px] my-[20px] text-[#001E50] font-bold lg:text-[36px] mb-16 mt-0">
                             Contact Us
                         </h1>
                         <div className=" flex items-center space-x-4 mb-10">
