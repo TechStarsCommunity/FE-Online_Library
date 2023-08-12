@@ -3,6 +3,7 @@ import Loading from "./components/loading";
 import { createBrowserRouter } from "react-router-dom"
 
 
+
 const Home = lazy(() => import("./pages/home"));
 const Login = lazy(() => import("./pages/login"));
 const Signup = lazy(() => import("./pages/signup"));
@@ -10,6 +11,7 @@ const Uploads = lazy(() => import("./pages/uploads"));
 const Contact = lazy(() => import("./pages/contact"));
 const About = lazy(() => import("./pages/about"));
 const Search = lazy(() => import("./pages/search"));
+const OTPVerification = lazy(() => import("./pages/otpverification"));
 
 
 const BrowserRouter = createBrowserRouter([
@@ -20,7 +22,7 @@ const BrowserRouter = createBrowserRouter([
               <Home />
             </React.Suspense>
           ),
-        children: [
+        },
             {
                 path: "/login",
                 element: (
@@ -70,15 +72,21 @@ const BrowserRouter = createBrowserRouter([
                 )
             },
             {
-                path: "*",
+                path: "/auth-otp",
                 element: (
                   <React.Suspense fallback={<Loading />}>
-                    <Login />
+                    <OTPVerification />
                   </React.Suspense>
                 )
             },
-        ]
-    }
+            {
+              path: "*",
+              element: (
+                <React.Suspense fallback={<Loading />}>
+                  <Login />
+                </React.Suspense>
+              )
+          },
 ])
 
 export default BrowserRouter;
