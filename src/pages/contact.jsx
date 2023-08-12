@@ -6,8 +6,8 @@ import Footer from "../components/footer";
 const Contact = () => {
     return (
         <React.Fragment>
-            <Header/>
-            <ContactComponent/>
+            <Header />
+            <ContactComponent />
             <section className="py-10 px-4">
                 <div className="container mx-auto flex flex-wrap">
                     <div className="w-full md:w-1/2">
@@ -63,7 +63,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </React.Fragment>
     );
 };
