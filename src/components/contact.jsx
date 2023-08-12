@@ -40,7 +40,7 @@ const ContactComponent = () => {
                             </a>
                         </div>
                         <div className="mt-12">
-                            <Button> Contact Us</Button>
+                            <Button variant="primary"> Contact Us</Button>
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">
