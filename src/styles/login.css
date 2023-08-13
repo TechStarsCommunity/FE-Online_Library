@@ -29,11 +29,11 @@
     margin-left: 13.57vw;
 }
 
-img {
+/*img {
     height: 240px;
     width: 240px;
     border-radius: 24px;
-}
+}*/
 
 .left-content {
     width: 60%;
@@ -47,23 +47,23 @@ img {
     padding-top: 6vh;
 }
 
-h1 {
+/*h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 40px;
     color: #000000;
     padding-bottom: 0px;
     margin: 0px;
-}
+}*/
 
-p {
+/*p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: #707070;
     padding-top: 0px;
     margin: 0px;
-}
+}*/
 
 h5 {
     font-family: 'Montserrat', sans-serif;
@@ -124,6 +124,6 @@ button {
     transition: 0.6s;
 }
 
-button:hover {
+/*button:hover {
     background: #858585;
-}
+}*/
