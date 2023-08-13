@@ -5,6 +5,7 @@ import "../styles/header.css";
 import { BsList } from "react-icons/bs";
 // import Button from "./button/button.jsx";
 import logo from "../assets/booksLab_logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -44,9 +45,11 @@ const Header = () => {
                         <button className="get-started-btn hidden md:block py-1.5 px-2.5 rounded-[3.125rem] text-white cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  border-none ease-in duration-300 hover:scale-[1.1]">
                             Get Started
                         </button>
-                        <button className=" border-[#10b2f3] border-solid border py-1.5 px-2.5 rounded-[3.125rem]  outline-none cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  text-[#10b2f3] bg-white ease-in duration-300 hover:scale-[1.1]">
-                            Login
-                        </button>
+                        <Link to="login">
+                            <button className=" border-[#10b2f3] border-solid border py-1.5 px-2.5 rounded-[3.125rem]  outline-none cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  text-[#10b2f3] bg-white ease-in duration-300 hover:scale-[1.1]">
+                                Login
+                            </button>
+                        </Link>
 
                         <BsList className="menu-icon w-7 h-7 md:hidden" />
                     </div>

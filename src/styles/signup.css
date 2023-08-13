@@ -104,7 +104,7 @@ h5 {
     font-size: 15px;
 }
 
-a {
+span {
     text-decoration: none;
     color: #001e50;
     font-weight: 700;
@@ -112,4 +112,7 @@ a {
 
 ::placeholder {
     font-size: 14px;
+}
+@media only screen and  (max-width:768px){
+    .left-section{display:none;}
 }

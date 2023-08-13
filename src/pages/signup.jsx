@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/signup.css";
 import { useAppDispatch } from "../redux/store";
-import "../styles/signup.css";
 import Button from "../components/button/button";
 import { loginSuccess } from "../redux/authSlice";
 import { signUpSchema } from "../config/schema";
@@ -22,10 +21,7 @@ const Signup = () => {
             <div className="main">
                 <div className="left-section">
                     <div className="imgg">
-                        {/* <img src={"../assets/authPage_bg.png"} className="imge" alt="image" /> */}
-                        <div className="vector">
-                            {/* <img src={"../assets/booksLab_logo.png"} alt="vector" /> */}
-                        </div>
+                        <div className="vector"></div>
                     </div>
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)} className="right-section">
@@ -59,7 +55,6 @@ const Signup = () => {
                         autoComplete="email"
                         placeholder="Email..."
                     />
-
                     {/* container for passwords */}
                     <div className="password-container">
                         <div className="password-child">
@@ -86,18 +81,14 @@ const Signup = () => {
                             />
                         </div>
                     </div>
-
-                    <Link to="/">
-                        <Button borderVariant="noRadius" variant="primary">
-                            Sign Up
-                        </Button>{" "}
-                    </Link>
-
+                    <Button borderVariant="noRadius" variant="primary">
+                        Sign Up
+                    </Button>{" "}
                     <h5>
                         Have an Account?
                         <Link to="/login">
                             {" "}
-                            <a href="">Login</a>
+                            <span>Login</span>
                         </Link>
                     </h5>
                 </form>
