@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/login.css";
 import loginImage from "../assets/loginImage.svg";
-import Logo from "../assets/booksLab_logo.png";
+
 
 const Login = () => {
     return (

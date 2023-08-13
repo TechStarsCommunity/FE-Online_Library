@@ -34,7 +34,7 @@ import JavaScript from "../assets/js.svg";
       id: 3,
       src: html,
       title: "HTML",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
     {
       id: 4,
