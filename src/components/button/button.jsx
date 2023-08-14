@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/button.css";
 
-const Button = ({ children, variant }) => {
+const Button = ({ children, variant, borderVariant }) => {
     let buttonClass = "btn"; // Default class
 
     if (variant === "primary") {
@@ -9,7 +9,9 @@ const Button = ({ children, variant }) => {
     } else if (variant === "secondary") {
         buttonClass += " btn-secondary ";
     }
-
+    if (borderVariant === "noRadius") {
+        buttonClass += " btn-radius ";
+    }
     return <button className={buttonClass}>{children}</button>;
 };
 

@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/login.css";
-import loginImage from "../assets/loginImage.svg";
-
+import { loginSchema } from "../config/schema";
+import useSubmit from "../hooks/useSubmit";
+import loginImage from "../assets/loginImage.svg"
 
 const Login = () => {
+    const { errors, register, handleSubmit } = useSubmit(loginSchema);
+
+    const onLogin = (data) => {
+        console.log(data);
+    };
+
     return (
         <React.Fragment>
             <div className=" bg-white grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-0 h-screen w-full m-0 p-0">
@@ -11,14 +18,18 @@ const Login = () => {
                     <div className="left-content py-20">
                         <h1 className="text-sky-950 text-4xl font-semibold">Welcome Back</h1>
                         <p className="text-black text-base font-normal">Sign in to continue</p>
-                        <form>
+                        <form onSubmit={handleSubmit(onLogin)}>
                             <div>
                                 <label htmlFor="email">Email</label>
                                 <input
                                     type="text"
                                     placeholder="tola001@gmail.com"
                                     autoComplete="email"
+                                    {...register("email")}
                                 />
+                                {errors.email && (
+                                    <p className="text-red-600">{errors.email.message}</p>
+                                )}
                             </div>
                             <div>
                                 <label htmlFor="password">Password</label>
@@ -26,9 +37,13 @@ const Login = () => {
                                     type="password"
                                     placeholder="8+ characters"
                                     autoComplete="current-password"
+                                    {...register("password")}
                                 />
+                                {errors.password && (
+                                    <p className="text-red-600">{errors.password.message}</p>
+                                )}
                             </div>
-                            <button className="bg-gradient-to-r from-cyan-600 to-teal-400 text-white">Login</button>
+                            <button type="submit" className="bg-gradient-to-r from-cyan-600 to-teal-400 text-white">Login</button>
                         </form>
                         <h5 className="text-2xl font-medium">
                             Don{`'`}t have an Account? <a className="text-sky-950 text-2xl font-bold" href="register">Sign Up</a>
