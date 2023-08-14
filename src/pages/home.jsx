@@ -3,6 +3,7 @@ import TopCategories from "../components/topCategories";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
 import Header from "../components/header";
+import Roadmap from "../components/roadmap";
 import AboutComponent from "../components/about";
 import Footer from "../components/footer";
 import Button from "../components/button/button";
@@ -48,6 +49,7 @@ const home = () => {
                 </section>
                 <TopCategories />
             </main>
+            <Roadmap />
             <AboutComponent />
             <ContactComponent />
             <Footer />

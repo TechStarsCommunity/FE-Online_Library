@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/login.css";
 import { loginSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
+import loginImage from "../assets/loginImage.svg"
 
 const Login = () => {
     const { errors, register, handleSubmit } = useSubmit(loginSchema);
@@ -12,17 +13,17 @@ const Login = () => {
 
     return (
         <React.Fragment>
-            <div className="page">
+            <div className=" bg-white grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-0 h-screen w-full m-0 p-0">
                 <div className="left">
-                    <div className="left-content">
-                        <h1>Welcome!</h1>
-                        <p>Sign in to continue</p>
+                    <div className="left-content py-20">
+                        <h1 className="text-sky-950 text-4xl font-semibold">Welcome Back</h1>
+                        <p className="text-black text-base font-normal">Sign in to continue</p>
                         <form onSubmit={handleSubmit(onLogin)}>
                             <div>
                                 <label htmlFor="email">Email</label>
                                 <input
                                     type="text"
-                                    placeholder="Type your email"
+                                    placeholder="tola001@gmail.com"
                                     autoComplete="email"
                                     {...register("email")}
                                 />
@@ -42,16 +43,16 @@ const Login = () => {
                                     <p className="text-red-600">{errors.password.message}</p>
                                 )}
                             </div>
-                            <button type="submit">Login</button>
+                            <button type="submit" className="bg-gradient-to-r from-cyan-600 to-teal-400 text-white">Login</button>
                         </form>
-                        <h5>
-                            Don{`'`}t have an Account? <a href="register">Sign Up</a>
+                        <h5 className="text-2xl font-medium">
+                            Don{`'`}t have an Account? <a className="text-sky-950 text-2xl font-bold" href="register">Sign Up</a>
                         </h5>
-                        <button>Login as Admin</button>
+                        <button className="bg-gradient-to-r from-cyan-600 to-teal-400 text-white">Login as Admin</button>
                     </div>
                 </div>
                 <div className="right">
-                    <img src={"../assets/image_icon.png"} alt="image" />
+                    <img src={loginImage} alt="image" />
                 </div>
             </div>
         </React.Fragment>
