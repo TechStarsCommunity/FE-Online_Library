@@ -44,7 +44,7 @@ import JavaScript from "../assets/js.svg";
       id: 5,
       src: css1,
       title: "CSS",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
     {
       id: 6,
@@ -54,7 +54,7 @@ import JavaScript from "../assets/js.svg";
       id: 7,
       src: JavaScript,
       title: "JavaScript",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
   ];
     const backendIcon2 = [
@@ -70,7 +70,7 @@ import JavaScript from "../assets/js.svg";
       id: 3,
       src: python2,
       title: "Python",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
     {
       id: 4,
@@ -80,7 +80,7 @@ import JavaScript from "../assets/js.svg";
       id: 5,
       src: django2,
       title: "Django",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
     {
       id: 6,
@@ -90,7 +90,7 @@ import JavaScript from "../assets/js.svg";
       id: 7,
       src: mysql2,
       title: "MySQL",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
   ];
     const designIcon2 = [
@@ -106,7 +106,7 @@ import JavaScript from "../assets/js.svg";
       id: 3,
       src: DesignBasics,
       title: "Design Basics",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
     {
       id: 4,
@@ -116,7 +116,7 @@ import JavaScript from "../assets/js.svg";
       id: 5,
       src: uiDesign,
       title: "UI Design",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
     {
       id: 6,
@@ -126,7 +126,7 @@ import JavaScript from "../assets/js.svg";
       id: 7,
       src: uxinterface,
       title: "UX Design",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
   ];
     const writerIcon2 = [
@@ -142,7 +142,7 @@ import JavaScript from "../assets/js.svg";
       id: 3,
       src: writingIcon,
       title: "Writing Basics",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
     {
       id: 4,
@@ -152,7 +152,7 @@ import JavaScript from "../assets/js.svg";
       id: 5,
       src: CopyWriting,
       title: "copywriting",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
     {
       id: 6,
@@ -162,7 +162,7 @@ import JavaScript from "../assets/js.svg";
       id: 7,
       src: AdvancedWriting,
       title: "advanced writing",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
   ];
     const dataanalysisIcon2 = [
@@ -178,7 +178,7 @@ import JavaScript from "../assets/js.svg";
       id: 3,
       src: Analytics,
       title: "analysis I",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
     {
       id: 4,
@@ -188,7 +188,7 @@ import JavaScript from "../assets/js.svg";
       id: 5,
       src: Analytics,
       title: "analysis II",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
     {
       id: 6,
@@ -198,7 +198,7 @@ import JavaScript from "../assets/js.svg";
       id: 7,
       src: Analytics,
       title: "analysis III",
-      url: "https://example.com/html-link"
+      url: "/roadmap/html"
     },
   ];
 
