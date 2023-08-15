@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import "../styles/login.css";
 import { loginSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
-import loginImage from "../assets/loginImage.svg"
+import loginImage from "../assets/loginImage.svg";
+import loginLogo from "../assets/booksLab_logo.png";
 
 const Login = () => {
     const { errors, register, handleSubmit } = useSubmit(loginSchema);
@@ -13,7 +14,7 @@ const Login = () => {
 
     return (
         <React.Fragment>
-            <div className=" bg-white grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-0 h-screen w-full m-0 p-0">
+            <div className=" bg-white grid grid-cols-[repeat(auto-fit,minmax(2px,1fr))] gap-0 h-screen w-full m-0 p-0">
                 <div className="left">
                     <div className="left-content py-20">
                         <h1 className="text-sky-950 text-4xl font-semibold">Welcome Back</h1>
@@ -31,7 +32,7 @@ const Login = () => {
                                     <p className="text-red-600">{errors.email.message}</p>
                                 )}
                             </div>
-                            <div>
+                            <div className="outline-8 outline-purple-900">
                                 <label htmlFor="password">Password</label>
                                 <input
                                     type="password"
@@ -52,7 +53,10 @@ const Login = () => {
                     </div>
                 </div>
                 <div className="right">
-                    <img src={loginImage} alt="image" />
+                    {/* <img src={loginImage} alt="image" /> */}
+                        <div className="w-[160px]">
+                            <img src={loginLogo} alt="logo" />
+                        </div>
                 </div>
             </div>
         </React.Fragment>
