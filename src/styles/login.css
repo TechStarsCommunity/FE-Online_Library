@@ -21,13 +21,17 @@
 .right {
     display: grid;
     place-items: center;
-    height: 100%;
+    height: 100vh;
     width: 72.9%;
-    background-color: #E8E6E6;
+    /* background-color: #E8E6E6; */
+    background-size: cover;
+    background-position: center;
+    background-image: url(../assets/loginImage.svg);
     /* border: 2px solid #ff0000; */
     border-radius: 64px 0px 0px 64px;
     margin-left: 13.57vw;
 }
+
 
 /*img {
     height: 240px;
