@@ -44,19 +44,29 @@ const Login = () => {
                                     <p className="text-red-600">{errors.password.message}</p>
                                 )}
                             </div>
-                            <button type="submit" className="bg-gradient-to-r from-cyan-600 to-teal-400 text-white">Login</button>
+                            <button
+                                type="submit"
+                                className="bg-gradient-to-r from-cyan-600 to-teal-400 text-white"
+                            >
+                                Login
+                            </button>
                         </form>
                         <h5 className="text-2xl font-medium">
-                            Don{`'`}t have an Account? <a className="text-sky-950 text-2xl font-bold" href="register">Sign Up</a>
+                            Don{`'`}t have an Account?{" "}
+                            <a className="text-sky-950 text-2xl font-bold" href="register">
+                                Sign Up
+                            </a>
                         </h5>
-                        <button className="bg-gradient-to-r from-cyan-600 to-teal-400 text-white">Login as Admin</button>
+                        <button className="bg-gradient-to-r from-cyan-600 to-teal-400 text-white">
+                            Login as Admin
+                        </button>
                     </div>
                 </div>
                 <div className="right">
                     {/* <img src={loginImage} alt="image" /> */}
-                        <div className="w-[160px]">
-                            <img src={loginLogo} alt="logo" />
-                        </div>
+                    <div className="w-[160px]">
+                        <img src={loginLogo} alt="logo" />
+                    </div>
                 </div>
             </div>
         </React.Fragment>

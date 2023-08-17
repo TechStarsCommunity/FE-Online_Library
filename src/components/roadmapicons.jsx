@@ -19,237 +19,234 @@ import CopyWriting from "../assets/CopyWriting.svg";
 import Analytics from "../assets/Analytics.svg";
 import JavaScript from "../assets/js.svg";
 
-
-
-    const frontendIcon2 = [
+const frontendIcon2 = [
     {
-      id: 1,
-      src: frontendIcon,
+        id: 1,
+        src: frontendIcon,
     },
     {
-      id: 2,
-      src: arrow1,
+        id: 2,
+        src: arrow1,
     },
     {
-      id: 3,
-      src: html,
-      title: "HTML",
-      url: "/roadmap/html"
+        id: 3,
+        src: html,
+        title: "HTML",
+        url: "/roadmap/html",
     },
     {
-      id: 4,
-      src: arrow2,
+        id: 4,
+        src: arrow2,
     },
     {
-      id: 5,
-      src: css1,
-      title: "CSS",
-      url: "/roadmap/html"
+        id: 5,
+        src: css1,
+        title: "CSS",
+        url: "/roadmap/html",
     },
     {
-      id: 6,
-      src: arrow2,
+        id: 6,
+        src: arrow2,
     },
     {
-      id: 7,
-      src: JavaScript,
-      title: "JavaScript",
-      url: "/roadmap/html"
+        id: 7,
+        src: JavaScript,
+        title: "JavaScript",
+        url: "/roadmap/html",
     },
-  ];
-    const backendIcon2 = [
+];
+const backendIcon2 = [
     {
-      id: 1,
-      src: backendIcon,
-    },
-    {
-      id: 2,
-      src: arrow1,
+        id: 1,
+        src: backendIcon,
     },
     {
-      id: 3,
-      src: python2,
-      title: "Python",
-      url: "/roadmap/html"
+        id: 2,
+        src: arrow1,
     },
     {
-      id: 4,
-      src: arrow2,
+        id: 3,
+        src: python2,
+        title: "Python",
+        url: "/roadmap/html",
     },
     {
-      id: 5,
-      src: django2,
-      title: "Django",
-      url: "/roadmap/html"
+        id: 4,
+        src: arrow2,
     },
     {
-      id: 6,
-      src: arrow2,
+        id: 5,
+        src: django2,
+        title: "Django",
+        url: "/roadmap/html",
     },
     {
-      id: 7,
-      src: mysql2,
-      title: "MySQL",
-      url: "/roadmap/html"
-    },
-  ];
-    const designIcon2 = [
-    {
-      id: 1,
-      src: designIcon,
+        id: 6,
+        src: arrow2,
     },
     {
-      id: 2,
-      src: arrow1,
+        id: 7,
+        src: mysql2,
+        title: "MySQL",
+        url: "/roadmap/html",
+    },
+];
+const designIcon2 = [
+    {
+        id: 1,
+        src: designIcon,
     },
     {
-      id: 3,
-      src: DesignBasics,
-      title: "Design Basics",
-      url: "/roadmap/html"
+        id: 2,
+        src: arrow1,
     },
     {
-      id: 4,
-      src: arrow2,
+        id: 3,
+        src: DesignBasics,
+        title: "Design Basics",
+        url: "/roadmap/html",
     },
     {
-      id: 5,
-      src: uiDesign,
-      title: "UI Design",
-      url: "/roadmap/html"
+        id: 4,
+        src: arrow2,
     },
     {
-      id: 6,
-      src: arrow2,
+        id: 5,
+        src: uiDesign,
+        title: "UI Design",
+        url: "/roadmap/html",
     },
     {
-      id: 7,
-      src: uxinterface,
-      title: "UX Design",
-      url: "/roadmap/html"
-    },
-  ];
-    const writerIcon2 = [
-    {
-      id: 1,
-      src: writerIcon,
+        id: 6,
+        src: arrow2,
     },
     {
-      id: 2,
-      src: arrow1,
+        id: 7,
+        src: uxinterface,
+        title: "UX Design",
+        url: "/roadmap/html",
+    },
+];
+const writerIcon2 = [
+    {
+        id: 1,
+        src: writerIcon,
     },
     {
-      id: 3,
-      src: writingIcon,
-      title: "Writing Basics",
-      url: "/roadmap/html"
+        id: 2,
+        src: arrow1,
     },
     {
-      id: 4,
-      src: arrow2,
+        id: 3,
+        src: writingIcon,
+        title: "Writing Basics",
+        url: "/roadmap/html",
     },
     {
-      id: 5,
-      src: CopyWriting,
-      title: "copywriting",
-      url: "/roadmap/html"
+        id: 4,
+        src: arrow2,
     },
     {
-      id: 6,
-      src: arrow2,
+        id: 5,
+        src: CopyWriting,
+        title: "copywriting",
+        url: "/roadmap/html",
     },
     {
-      id: 7,
-      src: AdvancedWriting,
-      title: "advanced writing",
-      url: "/roadmap/html"
-    },
-  ];
-    const dataanalysisIcon2 = [
-    {
-      id: 1,
-      src: dataanalysisIcon,
+        id: 6,
+        src: arrow2,
     },
     {
-      id: 2,
-      src: arrow1,
+        id: 7,
+        src: AdvancedWriting,
+        title: "advanced writing",
+        url: "/roadmap/html",
+    },
+];
+const dataanalysisIcon2 = [
+    {
+        id: 1,
+        src: dataanalysisIcon,
     },
     {
-      id: 3,
-      src: Analytics,
-      title: "analysis I",
-      url: "/roadmap/html"
+        id: 2,
+        src: arrow1,
     },
     {
-      id: 4,
-      src: arrow2,
+        id: 3,
+        src: Analytics,
+        title: "analysis I",
+        url: "/roadmap/html",
     },
     {
-      id: 5,
-      src: Analytics,
-      title: "analysis II",
-      url: "/roadmap/html"
+        id: 4,
+        src: arrow2,
     },
     {
-      id: 6,
-      src: arrow2,
+        id: 5,
+        src: Analytics,
+        title: "analysis II",
+        url: "/roadmap/html",
     },
     {
-      id: 7,
-      src: Analytics,
-      title: "analysis III",
-      url: "/roadmap/html"
+        id: 6,
+        src: arrow2,
     },
-  ];
-
+    {
+        id: 7,
+        src: Analytics,
+        title: "analysis III",
+        url: "/roadmap/html",
+    },
+];
 
 export const iconData = [
-  {
-    id: 1,
-    src: frontendIcon,
-    show: false,
-  },
-  {
-    id: 2,
-    src: backendIcon,
-    show: false,
-  },
-  {
-    id: 3,
-    src: designIcon,
-    show: false,
-  },
-  {
-    id: 4,
-    src: writerIcon,
-    show: false,
-  },
-  {
-    id: 5,
-    src: dataanalysisIcon,
-    show: false,
-  },
+    {
+        id: 1,
+        src: frontendIcon,
+        show: false,
+    },
+    {
+        id: 2,
+        src: backendIcon,
+        show: false,
+    },
+    {
+        id: 3,
+        src: designIcon,
+        show: false,
+    },
+    {
+        id: 4,
+        src: writerIcon,
+        show: false,
+    },
+    {
+        id: 5,
+        src: dataanalysisIcon,
+        show: false,
+    },
 ];
 
 export const iconData2 = [
-  {
-    id: 1,
-    images: frontendIcon2,
-  },
-  {
-    id: 2,
-    images: backendIcon2,
-  },
-  {
-    id: 3,
-    images: designIcon2,
-  },
-  {
-    id: 4,
-    images: writerIcon2,
-  },
-  {
-    id: 5,
-    images: dataanalysisIcon2,
-  },
+    {
+        id: 1,
+        images: frontendIcon2,
+    },
+    {
+        id: 2,
+        images: backendIcon2,
+    },
+    {
+        id: 3,
+        images: designIcon2,
+    },
+    {
+        id: 4,
+        images: writerIcon2,
+    },
+    {
+        id: 5,
+        images: dataanalysisIcon2,
+    },
 ];
