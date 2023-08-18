@@ -14,7 +14,6 @@ const OTPVerification = () => {
     const dispatch = useAppDispatch();
 
     const onSubmit = (data) => {
-       
         console.log(data);
     };
     return (
@@ -22,10 +21,7 @@ const OTPVerification = () => {
             <div className="main">
                 <div className="left-section">
                     <div className="imgg">
-                        
-                        <div className="vector">
-                            
-                        </div>
+                        <div className="vector"></div>
                     </div>
                 </div>
                 <div className="opf">
