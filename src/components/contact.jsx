@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./button/button";
+import Button from "./button";
 
 const ContactComponent = () => {
     return (
@@ -36,7 +36,7 @@ const ContactComponent = () => {
                             </a>
                         </div>
                         <div className="mt-12">
-                            <Button> Contact Us</Button>
+                            <Button variant="primary"> Contact Us</Button>
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">
