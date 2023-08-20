@@ -26,7 +26,6 @@
 .categoriesCard {
     width: 100%;
     min-width: 250px;
-    /* background-color: red; */
 }
 
 .categoriesCard img {
@@ -42,7 +41,6 @@
 
 @media (max-width: 562px) {
     .myCollapse {
-        /* display: ; */
         flex-direction: column;
     }
 

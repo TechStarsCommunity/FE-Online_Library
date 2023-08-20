@@ -6,7 +6,7 @@ import Header from "../components/header";
 import Roadmap from "../components/roadmap";
 import AboutComponent from "../components/about";
 import Footer from "../components/footer";
-import Button from "../components/button/button";
+import Button from "../components/button";
 import ContactComponent from "../components/contact";
 import { Link } from "react-router-dom";
 

@@ -8,32 +8,32 @@ const Contact = () => {
                     <div className="mt-10 w-full md:w-1/2">
                         <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
                         <div className="flex items-center space-x-4 mb-4">
-                            <img src="src/assets/small.svg" alt="" className="w-6 h-6" />
+                            <img src="/small.svg" alt="" className="w-6 h-6" />
                             <a href="techstarscommunity@gmail.com" className="text-blue-500">
                                 techstarscommunity@gmail.com
                             </a>
                         </div>
                         <div className="flex items-center space-x-4 mb-4">
-                            <img src="src/assets/small.svg" alt="" className="w-6 h-6" />
+                            <img src="/small.svg" alt="" className="w-6 h-6" />
                             <a href="tel:+00018494724745" className="text-blue-500">
                                 +000 184 947 24745
                             </a>
                         </div>
                         <div className="flex items-center space-x-4 mb-4">
-                            <img src="src/assets/small.svg" alt="" className="w-6 h-6" />
+                            <img src="/small.svg" alt="" className="w-6 h-6" />
                             <a href="#" className="text-blue-500">
                                 285 Office Address
                             </a>
                         </div>
                         <div className="flex items-center space-x-4">
-                            <img src="src/assets/small.svg" alt="" className="w-6 h-6" />
-                            <img src="src/assets/small.svg" alt="" className="w-6 h-6" />
-                            <img src="src/assets/small.svg" alt="" className="w-6 h-6" />
+                            <img src="/small.svg" alt="" className="w-6 h-6" />
+                            <img src="/small.svg" alt="" className="w-6 h-6" />
+                            <img src="/small.svg" alt="" className="w-6 h-6" />
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">
                         <div className="mt-8">
-                            <img src="src/assets/big.svg" alt="" />
+                            <img src="/big.svg" alt="" />
                         </div>
                     </div>
                 </div>

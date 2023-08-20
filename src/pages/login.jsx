@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/login.css";
 import { loginSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
-import loginLogo from "../assets/booksLab_logo.png";
+import loginLogo from "/booksLab_logo.png";
 
 const Login = () => {
     const { errors, register, handleSubmit } = useSubmit(loginSchema);
@@ -55,7 +55,7 @@ const Login = () => {
                             Don{`'`}t have an Account?{" "}
                             <a
                                 className="text-sky-950 text-lg md:text-2xl font-bold"
-                                href="register"
+                                href="/signup"
                             >
                                 Sign Up
                             </a>
@@ -65,7 +65,7 @@ const Login = () => {
                         </button>
                     </div>
                 </div>
-                <div className="hidden sm:flex h-full  bg-cover bg-center bg-[url('../assets/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl ml-[9vw]">
+                <div className="hidden sm:flex h-full  bg-cover bg-center bg-[url('/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl ml-[9vw]">
                     {/* <img src={loginImage} alt="image" /> */}
                     <div className="flex items-center justify-center w-full">
                         <img src={loginLogo} alt="logo" className="w-1/3" />
