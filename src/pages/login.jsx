@@ -38,7 +38,6 @@ const Login = () => {
                                     placeholder="8+ characters"
                                     autoComplete="current-password"
                                     {...register("password")}
-                                    focus:border-blue-500
                                 />
                                 {errors.password && (
                                     <p className="text-red-600">{errors.password.message}</p>
@@ -66,7 +65,6 @@ const Login = () => {
                     </div>
                 </div>
                 <div className="hidden sm:flex h-full  bg-cover bg-center bg-[url('/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl ml-[9vw]">
-                    {/* <img src={loginImage} alt="image" /> */}
                     <div className="flex items-center justify-center w-full">
                         <img src={loginLogo} alt="logo" className="w-1/3" />
                     </div>

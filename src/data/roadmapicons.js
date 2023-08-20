@@ -1,200 +1,183 @@
-import frontendIcon from "/frontendicon.svg";
-import backendIcon from "/backendicon.svg";
-import designIcon from "/designicon.svg";
-import writerIcon from "/writericon.svg";
-import dataanalysisIcon from "/dataanalysisicon.svg";
-import arrow1 from "/Arrow 1.svg";
-import html from "/Html.svg";
-import arrow2 from "/Arrow 2.svg";
-import css1 from "/CSS3.svg";
-import python2 from "/Python.svg";
-import django2 from "/Django.svg";
-import mysql2 from "/Mysql.svg";
-import DesignBasics from "/DesignBasics.svg";
-import uiDesign from "/UIDesign.svg";
-import uxinterface from "/Uxinterface.svg";
-import writingIcon from "/Writing.svg";
-import AdvancedWriting from "/AdvancedWriting.svg";
-import CopyWriting from "/CopyWriting.svg";
-import Analytics from "/Analytics.svg";
-import JavaScript from "/js.svg";
-
 const frontendIcon2 = [
     {
         id: 1,
-        src: frontendIcon,
+        src: "/frontendicon.svg",
     },
     {
         id: 2,
-        src: arrow1,
+        src: "/Arrow 1.svg",
     },
     {
         id: 3,
-        src: html,
+        src: "/Html.svg",
         title: "HTML",
         url: "/roadmap/html",
     },
     {
         id: 4,
-        src: arrow2,
+        src: "/Arrow 2.svg",
     },
     {
         id: 5,
-        src: css1,
+        src: "/CSS3.svg",
         title: "CSS",
         url: "/roadmap/html",
     },
     {
         id: 6,
-        src: arrow2,
+        src: "/Arrow 2.svg",
     },
     {
         id: 7,
-        src: JavaScript,
+        src: "/Js.svg",
         title: "JavaScript",
         url: "/roadmap/html",
     },
 ];
+
 const backendIcon2 = [
     {
         id: 1,
-        src: backendIcon,
+        src: "/backendicon.svg",
     },
     {
         id: 2,
-        src: arrow1,
+        src: "/Arrow 1.svg",
     },
     {
         id: 3,
-        src: python2,
+        src: "/Python.svg",
         title: "Python",
         url: "/roadmap/html",
     },
     {
         id: 4,
-        src: arrow2,
+        src: "/Arrow 2.svg",
     },
     {
         id: 5,
-        src: django2,
+        src: "/Django.svg",
         title: "Django",
         url: "/roadmap/html",
     },
     {
         id: 6,
-        src: arrow2,
+        src: "/Arrow 2.svg",
     },
     {
         id: 7,
-        src: mysql2,
+        src: "/Mysql.svg",
         title: "MySQL",
         url: "/roadmap/html",
     },
 ];
+
 const designIcon2 = [
     {
         id: 1,
-        src: designIcon,
+        src: "/designicon.svg",
     },
     {
         id: 2,
-        src: arrow1,
+        src: "/Arrow 1.svg",
     },
     {
         id: 3,
-        src: DesignBasics,
+        src: "/DesignBasics.svg",
         title: "Design Basics",
         url: "/roadmap/html",
     },
     {
         id: 4,
-        src: arrow2,
+        src: "/Arrow 2.svg",
     },
     {
         id: 5,
-        src: uiDesign,
+        src: "/UIDesign.svg",
         title: "UI Design",
         url: "/roadmap/html",
     },
     {
         id: 6,
-        src: arrow2,
+        src: "/Arrow 2.svg",
     },
     {
         id: 7,
-        src: uxinterface,
+        src: "/Uxinterface.svg",
         title: "UX Design",
         url: "/roadmap/html",
     },
 ];
+
 const writerIcon2 = [
     {
         id: 1,
-        src: writerIcon,
+        src: "/writericon.svg",
     },
     {
         id: 2,
-        src: arrow1,
+        src: "/Arrow 1.svg",
     },
     {
         id: 3,
-        src: writingIcon,
+        src: "/Writing.svg",
         title: "Writing Basics",
         url: "/roadmap/html",
     },
     {
         id: 4,
-        src: arrow2,
+        src: "/Arrow 2.svg",
     },
     {
         id: 5,
-        src: CopyWriting,
+        src: "/CopyWriting.svg",
         title: "copywriting",
         url: "/roadmap/html",
     },
     {
         id: 6,
-        src: arrow2,
+        src: "/Arrow 2.svg",
     },
     {
         id: 7,
-        src: AdvancedWriting,
+        src: "/AdvancedWriting.svg",
         title: "advanced writing",
         url: "/roadmap/html",
     },
 ];
+
 const dataanalysisIcon2 = [
     {
         id: 1,
-        src: dataanalysisIcon,
+        src: "/dataanalysisicon.svg",
     },
     {
         id: 2,
-        src: arrow1,
+        src: "/Arrow 1.svg",
     },
     {
         id: 3,
-        src: Analytics,
+        src: "/Analytics.svg",
         title: "analysis I",
         url: "/roadmap/html",
     },
     {
         id: 4,
-        src: arrow2,
+        src: "/Arrow 2.svg",
     },
     {
         id: 5,
-        src: Analytics,
+        src: "/Analytics.svg",
         title: "analysis II",
         url: "/roadmap/html",
     },
     {
         id: 6,
-        src: arrow2,
+        src: "/Arrow 2.svg",
     },
     {
         id: 7,
-        src: Analytics,
+        src: "/Analytics.svg",
         title: "analysis III",
         url: "/roadmap/html",
     },
@@ -203,27 +186,27 @@ const dataanalysisIcon2 = [
 export const iconData = [
     {
         id: 1,
-        src: frontendIcon,
+        src: "/frontendicon.svg",
         show: false,
     },
     {
         id: 2,
-        src: backendIcon,
+        src: "/backendicon.svg",
         show: false,
     },
     {
         id: 3,
-        src: designIcon,
+        src: "/designicon.svg",
         show: false,
     },
     {
         id: 4,
-        src: writerIcon,
+        src: "/writericon.svg",
         show: false,
     },
     {
         id: 5,
-        src: dataanalysisIcon,
+        src: "/dataanalysisicon.svg",
         show: false,
     },
 ];
@@ -248,5 +231,28 @@ export const iconData2 = [
     {
         id: 5,
         images: dataanalysisIcon2,
+    },
+];
+
+export const categories = [
+    {
+        image: "/tech.png",
+        title: "Tech",
+        description: "All distributions of tech books",
+    },
+    {
+        image: "/fruit.png",
+        title: "Nutrition",
+        description: "Boost your Nutrition and Health with these books",
+    },
+    {
+        image: "/women.png",
+        title: "Sports",
+        description: "For Athletes, get in the zone and aim for the summit.",
+    },
+    {
+        image: "/tech.png",
+        title: "Tech",
+        description: "All distributions of tech books",
     },
 ];

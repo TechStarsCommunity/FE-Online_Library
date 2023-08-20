@@ -1,25 +1,21 @@
-import tech from "/tech.png";
-import fruit from "/fruit.png";
-import women from "/women.png";
-
 export const categories = [
     {
-        image: tech,
+        image: "/tech.png",
         title: "Tech",
         description: "All distributions of tech books",
     },
     {
-        image: fruit,
+        image: "/fruit.png",
         title: "Nutrition",
         description: "Boost your Nutrition and Health with these books",
     },
     {
-        image: women,
+        image: "/women.png",
         title: "Sports",
         description: "For Athletes, get in the zone and aim for the summit.",
     },
     {
-        image: tech,
+        image: "/tech.png",
         title: "Tech",
         description: "All distributions of tech books",
     },
