@@ -1,23 +1,23 @@
-import frontendIcon from "../assets/frontendicon.svg";
-import backendIcon from "../assets/backendicon.svg";
-import designIcon from "../assets/designicon.svg";
-import writerIcon from "../assets/writericon.svg";
-import dataanalysisIcon from "../assets/dataanalysisicon.svg";
-import arrow1 from "../assets/Arrow 1.svg";
-import html from "../assets/Html.svg";
-import arrow2 from "../assets/Arrow 2.svg";
-import css1 from "../assets/CSS3.svg";
-import python2 from "../assets/Python.svg";
-import django2 from "../assets/Django.svg";
-import mysql2 from "../assets/Mysql.svg";
-import DesignBasics from "../assets/DesignBasics.svg";
-import uiDesign from "../assets/UIDesign.svg";
-import uxinterface from "../assets/Uxinterface.svg";
-import writingIcon from "../assets/Writing.svg";
-import AdvancedWriting from "../assets/AdvancedWriting.svg";
-import CopyWriting from "../assets/CopyWriting.svg";
-import Analytics from "../assets/Analytics.svg";
-import JavaScript from "../assets/js.svg";
+import frontendIcon from "/frontendicon.svg";
+import backendIcon from "/backendicon.svg";
+import designIcon from "/designicon.svg";
+import writerIcon from "/writericon.svg";
+import dataanalysisIcon from "/dataanalysisicon.svg";
+import arrow1 from "/Arrow 1.svg";
+import html from "/Html.svg";
+import arrow2 from "/Arrow 2.svg";
+import css1 from "/CSS3.svg";
+import python2 from "/Python.svg";
+import django2 from "/Django.svg";
+import mysql2 from "/Mysql.svg";
+import DesignBasics from "/DesignBasics.svg";
+import uiDesign from "/UIDesign.svg";
+import uxinterface from "/Uxinterface.svg";
+import writingIcon from "/Writing.svg";
+import AdvancedWriting from "/AdvancedWriting.svg";
+import CopyWriting from "/CopyWriting.svg";
+import Analytics from "/Analytics.svg";
+import JavaScript from "/js.svg";
 
 const frontendIcon2 = [
     {

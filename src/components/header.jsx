@@ -1,10 +1,7 @@
 import React from "react";
-// css file
 import "../styles/header.css";
-//import icons
 import { BsList } from "react-icons/bs";
-// import Button from "./button/button.jsx";
-import logo from "../assets/booksLab_logo.png";
+import logo from "/booksLab_logo.png";
 
 const Header = () => {
     return (

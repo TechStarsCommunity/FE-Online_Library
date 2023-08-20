@@ -10,7 +10,7 @@ const UploadContents = () => {
                 <div className="uploadContents__contents">
                     <h2 className="uploadContents__contents-text">Pending Approval</h2>
                     <div className="uploadContents__contents-content">
-                        <img src={"../assets/image_icon.png"} alt="uploads img" />
+                        <img src={"/image_icon.png"} alt="uploads img" />
                         <div className="uploadContents__contents-content-details">
                             <h4>Starting a successful Career in Tech</h4>
                             <h6>
@@ -24,7 +24,7 @@ const UploadContents = () => {
                                 }}
                             >
                                 <img
-                                    src={"../assets/image_icon.png"}
+                                    src={"/image_icon.png"}
                                     alt=""
                                     style={{
                                         width: "45px",
@@ -40,18 +40,18 @@ const UploadContents = () => {
                         </div>
                         <div className="uploadContents__contents-content-images">
                             <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 accept
                             </div>
                             <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 reject
                             </div>
                         </div>
                     </div>
 
                     <div className="uploadContents__contents-content">
-                        <img src={"../assets/image_icon.png"} alt="uploads img" />
+                        <img src={"/image_icon.png"} alt="uploads img" />
                         <div className="uploadContents__contents-content-details">
                             <h4>Starting a successful Career in Tech</h4>
                             <h6>
@@ -60,18 +60,18 @@ const UploadContents = () => {
                         </div>
                         <div className="uploadContents__contents-content-images">
                             <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 accept
                             </div>
                             <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 reject
                             </div>
                         </div>
                     </div>
 
                     <div className="uploadContents__contents-content">
-                        <img src={"../assets/image_icon.png"} alt="uploads img" />
+                        <img src={"/image_icon.png"} alt="uploads img" />
                         <div className="uploadContents__contents-content-details">
                             <h4>Starting a successful Career in Tech</h4>
                             <h6>
@@ -81,11 +81,11 @@ const UploadContents = () => {
 
                         <div className="uploadContents__contents-content-images">
                             <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 accept
                             </div>
                             <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 reject
                             </div>
                         </div>

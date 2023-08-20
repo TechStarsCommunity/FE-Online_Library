@@ -2,11 +2,11 @@ import React from "react";
 import "../styles/verification.css";
 import { useAppDispatch } from "../redux/store";
 import "../styles/signup.css";
-import Button from "../components/button/button";
+import Button from "../components/button";
 import { loginSuccess } from "../redux/authSlice";
 import { signUpSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
-import Input from "../components/input/input";
+import Input from "../components/input";
 import { Link } from "react-router-dom";
 
 const OTPVerification = () => {
