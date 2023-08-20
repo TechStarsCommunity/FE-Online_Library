@@ -10,7 +10,7 @@
 .left-section {
     display: flex;
     align-items: center;
-    background: url("../assets/authPage_bg.png");
+    background: url("/authPage_bg.png");
     background-size: cover;
     object-fit: cover;
     width: 35%;
@@ -27,7 +27,7 @@
 }
 
 .vector {
-    background-image: url("../assets/booksLab_logo.png");
+    background-image: url("/booksLab_logo.png");
     width: 20rem;
     width: 250px;
     max-width: 100%;
@@ -38,12 +38,12 @@
 .right-section {
     padding: 0 0.5rem;
 }
- h2 {
+h2 {
     font-style: normal;
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 48px;
-    color: #001E50;
+    color: #001e50;
     white-space: nowrap;
 }
 
@@ -63,7 +63,6 @@ input[type="email"] {
     background: #ffffff;
     border: 1px solid #696969;
     border-radius: 8px;
-   
 }
 
 input[type="text"]:focus,
@@ -82,7 +81,7 @@ input[type="password"] {
     border-radius: 8px;
     background: #ffffff;
     border: 1px solid #696969;
-    margin-top:-6px;
+    margin-top: -6px;
 }
 .password-container {
     margin-top: -0.5rem;

@@ -1,11 +1,12 @@
 import React from "react";
 import "../styles/signup.css";
 import { useAppDispatch } from "../redux/store";
-import Button from "../components/button/button";
+import "../styles/signup.css";
+import Button from "../components/button";
 import { loginSuccess } from "../redux/authSlice";
 import { signUpSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
-import Input from "../components/input/input";
+import Input from "../components/input";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
