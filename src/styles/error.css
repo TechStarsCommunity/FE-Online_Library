@@ -1,0 +1,140 @@
+.error__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    width: 100%;
+    background-image: url("../assets/notfound_image.jpg");
+    background-size: cover;
+    object-fit: cover;
+}
+
+.error__section-details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 37.5rem;
+    height: 15.625rem;
+    color: white;
+}
+
+.error__section-details > h1 {
+    font-size: 1.5625rem;
+    font-weight: 500;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: #0f1110;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 3.125rem;
+    margin-bottom: 0.8125rem;
+    padding-left: 1.25rem;
+    height: 2.6875rem;
+    width: 100%;
+}
+
+.search-icon {
+    margin-right: 0.625rem;
+    color: #888;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+.search-container input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: black;
+    padding: 0.625rem 1rem;
+    font-size: 1rem;
+}
+
+.search-button {
+    padding: 0.3125rem 0.625rem;
+    border-radius: 3.125rem;
+    background: var(
+        --gradient,
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+    );
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 6.25rem;
+    height: 100%;
+}
+
+.error__section-details > h3 {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #0f1110;
+}
+
+get-started-btn {
+    background: var(
+        --gradient,
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+    );
+    color: #fff;
+}
+
+/* Media queries for responsiveness */
+
+/* Styles for screens with a maximum width of 48rem (e.g., tablets and smaller) */
+@media screen and (max-width: 48rem) {
+    .hero__section-details {
+        width: 30rem;
+    }
+
+    .search-container {
+        height: 2.5rem;
+        padding-left: 1rem;
+    }
+
+    .search-container input {
+        font-size: 0.9375rem;
+        padding: 0.5rem 0.875rem;
+    }
+
+    .search-button {
+        width: 5rem;
+    }
+
+    .hero__section-details > h1 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Styles for screens with a maximum width of 36rem (e.g., mobile phones) */
+@media screen and (max-width: 36rem) {
+    .search-container {
+        height: 2.125rem;
+        padding-left: 0.625rem;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 11px;
+    }
+
+    .hero__section-details {
+        width: 32.5rem;
+        height: auto;
+    }
+
+    .hero__section-details > h1 {
+        font-size: 1.125rem;
+    }
+
+    .search-container input {
+        font-size: 0.875rem;
+        padding: 0.375rem 0.625rem;
+    }
+}
