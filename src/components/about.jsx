@@ -1,9 +1,10 @@
 import React from "react";
-import Button from "./button/button";
+import Button from "./button";
+
 const AboutComponent = () => {
     return (
         <React.Fragment>
-            <div className="p-5 bg-[#dffcf4] my-[30px] font-serif">
+            <div className="p-5 bg-[#dffcf4] font-serif">
                 <div className="md:px-[50px] lg:max-w-screen-lg lg:mx-auto">
                     <h1 className="text-[24px] md:text-[30px] my-[20px] text-[#203A66] font-bold lg:text-[36px]">
                         About BooksLab

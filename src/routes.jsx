@@ -17,7 +17,6 @@ const BrowserRouter = createBrowserRouter([
         element: (
             <React.Suspense fallback={<Loading />}>
                 <Home />
-                <Home />
             </React.Suspense>
         ),
     },

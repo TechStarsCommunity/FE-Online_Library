@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/footer.css";
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
-import Logo from "../assets/booksLab_logo.png";
+import Logo from "/booksLab_logo.png";
 
 const Footer = () => {
     return (
         <React.Fragment>
-            <img src="../assets/logo.png" alt="" />
+            <img src="/logo.png" alt="" />
             <footer className="bg-background pt-[2rem] sm:pt-[5rem] pl-3 pb-[100px] sm:pl-12 overflow-x-hidden">
                 <div className="lg:flex  g-x-12">
                     <div className="md:basis-1/3 lg:basis-1/2 mb-[1rem] col-start-1 col-end-2 sm:my-[10px] md:text-start text-center">

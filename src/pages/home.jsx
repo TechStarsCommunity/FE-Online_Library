@@ -3,9 +3,10 @@ import TopCategories from "../components/topCategories";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
 import Header from "../components/header";
+import Roadmap from "../components/roadmap";
 import AboutComponent from "../components/about";
 import Footer from "../components/footer";
-import Button from "../components/button/button";
+import Button from "../components/button";
 import ContactComponent from "../components/contact";
 import { Link } from "react-router-dom";
 
@@ -48,6 +49,7 @@ const home = () => {
                 </section>
                 <TopCategories />
             </main>
+            <Roadmap />
             <AboutComponent />
             <ContactComponent />
             <Footer />
