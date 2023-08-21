@@ -24,16 +24,16 @@ const OTPVerification = () => {
                         <div className="vector"></div>
                     </div>
                 </div>
-                <div className="opf">
+                <div className="pad">
                     <form onSubmit={handleSubmit(onSubmit)} className="right-section"></form>
                     <div className="container">
-                        <div className="hdngs">
-                            <h2>Verification</h2>
-                            <p className="hdngs">Enter the Code sent to your email below.</p>
+                        <div>
+                            <h2 className="heading">Verification</h2>
+                            <p className="right-text">Enter the Code sent to your email below.</p>
                         </div>
 
                         <div className="container">
-                            <h2 className="hhd">Code</h2>
+                            <h2 className="code-label">Code</h2>
                             <div className="code.container">
                                 <input
                                     type="number"
@@ -85,8 +85,8 @@ const OTPVerification = () => {
                                 />
                             </div>
                         </div>
-                        <p className="hdgn">
-                            Didn't receive a code? <button className="hff">Resend</button>
+                        <p className="texts">
+                            Didn't receive a code? <button className="btnn">Resend</button>
                         </p>
 
                         <Link to="/">
@@ -94,8 +94,8 @@ const OTPVerification = () => {
                                 Continue
                             </Button>{" "}
                         </Link>
-                        <p className="hdgp">
-                            wrong email? <button className="hff">Reset</button>
+                        <p className="text">
+                            wrong email? <button className="btnn">Reset</button>
                         </p>
                     </div>
                 </div>
