@@ -8,7 +8,7 @@ const Header = () => {
         <React.Fragment>
             <header className="flex flex-row items-center justify-between gap-2.5 px-8 md:px-11 py-4 bg-white w-full z-[999]">
                 <div>
-                    <img src={logo} alt="" className="max-w-[100%]  h-auto w-40"  />
+                    <img src={logo} alt="" className="max-w-[100%]  h-auto w-40" />
                 </div>
                 <div className="flex flex-row items-center justify-between  header-links-parent gap-4">
                     <ul className="md:flex hidden flex-row gap-2.5">

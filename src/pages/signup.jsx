@@ -21,14 +21,12 @@ const Signup = () => {
         <React.Fragment>
             <div className="main">
                 <section className="left-section">
-                    
-                        <div className="imgg">
-                            <div className="vector"></div>
-                       
+                    <div className="imgg">
+                        <div className="vector"></div>
                     </div>
                 </section>
                 <section className="right-section">
-                    <form onSubmit={handleSubmit(onSubmit)} >
+                    <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="hdngs">
                             <h2>WELCOME TO BOOKSLAB</h2>
                             <p>Register your account</p>
