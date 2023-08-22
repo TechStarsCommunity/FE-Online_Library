@@ -1,9 +1,7 @@
 .main {
-    height: 100%;
-    width: auto;
+    margin:0;
     display: flex;
-    align-items: center;
-    gap: 3rem;
+    align-items:center;
     font-size: 15px;
 }
 
@@ -12,9 +10,7 @@
     align-items: center;
     background: url("/authPage_bg.png");
     background-size: cover;
-    object-fit: cover;
-    width: 35%;
-    height: 100vh;
+    min-height:100vh;
     border-radius: 0px 44px 44px 0px;
 }
 
@@ -36,7 +32,10 @@
 }
 
 .right-section {
-    padding: 0 0.5rem;
+    padding:  0.5rem;
+    width:auto;
+    margin:0 auto;
+   
 }
 h2 {
     font-style: normal;
@@ -70,6 +69,7 @@ input[type="email"]:focus,
 input[type="password"]:focus {
     outline: none;
     background-color: #ffffff;
+    margin-top: -1rem;
 }
 label {
     display: block;
@@ -81,10 +81,11 @@ input[type="password"] {
     border-radius: 8px;
     background: #ffffff;
     border: 1px solid #696969;
-    margin-top: -6px;
+}
+input:focus{
+    border-color:blue;
 }
 .password-container {
-    margin-top: -0.5rem;
     display: flex;
     flex-direction: row;
     gap: 2%;
@@ -114,4 +115,9 @@ span {
 }
 @media only screen and  (max-width:768px){
     .left-section{display:none;}
+    .right-section{
+        width:100%;
+        margin:4rem auto;
+    }
+    
 }

@@ -2,15 +2,15 @@ import React from "react";
 import "../styles/header.css";
 import { BsList } from "react-icons/bs";
 import logo from "/booksLab_logo.png";
-
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <React.Fragment>
-            <header className="flex flex-row items-center justify-between px-8 md:px-11 py-4 bg-white w-full z-[999]">
-                <div className="w-[6.5rem] md:w-[9.5rem] h-auto ">
-                    <img src={logo} alt="" className="max-w-[100%] w-[8rem] md:w-[9rem]" />
+            <header className="flex flex-row items-center justify-between gap-2.5 px-8 md:px-11 py-4 bg-white w-full z-[999]">
+                <div>
+                    <img src={logo} alt="" className="max-w-[100%]  h-auto w-40"  />
                 </div>
-                <div className="flex flex-row items-center justify-between md:w-1/2 header-links-parent">
+                <div className="flex flex-row items-center justify-between  header-links-parent gap-4">
                     <ul className="md:flex hidden flex-row gap-2.5">
                         <li>
                             <a
