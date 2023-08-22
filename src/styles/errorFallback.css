@@ -30,16 +30,16 @@
 /* Media Query for All Screen Sizes */
 @media (max-width: 768px) {
     .error__content > p {
-        font-size: 2em; /* Adjust as needed */
-        margin-bottom: 0.5em; /* Adjust as needed */
+        font-size: 2em;
+        margin-bottom: 0.5em;
     }
 
     .error__content > pre {
-        font-size: 1.5em; /* Adjust as needed */
-        margin-bottom: 0.5em; /* Adjust as needed */
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
     }
 
     .error__button {
-        width: 10em; /* Adjust as needed */
+        width: 10em;
     }
 }

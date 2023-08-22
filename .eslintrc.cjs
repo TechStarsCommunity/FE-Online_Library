@@ -12,7 +12,7 @@ module.exports = {
     settings: { react: { version: "18.2" } },
     plugins: ["react-refresh", "unicorn", "prettier"],
     rules: {
-        "react-refresh/only-export-components": "warn",
+        "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
         "unicorn/filename-case": [
             "warn",
             {
@@ -28,5 +28,15 @@ module.exports = {
         "no-console": "warn",
         "no-unused-vars": "warn",
         "react/prop-types": "warn",
+        "import/order": [
+            "warn",
+            {
+                groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
+                alphabetize: {
+                    order: "asc",
+                    caseInsensitive: true,
+                },
+            },
+        ],
     },
 };

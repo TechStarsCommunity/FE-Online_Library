@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/login.css";
 import { loginSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
-import loginLogo from "../assets/booksLab_logo.png";
+import loginLogo from "/booksLab_logo.png";
 
 const Login = () => {
     const { errors, register, handleSubmit } = useSubmit(loginSchema);
@@ -38,7 +38,6 @@ const Login = () => {
                                     placeholder="8+ characters"
                                     autoComplete="current-password"
                                     {...register("password")}
-                                    focus:border-blue-500
                                 />
                                 {errors.password && (
                                     <p className="text-red-600">{errors.password.message}</p>
@@ -51,17 +50,11 @@ const Login = () => {
                                 Login
                             </button>
                         </form>
-                        <h5 className="text-2xl font-medium">
-                            Don{`'`}t have an Account?{" "}
-                            <a className="text-sky-950 text-2xl font-bold" href="register">
-                                Sign Up
-                            </a>
-                        </h5>
                         <h5 className="text-lg md:text-2xl font-medium">
                             Don{`'`}t have an Account?{" "}
                             <a
                                 className="text-sky-950 text-lg md:text-2xl font-bold"
-                                href="register"
+                                href="/signup"
                             >
                                 Sign Up
                             </a>
@@ -76,11 +69,13 @@ const Login = () => {
                     <div className="w-[160px]">
                         <img src={loginLogo} alt="logo" />
                     </div>
+                <div className="hidden sm:flex h-full  bg-cover bg-center bg-[url('/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl ml-[9vw]">
                     <div className="flex items-center justify-center w-full">
                         <img src={loginLogo} alt="logo" className="w-1/3" />
                     </div>
                 </div>
             </div>
+        </div>    
         </React.Fragment>
     );
 };

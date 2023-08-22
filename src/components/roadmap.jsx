@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { iconData, iconData2 } from "./roadmapicons";
+import { iconData, iconData2 } from "../data/roadmapicons";
 
-const roadmap = () => {
+const RoadMap = () => {
     const [icons, setIcons] = useState(iconData);
 
     const toggleIcon2 = (id) => {
@@ -56,4 +56,4 @@ const roadmap = () => {
     );
 };
 
-export default roadmap;
+export default RoadMap;
