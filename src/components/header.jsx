@@ -10,8 +10,8 @@ const Header = () => {
                 <div>
                     <img src={logo} alt="" className="max-w-[100%]  h-auto w-40" />
                 </div>
-                <div className="flex flex-row items-center justify-between  header-links-parent gap-4">
-                    <ul className="md:flex hidden flex-row gap-2.5">
+                <div className="flex flex-row items-center justify-between  header-links-parent gap-4 md:w-[80%] w-auto">
+                    <ul className="md:flex hidden flex-row gap-2.5 my-0 mx-auto">
                         <li>
                             <a
                                 href="#"
@@ -38,9 +38,12 @@ const Header = () => {
                         </li>
                     </ul>
                     <div className="inline-flex flex-row gap-2.5 items-center">
-                        <button className="get-started-btn hidden md:block py-1.5 px-2.5 rounded-[3.125rem] text-white cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  border-none ease-in duration-300 hover:scale-[1.1]">
-                            Get Started
-                        </button>
+                        <Link to="signup">
+                            <button className="get-started-btn hidden md:block py-1.5 px-2.5 rounded-[3.125rem] text-white cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  border-none ease-in duration-300 hover:scale-[1.1]">
+                            
+                                Get Started
+                            </button>
+                        </Link>
                         <Link to="login">
                             <button className=" border-[#10b2f3] border-solid border py-1.5 px-2.5 rounded-[3.125rem]  outline-none cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  text-[#10b2f3] bg-white ease-in duration-300 hover:scale-[1.1]">
                                 Login
