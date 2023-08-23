@@ -1,47 +1,30 @@
 import React from "react";
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
 import "../styles/signup.css";
 import { useAppDispatch } from "../redux/store";
 import "../styles/signup.css";
+import Button from "../components/button";
 import { loginSuccess } from "../redux/authSlice";
+import { signUpSchema } from "../config/schema";
+import useSubmit from "../hooks/useSubmit";
+import Input from "../components/input";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
+    const { errors, register, handleSubmit } = useSubmit(signUpSchema);
     const dispatch = useAppDispatch();
 
-    const schema = yup.object().shape({
-        name: yup.string().required("Your Name Is Required"),
-        username: yup.string().required("Your Username Is Required"),
-        email: yup
-            .string()
-            .email()
-            .required("Your Email is Required, ensure it is the Correct Format"),
-        password: yup.string().min(8).required(),
-        confirmPassword: yup
-            .string()
-            .oneOf([yup.ref("password"), undefined], "Passwords Don't Match")
-            .required(),
-    });
-
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm({
-        resolver: yupResolver(schema),
-    });
     const onSubmit = (data) => {
-        dispatch(loginSuccess(data));
+        // dispatch(loginSuccess(data));
+        console.log(data);
     };
     return (
         <React.Fragment>
             <div className="main">
                 <div className="left-section">
                     <div className="imgg">
-                        <img src={"../assets/image.png"} className="imge" alt="image" />
+                        {/* <img src={"/authPage_bg.png"} className="imge" alt="image" /> */}
                         <div className="vector">
-                            <img src={"../assets/vector.png"} alt="vector" />
+                            {/* <img src={"/booksLab_logo.png"} alt="vector" /> */}
                         </div>
                     </div>
                 </div>
@@ -50,32 +33,68 @@ const Signup = () => {
                         <h2>WELCOME TO BOOKSLAB</h2>
                         <p>Register your account</p>
                     </div>
-                    <input type="text" placeholder="Name ..." {...register("name")} />
-                    <p> {errors.name?.message} </p>
-                    <input type="text" placeholder="Username ..." {...register("username")} />
-                    <p> {errors.username?.message} </p>
-                    <input
+                    <Input
+                        label="Name"
+                        name="name"
                         type="text"
-                        placeholder="Email ..."
-                        {...register("email")}
+                        register={register}
+                        errors={errors}
+                        autoComplete="name"
+                        placeholder="Name..."
+                    />
+                    <Input
+                        label="Username"
+                        name="username"
+                        type="text"
+                        register={register}
+                        errors={errors}
+                        placeholder="Username..."
+                    />
+                    <Input
+                        label="Email"
+                        name="email"
+                        type="email"
+                        register={register}
+                        errors={errors}
                         autoComplete="email"
+                        placeholder="Email..."
                     />
-                    <p> {errors.email?.message} </p>
-                    <input
-                        type="password"
-                        placeholder="Password ..."
-                        {...register("password")}
-                        autoComplete="new-password"
-                    />
-                    <p> {errors.password?.message} </p>
-                    <input
-                        type="password"
-                        placeholder="Confirm Password ..."
-                        {...register("confirmPassword")}
-                        autoComplete="new-password"
-                    />
-                    <p> {errors.confirmPassword?.message} </p>
-                    <input type="submit" />
+                    {/* container for passwords */}
+                    <div className="password-container">
+                        <div className="password-child">
+                            <Input
+                                label="Password"
+                                name="password"
+                                type="password"
+                                register={register}
+                                errors={errors}
+                                placeholder="Password..."
+                                id="password"
+                            />
+                        </div>
+                        <div className="password-child">
+                            <Input
+                                label=" Confirm Password"
+                                name="confirm-password"
+                                type="password"
+                                register={register}
+                                errors={errors}
+                                autoComplete="new-password"
+                                placeholder="Confirm Password..."
+                                id="confirmPassword"
+                            />
+                        </div>
+                    </div>
+                    <Button borderVariant="noRadius" variant="primary">
+                        Sign Up
+                    </Button>{" "}
+                    <h5>
+                        Have an Account?
+                        <Link to="/login">
+                            {" "}
+                            <a href="">Login</a>
+                        </Link>
+                    </h5>
                 </form>
             </div>
         </React.Fragment>

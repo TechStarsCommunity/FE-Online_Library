@@ -9,20 +9,12 @@ const LeftSidebar = () => {
 
                 <div className="left__sidebar-options">
                     <div className="left__sidebar-option">
-                        <img
-                            src={"../assets/image.png"}
-                            alt="image"
-                            className="left__sidebar-optionImg"
-                        />
+                        <img src={"/image.png"} alt="image" className="left__sidebar-optionImg" />
                         Dashboard
                     </div>
 
                     <div className="left__sidebar-option">
-                        <img
-                            src={"../assets/image.png"}
-                            alt="image"
-                            className="left__sidebar-optionImg"
-                        />
+                        <img src={"/image.png"} alt="image" className="left__sidebar-optionImg" />
                         Uploads
                     </div>
                 </div>

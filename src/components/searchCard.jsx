@@ -6,11 +6,7 @@ const SearchCard = () => {
             <div className="searchCard">
                 <div className="w-36 flex items-center justify-center myCollapse">
                     <div className="w-full ">
-                        <img
-                            src={"../assets/image_icon.png"}
-                            alt=""
-                            className="w-full none md:flex"
-                        />
+                        <img src={"/image_icon.png"} alt="" className="w-full none md:flex" />
                     </div>
                 </div>
                 <div className="grid gap-2">
@@ -26,11 +22,7 @@ const SearchCard = () => {
                     <div className="flex justify-between flex-wrap">
                         <div className="flex items-center gap-2">
                             <div className="w-9 h-9">
-                                <img
-                                    src={"../assets/image_icon.png"}
-                                    alt=""
-                                    className="w-full h-full"
-                                />
+                                <img src={"/image_icon.png"} alt="" className="w-full h-full" />
                             </div>
                             <p>Frontend Development </p>
                         </div>
