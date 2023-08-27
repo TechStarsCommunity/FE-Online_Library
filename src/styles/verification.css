@@ -3,12 +3,14 @@
     height: 100%;
     width: auto;
     display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-.left-section {
+.otp-left-section {
     display: flex;
     align-items: center;
-    background: url("../assets/authPage_bg.png");
+    background: url("/authPage_bg.png");
     background-size: cover;
     object-fit: cover;
     width: 45%;
@@ -26,22 +28,22 @@
 
 .vector {
     background-image: url("../assets/booksLab_logo.png");
-    width: 15.625rem;
+    width: 250px;
     max-width: 100%;
     height: 2.5rem;
     background-repeat: no-repeat;
 }
 
-.right-section {
-    padding-left: 0 2.5rem;
-    height: auto;
-    width: fit-content;
+.otp-right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.pad {
-    padding-left: 5rem;
+.opf {
+    padding-left: 80px;
 }
 
-.heading {
+.hdngs h2 {
     font-style: normal;
     font-weight: 600;
     font-size: 2.5rem;
@@ -59,7 +61,7 @@
     color: rgba(0, 0, 0, 1);
 }
 
-.right-text {
+.hdngs {
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -114,27 +116,27 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .code-container{
         flex-wrap: wrap;
     }
     .code{
-        font-size: 1.5rem;
-        height: 1.5rem;
-        width: 6.25rem;
-        max-width: 1.063rem;
+        font-size: 24px;
+        height: 24px;
+        width: 100px;
+        max-width: 17px;
         font-size: bold;
     }
 }
 
-.code::-webkit-outer-spin-button, 
+.code::-webkit-outer-spin-button,
 .code::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
 .code:valid {
     border-color: #696969 ;
-    box-shadow: 0 0.625rem 0.625rem --0.313rem;
+    box-shadow: 0 10px 10px -5px;
 }
 
 .btn {

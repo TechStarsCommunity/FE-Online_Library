@@ -6,8 +6,8 @@
 }
 
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 1rem solid #895736; /* redish grey */
+    border: 16px solid #f3f3f3;
+    border-top: 1rem solid #895736;
     border-radius: 50%;
     width: 100px;
     height: 100px;
