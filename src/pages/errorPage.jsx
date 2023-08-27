@@ -3,7 +3,7 @@ import "../styles/error.css";
 import { BsSearch } from "react-icons/bs";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Button from "../components/button/button";
+import Button from "../components/button";
 import { Link } from "react-router-dom";
 
 const errorPage = () => {

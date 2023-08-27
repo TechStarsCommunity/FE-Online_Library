@@ -5,7 +5,7 @@
     align-items: center;
     height: 120vh;
     width: 100%;
-    background-image: url("../assets/notfound_image.jpg");
+    background-image: url("../../notfound_image.jpg");
     background-size: cover;
     object-fit: cover;
 }
