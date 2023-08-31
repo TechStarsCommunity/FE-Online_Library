@@ -17,8 +17,9 @@ const Input = memo(
                 {label && (
                     <label
                         htmlFor={name}
-                        className={`text-sm md:text-lg ${disabled === true ? "text-red-600" : "text-slate-800"
-                            }`}
+                        className={`text-sm md:text-lg ${
+                            disabled === true ? "text-red-600" : "text-slate-800"
+                        }`}
                     >
                         {label}
                     </label>
@@ -51,8 +52,9 @@ const Input = memo(
                         }
                         autoComplete={autoComplete}
                         placeholder={placeholder}
-                        className={`input ${disabled === true ? "cursor-not-allowed" : "cursor-text"
-                            }`}
+                        className={`input ${
+                            disabled === true ? "cursor-not-allowed" : "cursor-text"
+                        }`}
                         {...props}
                     />
                     {type === "password" && (
