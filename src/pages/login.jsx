@@ -29,7 +29,7 @@ const Login = () => {
                                 />
                                 {errors.email && (
                                     <p
-                                        style={{ textTransform: "uppercase" }}
+                                        style={{ textTransform: "capitalize" }}
                                         className="text-red-600"
                                     >
                                         {errors.email.message}
@@ -46,7 +46,7 @@ const Login = () => {
                                 />
                                 {errors.password && (
                                     <p
-                                        style={{ textTransform: "uppercase" }}
+                                        style={{ textTransform: "capitalize" }}
                                         className="text-red-600"
                                     >
                                         {errors.password.message}
