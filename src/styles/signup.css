@@ -1,20 +1,15 @@
 .main {
-    height: 100%;
-    width: auto;
+    margin:0;
     display: flex;
-    align-items: center;
-    gap: 3rem;
     font-size: 15px;
 }
 
 .left-section {
     display: flex;
     align-items: center;
-    background: url("../assets/authPage_bg.png");
+    background: url("/authPage_bg.png");
     background-size: cover;
-    object-fit: cover;
-    width: 35%;
-    height: 100vh;
+    min-height:100vh;
     border-radius: 0px 44px 44px 0px;
 }
 
@@ -27,7 +22,7 @@
 }
 
 .vector {
-    background-image: url("../assets/booksLab_logo.png");
+    background-image: url("/booksLab_logo.png");
     width: 20rem;
     width: 250px;
     max-width: 100%;
@@ -36,14 +31,17 @@
 }
 
 .right-section {
-    padding: 0 0.5rem;
+    padding:  0.5rem;
+    width:auto;
+    margin: auto;
+   max-width:90%;
 }
- h2 {
+h2 {
     font-style: normal;
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 48px;
-    color: #001E50;
+    color: #001e50;
     white-space: nowrap;
 }
 
@@ -59,33 +57,35 @@
 input[type="text"],
 input[type="email"] {
     width: 100%;
-    padding: 10px 80px 10px 25px;
+    padding: 10px 80px 10px 20px;
     background: #ffffff;
     border: 1px solid #696969;
     border-radius: 8px;
-   
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-    outline: none;
-    background-color: #ffffff;
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+   margin-top: -1.5rem;
 }
 label {
     display: block;
+    margin-bottom: 5px;
 }
 
 input[type="password"] {
     width: 100%;
-    padding: 10px 40px 10px 25px;
+    padding: 10px 40px 10px 20px;
     border-radius: 8px;
     background: #ffffff;
     border: 1px solid #696969;
-    margin-top:-6px;
+}
+input:focus{
+    border-color: #35EAB9;
+     outline: none;
+    background-color: #ffffff;
 }
 .password-container {
-    margin-top: -0.5rem;
     display: flex;
     flex-direction: row;
     gap: 2%;
@@ -104,7 +104,7 @@ h5 {
     font-size: 15px;
 }
 
-a {
+span {
     text-decoration: none;
     color: #001e50;
     font-weight: 700;
@@ -112,4 +112,14 @@ a {
 
 ::placeholder {
     font-size: 14px;
+}
+@media only screen and  (max-width:768px){
+    .left-section{display:none;}
+    .right-section{
+        width:100%;
+        margin:4rem auto;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
 }

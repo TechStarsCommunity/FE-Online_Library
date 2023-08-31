@@ -14,31 +14,24 @@
     place-items: center;
     height: 100%;
     width: 128%;
-    /* border: 2px solid #000000; */
     background-color: #ffffff;
 }
 
 .right {
     display: grid;
     place-items: center;
-    height: 100%;
+    height: 100vh;
     width: 72.9%;
-    background-color: #E8E6E6;
-    /* border: 2px solid #ff0000; */
+    background-size: cover;
+    background-position: center;
+    background-image: url(/loginImage.svg);
     border-radius: 64px 0px 0px 64px;
     margin-left: 13.57vw;
-}
-
-img {
-    height: 240px;
-    width: 240px;
-    border-radius: 24px;
 }
 
 .left-content {
     width: 60%;
     height: auto;
-    /* border: 2px solid #00ff4c; */
     margin: auto;
 }
 
@@ -47,26 +40,8 @@ img {
     padding-top: 6vh;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 40px;
-    color: #000000;
-    padding-bottom: 0px;
-    margin: 0px;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #707070;
-    padding-top: 0px;
-    margin: 0px;
-}
-
 h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: #707070;
@@ -75,7 +50,7 @@ h5 {
 }
 
 a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 16px;
     color: #000000;
@@ -85,7 +60,7 @@ a {
 }
 
 label {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #000000;
@@ -101,7 +76,7 @@ input {
     background: #ffffff;
     border: 1px solid #696969;
     border-radius: 4px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -113,17 +88,13 @@ button {
     margin-top: 8vh;
     width: 100%;
     height: 9vh;
-    background: #AFAFAF;
+    background: #afafaf;
     color: #000000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: 0.6s;
-}
-
-button:hover {
-    background: #858585;
 }
