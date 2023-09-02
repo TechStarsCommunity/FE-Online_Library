@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/verification.css";
 import { useAppDispatch } from "../redux/store";
-import "../styles/signup.css";
 import Button from "../components/button";
 import { loginSuccess } from "../redux/authSlice";
 import { signUpSchema } from "../config/schema";
@@ -24,11 +23,11 @@ const OTPVerification = () => {
                         <div className="vector"></div>
                     </div>
                 </div>
-                <div className="opf">
+                <div className="space">
                     <form onSubmit={handleSubmit(onSubmit)} className="right-section"></form>
                     <div className="container">
                         <div>
-                            <h2  className="head">Verification</h2>
+                            <h2 className="head">Verification</h2>
                             <p className="right-text">Enter the Code sent to your email below.</p>
                         </div>
 
@@ -90,10 +89,7 @@ const OTPVerification = () => {
                         </p>
 
                         <Link to="/">
-                        <button
-                                type="submit"
-                                className="button"
-                            >
+                            <button type="submit" className="button">
                                 Continue
                             </button>{" "}
                         </Link>
@@ -104,7 +100,7 @@ const OTPVerification = () => {
                 </div>
             </div>
         </React.Fragment>
-    );
+    )
 };
 
 export default OTPVerification;

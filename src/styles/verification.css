@@ -27,11 +27,16 @@
 }
 
 .vector {
-    background-image: url("../assets/booksLab_logo.png");
+    background-image: url("/booksLab_logo.png");
     width: 15.625rem;
     max-width: 100%;
     height: 2.5rem;
     background-repeat: no-repeat;
+}
+
+
+.space {
+    padding: 8rem;
 }
 
 .otp-right-section {
@@ -40,9 +45,7 @@
     justify-content: center;
     width: 50%;
     height: 100vh;
-}
-.opf {
-    padding-left: 5rem;
+    align-content: center;
 }
 
 .head {
@@ -129,6 +132,15 @@
         max-width: 1.063rem;
         font-size: bold;
     }
+    .otp-right-section{
+        align-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .space{
+        padding-left: 5rem;
+    }
 }
 
 .code::-webkit-outer-spin-button,
@@ -171,4 +183,3 @@
         display: none;
     }
 }
-
