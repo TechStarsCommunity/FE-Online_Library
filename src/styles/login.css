@@ -1,62 +1,11 @@
-.page {
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0px;
-    height: 100vh;
-    width: 100%;
-    margin-top: 0px;
-    padding: 0px;
-}
-
-.left {
-    display: grid;
-    place-items: center;
-    height: 100%;
-    width: 128%;
-    background-color: #ffffff;
-}
-
-.right {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    width: 72.9%;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/loginImage.svg);
-    border-radius: 64px 0px 0px 64px;
-    margin-left: 13.57vw;
-}
-
-.left-content {
-    width: 60%;
-    height: auto;
-    margin: auto;
-}
-
-.left-content div {
-    width: 100%;
-    padding-top: 6vh;
-}
-
 h5 {
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
     color: #707070;
     padding-top: 2vh;
-    margin: 0px;
 }
 
 a {
     font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 16px;
-    color: #000000;
-    text-decoration: none;
-    padding-top: 0px;
-    margin: 0px;
 }
 
 label {
@@ -72,7 +21,7 @@ input {
     box-sizing: border-box;
     margin-top: 2vh;
     width: 100%;
-    height: 8vh;
+    height: 7vh;
     background: #ffffff;
     border: 1px solid #696969;
     border-radius: 4px;
@@ -80,14 +29,13 @@ input {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    color: rgba(0, 0, 0, 0.32);
     padding-left: 16px;
 }
 
 button {
     margin-top: 8vh;
     width: 100%;
-    height: 9vh;
+    height: 7vh;
     background: #afafaf;
     color: #000000;
     font-family: "Montserrat", sans-serif;
