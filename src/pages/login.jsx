@@ -53,7 +53,6 @@ const Login = () => {
                     </div>
                 </div>
                 <div className="hidden sm:flex h-full  bg-cover bg-center bg-[url('../assets/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl ml-[9vw]" >
-                    {/* <img src={loginImage} alt="image" /> */}
                         <div className="flex items-center justify-center w-full">
                             <img src={loginLogo} alt="logo" className="w-1/3" />
                         </div>
