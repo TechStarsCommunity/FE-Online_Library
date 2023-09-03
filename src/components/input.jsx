@@ -54,7 +54,7 @@ const Input = memo(
                         placeholder={placeholder}
                         className={`input ${
                             disabled === true ? "cursor-not-allowed" : "cursor-text"
-                        }`}
+                        } border border-1 border-#696969 focus:border-#35EAB9 focus:ring-1 focus:ring-#35EAB9 `}
                         {...props}
                     />
                     {type === "password" && (
