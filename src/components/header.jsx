@@ -3,7 +3,12 @@ import "../styles/header.css";
 import { BsList } from "react-icons/bs";
 import logo from "/booksLab_logo.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const Header = () => {
+    const [mobileLinksVisible, setMobileLinksVisible] = useState(false);
+    const toggleMobileLinks = () => {
+        setMobileLinksVisible(!mobileLinksVisible);
+    };
     return (
         <React.Fragment>
             <header className="flex flex-row items-center justify-between gap-2.5 px-8 md:px-11 py-4 bg-white w-full z-[999]">
@@ -40,7 +45,6 @@ const Header = () => {
                     <div className="inline-flex flex-row gap-2.5 items-center">
                         <Link to="signup">
                             <button className="get-started-btn hidden md:block py-1.5 px-2.5 rounded-[3.125rem] text-white cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  border-none ease-in duration-300 hover:scale-[1.1]">
-                            
                                 Get Started
                             </button>
                         </Link>
@@ -49,8 +53,25 @@ const Header = () => {
                                 Login
                             </button>
                         </Link>
+                        {/* Menu icon and links */}
+                        <BsList
+                            className="menu-icon w-7 h-7 md:hidden cursor-pointer hover:border-[#10b2f3] hover:border-solid hover:border rounded-[0.2rem]"
+                            onClick={toggleMobileLinks}
+                        />
 
-                        <BsList className="menu-icon w-7 h-7 md:hidden" />
+                        {mobileLinksVisible && (
+                            <nav className="mobile-links-parent ">
+                                <a href="/" className="active mobile-links">
+                                    Home
+                                </a>
+                                <a href="/" className="mobile-links">
+                                    About
+                                </a>
+                                <a href="/" className="mobile-links">
+                                    Contact Us
+                                </a>
+                            </nav>
+                        )}
                     </div>
                 </div>
             </header>
