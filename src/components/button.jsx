@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/button.css";
+import "../styles/button.css";
 
 const Button = ({ children, variant, borderVariant }) => {
     let buttonClass = "btn"; // Default class
