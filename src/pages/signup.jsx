@@ -73,7 +73,7 @@ const Signup = () => {
                             <div className="password-child">
                                 <Input
                                     label=" Confirm Password"
-                                    name="confirm-password"
+                                    name="confirmPassword"
                                     type="password"
                                     register={register}
                                     errors={errors}

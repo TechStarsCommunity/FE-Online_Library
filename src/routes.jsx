@@ -19,6 +19,7 @@ const BrowserRouter = createBrowserRouter([
                 <Home />
             </React.Suspense>
         ),
+        errorElement: <div>Error 404</div>,
     },
     {
         path: "/login",

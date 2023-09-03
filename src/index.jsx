@@ -1,3 +1,4 @@
+import { ErrorBoundary } from "react-error-boundary";
 import { Provider } from "react-redux";
 import store, { persistor } from "./redux/store.js";
 import { PersistGate } from "redux-persist/integration/react";

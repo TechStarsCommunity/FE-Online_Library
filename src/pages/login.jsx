@@ -28,7 +28,12 @@ const Login = () => {
                                     {...register("email")}
                                 />
                                 {errors.email && (
-                                    <p className="text-red-600">{errors.email.message}</p>
+                                    <p
+                                        style={{ textTransform: "capitalize" }}
+                                        className="text-red-600"
+                                    >
+                                        {errors.email.message}
+                                    </p>
                                 )}
                             </div>
                             <div className="outline-8 outline-purple-900">
@@ -40,7 +45,12 @@ const Login = () => {
                                     {...register("password")}
                                 />
                                 {errors.password && (
-                                    <p className="text-red-600">{errors.password.message}</p>
+                                    <p
+                                        style={{ textTransform: "capitalize" }}
+                                        className="text-red-600"
+                                    >
+                                        {errors.password.message}
+                                    </p>
                                 )}
                             </div>
                             <button
