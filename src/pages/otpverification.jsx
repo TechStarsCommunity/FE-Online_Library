@@ -100,7 +100,7 @@ const OTPVerification = () => {
                 </div>
             </div>
         </React.Fragment>
-    )
+    );
 };
 
 export default OTPVerification;
