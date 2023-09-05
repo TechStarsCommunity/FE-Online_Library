@@ -36,13 +36,8 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="mt-[20px] md:[40px] ml-5 md:basis-1/2 lg:basis-1/3 md:flex md:justify-between pr-12 grow">
-<<<<<<< HEAD
-                        <div className="flex flex-col gap-3">
-                            <h4 className="font-bold text-[17px]">Navigation</h4>
-=======
                         <div className="flex flex-col gap-3 font-light">
                             <h4 className="font-medium text-[#10B2F3] text-[17px]">Navigation</h4>
->>>>>>> develop
                             <Link
                                 to="/categories"
                                 className="text-[#001E50] text-[15px] hover:text-[#10B2F3]"
@@ -68,8 +63,6 @@ const Footer = () => {
                                 Contact Us
                             </Link>
                         </div>
-                        <div className="mt-[20px] lg:mt-[0] flex flex-col gap-3">
-                            <h4 className="font-bold text-[17px]">About</h4>
                         <div className="mt-[20px] lg:mt-[0] flex flex-col gap-3 font-light">
                             <h4 className="font-medium text-[17px] text-[#10B2F3]">About</h4>
                             <Link
@@ -120,7 +113,6 @@ const Footer = () => {
                 {/* <div>
                             <p className="text-center">2023 BooksLab. All right reserved!</p>
                         </div> */}
-                </div>
             </footer>
         </React.Fragment>
     );

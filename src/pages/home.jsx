@@ -1,11 +1,8 @@
 import React from "react";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
-<<<<<<< HEAD
-import Footer from "../components/footer";
 
 // change the name of the function to match the name of the file
-=======
 import Header from "../components/header";
 import Roadmap from "../components/roadmap";
 import AboutComponent from "../components/about";
@@ -13,12 +10,10 @@ import Footer from "../components/footer";
 import Button from "../components/button";
 import ContactComponent from "../components/contact";
 import { Link } from "react-router-dom";
->>>>>>> develop
 
 const home = () => {
     return (
         <React.Fragment>
-<<<<<<< HEAD
             {/* Write Your Normal HTML Here */}
             <section className="hero__section" id="top">
                 <div className="hero__section-details">
@@ -33,7 +28,6 @@ const home = () => {
                     <h3>Your Virtual Gateway to Boundless Resources</h3>
                 </div>
             </section>
-=======
             <Header />
             <main className="w-full">
                 <section className="hero__section">
@@ -73,7 +67,6 @@ const home = () => {
             <Roadmap />
             <AboutComponent />
             <ContactComponent />
->>>>>>> develop
             <Footer />
         </React.Fragment>
     );
