@@ -5,13 +5,13 @@ import Navbar from "./navbar";
 const UploadContents = () => {
     return (
         <React.Fragment>
-            <div className="uploadContents">
+            <div className="">
                 <Navbar />
-                <div className="uploadContents__contents">
-                    <h2 className="uploadContents__contents-text">Pending Approval</h2>
-                    <div className="uploadContents__contents-content">
-                        <img src={"../assets/image_icon.png"} alt="uploads img" />
-                        <div className="uploadContents__contents-content-details">
+                <div className="">
+                    <h2 className="">Pending Approval</h2>
+                    <div className="">
+                        <img src={"/image_icon.png"} alt="uploads img" />
+                        <div className="">
                             <h4>Starting a successful Career in Tech</h4>
                             <h6>
                                 Uploaded by: <span>Oluwaben Akeem</span>
@@ -24,7 +24,7 @@ const UploadContents = () => {
                                 }}
                             >
                                 <img
-                                    src={"../assets/image_icon.png"}
+                                    src={"/image_icon.png"}
                                     alt=""
                                     style={{
                                         width: "45px",
@@ -38,54 +38,54 @@ const UploadContents = () => {
                                 <span style={{ marginTop: "15px" }}>Frontend Development</span>
                             </div>
                         </div>
-                        <div className="uploadContents__contents-content-images">
-                            <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                        <div className="s">
+                            <div className="">
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 accept
                             </div>
-                            <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                            <div className="">
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 reject
                             </div>
                         </div>
                     </div>
 
-                    <div className="uploadContents__contents-content">
-                        <img src={"../assets/image_icon.png"} alt="uploads img" />
-                        <div className="uploadContents__contents-content-details">
+                    <div className="">
+                        <img src={"/image_icon.png"} alt="uploads img" />
+                        <div className="">
                             <h4>Starting a successful Career in Tech</h4>
                             <h6>
                                 Uploaded by: <span>Oluwaben Akeem</span>
                             </h6>
                         </div>
-                        <div className="uploadContents__contents-content-images">
-                            <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                        <div className="s">
+                            <div className="">
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 accept
                             </div>
-                            <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                            <div className="">
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 reject
                             </div>
                         </div>
                     </div>
 
-                    <div className="uploadContents__contents-content">
-                        <img src={"../assets/image_icon.png"} alt="uploads img" />
-                        <div className="uploadContents__contents-content-details">
+                    <div className="">
+                        <img src={"/image_icon.png"} alt="uploads img" />
+                        <div className="">
                             <h4>Starting a successful Career in Tech</h4>
                             <h6>
                                 Uploaded by: <span>Oluwaben Akeem</span>
                             </h6>
                         </div>
 
-                        <div className="uploadContents__contents-content-images">
-                            <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                        <div className="s">
+                            <div className="">
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 accept
                             </div>
-                            <div className="uploadContents__contents-content-image">
-                                <img src={"../assets/image_icon.png"} alt="uploads img" />
+                            <div className="">
+                                <img src={"/image_icon.png"} alt="uploads img" />
                                 reject
                             </div>
                         </div>

@@ -3,6 +3,7 @@ body{
     margin: 0;
 }
 
+<<<<<<< HEAD
 header{
     display:flex;
     align-items: center;
@@ -38,4 +39,46 @@ header{
 .header-links-parent li a:hover,
 .header-links-parent li a.active{
     color: #35EAB9;   
+=======
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li a:not(.active), .mobile-links:not(.active) {
+    background: var(
+        --gradient,
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: margin-box;
+}
+.get-started-btn {
+    background: var(
+        --gradient,
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+    );
+}
+.mobile-links-parent{
+    position:absolute;
+    display:none;
+    gap:5px;
+    flex-direction:column;
+    text-align:center;
+    background-color:white;
+    padding:10px;
+    min-width:160px;
+    top:65px;
+    right:0;
+    width:100%;
+}
+
+@media only screen and (max-width:680px){
+    .mobile-links-parent{
+        display:flex;
+    }
+>>>>>>> develop
 }

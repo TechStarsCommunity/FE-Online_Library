@@ -1,19 +1,32 @@
-
-:root {
-    --primary : #10B2F3;
-    ;
-}
-
-.btn{
+.btn {
     padding: 8px 20px;
     border-radius: 50px;
     outline: none;
     border: none;
     cursor: pointer;
     color: #fff;
+    margin-right: 15px;
 }
-.btn-primary{
-    background-color: var(--primary);
+.btn-primary {
+    background: var(
+        --gradient,
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+    );
     color: #fff;
-    border: 1px solid var(--primary);
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #10b2f3;
+    border: 2px solid
+        var(
+            --gradient,
+            linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+            linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+        );
+}
+.btn-radius{
+    border-radius: 5px;
 }

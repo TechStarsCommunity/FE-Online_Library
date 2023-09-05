@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
 
 .searchGrid {
     display: grid;
@@ -45,3 +46,5 @@
         flex-direction: column;
     }
 }
+=======
+>>>>>>> develop
