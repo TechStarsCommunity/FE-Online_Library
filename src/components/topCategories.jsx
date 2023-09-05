@@ -30,7 +30,7 @@ const TopCategories = () => {
                 className="w-full flex items-start pt-3 overflow-x-auto gap-8 custom-bar"
                 ref={parentRef}
             >
-                {categories.ma((category, key) => {
+                {categories.map((category, key) => {
                     return (
                         <CategoriesCard
                             key={key}

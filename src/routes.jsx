@@ -10,6 +10,7 @@ const Contact = lazy(() => import("./pages/contact"));
 const About = lazy(() => import("./pages/about"));
 const Search = lazy(() => import("./pages/search"));
 const OTPVerification = lazy(() => import("./pages/otpverification"));
+const Profile = lazy(() => import("./pages/Profile"));
 
 const BrowserRouter = createBrowserRouter([
     {
@@ -82,6 +83,14 @@ const BrowserRouter = createBrowserRouter([
         element: (
             <React.Suspense fallback={<Loading />}>
                 <Login />
+            </React.Suspense>
+        ),
+    },
+    {
+        path: "/Profile",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <Profile />
             </React.Suspense>
         ),
     },
