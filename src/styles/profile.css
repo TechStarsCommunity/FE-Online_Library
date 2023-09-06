@@ -43,14 +43,15 @@
 
 .contain {
     flex-direction: column;
+    height: 10rem;
 }
 
 .input {
-    background: #DFF6FF;
+    background: #e8f6fa;
     border: 1px solid #35EAB9;
     border-radius: .2rem;
     flex: 1;
-    height: 3rem;
+    /* height: 3rem; */
     padding: .5rem;
     margin-bottom: 2rem;
 }

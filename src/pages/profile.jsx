@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/profile.css'
 import profileImg from '../../public/bgimage.png'
-
+import SettingSvg from '../../public/settingSvg'
 export default function Profile() {
   return (
     <div className='profile-container'>
@@ -27,7 +27,9 @@ export default function Profile() {
           </form>
         </div>
         
-        <div className='setting'>settings</div>
+        <div className='setting'>
+          <SettingSvg />
+        </div>
         </div>
     </div>
   )
