@@ -40,6 +40,7 @@ Here is a breakdown of the project structure:
 ├── node_modules/
 ├── public/
 │   ├── vite.svg
+│   ├── images and other assets
 ├── src/
 │   ├── App.jsx
 │   ├── index.jsx
@@ -52,9 +53,6 @@ Here is a breakdown of the project structure:
 │   |   ├── Template.jsx
 |   ├── components/
 │   |   ├── //components go here
-│   └── assets/
-│       ├── // pictures go here
-│       ├── react.svg
 ├── .gitignore
 |── .eslintrc.cjs
 |── index.html
@@ -65,7 +63,7 @@ Here is a breakdown of the project structure:
 ```
 
 -   `node_modules`: contains all the project dependencies.
--   `public`: contains any other static assets that will be served by the development server or included in the production build.
+-   `public`: contains any other static assets(images, icons) that will be served by the development server or included in the production build.
 -   `src`: contains the application code, including the entry point (`main.jsx`), the root component (`App.jsx`), and other components or styles.
 -   `.eslintrc.cjs`: contains configuration options for ESLint.
 -   `.gitignore`: specifies files and directories that Git should ignore.

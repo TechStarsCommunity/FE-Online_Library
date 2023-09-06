@@ -1,5 +1,5 @@
 import React from "react";
-import tech from "../assets/tech.png";
+import tech from "/tech.png";
 import { Link } from "react-router-dom";
 
 const CategoriesCard = ({ src, title, description }) => {
