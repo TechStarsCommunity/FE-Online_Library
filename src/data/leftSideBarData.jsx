@@ -10,38 +10,38 @@ import UploadContents from "../components/uploadContents";
 export const Tabs = [
     {
         id: 1,
-        name: 'Dashboard',
+        name: "Dashboard",
         icon: <RxDashboard />,
-        component: 'Dashboard',
+        component: "Dashboard",
     },
     {
         id: 2,
-        name: 'Books',
+        name: "Books",
         icon: <GoBook />,
-        component: 'Books',
+        component: "Books",
     },
     {
         id: 3,
-        name: 'Your Library',
+        name: "Your Library",
         icon: <LiaBookSolid />,
-        component: 'Library',
+        component: "Library",
     },
     {
         id: 4,
-        name: 'Roadmap',
+        name: "Roadmap",
         icon: <SiGumroad />,
-        component: 'RoadMap',
+        component: "RoadMap",
     },
     {
         id: 5,
-        name: 'Upload',
+        name: "Upload",
         icon: <HiOutlineDocumentDownload />,
         component: UploadContents,
     },
     {
         id: 6,
-        name: 'Profile',
+        name: "Profile",
         icon: <BiSolidUserCircle />,
-        component: 'Profile',
+        component: "Profile",
     },
-]
+];
