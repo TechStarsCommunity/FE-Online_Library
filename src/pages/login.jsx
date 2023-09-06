@@ -65,7 +65,8 @@ const Login = () => {
                                 )}
                             </div>
                             <Button
-                                borderVariant="noRadius" variant="primary"
+                                borderVariant="noRadius"
+                                variant="primary"
                                 type="submit"
                                 className="w-full mt-14"
                             >
@@ -78,9 +79,7 @@ const Login = () => {
                                 Sign Up
                             </a>
                         </h5>
-                        <Button
-                            borderVariant="noRadius" variant="primary"
-                            className="w-full mt-14">
+                        <Button borderVariant="noRadius" variant="primary" className="w-full mt-14">
                             Login as Admin
                         </Button>
                     </div>
