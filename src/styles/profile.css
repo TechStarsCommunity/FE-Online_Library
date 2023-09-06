@@ -20,11 +20,12 @@
 }
 
 .bg-container {
-    width: 100%
+    width: 100%;
 }
 
 .bg-image {
     width: 100%;
+    height: 10rem;
 }
 
 .setting {
@@ -35,28 +36,39 @@
     margin-top: 3rem;
 }
 
-.input-container {
+.input-container-row {
     display: flex;
     justify-content: space-between;
     gap: 4%;
 }
 
-.contain {
+.input-container-colomn {
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    height: 10rem;
+    gap: 4%;
 }
 
 .input {
     background: #e8f6fa;
     border: 1px solid #35EAB9;
-    border-radius: .2rem;
+    border-radius: 8px;
     flex: 1;
     /* height: 3rem; */
     padding: .5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
+
+/* .input:focus {
+
+} */
 
 p {
     color: #35EAB9;
     margin-top: 2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
 }
