@@ -24,7 +24,7 @@ const OTPVerification = () => {
                     </div>
                 </div>
                 <div className="space">
-                    <form onSubmit={handleSubmit(onSubmit)} className="right-section"></form>
+                    <form onSubmit={handleSubmit(onSubmit)} className="right-section">
                     <div className="container">
                         <div>
                             <h2 className="head">Verification</h2>
@@ -97,7 +97,9 @@ const OTPVerification = () => {
                             wrong email? <button className="btnn">Reset</button>
                         </p>
                     </div>
+                    </form>
                 </div>
+                
             </div>
         </React.Fragment>
     );
