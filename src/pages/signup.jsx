@@ -23,7 +23,10 @@ const Signup = () => {
                         <div className="vector"></div>
                     </div>
                 </section>
-                <form onSubmit={handleSubmit(onSubmit)} className="mx-auto w-[90%] max-w-[60rem] mt-8">
+                <form
+                    onSubmit={handleSubmit(onSubmit)}
+                    className="mx-auto w-[90%] max-w-[60rem] mt-8"
+                >
                     <div className="hdngs">
                         <h2>WELCOME TO BOOKSLAB</h2>
                         <p>Register your account</p>
@@ -57,27 +60,27 @@ const Signup = () => {
                     {/* container for passwords */}
                     <div className="w-full flex flex-col md:flex-row justify-between gap-[5%] items-center">
                         <div className="w-full">
-                        <Input
-                            label="Password"
-                            name="password"
-                            type="password"
-                            register={register}
-                            errors={errors}
-                            placeholder="Password..."
-                            id="password"
-                        />
+                            <Input
+                                label="Password"
+                                name="password"
+                                type="password"
+                                register={register}
+                                errors={errors}
+                                placeholder="Password..."
+                                id="password"
+                            />
                         </div>
                         <div className="w-full">
-                        <Input
-                            label=" Confirm Password"
-                            name="confirmPassword"
-                            type="password"
-                            register={register}
-                            errors={errors}
-                            autoComplete="new-password"
-                            placeholder="Confirm Password..."
-                            id="confirmPassword"
-                        />
+                            <Input
+                                label=" Confirm Password"
+                                name="confirmPassword"
+                                type="password"
+                                register={register}
+                                errors={errors}
+                                autoComplete="new-password"
+                                placeholder="Confirm Password..."
+                                id="confirmPassword"
+                            />
                         </div>
                     </div>
                     <Button borderVariant="noRadius" variant="primary">
