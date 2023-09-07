@@ -20,11 +20,82 @@ const BookCategories = () => {
                     </div>
                 </header>
                 <main>
-                    <div className="mt-12">
-                        <Button className="border-gray-500">Contact Us</Button>
+                    <div className="my-12 flex flex-wrap gap-6  ">
+                        <button className="border-solid  border-[#8A8A8A]  p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Education
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Technology
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Frontend Development
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Product Design
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Javascript
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Editor's choice
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A]  p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Education
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Technology
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Frontend Development
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Product Design
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Javascript
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Editor's choice
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A]  p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Education
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Technology
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Frontend Development
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Product Design
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Javascript
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Editor's choice
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A]  p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Education
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Technology
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Frontend Development
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Product Design
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                            Javascript
+                        </button>
+                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
+                        Editor's choice
+                        </button>
                     </div>
                 </main>
-                <footer className="flex justify-between">
+                <footer className="flex justify-between" >
                     <div className="w-2/5">
                         <Button borderVariant="noRadius" variant="primary">
                             Continue
