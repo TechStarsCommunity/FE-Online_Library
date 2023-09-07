@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "../styles/leftSideBar.css";
-import booksLabLogo from "/booksLab_logo.png"
-import { Tabs as Tabs } from "../data/leftSideBarData"
+import booksLabLogo from "/booksLab_logo.png";
+import { Tabs as Tabs } from "../data/leftSideBarData";
 import { AiOutlineLogout } from "react-icons/ai";
 import Button from "./button";
 
 const LeftSidebar = ({ active, setActive }) => {
     const handleClick = (id) => {
-        setActive(id)
-    }
-    
+        setActive(id);
+    };
+
     return (
         <React.Fragment>
             <div className="relative bg-black h-full">
@@ -29,7 +29,7 @@ const LeftSidebar = ({ active, setActive }) => {
                                 <button>{name}</button>
                                 {/* <Button className='text-black'>{name}</Button> */}
                             </div>
-                        )
+                        );
                     })}
                     <div 
                         className={`text-[1rem] mx-5 flex text-center text-[#191919] font-serif font-medium

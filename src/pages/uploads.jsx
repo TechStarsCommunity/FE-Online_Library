@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "../styles/uploads.css";
 import LeftSidebar from "../components/leftSideBar";
-import { Tabs as Tabs } from "../data/leftSideBarData"
+import { Tabs as Tabs } from "../data/leftSideBarData";
 
 const Uploads = () => {
-    const [active, setActive] = useState(1)
+    const [active, setActive] = useState(1);
     const activeTabInfo = Tabs.find((tab) => tab.id === active);
     return (
         <React.Fragment>
