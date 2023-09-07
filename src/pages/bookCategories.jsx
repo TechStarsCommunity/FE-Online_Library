@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../components/button";
 import { Link } from "react-router-dom";
+import CategoriesButton from "../components/categoriesButton";
 
 // change the name of the function to match the name of the file
 const BookCategories = () => {
@@ -21,81 +22,38 @@ const BookCategories = () => {
                 </header>
                 <main>
                     <div className="my-12 flex flex-wrap gap-6  ">
-                        <button className="border-solid  border-[#8A8A8A]  p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Education
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Technology
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Frontend Development
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Product Design
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Javascript
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Editor's choice
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A]  p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Education
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Technology
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Frontend Development
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Product Design
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Javascript
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Editor's choice
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A]  p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Education
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Technology
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Frontend Development
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Product Design
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Javascript
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Editor's choice
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A]  p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Education
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Technology
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Frontend Development
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Product Design
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                            Javascript
-                        </button>
-                        <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Editor's choice
-                        </button>
+                        <CategoriesButton initialText="Editor's Pick" />
+                        <CategoriesButton initialText="Frontend Development" />
+                        <CategoriesButton initialText="Product Design" />
+                        <CategoriesButton initialText="Academic & Education" />
+                        <CategoriesButton initialText="Biography" />
+                        <CategoriesButton initialText="Children & Youth" />
+                        <CategoriesButton initialText="Fiction & Literature" />
+                        <CategoriesButton initialText="Religion" />
+                        <CategoriesButton initialText="Lifestyle" />
+                        <CategoriesButton initialText="Politics & Laws" />
+                        <CategoriesButton initialText="Science & Research" />
+                        <CategoriesButton initialText="Economics" />
+                        <CategoriesButton initialText="Food" />
+                        <CategoriesButton initialText="Marketing" />
+                        <CategoriesButton initialText="Parenting" />
+                        <CategoriesButton initialText="Relationships" />
+                        <CategoriesButton initialText="Backend Development" />
+                        <CategoriesButton initialText="Project Management" />
+                        <CategoriesButton initialText="Arts & Design" />
+                        <CategoriesButton initialText="Business & Career" />
+                        <CategoriesButton initialText="Environment" />
+                        <CategoriesButton initialText="Health & Fitness" />
+                        <CategoriesButton initialText="Personal Growth" />
+                        <CategoriesButton initialText="Tech" />
+                        <CategoriesButton initialText="Entertainment" />
+                        <CategoriesButton initialText="History" />
+                        <CategoriesButton initialText="Motivation" />
+                        <CategoriesButton initialText="Psychology" />
+                        <CategoriesButton initialText="Sports" />
                     </div>
                 </main>
-                <footer className="flex justify-between" >
+                <footer className="flex justify-between">
                     <div className="w-2/5">
                         <Button borderVariant="noRadius" variant="primary">
                             Continue
