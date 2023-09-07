@@ -19,85 +19,86 @@ const OTPVerification = () => {
     return (
         <React.Fragment>
             <div className="main">
-                <div className="left-section">
+                <div className="otp-left-section">
                     <div className="imgg">
                         <div className="vector"></div>
                     </div>
                 </div>
                 <div className="opf">
-                    <form onSubmit={handleSubmit(onSubmit)} className="right-section"></form>
-                    <div className="container">
-                        <div className="hdngs">
-                            <h2>Verification</h2>
-                            <p className="hdngs">Enter the Code sent to your email below.</p>
-                        </div>
-
-                        <div className="container">
-                            <h2 className="hhd">Code</h2>
-                            <div className="code.container">
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
+                    <form onSubmit={handleSubmit(onSubmit)} className="otp-right-section">
+                        <div className="">
+                            <div className="hdngs">
+                                <h2>Verification</h2>
+                                <p className="hdngs">Enter the Code sent to your email below.</p>
                             </div>
-                        </div>
-                        <p className="hdgn">
-                            Didn't receive a code? <button className="hff">Resend</button>
-                        </p>
 
-                        <Link to="/">
-                            <Button className="btn" borderVariant="8" variant="primary">
-                                Continue
-                            </Button>{" "}
-                        </Link>
-                        <p className="hdgp">
-                            wrong email? <button className="hff">Reset</button>
-                        </p>
-                    </div>
+                            <div className="input-wrapper">
+                                <h2 className="hhd">Code</h2>
+                                <div className="code-container">
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                </div>
+                                <p className="hdgn">
+                                    Didn't receive a code? <button className="hff">Resend</button>
+                                </p>
+                            </div>
+
+                            <Link to="/">
+                                <Button className="btn" borderVariant="8" variant="primary">
+                                    Continue
+                                </Button>{" "}
+                            </Link>
+                            <p className="hdgp">
+                                wrong email? <button className="hff">Reset</button>
+                            </p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </React.Fragment>
