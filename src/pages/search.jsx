@@ -7,10 +7,10 @@ import Footer from "../components/footer";
 const Search = () => {
     return (
         <React.Fragment>
-            <main className="w-full p-7">
+            <main className="w-full">
                 <Header />
-                <section className="searchGrid w-full flex">
-                    <div className="grid gap-5">
+                <section className="flex bg-background">
+                    <div className="grid gap-5 flex-2">
                         <div className="w-full  grid gap-3">
                             <SearchCard />
                             <SearchCard />
@@ -20,43 +20,12 @@ const Search = () => {
                         </div>
                     </div>
                     <div className="">
-                        <div className="flex flex-wrap gap-2">
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
-                            <SearchAside />
+                        <div className="flex-2">
                             <SearchAside />
                         </div>
                     </div>
                 </section>
-                <Footer />
+                <Footer style={{ background: "white"}}/>
             </main>
         </React.Fragment>
     );
