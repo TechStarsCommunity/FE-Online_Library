@@ -28,16 +28,16 @@ const BookCategories = () => {
                             Technology
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Frontend Development
+                            Frontend Development
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Product Design
+                            Product Design
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
                             Javascript
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Editor's choice
+                            Editor's choice
                         </button>
                         <button className="border-solid  border-[#8A8A8A]  p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
                             Education
@@ -46,16 +46,16 @@ const BookCategories = () => {
                             Technology
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Frontend Development
+                            Frontend Development
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Product Design
+                            Product Design
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
                             Javascript
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Editor's choice
+                            Editor's choice
                         </button>
                         <button className="border-solid  border-[#8A8A8A]  p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
                             Education
@@ -64,16 +64,16 @@ const BookCategories = () => {
                             Technology
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Frontend Development
+                            Frontend Development
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Product Design
+                            Product Design
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
                             Javascript
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Editor's choice
+                            Editor's choice
                         </button>
                         <button className="border-solid  border-[#8A8A8A]  p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
                             Education
@@ -82,20 +82,20 @@ const BookCategories = () => {
                             Technology
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Frontend Development
+                            Frontend Development
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Product Design
+                            Product Design
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
                             Javascript
                         </button>
                         <button className="border-solid  border-[#8A8A8A] p-2 text-base border-2 rounded-[3.75rem] text-[#8A8A8A]">
-                        Editor's choice
+                            Editor's choice
                         </button>
                     </div>
                 </main>
-                <footer className="flex justify-between" >
+                <footer className="flex justify-between">
                     <div className="w-2/5">
                         <Button borderVariant="noRadius" variant="primary">
                             Continue
