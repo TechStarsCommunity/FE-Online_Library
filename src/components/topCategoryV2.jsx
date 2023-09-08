@@ -6,30 +6,6 @@ import { categories } from "../data/category";
 
 const TopCategoryV2 = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    // const categories = [
-    //     {
-    //         image: "/tech.png",
-    //         title: "Tech",
-    //         description:
-    //             "This refers to the application of scientific knowledge and tools to solve practical problems and improve various aspects of human life. It encompasses a wide range of tools, techniques, systems, and devices that have been developed over time to enhance productivity, communication, convenience, and more. All distributions of tech books.",
-    //     },
-    //     {
-    //         image: "/fruit.png",
-    //         title: "Nutrition",
-    //         description: "Boost your Nutrition and Health with these books ",
-    //     },
-    //     {
-    //         image: "/women.png",
-    //         title: "Sports",
-    //         description: "For Athletes, get in the zone and aim for the summit.",
-    //     },
-    //     {
-    //         image: "/tech.png",
-    //         title: "Tech",
-    //         description: "All distributions of tech books",
-    //     },
-    // ];
-
     const currentCategory = categories[currentIndex];
 
     const goToNext = () => {
@@ -75,9 +51,8 @@ const TopCategoryV2 = () => {
                         {categories.map((_, index) => (
                             <div
                                 key={index}
-                                className={`flex-1 h-[7px] bg-[#fff] rounded-lg ${
-                                    index < currentIndex + 1 ? "bg-[red]" : ""
-                                }`}
+                                className={`flex-1 h-[7px] bg-[#fff] rounded-lg ${index < currentIndex + 1 ? "bg-[#35eab9]" : ""
+                                    }`}
                             ></div>
                         ))}
                     </div>

@@ -2,7 +2,7 @@ import React, { useState, memo } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const Input = memo(
-    ({ label, name, placeholder, type, register, errors, autoComplete, disabled, ...props }) => {
+    ({ label, name, placeholder, type, register, errors, autoComplete, disabled, style }) => {
         const [inputType, setInputType] = useState(type);
 
         const toggleInputType = () => {
@@ -13,13 +13,12 @@ const Input = memo(
         };
 
         return (
-            <div className="flex flex-col gap-2 mb-8">
+            <div className="flex flex-col gap-2 mb-4 md:mb-8">
                 {label && (
                     <label
                         htmlFor={name}
-                        className={`text-sm md:text-lg ${
-                            disabled === true ? "text-red-600" : "text-slate-800"
-                        }`}
+                        className={`text-sm md:text-lg ${disabled === true ? "text-red-600" : "text-slate-800"
+                            }`}
                     >
                         {label}
                     </label>
@@ -48,13 +47,16 @@ const Input = memo(
                         autoSave="true"
                         autoCorrect="on"
                         spellCheck={
-                            name !== "password" ? "true" : "confirmPassword" ? "true" : "false"
+                            name !== "password"
+                                ? "true"
+                                : name !== "confirmPassword"
+                                    ? "true"
+                                    : "false"
                         }
                         autoComplete={autoComplete}
                         placeholder={placeholder}
-                        className={`input ${
-                            disabled === true ? "cursor-not-allowed" : "cursor-text"
-                        }`}
+                        className={`input ${disabled === true ? "cursor-not-allowed" : "cursor-text"
+                            }`}
                         {...props}
                     />
                     {type === "password" && (
