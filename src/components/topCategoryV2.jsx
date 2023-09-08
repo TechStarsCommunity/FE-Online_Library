@@ -51,8 +51,9 @@ const TopCategoryV2 = () => {
                         {categories.map((_, index) => (
                             <div
                                 key={index}
-                                className={`flex-1 h-[7px] bg-[#fff] rounded-lg ${index < currentIndex + 1 ? "bg-[#35eab9]" : ""
-                                    }`}
+                                className={`flex-1 h-[7px] bg-[#fff] rounded-lg ${
+                                    index < currentIndex + 1 ? "bg-[#35eab9]" : ""
+                                }`}
                             ></div>
                         ))}
                     </div>
