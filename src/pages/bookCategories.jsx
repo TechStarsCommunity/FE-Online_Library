@@ -38,13 +38,15 @@ const categoryNames = [
 const BookCategories = () => {
     return (
         <React.Fragment>
-            <body className="md:p-16 p-2">
+            <body className="md:p-16 px-3 py-8">
                 <header>
                     <div>
                         <h1 className="font-semibold text-xl md:text-4xl">Book Categories</h1>
                     </div>
                     <div className="flex justify-between mt-2">
-                        <p className="text-[#5B5B5B] text-sm md:text-base">Select your favorite Categories</p>
+                        <p className="text-[#5B5B5B] text-sm md:text-base">
+                            Select your favorite Categories
+                        </p>
                         <Link to="/">
                             {" "}
                             <p className="text-[#5B5B5B] text-sm md:text-base">Switch to RoadMap</p>
@@ -52,7 +54,7 @@ const BookCategories = () => {
                     </div>
                 </header>
                 <main>
-                    <div className="my-12 flex flex-wrap gap-6">
+                    <div className="my-12 flex flex-wrap gap-6 mb-24 ">
                         {categoryNames.map((category, index) => (
                             <CategoriesButton key={index} initialText={category} />
                         ))}
@@ -64,7 +66,7 @@ const BookCategories = () => {
                             Continue
                         </Button>{" "}
                     </div>
-                    <p className="text-[#5B5B5B]">Skip</p>
+                    <p className="text-[#5B5B5B] md:pr-0 pr-4">Skip</p>
                 </footer>
             </body>
         </React.Fragment>
