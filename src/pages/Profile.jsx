@@ -18,9 +18,45 @@ const Profile = () => {
                         </div>
                     </div>
 
-                    <div className="mt-10 h-[74%] flex">
-                        <div className="border-green-900 border-2 w-1/2"></div>
-                        <div className="border-purple-900 border-2 w-1/2"></div>
+                    <div className="mt-10 h-[76%] block">
+                        <div className="flex border-green-900 border-2 h-1/2">
+                            <div className="border-purple-900 border-4 w-2/4">
+                                <div className="flex justify-between border-4 border-red-500 h-1/2">
+                                    <div className="p-4 pr-6">
+                                        <h6 className="text-cyan-400 text-lg pb-4">Name</h6>
+                                        <h6 className="font-medium text-lg">Akeem</h6>
+                                    </div>
+                                    <div className="p-4">
+                                        <h6 className="text-cyan-400 text-lg pb-4">Location</h6>
+                                        <h6 className="font-medium text-lg">@akeem_123star</h6>
+                                    </div>
+                                </div>
+                                <div className="p-4">
+                                    <h6 className="text-cyan-400 text-lg pb-4">Mail</h6>
+                                    <h6 className="font-medium text-lg">akeem123star@gmail.com</h6>
+                                </div>
+                            </div>
+                            <div className="border-yellow-900 border-4 w-3/4 pl-40">
+                                <div className="flex justify-between border-4 border-red-500 h-1/2">
+                                    <div className="p-4 pr-6">
+                                        <h6 className="text-cyan-400 text-lg pb-4">Name</h6>
+                                        <h6 className="font-medium text-lg">Akeem</h6>
+                                    </div>
+                                    <div className="p-4">
+                                        <h6 className="text-cyan-400 text-lg pb-4">Location</h6>
+                                        <h6 className="font-medium text-lg">@akeem_123star</h6>
+                                    </div>
+                                </div>
+                                <div className="p-4">
+                                    <h6 className="text-cyan-400 text-lg pb-4">Mail</h6>
+                                    <h6 className="font-medium text-lg">akeem123star@gmail.com</h6>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div className="flex border-purple-900 border-2 h-1/2">
+                            <div className=" border-purple-900 border-4 w-1/3"></div>
+                            <div className="border-yellow-900 border-4 w-2/3"></div>
+                        </div>
                     </div>
                 </div>
                 <div className="mt-11 justify-end">
