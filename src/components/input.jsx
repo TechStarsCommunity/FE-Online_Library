@@ -56,11 +56,10 @@ const Input = memo(
                         }
                         autoComplete={autoComplete}
                         placeholder={placeholder}
-
-                        className={`p-1 md:p-2 rounded text-lg border outline-none bg-white placeholder:text-slate-500 placeholder:text-sm md:placeholder:text-lg focus:border-[#35eab9] w-full ${
+                        className={`input ${
                             disabled === true ? "cursor-not-allowed" : "cursor-text"
                         }`}
-                        style={style}
+                        {...props}
                     />
                     {type === "password" && (
                         <span
