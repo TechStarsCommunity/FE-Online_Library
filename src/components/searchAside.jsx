@@ -40,7 +40,7 @@ const topContent = [
 const SearchAside = () => {
     return (
         <React.Fragment>
-            <div className="flex gap-8 flex-row items-center text-[.9rem] font-normal mr-[1.5rem] mt-[5rem]">
+            <div className="flex gap-8 flex-row items-center text-[.9rem] font-normal mr-[1.5rem] mt-[6.5rem]">
               <div className="flex flex-col gap-2 ml-8 w-[40%]">
                 {topResult.map((item) => (
                     <div className="flex gap-6" key={item.id}>
