@@ -9,6 +9,7 @@ const Uploads = lazy(() => import("./pages/uploads"));
 const Contact = lazy(() => import("./pages/contact"));
 const About = lazy(() => import("./pages/about"));
 const Search = lazy(() => import("./pages/search"));
+const BookCategories = lazy(() => import("./pages/bookCategories"));
 const OTPVerification = lazy(() => import("./pages/otpverification"));
 
 const BrowserRouter = createBrowserRouter([
@@ -82,6 +83,14 @@ const BrowserRouter = createBrowserRouter([
         element: (
             <React.Suspense fallback={<Loading />}>
                 <Login />
+            </React.Suspense>
+        ),
+    },
+    {
+        path: "/bookcategories",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <BookCategories />
             </React.Suspense>
         ),
     },
