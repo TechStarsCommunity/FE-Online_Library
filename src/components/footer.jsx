@@ -16,7 +16,7 @@ const Footer = () => {
                             </div>
                             <p className="text-[13px] md:text-md lg:text-lg mt-4 font-medium ">
                                 {" "}
-                                Copyright { new Date().getFullYear() } BooksLab. All right reserved!
+                                Copyright {new Date().getFullYear()} BooksLab. All right reserved!
                             </p>
                         </div>
                         <p className="text-[17px] font-bold tracking-normal">

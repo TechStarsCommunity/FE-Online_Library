@@ -14,7 +14,6 @@ const Search = () => {
                     <div className="searchCardWidth">
                         <div className="w-full  grid gap-3">
                             <SearchCard />
-
                         </div>
                     </div>
                     <div className="">
@@ -23,9 +22,10 @@ const Search = () => {
                         </div>
                     </div>
                 </section>
-                
             </main>
-            <div className="footerColor"><Footer /></div>
+            <div className="footerColor">
+                <Footer />
+            </div>
         </React.Fragment>
     );
 };
