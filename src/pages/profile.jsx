@@ -15,7 +15,7 @@ export default function Profile() {
             <p className='text'>Edit your Infomatin</p>
           
           <form className='profile-form'>
-          <div className='input-container-row'>
+            <div className='input-container-row'>
               <div className='inputContainer'>
                 <input placeholder='name' type='address' className='input' />
               </div>
@@ -35,12 +35,10 @@ export default function Profile() {
               <input placeholder='12345678' type='phone' className='input' />
             </div>
             
-            
+            <div className='btn-container'>
+              <Button variant='primary' type='submit'>DONE</Button>
+            </div>
           </form>
-
-          <div className='btn-container'>
-            <Button variant='primary' type='submit'>DONE</Button>
-          </div>
         </div>
         
         <div className='setting'>
