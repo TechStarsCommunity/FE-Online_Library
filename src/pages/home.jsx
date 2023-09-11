@@ -9,6 +9,7 @@ import AboutComponent from "../components/about";
 import Footer from "../components/footer";
 import Button from "../components/button";
 import ContactComponent from "../components/contact";
+import TopCategoryV2 from "../components/topCategoryV2";
 import { Link } from "react-router-dom";
 
 const home = () => {
@@ -62,7 +63,7 @@ const home = () => {
                         </div>
                     </div>
                 </section>
-                <TopCategories />
+                <TopCategoryV2 />
             </main>
             <Roadmap />
             <AboutComponent />

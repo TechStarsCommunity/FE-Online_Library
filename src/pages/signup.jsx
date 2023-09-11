@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/signup.css";
 import { useAppDispatch } from "../redux/store";
-import "../styles/signup.css";
 import Button from "../components/button";
 // import { loginSuccess } from "../redux/authSlice";
 import { signUpSchema } from "../config/schema";
@@ -19,83 +18,84 @@ const Signup = () => {
     };
     return (
         <React.Fragment>
-            <div className="main">
+            <main className="main lg:pr-[5%]">
                 <section className="left-section">
                     <div className="imgg">
                         <div className="vector"></div>
                     </div>
                 </section>
-                <section className="right-section">
-                    <form onSubmit={handleSubmit(onSubmit)}>
-                        <div className="hdngs">
-                            <h2>WELCOME TO BOOKSLAB</h2>
-                            <p>Register your account</p>
+                <form
+                    onSubmit={handleSubmit(onSubmit)}
+                    className="mx-auto w-[90%] max-w-[60rem] mt-8"
+                >
+                    <div className="hdngs">
+                        <h2>WELCOME TO BOOKSLAB</h2>
+                        <p>Register your account</p>
+                    </div>
+                    <Input
+                        label="Name"
+                        name="name"
+                        type="text"
+                        register={register}
+                        errors={errors}
+                        autoComplete="name"
+                        placeholder="Name..."
+                    />
+                    <Input
+                        label="Username"
+                        name="username"
+                        type="text"
+                        register={register}
+                        errors={errors}
+                        placeholder="Username..."
+                    />
+                    <Input
+                        label="Email"
+                        name="email"
+                        type="email"
+                        register={register}
+                        errors={errors}
+                        autoComplete="email"
+                        placeholder="Email..."
+                    />
+                    {/* container for passwords */}
+                    <div className="w-full flex flex-col md:flex-row justify-between gap-[5%] items-center">
+                        <div className="w-full">
+                            <Input
+                                label="Password"
+                                name="password"
+                                type="password"
+                                register={register}
+                                errors={errors}
+                                placeholder="Password..."
+                                id="password"
+                            />
                         </div>
-                        <Input
-                            label="Name"
-                            name="name"
-                            type="text"
-                            register={register}
-                            errors={errors}
-                            autoComplete="name"
-                            placeholder="Name..."
-                        />
-                        <Input
-                            label="Username"
-                            name="username"
-                            type="text"
-                            register={register}
-                            errors={errors}
-                            placeholder="Username..."
-                        />
-                        <Input
-                            label="Email"
-                            name="email"
-                            type="email"
-                            register={register}
-                            errors={errors}
-                            autoComplete="email"
-                            placeholder="Email..."
-                        />
-                        {/* container for passwords */}
-                        <div className="password-container">
-                            <div className="password-child">
-                                <Input
-                                    label="Password"
-                                    name="password"
-                                    type="password"
-                                    register={register}
-                                    errors={errors}
-                                    placeholder="Password..."
-                                    id="password"
-                                />
-                            </div>
-                            <div className="password-child">
-                                <Input
-                                    label=" Confirm Password"
-                                    name="confirmPassword"
-                                    type="password"
-                                    register={register}
-                                    errors={errors}
-                                    autoComplete="new-password"
-                                    placeholder="Confirm Password..."
-                                    id="confirmPassword"
-                                />
-                            </div>
+                        <div className="w-full">
+                            <Input
+                                label=" Confirm Password"
+                                name="confirmPassword"
+                                type="password"
+                                register={register}
+                                errors={errors}
+                                autoComplete="new-password"
+                                placeholder="Confirm Password..."
+                                id="confirmPassword"
+                            />
                         </div>
-                        <Button borderVariant="noRadius" variant="primary">
-                            Sign Up
-                        </Button>{" "}
-                        <h5>
-                            Have an Account?
-                            <Link to="/login">
-                                {" "}
-                                <span>Login</span>
-                            </Link>
-                        </h5>
-                    </form>
-                </section>
-            </div>
+                    </div>
+                    <Button borderVariant="noRadius" variant="primary">
+                        Sign Up
+                    </Button>{" "}
+                    <h5>
+                        Have an Account?
+                        <Link to="/login">
+                            {" "}
+                            <span>Login</span>
+                        </Link>
+                    </h5>
+                </form>
+            </main>
         </React.Fragment>
     );
 };
