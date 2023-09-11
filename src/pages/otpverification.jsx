@@ -3,7 +3,7 @@ import "../styles/verification.css";
 // import { useAppDispatch } from "../redux/store";
 import "../styles/signup.css";
 import Button from "../components/button";
-import { loginSuccess } from "../redux/authSlice";
+// import { loginSuccess } from "../redux/authSlice";
 import { signUpSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
 import Input from "../components/input";
