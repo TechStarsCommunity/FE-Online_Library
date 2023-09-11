@@ -1,99 +1,110 @@
-import React, { lazy } from "react";
-import Loading from "./components/loading";
-import { createBrowserRouter } from "react-router-dom";
+import React from "react";
+// import "../styles/verification.css";
+// import { useAppDispatch } from "../redux/store";
+import { useDispatch } from "react-redux";
+import Button from "./components/button";
+import { loginSuccess } from "../redux/authSlice";
+import { signUpSchema } from "../config/schema";
+import useSubmit from "../hooks/useSubmit";
+import Input from "../components/input";
+import { Link } from "react-router-dom";
 
-const Home = lazy(() => import("./pages/home"));
-const Login = lazy(() => import("./pages/login"));
-const Signup = lazy(() => import("./pages/signup"));
-const Uploads = lazy(() => import("./pages/uploads"));
-const Contact = lazy(() => import("./pages/contact"));
-const Profile = lazy(() => import("./pages/profile"));
-const About = lazy(() => import("./pages/about"));
-const Search = lazy(() => import("./pages/search"));
-const OTPVerification = lazy(() => import("./pages/otpverification"));
+const OTPVerification = () => {
+    const { errors, register, handleSubmit } = useSubmit(signUpSchema);
+    const dispatch = useAppDispatch();
 
-const BrowserRouter = createBrowserRouter([
-    {
-        path: "/",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <Home />
-            </React.Suspense>
-        ),
-        errorElement: <div>Error 404</div>,
-    },
-    {
-        path: "/login",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <Login />
-            </React.Suspense>
-        ),
-    },
-    {
-        path: "/signup",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <Signup />
-            </React.Suspense>
-        ),
-    },
-    {
-        path: "/uploads",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <Uploads />
-            </React.Suspense>
-        ),
-    },
-    {
-        path: "/contact",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <Contact />
-            </React.Suspense>
-        ),
-    },
-    {
-        path: "/profile",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <Profile />
-            </React.Suspense>
-        ),
-    },
-    {
-        path: "/about",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <About />
-            </React.Suspense>
-        ),
-    },
-    {
-        path: "/search",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <Search />
-            </React.Suspense>
-        ),
-    },
-    {
-        path: "/auth-otp",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <OTPVerification />
-            </React.Suspense>
-        ),
-    },
-    {
-        path: "*",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <Login />
-            </React.Suspense>
-        ),
-    },
-]);
+    const onSubmit = (data) => {
+        console.log(data);
+    };
+    return (
+        <React.Fragment>
+            <div className="main">
+                <div className="otp-left-section">
+                    <div className="imgg">
+                        <div className="vector"></div>
+                    </div>
+                </div>
+                <div className="space">
+                    <form onSubmit={handleSubmit(onSubmit)} className="right-section">
+                        <div className="container">
+                            <div>
+                                <h2 className="head">Verification</h2>
+                                <p className="right-text">
+                                    Enter the Code sent to your email below.
+                                </p>
+                            </div>
 
-export default BrowserRouter;
+                            <div className="container">
+                                <h2 className="code-label">Code</h2>
+                                <div className="code.container">
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                    <input
+                                        type="number"
+                                        className="code"
+                                        placeholder="0"
+                                        min="0"
+                                        max="9"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <p className="texts">
+                                Didn't receive a code? <button className="btnn">Resend</button>
+                            </p>
+
+                            <Link to="/">
+                                <button type="submit" className="button">
+                                    Continue
+                                </button>{" "}
+                            </Link>
+                            <p className="text">
+                                wrong email? <button className="btnn">Reset</button>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </React.Fragment>
+    );
+};
+
+export default OTPVerification;

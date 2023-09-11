@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/verification.css";
-import { useAppDispatch } from "../redux/store";
+// import { useAppDispatch } from "../redux/store";
 import "../styles/signup.css";
 import Button from "../components/button";
 import { loginSuccess } from "../redux/authSlice";
@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const OTPVerification = () => {
     const { errors, register, handleSubmit } = useSubmit(signUpSchema);
-    const dispatch = useAppDispatch();
+    // const dispatch = useAppDispatch();
 
     const onSubmit = (data) => {
         console.log(data);
