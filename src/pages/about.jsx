@@ -2,7 +2,9 @@ import React from "react";
 import "../styles/about.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
-
+import AboutpageCard from "../components/aboutpageCard";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 const About = () => {
     return (
@@ -25,19 +27,19 @@ const About = () => {
                 <p className="lor">
                     Apart from the access to Books from various aspect of life, one of the unique
                     features of BooksLab is the roadmap feature. Our Roadmap is designed to guide
-                    users from being a beginner to advanced in their chosen tech field. Whether you're 
-                    interested in web development, data science, cybersecurity, or any other tech field,
-                     our Roadmap will help yopu develop a clear path to success. Our Roadmap is regularly updated
-                    with the latest trends and technologies, ensuring that users have access to the
-                    most up-to-date information.
+                    users from being a beginner to advanced in their chosen tech field. Whether
+                    you're interested in web development, data science, cybersecurity, or any other
+                    tech field, our Roadmap will help yopu develop a clear path to success. Our
+                    Roadmap is regularly updated with the latest trends and technologies, ensuring
+                    that users have access to the most up-to-date information.
                 </p>
                 <p className="lor">
                     At BooksLab, we believe that knowledge should be accessible to everyone,
                     regardless of their location or financial situation. This is why our platform is
                     completely free to use, and all of our resources are user-generated. Our
                     community of experts maintain the quality of our resources by verifying the
-                    content that is uploaded to the platform. This ensures that our users have access
-                    to only the best and most relevant resources.
+                    content that is uploaded to the platform. This ensures that our users have
+                    access to only the best and most relevant resources.
                 </p>
                 <p className="lor">
                     BooksLab is proud to be a part of the TechStars community. TechStars is a global
@@ -64,170 +66,172 @@ const About = () => {
                     <h1 className="team">Team</h1>
                 </div>
 
-                <h2 className="stack">Product Manager</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                          
-                            <div class="container">
-                                <h2>Akeem Badmus</h2>
-                                <p class="title">Community Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname</h2>
-                                <p class="title">Designation</p>
-                            </div>
-                        </div>
+                <div className="row__options">
+                    <h2 className="row__stack">Product Managers</h2>
+                    <div style={{ display: "flex" }}>
+                        <IoIosArrowBack className="row__icon" />
+                        <IoIosArrowForward className="row__icon" />
                     </div>
                 </div>
+                <div className="row">
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
 
-                <h2 className="stack">Product Designers</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Aslam Dhikrullahi</h2>
-                                <p class="title">Design Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Opata Ebubechukwu</h2>
-                                <p class="title">Design Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Ojieh Miracle</h2>
-                                <p class="title">Product Designer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Amaefule Ogechi</h2>
-                                <p class="title">Product Designer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname</h2>
-                                <p class="title">Designation</p>
-                            </div>
-                        </div>
-                    </div>
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
                 </div>
 
-                <h2 className="stack">Frontend Developers</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Christian Enyia</h2>
-                                <p class="title">Frontend Development Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Olaiya Heritage J</h2>
-                                <p class="title">Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Gabriel Ogbu</h2>
-                                <p class="title">Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Hafiz Salam</h2>
-                                <p class="title">Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname</h2>
-                                <p class="title">Designation</p>
-                            </div>
-                        </div>
+                <div className="row__options">
+                    <h2 className="row__stack">Product Designers</h2>
+                    <div style={{ display: "flex" }}>
+                        <IoIosArrowBack className="row__icon" />
+                        <IoIosArrowForward className="row__icon" />
                     </div>
                 </div>
+                <div className="row">
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
 
-                <h2 className="stack">Backend Developers</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Oluwafikayomi Soetan</h2>
-                                <p class="title">Backend Development Lead</p>
-                            </div>
-                        </div>
-                    </div>
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Toyin Muhammed</h2>
-                                <p class="title">Backend Developer</p>
-                            </div>
-                        </div>
-                    </div>
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname </h2>
-                                <p class="title">Backend Developer</p>
-                            </div>
-                        </div>
-                    </div>
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname</h2>
-                                <p class="title">Backend Developer</p>
-                            </div>
-                        </div>
-                    </div>
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname</h2>
-                                <p class="title">Backend Developer</p>
-                            </div>
-                        </div>
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+                </div>
+
+                <div className="row__options">
+                    <h2 className="row__stack">Frontend Developers</h2>
+                    <div style={{ display: "flex" }}>
+                        <IoIosArrowBack className="row__icon" />
+                        <IoIosArrowForward className="row__icon" />
                     </div>
+                </div>
+                <div className="row">
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+                </div>
+
+                <div className="row__options">
+                    <h2 className="row__stack">Backend Developers</h2>
+                    <div style={{ display: "flex" }}>
+                        <IoIosArrowBack className="row__icon" />
+                        <IoIosArrowForward className="row__icon" />
+                    </div>
+                </div>
+                <div className="row">
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
+
+                    <AboutpageCard
+                        name="Aslam Dhikrullahi"
+                        title="Design Lead"
+                        image="../../public/test_img1.jpg"
+                    />
                 </div>
             </div>
         </React.Fragment>
