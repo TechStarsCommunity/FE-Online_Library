@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/verification.css";
 import { useAppDispatch } from "../redux/store";
-import "../styles/signup.css";
 import Button from "../components/button";
 import { loginSuccess } from "../redux/authSlice";
 import { signUpSchema } from "../config/schema";
@@ -24,17 +23,19 @@ const OTPVerification = () => {
                         <div className="vector"></div>
                     </div>
                 </div>
-                <div className="opf">
-                    <form onSubmit={handleSubmit(onSubmit)} className="otp-right-section">
-                        <div className="">
-                            <div className="hdngs">
-                                <h2>Verification</h2>
-                                <p className="hdngs">Enter the Code sent to your email below.</p>
+                <div className="space">
+                    <form onSubmit={handleSubmit(onSubmit)} className="right-section">
+                        <div className="container">
+                            <div>
+                                <h2 className="head">Verification</h2>
+                                <p className="right-text">
+                                    Enter the Code sent to your email below.
+                                </p>
                             </div>
 
-                            <div className="input-wrapper">
-                                <h2 className="hhd">Code</h2>
-                                <div className="code-container">
+                            <div className="container">
+                                <h2 className="code-label">Code</h2>
+                                <div className="code.container">
                                     <input
                                         type="number"
                                         className="code"
@@ -84,18 +85,18 @@ const OTPVerification = () => {
                                         required
                                     />
                                 </div>
-                                <p className="hdgn">
-                                    Didn't receive a code? <button className="hff">Resend</button>
-                                </p>
                             </div>
+                            <p className="texts">
+                                Didn't receive a code? <button className="btnn">Resend</button>
+                            </p>
 
                             <Link to="/">
-                                <Button className="btn" borderVariant="8" variant="primary">
+                                <button type="submit" className="button">
                                     Continue
-                                </Button>{" "}
+                                </button>{" "}
                             </Link>
-                            <p className="hdgp">
-                                wrong email? <button className="hff">Reset</button>
+                            <p className="text">
+                                wrong email? <button className="btnn">Reset</button>
                             </p>
                         </div>
                     </form>
