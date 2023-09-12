@@ -5,6 +5,10 @@ import Footer from "../components/footer";
 import AboutpageCard from "../components/aboutpageCard";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { productManagers } from "../data/teamMembers/productManagers";
+import { teamDesigners } from "../data/teamMembers/designTeam";
+import { teamFrontend } from "../data/teamMembers/frontendTeam";
+import { teamBackend } from "../data/teamMembers/backendTeam";
 
 const About = () => {
     return (
@@ -74,17 +78,13 @@ const About = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
+                    {productManagers.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
                 </div>
 
                 <div className="row__options">
@@ -95,65 +95,13 @@ const About = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
+                    {teamDesigners.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
                 </div>
 
                 <div className="row__options">
@@ -164,35 +112,13 @@ const About = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
+                    {teamFrontend.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
                 </div>
 
                 <div className="row__options">
@@ -203,35 +129,13 @@ const About = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
-
-                    <AboutpageCard
-                        name="Aslam Dhikrullahi"
-                        title="Design Lead"
-                        image="../../public/test_img1.jpg"
-                    />
+                    {teamBackend.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
                 </div>
             </div>
         </React.Fragment>
