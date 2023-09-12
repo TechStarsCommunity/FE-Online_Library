@@ -10,6 +10,29 @@ import { teamDesigners } from "../data/teamMembers/designTeam";
 import { teamFrontend } from "../data/teamMembers/frontendTeam";
 import { teamBackend } from "../data/teamMembers/backendTeam";
 
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 7,
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 4.5,
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2,
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+    },
+};
+
 const About = () => {
     return (
         <React.Fragment>
@@ -70,14 +93,14 @@ const About = () => {
                     <h1 className="team">Team</h1>
                 </div>
 
-                <div className="row__options">
+                {/* <div className="row__options">
                     <h2 className="row__stack">Product Managers</h2>
                     <div style={{ display: "flex" }}>
                         <IoIosArrowBack className="row__icon" />
                         <IoIosArrowForward className="row__icon" />
                     </div>
-                </div>
-                <div className="row">
+                </div> */}
+                {/* <div className="row">
                     {productManagers.map((members) => (
                         <AboutpageCard
                             name={members.name}
@@ -85,16 +108,26 @@ const About = () => {
                             image={members.image}
                         />
                     ))}
-                </div>
+                </div> */}
+                <Carousel responsive={responsive}>
+                    {productManagers.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
+                </Carousel>
 
-                <div className="row__options">
+                {/* <div className="row__options">
                     <h2 className="row__stack">Product Designers</h2>
                     <div style={{ display: "flex" }}>
                         <IoIosArrowBack className="row__icon" />
                         <IoIosArrowForward className="row__icon" />
                     </div>
-                </div>
-                <div className="row">
+                </div> */}
+
+                <Carousel responsive={responsive}>
                     {teamDesigners.map((members) => (
                         <AboutpageCard
                             name={members.name}
@@ -102,16 +135,16 @@ const About = () => {
                             image={members.image}
                         />
                     ))}
-                </div>
+                </Carousel>
 
-                <div className="row__options">
+                {/* <div className="row__options">
                     <h2 className="row__stack">Frontend Developers</h2>
                     <div style={{ display: "flex" }}>
                         <IoIosArrowBack className="row__icon" />
                         <IoIosArrowForward className="row__icon" />
                     </div>
-                </div>
-                <div className="row">
+                </div> */}
+                <Carousel responsive={responsive}>
                     {teamFrontend.map((members) => (
                         <AboutpageCard
                             name={members.name}
@@ -119,16 +152,16 @@ const About = () => {
                             image={members.image}
                         />
                     ))}
-                </div>
+                </Carousel>
 
-                <div className="row__options">
+                {/* <div className="row__options">
                     <h2 className="row__stack">Backend Developers</h2>
                     <div style={{ display: "flex" }}>
                         <IoIosArrowBack className="row__icon" />
                         <IoIosArrowForward className="row__icon" />
                     </div>
-                </div>
-                <div className="row">
+                </div> */}
+                <Carousel responsive={responsive}>
                     {teamBackend.map((members) => (
                         <AboutpageCard
                             name={members.name}
@@ -136,7 +169,7 @@ const About = () => {
                             image={members.image}
                         />
                     ))}
-                </div>
+                </Carousel>
             </div>
         </React.Fragment>
     );

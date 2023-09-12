@@ -51,12 +51,12 @@ p {
     margin: 10px 0px;
 }
 
-.row {
+/* .row {
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
     white-space: nowrap;
-}
+} */
 
 .row::-webkit-scrollbar {
     display: none !important ;
