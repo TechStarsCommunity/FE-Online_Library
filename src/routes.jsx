@@ -3,6 +3,7 @@ import Loading from "./components/loading";
 import { createBrowserRouter } from "react-router-dom";
 
 const Home = lazy(() => import("./pages/home"));
+const RoadMap = lazy(() => import("./pages/roadMap"));
 const Login = lazy(() => import("./pages/login"));
 const Signup = lazy(() => import("./pages/signup"));
 const Uploads = lazy(() => import("./pages/uploads"));
@@ -60,6 +61,14 @@ const BrowserRouter = createBrowserRouter([
         element: (
             <React.Suspense fallback={<Loading />}>
                 <Profile />
+            </React.Suspense>
+        ),
+    },
+    {
+        path: "/roadmap",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <RoadMap />
             </React.Suspense>
         ),
     },
