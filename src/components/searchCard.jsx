@@ -3,7 +3,7 @@ import React from "react";
 const SearchCard = () => {
     return (
         <React.Fragment>
-            <div className="searchCard">
+            <div className="searchCard flex justify-between">
                 <div className="w-36 flex items-center justify-center myCollapse">
                     <div className="w-full ">
                         <img src={"/image_icon.png"} alt="" className="w-full none md:flex" />
@@ -31,6 +31,15 @@ const SearchCard = () => {
                         </div>
                     </div>
                 </div>
+                <div className="flex items-center justify-between w-full">
+                            <h3>97 results found in 0.33 seconds</h3>
+                            <select name="Sort By" id="" placeholder="Sort By">
+                                <option value="">Sort By</option>
+                                <option value="Latest">Latest</option>
+                                <option value="Old To New">Old To New</option>
+                                <option value="Techniclity">Techniclity</option>
+                            </select>
+                        </div>
             </div>
         </React.Fragment>
     );
