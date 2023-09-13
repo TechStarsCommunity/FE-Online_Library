@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/roadmap.css'
 import Input from '../components/input'
+import Button from '../components/button'
 
 export default function RoadMap() {
   return (
@@ -12,8 +13,9 @@ export default function RoadMap() {
             </div>
             <form>
                 <div>
-                    <label>Stack</label>
+                    <label htmlFor='stack'>Stack</label>
                     <input
+                    id='stack'
                         className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300"
                         type="text"
                         placeholder="Select you stack"
@@ -23,8 +25,9 @@ export default function RoadMap() {
                   </div>
                   
                   <div>
-                    <label>Level</label>
+                    <label htmlFor='level'>Level</label>
                     <input
+                        id='level'
                         className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300"
                         type="text"
                         placeholder="Select you stack"
@@ -33,11 +36,14 @@ export default function RoadMap() {
                     />
                 </div>
             </form>
-            <div>button</div>
+            <div className='btn-container'>
+                <Button className='btn-skip'>Skip</Button>
+                <Button variant='primary'>Continue</Button>
+            </div>
         </section>
         
         <section className='svgContainer'>
-            <div></div>
+            <div>svg</div>
         </section>
     </div>
   )
