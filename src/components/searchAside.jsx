@@ -1,6 +1,7 @@
 import React from "react";
 
 const topResult = [
+
     { id: 1, img: "/editor-image.svg", name: "Editor's Pick" },
     { id: 2, img: "/editor-image.svg", name: "Frontend Development" },
     { id: 3, img: "/editor-image.svg", name: "Product Design" },
@@ -36,6 +37,7 @@ const topContent = [
     { id: 15, img: "/editor-image.svg", name: "Sports" },
 ];
 
+
 const SearchAside = () => {
     return (
         <React.Fragment>
@@ -64,6 +66,7 @@ const SearchAside = () => {
                         </div>
                     ))}
                 </div>
+
             </div>
         </React.Fragment>
     );

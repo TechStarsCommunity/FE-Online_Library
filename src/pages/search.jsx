@@ -12,6 +12,7 @@ const Search = () => {
                 <Header />
                 <section className="flex bg-background">
                     <div className="searchCardWidth">
+
                         <div className="w-full  grid gap-3">
                             <SearchCard />
                         </div>
@@ -22,6 +23,7 @@ const Search = () => {
                         </div>
                     </div>
                 </section>
+                <Footer style={{ background: "white"}}/>
             </main>
             <div className="footerColor">
                 <Footer />
