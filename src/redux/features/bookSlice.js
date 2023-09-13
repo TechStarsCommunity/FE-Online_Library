@@ -1,15 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 import allBooks from "./dummyBooks";
-const initialState = allBooks()
+const initialState = allBooks();
 
 const bookSlice = createSlice({
     name: "book",
     initialState,
     reducers: {
         getAllBooksHandler: (state) => {
-            state.allBooks = initialState
+            state.allBooks = initialState;
             // getAllbook logic
-            
         },
         getBookByNameHandler: () => {
             // search book by name logic
@@ -23,8 +22,8 @@ const bookSlice = createSlice({
         },
         deleteBookHandler: (state, action) => {
             // delete books logic
-            const allBooks = state.allBooks.filter(books => books !== action.payload.id)
-            state.allBooks = allBooks
+            const allBooks = state.allBooks.filter((books) => books !== action.payload.id);
+            state.allBooks = allBooks;
         },
     },
 });

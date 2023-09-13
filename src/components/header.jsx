@@ -14,8 +14,8 @@ const Header = () => {
     return (
         <React.Fragment>
             <header>
-            <div className="header-logo-parent">
-                <img src={"../assets/booksLab_logo"} alt="" className="header-logo" />
+                <div className="header-logo-parent">
+                    <img src={"../assets/booksLab_logo"} alt="" className="header-logo" />
                 </div>
                 <div className="header-links-parent">
                     <ul>
@@ -26,7 +26,7 @@ const Header = () => {
                 </div>
                 <button className="">Get Started</button>
                 <button className="">Login</button>
-                </header>
+            </header>
             <header className="flex flex-row items-center justify-between gap-2.5 px-8 md:px-11 py-4 bg-white w-full z-[999]">
                 <div>
                     <img src={logo} alt="" className="max-w-[100%]  h-auto w-40" />

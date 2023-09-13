@@ -12,7 +12,7 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import authReducer from "./features/authSlice";
-import bookReducer from './features/bookSlice'
+import bookReducer from "./features/bookSlice";
 
 const persistConfig = {
     key: "root",
@@ -21,10 +21,10 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
     auth: authReducer,
-    books: bookReducer
+    books: bookReducer,
 });
 
-const persistedReducer = persistReducer(persistConfig, rootReducer,);
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 const store = configureStore({
     reducer: persistedReducer,
