@@ -25,7 +25,7 @@ const Search = () => {
                         </div>
                     </div>
                 </section>
-                <Footer style={{ background: "white"}}/>
+                <Footer style={{ background: "white" }} />
             </main>
         </React.Fragment>
     );
