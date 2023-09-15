@@ -1,0 +1,73 @@
+.roadmap-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.125rem 12.5rem;
+    height: 100vh;
+    /* background-color: pink; */
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-detail h1 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: .2rem;
+}
+
+.container-detail p {
+    color: #5B5B5B;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #000;
+    font-family: Inter;
+    margin-bottom: .2rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+input {
+    /* width: 42.75rem; */
+    height: 3.3125rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 1px solid var(--gradient, #10B2F3);
+    background: #FFF;
+    padding-left: 2rem;
+    /* animation: all .3s ease-in-out; */
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.btn-skip {
+    background: #D9D9D9;
+}
