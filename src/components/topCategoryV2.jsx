@@ -35,12 +35,16 @@ const TopCategoryV2 = () => {
                             <Button
                                 children={"Learn More"}
                                 variant="primary"
-                                style={{ width: "250px", borderRadius: "50%", fontSize:"12px" }}
+                                style={{ width: "250px", borderRadius: "50%", fontSize: "12px" }}
                             />
                         </div>
                     </div>
                     <div className="hidden md:flex">
-                        <img src={currentCategory.image} alt="" className="w-full max-h-[400px] rounded-xl" />
+                        <img
+                            src={currentCategory.image}
+                            alt=""
+                            className="w-full max-h-[400px] rounded-xl"
+                        />
                     </div>
                 </div>
                 <div className="py-[20px] px-[40px] w-full flex items-center justify-between absolute bottom-[20px] left-0 ">
