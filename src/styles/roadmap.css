@@ -3,13 +3,15 @@
     justify-content: space-between;
     padding: 3.125rem 12.5rem;
     height: 100vh;
-    /* background-color: pink; */
 }
 
 .formContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
+    padding-bottom: 100px;
+    padding-top: 10px;
 }
 
 .container-detail h1 {
@@ -18,13 +20,13 @@
     font-size: 3rem;
     font-weight: 600;
     line-height: normal;
-    margin-bottom: .2rem;
+    margin-bottom: 10px;
 }
 
 .container-detail p {
-    color: #5B5B5B;
+    color: #5b5b5b;
     font-family: Montserrat;
-    font-size: 1.5rem;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -33,7 +35,7 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 form div {
@@ -43,8 +45,8 @@ form div {
 
 label {
     color: #000;
-    font-family: Inter;
-    margin-bottom: .2rem;
+    font-family: Inter, Montserrat;
+    margin-bottom: 0.8rem;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
@@ -52,22 +54,54 @@ label {
 }
 
 input {
-    /* width: 42.75rem; */
-    height: 3.3125rem;
+    height: 3.7rem;
+    width: 90%;
     flex-shrink: 0;
     border-radius: 0.5rem;
-    border: 1px solid var(--gradient, #10B2F3);
-    background: #FFF;
+    border: 1px solid var(--gradient, #10b2f3);
+    background: #fff;
     padding-left: 2rem;
     /* animation: all .3s ease-in-out; */
+}
+
+input::placeholder {
+    font: Montserrat;
+    font-size: 17px;
 }
 
 .btn-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
+    width: 90%;
 }
 
 .btn-skip {
-    background: #D9D9D9;
+    background-color: #d9d9d9;
+    color: red;
+}
+
+.svgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.svgContainer h3 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #5b5b5b;
+}
+
+.svgContainer img {
+    object-fit: contain;
+    width: 30rem;
+    height: 585px;
+    margin-left: 170px;
+    padding-top: 70px;
 }
