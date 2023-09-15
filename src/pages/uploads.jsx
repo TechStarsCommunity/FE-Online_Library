@@ -9,12 +9,12 @@ const Uploads = () => {
     return (
         <React.Fragment>
             <div className="grid grid-cols-5 gap-4 w-full overflow-x-none">
-                <div className="col-span-2 bg-[#DFF6FF] overflow-y-auto h-screen px-4 py-4 fixed ">
-                    <LeftSidebar active={active} setActive={setActive} className="" />
-                </div>
-                <div className="col-span-3 ml-[400px]">
-                    {activeTabInfo && <activeTabInfo.component />}
-                </div>
+              <div className="col-span-2 bg-[#DFF6FF] h-screen px-4 py-4 fixed ">
+                <LeftSidebar active={active} setActive={setActive} className=""/>
+              </div>
+              <div className="col-span-3 ml-[400px]">
+                  {activeTabInfo && <activeTabInfo.component/>}
+              </div>
             </div>
         </React.Fragment>
     );

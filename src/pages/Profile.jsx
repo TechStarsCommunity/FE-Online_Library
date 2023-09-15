@@ -44,14 +44,20 @@ const Profile = () => {
                                     </div>
                                     <div className="p-4">
                                         <h6 className="text-cyan-400 text-lg pb-4">Location</h6>
-                                        <h6 className="font-medium text-lg">Victoria Island Ibadan</h6>
+                                        <h6 className="font-medium text-lg">
+                                            Victoria Island Ibadan
+                                        </h6>
                                     </div>
                                 </div>
                                 <div className="p-4">
                                     <h6 className="text-cyan-400 text-lg pb-4">Password</h6>
-                                    <h6 className="font-medium text-lg">.................................</h6>
+                                    <h6 className="font-medium text-lg">
+                                        .................................
+                                    </h6>
                                 </div>
-                            <button className="bg-sky-400 p-2 text-l font-medium rounded">Edit Profile</button>
+                                <button className="bg-sky-400 p-2 text-l font-medium rounded">
+                                    Edit Profile
+                                </button>
                             </div>
                         </div>
                         <div className="flex border-purple-900 border-2 h-1/2">

@@ -3,6 +3,7 @@ import "../styles/login.css";
 import { loginSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
 import loginLogo from "/booksLab_logo.png";
+import Button from "../components/button";
 
 const Login = () => {
     const { errors, register, handleSubmit } = useSubmit(loginSchema);
@@ -63,12 +64,14 @@ const Login = () => {
                                     </p>
                                 )}
                             </div>
-                            <button
+                            <Button
+                                borderVariant="noRadius"
+                                variant="primary"
                                 type="submit"
-                                className="bg-gradient-to-r from-cyan-600 to-teal-400  text-white"
+                                className="w-full mt-14"
                             >
                                 Login
-                            </button>
+                            </Button>
                         </form>
                         <h5 className="text-lg md:text-xl font-medium">
                             Don{`'`}t have an Account?{" "}
@@ -76,9 +79,9 @@ const Login = () => {
                                 Sign Up
                             </a>
                         </h5>
-                        <button className="bg-gradient-to-r from-cyan-600 to-teal-400  text-white">
+                        <Button borderVariant="noRadius" variant="primary" className="w-full mt-14">
                             Login as Admin
-                        </button>
+                        </Button>
                     </div>
                 </div>
 
