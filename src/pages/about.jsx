@@ -3,7 +3,6 @@ import "../styles/about.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-
 const About = () => {
     return (
         <React.Fragment>
@@ -25,19 +24,19 @@ const About = () => {
                 <p className="lor">
                     Apart from the access to Books from various aspect of life, one of the unique
                     features of BooksLab is the roadmap feature. Our Roadmap is designed to guide
-                    users from being a beginner to advanced in their chosen tech field. Whether you're 
-                    interested in web development, data science, cybersecurity, or any other tech field,
-                     our Roadmap will help yopu develop a clear path to success. Our Roadmap is regularly updated
-                    with the latest trends and technologies, ensuring that users have access to the
-                    most up-to-date information.
+                    users from being a beginner to advanced in their chosen tech field. Whether
+                    you're interested in web development, data science, cybersecurity, or any other
+                    tech field, our Roadmap will help yopu develop a clear path to success. Our
+                    Roadmap is regularly updated with the latest trends and technologies, ensuring
+                    that users have access to the most up-to-date information.
                 </p>
                 <p className="lor">
                     At BooksLab, we believe that knowledge should be accessible to everyone,
                     regardless of their location or financial situation. This is why our platform is
                     completely free to use, and all of our resources are user-generated. Our
                     community of experts maintain the quality of our resources by verifying the
-                    content that is uploaded to the platform. This ensures that our users have access
-                    to only the best and most relevant resources.
+                    content that is uploaded to the platform. This ensures that our users have
+                    access to only the best and most relevant resources.
                 </p>
                 <p className="lor">
                     BooksLab is proud to be a part of the TechStars community. TechStars is a global
@@ -68,7 +67,6 @@ const About = () => {
                 <div class="row">
                     <div class="column">
                         <div class="card">
-                          
                             <div class="container">
                                 <h2>Akeem Badmus</h2>
                                 <p class="title">Community Lead</p>

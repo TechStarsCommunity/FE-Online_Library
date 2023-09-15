@@ -11,7 +11,6 @@ const About = lazy(() => import("./pages/about"));
 const Search = lazy(() => import("./pages/search"));
 const BookCategories = lazy(() => import("./pages/bookCategories"));
 const OTPVerification = lazy(() => import("./pages/otpverification"));
-
 const BrowserRouter = createBrowserRouter([
     {
         path: "/",

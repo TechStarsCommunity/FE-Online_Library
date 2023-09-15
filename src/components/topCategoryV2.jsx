@@ -22,8 +22,8 @@ const TopCategoryV2 = () => {
 
     return (
         <div className="h-[90vh] md:h-[100vh] w-full relative ">
-            <img src={currentCategory.image} alt="" className="w-full h-full object-cover" />
-            <div className="absolute top-0 left-0 w-full md:h-[100vh] h-[90vh] myBg p-[30px] text-white flex flex-col gap-[30px]">
+            <img src={currentCategory.image} alt="" className="w-full h-full object-cover  " />
+            <div className="absolute top-0 left-0 w-full md:h-[100vh] h-[90vh] myBg p-[30px] text-white flex flex-col gap-[30px] bg-[#000000a1]">
                 <h2 className="text-[35px] md:text-[50px] font-bold">Top Categories</h2>
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-[40px] items-center justify-center">
                     <div className="flex flex-col gap-[30px]">
@@ -31,14 +31,16 @@ const TopCategoryV2 = () => {
                             <h4 className="text-[25px] md:text-[35px]">{currentCategory.title}</h4>
                             <p className="text-[18px]">{currentCategory.description}</p>
                         </div>
-                        <Button
-                            children={"Learn More"}
-                            variant="primary"
-                            style={{ width: "250px" }}
-                        />
+                        <div className=" md:w-1/2 w-full  h-1/4 ">
+                            <Button
+                                children={"Learn More"}
+                                variant="primary"
+                                style={{ width: "250px", borderRadius: "50%", fontSize:"12px" }}
+                            />
+                        </div>
                     </div>
                     <div className="hidden md:flex">
-                        <img src={currentCategory.image} alt="" className="w-full max-h-[400px]" />
+                        <img src={currentCategory.image} alt="" className="w-full max-h-[400px] rounded-xl" />
                     </div>
                 </div>
                 <div className="py-[20px] px-[40px] w-full flex items-center justify-between absolute bottom-[20px] left-0 ">
@@ -47,7 +49,7 @@ const TopCategoryV2 = () => {
                         style={{ cursor: currentIndex === 0 ? "not-allowed" : "pointer" }}
                         onClick={goToPrevious}
                     />
-                    <div className=" w-[50%] rounded-lg flex items-center">
+                    <div className=" w-[50%] rounded-lg flex gap-[2px] items-center">
                         {categories.map((_, index) => (
                             <div
                                 key={index}
