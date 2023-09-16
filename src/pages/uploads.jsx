@@ -16,6 +16,7 @@ const Uploads = () => {
                     {activeTabInfo && <activeTabInfo.component />}
                 </div>
             </div>
+           
         </React.Fragment>
     );
 };

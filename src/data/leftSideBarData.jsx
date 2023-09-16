@@ -7,6 +7,7 @@ import { SiGumroad } from "react-icons/si";
 import UploadContents from "../components/uploadContents";
 import RoadMap from "./../components/roadmap";
 import ContactComponent from "../components/contact";
+import YourLibrary from "../components/yourLibrary";
 import React from "react";
 
 export const Tabs = [
@@ -26,7 +27,7 @@ export const Tabs = [
         id: 3,
         name: "Your Library",
         Icon: <LiaBookSolid />,
-        component: UploadContents,
+        component: YourLibrary,
     },
     {
         id: 4,
