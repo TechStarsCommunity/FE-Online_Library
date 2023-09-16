@@ -44,7 +44,7 @@ export default function RoadMap() {
 
             <section className="svgContainer">
                 <h3>Switch to Book Categories</h3>
-                <img src="../../Roadmap.png" alt="" />
+                <img src="/Roadmap.png" alt="" />
             </section>
         </div>
     );
