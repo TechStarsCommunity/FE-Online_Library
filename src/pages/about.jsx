@@ -2,6 +2,36 @@ import React from "react";
 import "../styles/about.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import { productManagers } from "../data/teamMembers/productManagers";
+import { teamDesigners } from "../data/teamMembers/designTeam";
+import { teamFrontend } from "../data/teamMembers/frontendTeam";
+import { teamBackend } from "../data/teamMembers/backendTeam";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import AboutpageCard from "../components/aboutpageCard";
+
+const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 7,
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 4.5,
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2,
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+    },
+};
 
 const About = () => {
     return (
@@ -63,170 +93,45 @@ const About = () => {
                     <h1 className="team">Team</h1>
                 </div>
 
-                <h2 className="stack">Product Manager</h2>
-                <div className="row">
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Akeem Badmus</h2>
-                                <p className="title">Community Lead</p>
-                            </div>
-                        </div>
-                    </div>
+                <Carousel responsive={responsive}>
+                    {productManagers.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
+                </Carousel>
 
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Firstname Lastname</h2>
-                                <p className="title">Designation</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Carousel responsive={responsive}>
+                    {teamDesigners.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
+                </Carousel>
 
-                <h2 className="stack">Product Designers</h2>
-                <div className="row">
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Aslam Dhikrullahi</h2>
-                                <p className="title">Design Lead</p>
-                            </div>
-                        </div>
-                    </div>
+                <Carousel responsive={responsive}>
+                    {teamFrontend.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
+                </Carousel>
 
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Opata Ebubechukwu</h2>
-                                <p className="title">Design Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Ojieh Miracle</h2>
-                                <p className="title">Product Designer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Amaefule Ogechi</h2>
-                                <p className="title">Product Designer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Firstname Lastname</h2>
-                                <p className="title">Designation</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 className="stack">Frontend Developers</h2>
-                <div className="row">
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Christian Enyia</h2>
-                                <p className="title">Frontend Development Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Olaiya Heritage J</h2>
-                                <p className="title">Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Gabriel Ogbu</h2>
-                                <p className="title">Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Hafiz Salam</h2>
-                                <p className="title">Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Firstname Lastname</h2>
-                                <p className="title">Designation</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 className="stack">Backend Developers</h2>
-                <div className="row">
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Oluwafikayomi Soetan</h2>
-                                <p className="title">Backend Development Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Toyin Muhammed</h2>
-                                <p className="title">Backend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Firstname Lastname </h2>
-                                <p className="title">Backend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Firstname Lastname</h2>
-                                <p className="title">Backend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="column">
-                        <div className="card">
-                            <div className="container">
-                                <h2>Firstname Lastname</h2>
-                                <p className="title">Backend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Carousel responsive={responsive}>
+                    {teamBackend.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
+                </Carousel>
             </div>
         </React.Fragment>
     );
