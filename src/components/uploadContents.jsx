@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/uploadContents.css";
 import Navbar from "./navbar";
 
-
 const UploadContents = () => {
     return (
         <React.Fragment>
@@ -92,7 +91,6 @@ const UploadContents = () => {
                         </div>
                     </div>
                 </div>
-                
             </div>
         </React.Fragment>
     );
