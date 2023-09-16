@@ -64,165 +64,165 @@ const About = () => {
                 </div>
 
                 <h2 className="stack">Product Manager</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                <div className="row">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Akeem Badmus</h2>
-                                <p class="title">Community Lead</p>
+                                <p className="title">Community Lead</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Firstname Lastname</h2>
-                                <p class="title">Designation</p>
+                                <p className="title">Designation</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <h2 className="stack">Product Designers</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                <div className="row">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Aslam Dhikrullahi</h2>
-                                <p class="title">Design Lead</p>
+                                <p className="title">Design Lead</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Opata Ebubechukwu</h2>
-                                <p class="title">Design Lead</p>
+                                <p className="title">Design Lead</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Ojieh Miracle</h2>
-                                <p class="title">Product Designer</p>
+                                <p className="title">Product Designer</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Amaefule Ogechi</h2>
-                                <p class="title">Product Designer</p>
+                                <p className="title">Product Designer</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Firstname Lastname</h2>
-                                <p class="title">Designation</p>
+                                <p className="title">Designation</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <h2 className="stack">Frontend Developers</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                <div className="row">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Christian Enyia</h2>
-                                <p class="title">Frontend Development Lead</p>
+                                <p className="title">Frontend Development Lead</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Olaiya Heritage J</h2>
-                                <p class="title">Frontend Developer</p>
+                                <p className="title">Frontend Developer</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Gabriel Ogbu</h2>
-                                <p class="title">Frontend Developer</p>
+                                <p className="title">Frontend Developer</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Hafiz Salam</h2>
-                                <p class="title">Frontend Developer</p>
+                                <p className="title">Frontend Developer</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Firstname Lastname</h2>
-                                <p class="title">Designation</p>
+                                <p className="title">Designation</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <h2 className="stack">Backend Developers</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                <div className="row">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Oluwafikayomi Soetan</h2>
-                                <p class="title">Backend Development Lead</p>
+                                <p className="title">Backend Development Lead</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Toyin Muhammed</h2>
-                                <p class="title">Backend Developer</p>
+                                <p className="title">Backend Developer</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Firstname Lastname </h2>
-                                <p class="title">Backend Developer</p>
+                                <p className="title">Backend Developer</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Firstname Lastname</h2>
-                                <p class="title">Backend Developer</p>
+                                <p className="title">Backend Developer</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
+                    <div className="column">
+                        <div className="card">
+                            <div className="container">
                                 <h2>Firstname Lastname</h2>
-                                <p class="title">Backend Developer</p>
+                                <p className="title">Backend Developer</p>
                             </div>
                         </div>
                     </div>

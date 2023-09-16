@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/searchCard.css";
 import Button from "../components/button";
-import TechCareer from "../techCareer.json";
+import { TechCareer } from "../data/search";
+
 const SearchCard = () => {
     return (
         <React.Fragment>
