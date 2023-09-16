@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/login.css";
-import { loginSchema } from "../config/schema";
+import { LoginSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
 import loginLogo from "/booksLab_logo.png";
 import Button from "../components/button";
 
 const Login = () => {
-    const { errors, register, handleSubmit } = useSubmit(loginSchema);
+    const { errors, register, handleSubmit } = useSubmit(LoginSchema);
 
     const onLogin = (data) => {
         console.log(data);

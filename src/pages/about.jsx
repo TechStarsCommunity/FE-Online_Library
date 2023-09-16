@@ -2,7 +2,36 @@ import React from "react";
 import "../styles/about.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import { productManagers } from "../data/teamMembers/productManagers";
+import { teamDesigners } from "../data/teamMembers/designTeam";
+import { teamFrontend } from "../data/teamMembers/frontendTeam";
+import { teamBackend } from "../data/teamMembers/backendTeam";
 
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import AboutpageCard from "../components/aboutpageCard";
+
+const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 7,
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 4.5,
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2,
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+    },
+};
 
 const About = () => {
     return (
@@ -25,19 +54,19 @@ const About = () => {
                 <p className="lor">
                     Apart from the access to Books from various aspect of life, one of the unique
                     features of BooksLab is the roadmap feature. Our Roadmap is designed to guide
-                    users from being a beginner to advanced in their chosen tech field. Whether you're 
-                    interested in web development, data science, cybersecurity, or any other tech field,
-                     our Roadmap will help yopu develop a clear path to success. Our Roadmap is regularly updated
-                    with the latest trends and technologies, ensuring that users have access to the
-                    most up-to-date information.
+                    users from being a beginner to advanced in their chosen tech field. Whether
+                    you're interested in web development, data science, cybersecurity, or any other
+                    tech field, our Roadmap will help yopu develop a clear path to success. Our
+                    Roadmap is regularly updated with the latest trends and technologies, ensuring
+                    that users have access to the most up-to-date information.
                 </p>
                 <p className="lor">
                     At BooksLab, we believe that knowledge should be accessible to everyone,
                     regardless of their location or financial situation. This is why our platform is
                     completely free to use, and all of our resources are user-generated. Our
                     community of experts maintain the quality of our resources by verifying the
-                    content that is uploaded to the platform. This ensures that our users have access
-                    to only the best and most relevant resources.
+                    content that is uploaded to the platform. This ensures that our users have
+                    access to only the best and most relevant resources.
                 </p>
                 <p className="lor">
                     BooksLab is proud to be a part of the TechStars community. TechStars is a global
@@ -64,171 +93,45 @@ const About = () => {
                     <h1 className="team">Team</h1>
                 </div>
 
-                <h2 className="stack">Product Manager</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                          
-                            <div class="container">
-                                <h2>Akeem Badmus</h2>
-                                <p class="title">Community Lead</p>
-                            </div>
-                        </div>
-                    </div>
+                <Carousel responsive={responsive}>
+                    {productManagers.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
+                </Carousel>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname</h2>
-                                <p class="title">Designation</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Carousel responsive={responsive}>
+                    {teamDesigners.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
+                </Carousel>
 
-                <h2 className="stack">Product Designers</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Aslam Dhikrullahi</h2>
-                                <p class="title">Design Lead</p>
-                            </div>
-                        </div>
-                    </div>
+                <Carousel responsive={responsive}>
+                    {teamFrontend.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
+                </Carousel>
 
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Opata Ebubechukwu</h2>
-                                <p class="title">Design Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Ojieh Miracle</h2>
-                                <p class="title">Product Designer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Amaefule Ogechi</h2>
-                                <p class="title">Product Designer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname</h2>
-                                <p class="title">Designation</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 className="stack">Frontend Developers</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Christian Enyia</h2>
-                                <p class="title">Frontend Development Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Olaiya Heritage J</h2>
-                                <p class="title">Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Gabriel Ogbu</h2>
-                                <p class="title">Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Hafiz Salam</h2>
-                                <p class="title">Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname</h2>
-                                <p class="title">Designation</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 className="stack">Backend Developers</h2>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Oluwafikayomi Soetan</h2>
-                                <p class="title">Backend Development Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Toyin Muhammed</h2>
-                                <p class="title">Backend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname </h2>
-                                <p class="title">Backend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname</h2>
-                                <p class="title">Backend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <div class="container">
-                                <h2>Firstname Lastname</h2>
-                                <p class="title">Backend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Carousel responsive={responsive}>
+                    {teamBackend.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
+                </Carousel>
             </div>
         </React.Fragment>
     );

@@ -1,6 +1,7 @@
 import React, { lazy } from "react";
 import Loading from "./components/loading";
 import { createBrowserRouter } from "react-router-dom";
+import RoadMap from "./pages/roadMap";
 
 const Home = lazy(() => import("./pages/home"));
 const Login = lazy(() => import("./pages/login"));
@@ -43,6 +44,14 @@ const BrowserRouter = createBrowserRouter([
         element: (
             <React.Suspense fallback={<Loading />}>
                 <Uploads />
+            </React.Suspense>
+        ),
+    },
+    {
+        path: "/road-map",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <RoadMap />
             </React.Suspense>
         ),
     },

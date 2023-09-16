@@ -22,6 +22,7 @@ const Search = () => {
                         </div>
                     </div>
                 </section>
+                <Footer style={{ background: "white" }} />
             </main>
             <div className="footerColor">
                 <Footer />
