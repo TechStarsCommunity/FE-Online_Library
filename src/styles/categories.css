@@ -48,3 +48,14 @@
         font-size: 20px;
     }
 }
+
+/* new */
+.myBg {
+    background: #000c;
+}
+
+/* .myBg2 {
+    background: var(--gradient,
+            linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+            linear-gradient(135deg, #10b2f3 0%, #35eab9 100%));
+} */
