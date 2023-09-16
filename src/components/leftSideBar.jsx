@@ -13,7 +13,6 @@ const LeftSidebar = ({ active, setActive }) => {
     return (
         <React.Fragment>
             <div className="relative bg-black h-full">
-
                 <h1 className="mt-[50px] mb-[50px] mx-auto w-[60%]">
                     <img src={booksLabLogo} alt="Logo" />
                 </h1>
@@ -30,7 +29,6 @@ const LeftSidebar = ({ active, setActive }) => {
                                   active === id ? "button-active-style" : ""
                               }`}
                             >
-
                                 <span className="me-4 text-[24px]">{icon}</span>
                                 <button>{name}</button>
                                 {/* <Button className='text-black'>{name}</Button> */}

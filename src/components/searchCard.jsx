@@ -8,7 +8,6 @@ const SearchCard = () => {
             <div className="flex items-center justify-between">
                 <div className="search-container">
                     <input type="text" placeholder="Search for a book, category or author" />
-
                 </div>
                 <div className="btn-search">
                     <Button className="btn-search">search</Button>{" "}

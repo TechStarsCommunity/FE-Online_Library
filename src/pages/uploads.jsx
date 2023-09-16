@@ -15,7 +15,6 @@ const Uploads = () => {
                 <div className="col-span-3 ml-[400px]">
                     {activeTabInfo && <activeTabInfo.component />}
                 </div>
-
             </div>
         </React.Fragment>
     );
