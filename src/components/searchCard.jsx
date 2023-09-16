@@ -1,27 +1,27 @@
 import React from "react";
 import "../styles/searchCard.css";
 import Button from "../components/button";
-import TechCareer from "../techCareer.json";
+import { TechCareer } from "../data/search";
+
 const SearchCard = () => {
     return (
         <React.Fragment>
             <div className="flex items-center justify-between">
                 <div className="search-container">
                     <input type="text" placeholder="Search for a book, category or author" />
-
                 </div>
                 <div className="btn-search">
                     <Button className="btn-search">search</Button>{" "}
                 </div>
                 <div className="flex items-center justify-between w-full">
-                            <h3>97 results found in 0.33 seconds</h3>
-                            <select name="Sort By" id="" placeholder="Sort By">
-                                <option value="">Sort By</option>
-                                <option value="Latest">Latest</option>
-                                <option value="Old To New">Old To New</option>
-                                <option value="Techniclity">Techniclity</option>
-                            </select>
-                        </div>
+                    <h3>97 results found in 0.33 seconds</h3>
+                    <select name="Sort By" id="" placeholder="Sort By">
+                        <option value="">Sort By</option>
+                        <option value="Latest">Latest</option>
+                        <option value="Old To New">Old To New</option>
+                        <option value="Techniclity">Techniclity</option>
+                    </select>
+                </div>
             </div>
             <div className="flex items-center justify-between resultFound">
                 <h3>97 results found in 0.33 seconds</h3>
