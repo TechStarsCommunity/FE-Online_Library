@@ -1,6 +1,7 @@
 import React from "react";
 
 const topResult = [
+
     { id: 1, img: "/editor-image.svg", name: "Editor's Pick" },
     { id: 2, img: "/editor-image.svg", name: "Frontend Development" },
     { id: 3, img: "/editor-image.svg", name: "Product Design" },
@@ -36,10 +37,11 @@ const topContent = [
     { id: 15, img: "/editor-image.svg", name: "Sports" },
 ];
 
+
 const SearchAside = () => {
     return (
         <React.Fragment>
-            <div className="flex gap-8 flex-row items-center text-[.9rem] font-normal mr-[1.5rem] mt-[5rem]">
+            <div className="flex gap-8 flex-row items-center text-[.9rem] font-normal mr-[1.5rem] mt-[6.5rem]">
                 <div className="flex flex-col gap-2 ml-8 w-[40%]">
                     {topResult.map((item) => (
                         <div className="flex gap-6" key={item.id}>
