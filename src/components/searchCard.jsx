@@ -32,14 +32,14 @@ const SearchCard = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-between w-full">
-                            <h3>97 results found in 0.33 seconds</h3>
-                            <select name="Sort By" id="" placeholder="Sort By">
-                                <option value="">Sort By</option>
-                                <option value="Latest">Latest</option>
-                                <option value="Old To New">Old To New</option>
-                                <option value="Techniclity">Techniclity</option>
-                            </select>
-                        </div>
+                    <h3>97 results found in 0.33 seconds</h3>
+                    <select name="Sort By" id="" placeholder="Sort By">
+                        <option value="">Sort By</option>
+                        <option value="Latest">Latest</option>
+                        <option value="Old To New">Old To New</option>
+                        <option value="Techniclity">Techniclity</option>
+                    </select>
+                </div>
             </div>
         </React.Fragment>
     );
