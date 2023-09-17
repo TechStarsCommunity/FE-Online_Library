@@ -27,8 +27,8 @@ const TopCategoryV2 = () => {
     };
 
     return (
-        <div className="h-auto w-full relative ">
-            <img src={currentCategory.image} className="w-full h-full object-cover  " />
+        <div className="h-[90vh] md:h-[100vh] w-full relative ">
+            <img src={currentCategory.image} alt="" className="w-full h-full object-cover  " />
             <div className="absolute top-0 left-0 w-full md:h-[100vh] h-[90vh] myBg p-[30px] text-white flex flex-col gap-[30px] bg-[#000000a1]">
                 <h2 className="text-[35px] md:text-[50px] font-bold">Top Categories</h2>
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-[40px] items-center justify-center">
@@ -41,7 +41,7 @@ const TopCategoryV2 = () => {
                             <Button
                                 children={"Learn More"}
                                 variant="primary"
-                                style={{ width: "250px", borderRadius: "50%", fontSize: "12px" }}
+                                style={{ width: "150px", borderRadius: "20px", fontSize: "14px", height:"50px" }}
                             />
                         </div>
                     </div>
@@ -53,7 +53,7 @@ const TopCategoryV2 = () => {
                         />
                     </div>
                 </div>
-                <div className="py-[20px] px-[40px] w-full flex items-center justify-between  bottom-[20px] left-0 ">
+                <div className="py-[20px] px-[40px] w-full flex items-center justify-between absolute bottom-[20px] left-0 ">
                     <BsArrowLeftCircleFill
                         size={30}
                         style={{ cursor: currentIndex === 0 ? "not-allowed" : "pointer" }}
