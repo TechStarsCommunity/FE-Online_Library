@@ -1,8 +1,14 @@
 import React, { useState } from "react";
-import tech from "/tech.svg";
 import Button from "./button";
 import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from "react-icons/bs";
 import { categories } from "../data/category";
+
+// a separate Dot component for the dots
+const Dot = ({ active }) => (
+    <div
+        className={`w-[15px] h-[15px] rounded-full ${active ? "bg-[#10B2F3]" : "bg-[#ffffff]"}`}
+    ></div>
+);
 
 const TopCategoryV2 = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -53,17 +59,12 @@ const TopCategoryV2 = () => {
                         style={{ cursor: currentIndex === 0 ? "not-allowed" : "pointer" }}
                         onClick={goToPrevious}
                     />
-                    <div className=" w-[50%] rounded-lg flex gap-[2px] items-center">
+
+                    <div className="w-[50%] flex gap-[5px] justify-center">
                         {categories.map((_, index) => (
-                            <div
-                                key={index}
-                                className={`flex-1 h-[7px] bg-[#fff] rounded-lg ${
-                                    index < currentIndex + 1 ? "bg-[#35eab9]" : ""
-                                }`}
-                            ></div>
+                            <Dot key={index} active={index === currentIndex} />
                         ))}
                     </div>
-
                     <BsArrowRightCircleFill
                         size={30}
                         style={{

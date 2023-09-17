@@ -8,8 +8,7 @@ export const categories = [
     {
         image: "/nutrition-img.png",
         title: "Nutrition",
-        description:
-            `This is the science of how food and its components
+        description: `This is the science of how food and its components
             impact our body's growth, maintenance, and overall 
            health. There are numerous books available on the 
            topic of nutrition, ranging from general guides to 
@@ -24,8 +23,7 @@ export const categories = [
     {
         image: "/health.png",
         title: "Health",
-        description:
-            `This is a state of complete physical, mental, 
+        description: `This is a state of complete physical, mental, 
             and social well-being, and not merely the 
             absence of disease or infirmity. It 
             encompasses a wide range of factors that 
@@ -41,8 +39,7 @@ export const categories = [
     {
         image: "/business.png",
         title: "Business",
-        description:
-            `This encompasses a wide range of topics, including entrepreneurship, management, marketing, finance, operations, and more.  Business books cover a wide range of topics related to management, leadership, 
+        description: `This encompasses a wide range of topics, including entrepreneurship, management, marketing, finance, operations, and more.  Business books cover a wide range of topics related to management, leadership, 
             entrepreneurship, marketing, finance, 
             and more.`,
     },
