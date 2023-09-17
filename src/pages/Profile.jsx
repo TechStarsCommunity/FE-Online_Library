@@ -10,7 +10,7 @@ const Profile = () => {
         <>
             <div className="flex justify-center h-full  w-screen">
                 <div className="hidden sm:block">
-                  <LeftSidebar />
+                    <LeftSidebar />
                 </div>
                 <div className="flex justify-center m-10 ">
                     <div className="flex flex-col gap-5 justify-between">
@@ -29,11 +29,15 @@ const Profile = () => {
                                 <div className="flex gap-12">
                                     <div className="flex flex-col">
                                         <p className="text-sky-500 text-lg font-medium">Name</p>
-                                        <p className="md:text-xl text-base font-medium py-3">Akeem</p>
+                                        <p className="md:text-xl text-base font-medium py-3">
+                                            Akeem
+                                        </p>
                                     </div>
                                     <div className="flex flex-col">
                                         <p className="text-sky-500 text-lg font-medium">Location</p>
-                                        <p className="md:text-xl text-base font-medium py-3">@akeem_123star</p>
+                                        <p className="md:text-xl text-base font-medium py-3">
+                                            @akeem_123star
+                                        </p>
                                     </div>
                                 </div>
                                 <div>
@@ -49,7 +53,9 @@ const Profile = () => {
                                         <p className="text-sky-500 text-lg font-medium">
                                             Phone number{" "}
                                         </p>
-                                        <p className="md:text-xl text-base font-medium py-3">+234 8020653695</p>
+                                        <p className="md:text-xl text-base font-medium py-3">
+                                            +234 8020653695
+                                        </p>
                                     </div>
                                     <div className="flex flex-col">
                                         <p className="text-sky-500 text-lg font-medium">Location</p>
@@ -83,7 +89,9 @@ const Profile = () => {
                                     Choose how you want to receive your notification{" "}
                                 </p>
                                 <div className="flex justify-between">
-                                    <p className="md:text-xl text-base font-medium items-center">Email</p>
+                                    <p className="md:text-xl text-base font-medium items-center">
+                                        Email
+                                    </p>
                                     <PiToggleLeft />
                                 </div>
                                 <div className="flex justify-between items-center">
@@ -91,7 +99,9 @@ const Profile = () => {
                                     <PiToggleLeft />
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <p className="md:text-xl text-base font-medium">Desktop notification</p>
+                                    <p className="md:text-xl text-base font-medium">
+                                        Desktop notification
+                                    </p>
                                     <PiToggleLeft />
                                 </div>
                             </div>
@@ -111,7 +121,9 @@ const Profile = () => {
                                     <PiToggleLeft />
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <p className="md:text-xl text-base font-medium">Eye care mode</p>
+                                    <p className="md:text-xl text-base font-medium">
+                                        Eye care mode
+                                    </p>
                                     <PiToggleLeft />
                                 </div>
                             </div>
