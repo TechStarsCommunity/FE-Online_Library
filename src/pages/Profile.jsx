@@ -8,10 +8,12 @@ import { BiHide } from "react-icons/bi";
 const Profile = () => {
     return (
         <>
-            <div className="flex h-screen w-screen">
-                <LeftSidebar />
+            <div className="flex justify-center h-full  w-screen">
+                <div className="hidden sm:block">
+                  <LeftSidebar />
+                </div>
                 <div className="flex justify-center m-10 ">
-                    <div className="flex flex-col justify-between">
+                    <div className="flex flex-col gap-5 justify-between">
                         <div className=" relative bg-cover bg-center bg-[url('/Header.jpg')] h-32 p-4 rounded-md">
                             <img
                                 src="/women.png"
@@ -22,21 +24,21 @@ const Profile = () => {
                                 <AiOutlineEdit /> Edit
                             </div>
                         </div>
-                        <div className="flex  justify-between gap-32">
+                        <div className="flex flex-col md:flex-row justify-between gap-12">
                             <div className="flex flex-col">
                                 <div className="flex gap-12">
                                     <div className="flex flex-col">
                                         <p className="text-sky-500 text-lg font-medium">Name</p>
-                                        <p className="text-xl font-medium py-3">Akeem</p>
+                                        <p className="md:text-xl text-base font-medium py-3">Akeem</p>
                                     </div>
                                     <div className="flex flex-col">
                                         <p className="text-sky-500 text-lg font-medium">Location</p>
-                                        <p className="text-xl font-medium py-3">@akeem_123star</p>
+                                        <p className="md:text-xl text-base font-medium py-3">@akeem_123star</p>
                                     </div>
                                 </div>
                                 <div>
                                     <p className="text-sky-500 text-lg font-medium">Mail</p>
-                                    <p className="text-xl font-medium py-3">
+                                    <p className="md:text-xl text-base font-medium py-3">
                                         akeem123star@gmail.com
                                     </p>
                                 </div>
@@ -47,11 +49,11 @@ const Profile = () => {
                                         <p className="text-sky-500 text-lg font-medium">
                                             Phone number{" "}
                                         </p>
-                                        <p className="text-xl font-medium py-3">+234 8020653695</p>
+                                        <p className="md:text-xl text-base font-medium py-3">+234 8020653695</p>
                                     </div>
                                     <div className="flex flex-col">
                                         <p className="text-sky-500 text-lg font-medium">Location</p>
-                                        <p className="text-xl font-medium py-3">
+                                        <p className="md:text-xl text-base font-medium py-3">
                                             Victorial island ibadan
                                         </p>
                                     </div>
@@ -72,24 +74,24 @@ const Profile = () => {
                         >
                             Edit Profile
                         </Button>
-                        <div className="flex justify-between gap-52">
+                        <div className="flex justify-between flex-col md:flex-row gap-12 md:gap-52">
                             <div className="flex flex-col text-black">
                                 <p className="text-sky-500 text-3xl font-medium pb-3">
                                     Notification{" "}
                                 </p>
-                                <p className="text-neutral-600 text-lg font-normal pb-5">
+                                <p className="text-neutral-600 md:text-lg text-xs font-normal pb-5">
                                     Choose how you want to receive your notification{" "}
                                 </p>
                                 <div className="flex justify-between">
-                                    <p className="text-xl font-medium items-center">Email</p>
+                                    <p className="md:text-xl text-base font-medium items-center">Email</p>
                                     <PiToggleLeft />
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <p className="text-xl font-medium">Sms</p>
+                                    <p className="md:text-xl text-base font-medium">Sms</p>
                                     <PiToggleLeft />
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <p className="text-xl font-medium">Desktop notification</p>
+                                    <p className="md:text-xl text-base font-medium">Desktop notification</p>
                                     <PiToggleLeft />
                                 </div>
                             </div>
@@ -97,19 +99,19 @@ const Profile = () => {
                                 <p className="text-sky-500 text-3xl font-medium pb-3">
                                     Appearance{" "}
                                 </p>
-                                <p className="text-neutral-600 text-lg font-normal pb-5 pr-40">
+                                <p className="text-neutral-600 md:text-lg text-xs font-normal pb-5 pr-40">
                                     Change you view booklab{" "}
                                 </p>
                                 <div className="flex justify-between items-center">
-                                    <p className="text-xl font-medium">Dark Mode</p>
+                                    <p className="md:text-xl text-base font-medium">Dark Mode</p>
                                     <PiToggleLeft />
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <p className="text-xl font-medium ">Light Mode</p>
+                                    <p className="md:text-xl text-base font-medium ">Light Mode</p>
                                     <PiToggleLeft />
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <p className="text-xl font-medium">Eye care mode</p>
+                                    <p className="md:text-xl text-base font-medium">Eye care mode</p>
                                     <PiToggleLeft />
                                 </div>
                             </div>
