@@ -18,7 +18,9 @@ const Profile = () => {
                                 alt="image"
                                 className=" absolute rounded-full h-2/4 bottom-2 "
                             />
-                            <div className="flex text-white items-center absolute bottom-2 right-5"><AiOutlineEdit/> Edit</div>
+                            <div className="flex text-white items-center absolute bottom-2 right-5">
+                                <AiOutlineEdit /> Edit
+                            </div>
                         </div>
                         <div className="flex  justify-between gap-32">
                             <div className="flex flex-col">
@@ -34,18 +36,24 @@ const Profile = () => {
                                 </div>
                                 <div>
                                     <p className="text-sky-500 text-lg font-medium">Mail</p>
-                                    <p className="text-xl font-medium py-3">akeem123star@gmail.com</p>
+                                    <p className="text-xl font-medium py-3">
+                                        akeem123star@gmail.com
+                                    </p>
                                 </div>
                             </div>
                             <div className="flex flex-col">
                                 <div className="flex gap-12">
                                     <div className="flex flex-col">
-                                        <p className="text-sky-500 text-lg font-medium">Phone number </p>
+                                        <p className="text-sky-500 text-lg font-medium">
+                                            Phone number{" "}
+                                        </p>
                                         <p className="text-xl font-medium py-3">+234 8020653695</p>
                                     </div>
                                     <div className="flex flex-col">
                                         <p className="text-sky-500 text-lg font-medium">Location</p>
-                                        <p className="text-xl font-medium py-3">Victorial island ibadan</p>
+                                        <p className="text-xl font-medium py-3">
+                                            Victorial island ibadan
+                                        </p>
                                     </div>
                                 </div>
                                 <div>
@@ -66,8 +74,12 @@ const Profile = () => {
                         </Button>
                         <div className="flex justify-between gap-52">
                             <div className="flex flex-col text-black">
-                                <p className="text-sky-500 text-3xl font-medium pb-3">Notification </p>
-                                <p className="text-neutral-600 text-lg font-normal pb-5">Choose how you want to receive your notification </p>
+                                <p className="text-sky-500 text-3xl font-medium pb-3">
+                                    Notification{" "}
+                                </p>
+                                <p className="text-neutral-600 text-lg font-normal pb-5">
+                                    Choose how you want to receive your notification{" "}
+                                </p>
                                 <div className="flex justify-between">
                                     <p className="text-xl font-medium items-center">Email</p>
                                     <PiToggleLeft />
@@ -82,8 +94,12 @@ const Profile = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col text-black">
-                                <p className="text-sky-500 text-3xl font-medium pb-3">Appearance </p>
-                                <p className="text-neutral-600 text-lg font-normal pb-5 pr-40">Change you view booklab </p>
+                                <p className="text-sky-500 text-3xl font-medium pb-3">
+                                    Appearance{" "}
+                                </p>
+                                <p className="text-neutral-600 text-lg font-normal pb-5 pr-40">
+                                    Change you view booklab{" "}
+                                </p>
                                 <div className="flex justify-between items-center">
                                     <p className="text-xl font-medium">Dark Mode</p>
                                     <PiToggleLeft />
