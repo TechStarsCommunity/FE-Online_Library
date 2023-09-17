@@ -1,7 +1,7 @@
 import React from "react";
 import LeftSidebar from "../components/leftSideBar";
 import Button from "../components/button";
-import { AiOutlineSetting } from "react-icons/ai";
+import { AiOutlineSetting, AiOutlineEdit } from "react-icons/ai";
 import { PiToggleLeft } from "react-icons/pi";
 import { BiHide } from "react-icons/bi";
 
@@ -10,46 +10,47 @@ const Profile = () => {
         <>
             <div className="flex h-screen w-screen">
                 <LeftSidebar />
-                <div className="flex justify-between m-10 ">
-                    <div className="flex flex-col place-content-between">
+                <div className="flex justify-center m-10 ">
+                    <div className="flex flex-col justify-between">
                         <div className=" relative bg-cover bg-center bg-[url('/Header.jpg')] h-32 p-4 rounded-md">
                             <img
                                 src="/women.png"
                                 alt="image"
                                 className=" absolute rounded-full h-2/4 bottom-2 "
                             />
+                            <div className="flex text-white items-center absolute bottom-2 right-5"><AiOutlineEdit/> Edit</div>
                         </div>
-                        <div className="flex">
+                        <div className="flex  justify-between gap-32">
                             <div className="flex flex-col">
-                                <div className="flex">
+                                <div className="flex gap-12">
                                     <div className="flex flex-col">
-                                        <p>Name</p>
-                                        <p>Akeem</p>
+                                        <p className="text-sky-500 text-lg font-medium">Name</p>
+                                        <p className="text-xl font-medium py-3">Akeem</p>
                                     </div>
                                     <div className="flex flex-col">
-                                        <p>Location</p>
-                                        <p>@akeem_123star</p>
+                                        <p className="text-sky-500 text-lg font-medium">Location</p>
+                                        <p className="text-xl font-medium py-3">@akeem_123star</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <p>Mail</p>
-                                    <p>akeem123star@gmail.com</p>
+                                    <p className="text-sky-500 text-lg font-medium">Mail</p>
+                                    <p className="text-xl font-medium py-3">akeem123star@gmail.com</p>
                                 </div>
                             </div>
                             <div className="flex flex-col">
-                                <div className="flex">
+                                <div className="flex gap-12">
                                     <div className="flex flex-col">
-                                        <p>Phone number </p>
-                                        <p>+234 8020653695</p>
+                                        <p className="text-sky-500 text-lg font-medium">Phone number </p>
+                                        <p className="text-xl font-medium py-3">+234 8020653695</p>
                                     </div>
                                     <div className="flex flex-col">
-                                        <p>Location</p>
-                                        <p>Victorial island ibadan</p>
+                                        <p className="text-sky-500 text-lg font-medium">Location</p>
+                                        <p className="text-xl font-medium py-3">Victorial island ibadan</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <p>password</p>
-                                    <div className="flex">
+                                    <p className="text-sky-500 text-lg font-medium">Password</p>
+                                    <div className="flex items-center py-3 gap-2">
                                         <p>...........................................</p>
                                         <BiHide />
                                     </div>
@@ -59,40 +60,40 @@ const Profile = () => {
                         <Button
                             borderVariant="noRadius"
                             variant="primary"
-                            className="w-28 text-sm h-10 text-black"
+                            className="w-28 text-sm h-10 pb-3 text-black"
                         >
                             Edit Profile
                         </Button>
-                        <div className="flex justify-between">
+                        <div className="flex justify-between gap-52">
                             <div className="flex flex-col text-black">
-                                <p>Notification </p>
-                                <p>Choose how you want to receive your notification </p>
+                                <p className="text-sky-500 text-3xl font-medium pb-3">Notification </p>
+                                <p className="text-neutral-600 text-lg font-normal pb-5">Choose how you want to receive your notification </p>
                                 <div className="flex justify-between">
-                                    <p>Email</p>
+                                    <p className="text-xl font-medium items-center">Email</p>
                                     <PiToggleLeft />
                                 </div>
-                                <div className="flex justify-between">
-                                    <p>Sms</p>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-xl font-medium">Sms</p>
                                     <PiToggleLeft />
                                 </div>
-                                <div className="flex justify-between">
-                                    <p>Desktop notification</p>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-xl font-medium">Desktop notification</p>
                                     <PiToggleLeft />
                                 </div>
                             </div>
                             <div className="flex flex-col text-black">
-                                <p>Appearance </p>
-                                <p>Change you view booklab </p>
-                                <div className="flex justify-between">
-                                    <p>Dark Mode</p>
+                                <p className="text-sky-500 text-3xl font-medium pb-3">Appearance </p>
+                                <p className="text-neutral-600 text-lg font-normal pb-5 pr-40">Change you view booklab </p>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-xl font-medium">Dark Mode</p>
                                     <PiToggleLeft />
                                 </div>
-                                <div className="flex justify-between">
-                                    <p>Light Mode</p>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-xl font-medium ">Light Mode</p>
                                     <PiToggleLeft />
                                 </div>
-                                <div className="flex justify-between">
-                                    <p>Eye care mode</p>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-xl font-medium">Eye care mode</p>
                                     <PiToggleLeft />
                                 </div>
                             </div>
