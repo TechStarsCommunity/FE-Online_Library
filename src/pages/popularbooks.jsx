@@ -7,7 +7,7 @@ import Button from "../components/button";
 const Popularbooks = () => {
     return (
         <>
-            <div className="flex  h-full  w-screen">
+            <div className="flex bg-slate-50 h-full  w-screen">
                 <div className="hidden sm:block">
                     <LeftSidebar />
                 </div>
@@ -18,7 +18,20 @@ const Popularbooks = () => {
                     </div>
                     <div>
                         <p>Categories</p>
-                        <div></div>
+                        <div className="p-2 bg-white rounded-lg flex">
+                            <div>
+                                <p>Frontend Development</p>
+                            </div>
+                            <div>
+                                <p>Backend Development</p>
+                            </div>
+                            <div>
+                                <p>Product Design</p>
+                            </div>
+                            <div>
+                                <p>Content Writing</p>
+                            </div>
+                        </div>
                     </div>
                     <Button
                         borderVariant="noRadius"
