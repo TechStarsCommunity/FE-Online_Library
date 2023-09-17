@@ -1,6 +1,4 @@
-import React from "react";
-
-const topResult = [
+export const topResult = [
     { id: 1, img: "/editor-image.svg", name: "Editor's Pick" },
     { id: 2, img: "/editor-image.svg", name: "Frontend Development" },
     { id: 3, img: "/editor-image.svg", name: "Product Design" },
@@ -18,7 +16,7 @@ const topResult = [
     { id: 15, img: "/editor-image.svg", name: "Relationships" },
 ];
 
-const topContent = [
+export const topContent = [
     { id: 1, img: "/", name: "Popular" },
     { id: 2, img: "/editor-image.svg", name: "Backend Development" },
     { id: 3, img: "/editor-image.svg", name: "Project Management" },
@@ -35,39 +33,60 @@ const topContent = [
     { id: 14, img: "/editor-image.svg", name: "Psychology" },
     { id: 15, img: "/editor-image.svg", name: "Sports" },
 ];
-import { topContent, topResult } from "../data/search";
 
-const SearchAside = () => {
-    return (
-        <React.Fragment>
-            <div className="flex gap-8 flex-row items-center text-[.9rem] font-normal mr-[1.5rem] mt-[5rem]">
-                <div className="flex flex-col gap-2 ml-8 w-[40%]">
-                    {topResult.map((item) => (
-                        <div className="flex gap-6" key={item.id}>
-                            <div className="">
-                                <img src={item.img} alt="alt" className="w-[2.2rem] h-[2.2rem]" />
-                            </div>
-                            <p>{item.name}</p>
-                        </div>
-                    ))}
-                </div>
-                <div className="flex flex-col gap-2 w-[40%]">
-                    {topContent.map((item) => (
-                        <div className="flex gap-6" key={item.id}>
-                            <div className="">
-                                <img
-                                    src="/editor-image.svg"
-                                    alt={item.name}
-                                    className="w-[2.2rem] h-[2.2rem]"
-                                />
-                            </div>
-                            <p>{item.name}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </React.Fragment>
-    );
-};
-
-export default SearchAside;
+export const TechCareer = [
+    {
+        id: 1,
+        title: "Starting a successful Career in Tech",
+        name: "Oluwaben Akeem",
+        tech: "Frontend Development",
+    },
+    {
+        id: 2,
+        title: "Starting a successful Career in Tech",
+        name: "Oluwaben Akeem",
+        tech: "Frontend Development",
+    },
+    {
+        id: 3,
+        title: "Starting a successful Career in Tech",
+        name: "Oluwaben Akeem",
+        tech: "Frontend Development",
+    },
+    {
+        id: 4,
+        title: "Starting a successful Career in Tech",
+        name: "Oluwaben Akeem",
+        tech: "Frontend Development",
+    },
+    {
+        id: 5,
+        title: "Starting a successful Career in Tech",
+        name: "Oluwaben Akeem",
+        tech: "Frontend Development",
+    },
+    {
+        id: 6,
+        title: "Starting a successful Career in Tech",
+        name: "Oluwaben Akeem",
+        tech: "Frontend Development",
+    },
+    {
+        id: 7,
+        title: "Starting a successful Career in Tech",
+        name: "Oluwaben Akeem",
+        tech: "Frontend Development",
+    },
+    {
+        id: 8,
+        title: "Starting a successful Career in Tech",
+        name: "Oluwaben Akeem",
+        tech: "Frontend Development",
+    },
+    {
+        id: 9,
+        title: "Starting a successful Career in Tech",
+        name: "Oluwaben Akeem",
+        tech: "Frontend Development",
+    },
+];
