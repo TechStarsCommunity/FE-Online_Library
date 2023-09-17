@@ -72,3 +72,41 @@
     border-radius: 3px;
     object-fit: cover;
 }
+.recentlyRead{
+    margin: 20px 0px;
+}
+.profile{
+    width: 32%;
+}
+.profilename{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.bookRead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 32%;
+}
+.book{
+    padding: 20px 0px;
+}
+
+.title{
+    width: 80%;
+    padding-left: 20px;
+}
+.name{
+    width: 80%;
+    padding-left: 20px;
+    padding-top: 25px;
+    align-items: center;
+}
+.auth{
+    width: 32%;
+}
+.topAuthors{
+    margin-bottom: 70px;
+}

@@ -1,6 +1,7 @@
 import React, { lazy } from "react";
 import Loading from "./components/loading";
 import { createBrowserRouter } from "react-router-dom";
+import RoadMap from "./pages/roadMap";
 
 const Home = lazy(() => import("./pages/home"));
 const Login = lazy(() => import("./pages/login"));
@@ -11,6 +12,8 @@ const About = lazy(() => import("./pages/about"));
 const Search = lazy(() => import("./pages/search"));
 const BookCategories = lazy(() => import("./pages/bookCategories"));
 const OTPVerification = lazy(() => import("./pages/otpverification"));
+const Profile = lazy(() => import("./pages/Profile"));
+
 const BrowserRouter = createBrowserRouter([
     {
         path: "/",
@@ -42,6 +45,14 @@ const BrowserRouter = createBrowserRouter([
         element: (
             <React.Suspense fallback={<Loading />}>
                 <Uploads />
+            </React.Suspense>
+        ),
+    },
+    {
+        path: "/road-map",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <RoadMap />
             </React.Suspense>
         ),
     },
@@ -82,6 +93,14 @@ const BrowserRouter = createBrowserRouter([
         element: (
             <React.Suspense fallback={<Loading />}>
                 <Login />
+            </React.Suspense>
+        ),
+    },
+    {
+        path: "/profile",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <Profile />
             </React.Suspense>
         ),
     },

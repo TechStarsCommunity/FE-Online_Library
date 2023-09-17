@@ -2,13 +2,13 @@ import React from "react";
 import "../styles/signup.css";
 import { useAppDispatch } from "../redux/store";
 import Button from "../components/button";
-import { signUpSchema } from "../config/schema";
+import { SignUpSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
 import Input from "../components/input";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
-    const { errors, register, handleSubmit } = useSubmit(signUpSchema);
+    const { errors, register, handleSubmit } = useSubmit(SignUpSchema);
     const dispatch = useAppDispatch();
 
     const onSubmit = (data) => {
@@ -86,7 +86,7 @@ const Signup = () => {
                     <Button borderVariant="noRadius" variant="primary">
                         Sign Up
                     </Button>{" "}
-                    <h5>
+                    <h5 className="mb-8">
                         Have an Account?
                         <Link to="/login">
                             {" "}
