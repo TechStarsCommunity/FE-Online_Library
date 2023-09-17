@@ -3,3 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
+.h1{
+  @apply font-serif text-[2rem] font-semibold
+}
