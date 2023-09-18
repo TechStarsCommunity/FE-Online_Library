@@ -3,6 +3,7 @@ import LeftSidebar from "../components/leftSideBar";
 import Button from "../components/button";
 import { AiOutlineSetting, AiOutlineEdit } from "react-icons/ai";
 import { PiToggleLeft } from "react-icons/pi";
+import ToogleSwitch from "../components/toggle";
 import { BiHide } from "react-icons/bi";
 
 const Profile = () => {
@@ -34,7 +35,7 @@ const Profile = () => {
                                         </p>
                                     </div>
                                     <div className="flex flex-col">
-                                        <p className="text-sky-500 text-lg font-medium">Location</p>
+                                        <p className="text-sky-500 text-lg font-medium">Username</p>
                                         <p className="md:text-xl text-base font-medium py-3">
                                             @akeem_123star
                                         </p>
@@ -64,13 +65,6 @@ const Profile = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div>
-                                    <p className="text-sky-500 text-lg font-medium">Password</p>
-                                    <div className="flex items-center py-3 gap-2">
-                                        <p>...........................................</p>
-                                        <BiHide />
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <Button
@@ -92,17 +86,17 @@ const Profile = () => {
                                     <p className="md:text-xl text-base font-medium items-center">
                                         Email
                                     </p>
-                                    <PiToggleLeft />
+                                    <ToogleSwitch />
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <p className="md:text-xl text-base font-medium">Sms</p>
-                                    <PiToggleLeft />
+                                    <ToogleSwitch />
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <p className="md:text-xl text-base font-medium">
                                         Desktop notification
                                     </p>
-                                    <PiToggleLeft />
+                                    <ToogleSwitch/>
                                 </div>
                             </div>
                             <div className="flex flex-col text-black">
@@ -114,17 +108,17 @@ const Profile = () => {
                                 </p>
                                 <div className="flex justify-between items-center">
                                     <p className="md:text-xl text-base font-medium">Dark Mode</p>
-                                    <PiToggleLeft />
+                                    <ToogleSwitch/>
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <p className="md:text-xl text-base font-medium ">Light Mode</p>
-                                    <PiToggleLeft />
+                                    <ToogleSwitch />
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <p className="md:text-xl text-base font-medium">
                                         Eye care mode
                                     </p>
-                                    <PiToggleLeft />
+                                    <ToogleSwitch />
                                 </div>
                             </div>
                         </div>
