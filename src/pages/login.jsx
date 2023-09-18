@@ -4,6 +4,7 @@ import { LoginSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
 import loginLogo from "/booksLab_logo.png";
 import Button from "../components/button";
+import Input from "../components/input";
 
 const Login = () => {
     const { errors, register, handleSubmit } = useSubmit(LoginSchema);
@@ -24,46 +25,24 @@ const Login = () => {
                             Sign in to continue
                         </p>
                         <form onSubmit={handleSubmit(onLogin)}>
-                            <div className="mt-10">
-                                <label htmlFor="email" className=" text-lg">
-                                    Email
-                                </label>
-                                <input
-                                    className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300"
-                                    type="text"
-                                    placeholder="tola001@gmail.com"
-                                    autoComplete="email"
-                                    {...register("email")}
-                                />
-                                {errors.email && (
-                                    <p
-                                        style={{ textTransform: "capitalize" }}
-                                        className="text-red-600"
-                                    >
-                                        {errors.email.message}
-                                    </p>
-                                )}
-                            </div>
-                            <div className="mt-10">
-                                <label htmlFor="password" className=" text-lg">
-                                    Password
-                                </label>
-                                <input
-                                    className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300"
-                                    type="password"
-                                    placeholder="8+ characters"
-                                    autoComplete="current-password"
-                                    {...register("password")}
-                                />
-                                {errors.password && (
-                                    <p
-                                        style={{ textTransform: "capitalize" }}
-                                        className="text-red-600"
-                                    >
-                                        {errors.password.message}
-                                    </p>
-                                )}
-                            </div>
+                            <Input
+                                label="Email"
+                                name="email"
+                                type="email"
+                                register={register}
+                                errors={errors}
+                                autoComplete="email"
+                                placeholder="Email..."
+                            />
+                            <Input
+                                label="Password"
+                                name="password"
+                                type="password"
+                                register={register}
+                                errors={errors}
+                                placeholder="Password..."
+                                id="password"
+                            />
                             <Button
                                 borderVariant="noRadius"
                                 variant="primary"

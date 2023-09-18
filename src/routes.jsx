@@ -97,6 +97,14 @@ const BrowserRouter = createBrowserRouter([
         ),
     },
     {
+        path: "/profile",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <Profile />
+            </React.Suspense>
+        ),
+    },
+    {
         path: "/bookcategories",
         element: (
             <React.Suspense fallback={<Loading />}>
