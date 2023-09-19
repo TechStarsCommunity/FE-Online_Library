@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../components/button";
-import { Link } from "react-router-dom";
 import CategoriesButton from "../components/categoriesButton";
 import { categoryNames } from "../data/categoryNames";
 
