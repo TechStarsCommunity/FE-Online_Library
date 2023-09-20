@@ -17,7 +17,7 @@ const RoadMap = () => {
 
     return (
         <React.Fragment>
-            <div className="bg-[#E9FCF4] w-full p-12">
+            <div className="bg-[#FFFFFF] w-full p-12">
                 <div className="text-center sm:text-left left-0 top-0 text-sky-950 text-5xl font-bold leading-normal">
                     Roadmap
                 </div>
