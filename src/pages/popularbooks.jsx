@@ -20,11 +20,19 @@ const Popularbooks = () => {
                         <p>Categories</p>
                         <div className="p-5 bg-white rounded-lg flex gap-3">
                             <div className="flex items-center">
-                                <img src="./frontend.png" alt="Frontend Development" className="h-20"/>
+                                <img
+                                    src="./frontend.png"
+                                    alt="Frontend Development"
+                                    className="h-20"
+                                />
                                 <p>Frontend Development</p>
                             </div>
                             <div className="flex items-center ">
-                                <img src="./webdevelopment.png" alt="backend development" className="h-20" />
+                                <img
+                                    src="./webdevelopment.png"
+                                    alt="backend development"
+                                    className="h-20"
+                                />
                                 <p>Backend Development</p>
                             </div>
                             <div className="flex items-center">
@@ -32,10 +40,14 @@ const Popularbooks = () => {
                                 <p>Product Design</p>
                             </div>
                             <div className="flex items-center">
-                                <img src="./creativewriter.png" alt="content writer" className="h-20"/>
+                                <img
+                                    src="./creativewriter.png"
+                                    alt="content writer"
+                                    className="h-20"
+                                />
                                 <p>Content Writing</p>
                             </div>
-                            <img src="./datascientist.png" alt="data scienctist" className="h-20"/>
+                            <img src="./datascientist.png" alt="data scienctist" className="h-20" />
                         </div>
                     </div>
                     <Button
