@@ -36,13 +36,34 @@ const home = () => {
                                 alignItems: "center",
                                 justifyContent: "center",
                                 marginTop: "40px",
+                                gap: "12px",
                             }}
                         >
                             <Link to="/signup">
-                                <Button variant="primary">Get Started</Button>
+                            <Button
+                                children={"Get Started"}
+                                variant="primary"
+                                style={{
+                                    maxWidth: "150px",
+                                    borderRadius: "25px",
+                                    fontSize: "16px",
+                                    height: "auto",
+                                    padding: "0.5em"
+                                }}
+                            />
                             </Link>
                             <Link to="/login">
-                                <Button variant="secondary">Login</Button>
+                               <Button
+                                children={"Login"}
+                                variant="secondary"
+                                style={{
+                                    maxWidth: "150px",
+                                    borderRadius: "25px",
+                                    fontSize: "16px",
+                                    height: "auto",
+                                    padding: "0.5em"
+                                }}
+                            />
                             </Link>
                         </div>
                     </div>
