@@ -40,30 +40,30 @@ const home = () => {
                             }}
                         >
                             <Link to="/signup">
-                            <Button
-                                children={"Get Started"}
-                                variant="primary"
-                                style={{
-                                    maxWidth: "150px",
-                                    borderRadius: "25px",
-                                    fontSize: "16px",
-                                    height: "auto",
-                                    padding: "0.5em"
-                                }}
-                            />
+                                <Button
+                                    children={"Get Started"}
+                                    variant="primary"
+                                    style={{
+                                        maxWidth: "150px",
+                                        borderRadius: "25px",
+                                        fontSize: "16px",
+                                        height: "auto",
+                                        padding: "0.5em",
+                                    }}
+                                />
                             </Link>
                             <Link to="/login">
-                               <Button
-                                children={"Login"}
-                                variant="secondary"
-                                style={{
-                                    maxWidth: "150px",
-                                    borderRadius: "25px",
-                                    fontSize: "16px",
-                                    height: "auto",
-                                    padding: "0.5em"
-                                }}
-                            />
+                                <Button
+                                    children={"Login"}
+                                    variant="secondary"
+                                    style={{
+                                        maxWidth: "150px",
+                                        borderRadius: "25px",
+                                        fontSize: "16px",
+                                        height: "auto",
+                                        padding: "0.5em",
+                                    }}
+                                />
                             </Link>
                         </div>
                     </div>

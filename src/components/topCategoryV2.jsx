@@ -35,7 +35,9 @@ const TopCategoryV2 = () => {
                     <div className="flex flex-col gap-[30px]">
                         <div className="grid gap-[30px]">
                             <h4 className="text-[25px] md:text-[35px]">{currentCategory.title}</h4>
-                            <p className="text-[14px]  md:text-[16px]">{currentCategory.description}</p>
+                            <p className="text-[14px]  md:text-[16px]">
+                                {currentCategory.description}
+                            </p>
                         </div>
                         <div className=" md:w-1/2 w-full  h-1/4 ">
                             <Button
@@ -59,7 +61,6 @@ const TopCategoryV2 = () => {
                     </div>
                 </div>
                 <div className="py-[20px] px-[40px] w-full flex items-center justify-between absolute bottom-[20px] left-0 ">
-                    
                     <BsArrowLeftCircleFill
                         size={30}
                         style={{ cursor: currentIndex === 0 ? "not-allowed" : "pointer" }}

@@ -34,16 +34,16 @@ const AboutComponent = () => {
                         </p>
                     </div>
                     <Button
-                                children={"Read More"}
-                                variant="primary"
-                                style={{
-                                    maxWidth: "150px",
-                                    width: "8rem",
-                                    borderRadius: "25px",
-                                    fontSize: "13px",
-                                    height: "40px",
-                                }}
-                            />
+                        children={"Read More"}
+                        variant="primary"
+                        style={{
+                            maxWidth: "150px",
+                            width: "8rem",
+                            borderRadius: "25px",
+                            fontSize: "13px",
+                            height: "40px",
+                        }}
+                    />
                 </div>
             </div>
         </React.Fragment>
