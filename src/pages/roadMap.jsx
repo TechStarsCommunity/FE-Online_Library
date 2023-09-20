@@ -3,7 +3,10 @@ import "../styles/roadmap.css";
 import Input from "../components/input";
 import Button from "../components/button";
 
-export default function RoadMap() {
+export default function RoadMap({ show, setShow }) {
+    const handleClick = () => {
+        setShow(true);
+    };
     return (
         <div className="roadmap-container">
             <section className="formContainer">
@@ -43,7 +46,10 @@ export default function RoadMap() {
             </section>
 
             <section className="svgContainer">
-                <h3>Switch to Book Categories</h3>
+                <button onClick={() => handleClick()} className="text-[#5B5B5B]">
+                    Switch to Book Categories
+                </button>
+
                 <img src="/Roadmap.png" alt="" />
             </section>
         </div>

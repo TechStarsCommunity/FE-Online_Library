@@ -41,7 +41,12 @@ const TopCategoryV2 = () => {
                             <Button
                                 children={"Learn More"}
                                 variant="primary"
-                                style={{ width: "150px", borderRadius: "20px", fontSize: "14px", height:"50px" }}
+                                style={{
+                                    width: "150px",
+                                    borderRadius: "20px",
+                                    fontSize: "14px",
+                                    height: "50px",
+                                }}
                             />
                         </div>
                     </div>
