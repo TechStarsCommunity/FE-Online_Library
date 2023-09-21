@@ -45,6 +45,7 @@ export const Tabs = [
         id: 6,
         name: "Profile",
         Icon: <BiSolidUserCircle />,
+        path: "/profile",
         component: ContactComponent,
     },
 ];

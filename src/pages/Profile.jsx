@@ -3,16 +3,21 @@ import LeftSidebar from "../components/leftSideBar";
 import Button from "../components/button";
 import { AiOutlineSetting, AiOutlineEdit } from "react-icons/ai";
 import { PiToggleLeft } from "react-icons/pi";
-import { BiHide } from "react-icons/bi";
+import { Link } from "react-router-dom";
+import { Toggle } from '../components/toggle'
 
 const Profile = () => {
+    const logState = state => {
+        console.log("Toggled:", state)
+    }
+
     return (
         <>
-            <div className="flex justify-center h-full  w-screen">
-                <div className="hidden sm:block">
+            <div className="flex h-full  w-screen">
+                <div className="hidden sm:block bg-[#DFF6FF] h-full py-4 fixed ">
                     <LeftSidebar />
                 </div>
-                <div className="flex justify-center m-10 ">
+                <div className="flex w-screen sm:w-fit items-center p-10 sm:absolute sm:right-0 min-h-100vh sm:left-[15.6rem] bg-[#e6e6e6] ">
                     <div className="flex flex-col gap-5 justify-between">
                         <div className=" relative bg-cover bg-center bg-[url('/Header.jpg')] h-32 p-4 rounded-md">
                             <img
@@ -20,29 +25,29 @@ const Profile = () => {
                                 alt="image"
                                 className=" absolute rounded-full h-2/4 bottom-2 "
                             />
-                            <div className="flex text-white items-center absolute bottom-2 right-5">
+                            <Link to="/editprofile" className="flex text-white items-center absolute bottom-2 right-5">
                                 <AiOutlineEdit /> Edit
-                            </div>
+                            </Link>
                         </div>
                         <div className="flex flex-col md:flex-row justify-between gap-12">
                             <div className="flex flex-col">
                                 <div className="flex gap-12">
                                     <div className="flex flex-col">
                                         <p className="text-sky-500 text-lg font-medium">Name</p>
-                                        <p className="md:text-xl text-base font-medium py-3">
+                                        <p className="text-sm md:text-base font-medium py-3">
                                             Akeem
                                         </p>
                                     </div>
                                     <div className="flex flex-col">
-                                        <p className="text-sky-500 text-lg font-medium">Location</p>
-                                        <p className="md:text-xl text-base font-medium py-3">
+                                        <p className="text-sky-500 text-lg font-medium">Username</p>
+                                        <p className="text-sm md:text-base font-medium py-3">
                                             @akeem_123star
                                         </p>
                                     </div>
                                 </div>
                                 <div>
                                     <p className="text-sky-500 text-lg font-medium">Mail</p>
-                                    <p className="md:text-xl text-base font-medium py-3">
+                                    <p className="text-sm md:text-base font-medium py-3">
                                         akeem123star@gmail.com
                                     </p>
                                 </div>
@@ -53,26 +58,20 @@ const Profile = () => {
                                         <p className="text-sky-500 text-lg font-medium">
                                             Phone number{" "}
                                         </p>
-                                        <p className="md:text-xl text-base font-medium py-3">
+                                        <p className="text-sm md:text-base font-medium py-3">
                                             +234 8020653695
                                         </p>
                                     </div>
                                     <div className="flex flex-col">
                                         <p className="text-sky-500 text-lg font-medium">Location</p>
-                                        <p className="md:text-xl text-base font-medium py-3">
+                                        <p className="text-sm md:text-base font-medium py-3">
                                             Victorial island ibadan
                                         </p>
                                     </div>
                                 </div>
-                                <div>
-                                    <p className="text-sky-500 text-lg font-medium">Password</p>
-                                    <div className="flex items-center py-3 gap-2">
-                                        <p>...........................................</p>
-                                        <BiHide />
-                                    </div>
-                                </div>
                             </div>
                         </div>
+                        <div className="flex justify-end">
                         <Button
                             borderVariant="noRadius"
                             variant="primary"
@@ -80,6 +79,7 @@ const Profile = () => {
                         >
                             Edit Profile
                         </Button>
+                        </div>
                         <div className="flex justify-between flex-col md:flex-row gap-12 md:gap-52">
                             <div className="flex flex-col text-black">
                                 <p className="text-sky-500 text-3xl font-medium pb-3">
@@ -89,49 +89,67 @@ const Profile = () => {
                                     Choose how you want to receive your notification{" "}
                                 </p>
                                 <div className="flex justify-between">
-                                    <p className="md:text-xl text-base font-medium items-center">
+                                    <p className="text-sm md:text-base font-medium items-center">
                                         Email
                                     </p>
-                                    <PiToggleLeft />
+                                    <Toggle
+                                        toggled={true}
+                                        onClick={logState}
+                                    />
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <p className="md:text-xl text-base font-medium">Sms</p>
-                                    <PiToggleLeft />
+                                    <p className="text-sm md:text-base font-medium">Sms</p>
+                                    <Toggle
+                                        toggled={true}
+                                        onClick={logState}
+                                    />
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <p className="md:text-xl text-base font-medium">
+                                    <p className="text-sm md:text-base font-medium">
                                         Desktop notification
                                     </p>
-                                    <PiToggleLeft />
+                                    <Toggle
+                                        toggled={true}
+                                        onClick={logState}
+                                    />
                                 </div>
                             </div>
                             <div className="flex flex-col text-black">
                                 <p className="text-sky-500 text-3xl font-medium pb-3">
                                     Appearance{" "}
                                 </p>
-                                <p className="text-neutral-600 md:text-lg text-xs font-normal pb-5 pr-40">
+                                <p className="text-neutral-600 md:text-lg text-xs font-normal pb-5 md:pr-40">
                                     Change you view booklab{" "}
                                 </p>
                                 <div className="flex justify-between items-center">
-                                    <p className="md:text-xl text-base font-medium">Dark Mode</p>
-                                    <PiToggleLeft />
+                                    <p className="text-sm md:text-base font-medium">Dark Mode</p>
+                                    <Toggle
+                                        toggled={true}
+                                        onClick={logState}
+                                    />
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <p className="md:text-xl text-base font-medium ">Light Mode</p>
-                                    <PiToggleLeft />
+                                    <p className="text-sm md:text-base font-medium ">Light Mode</p>
+                                    <Toggle
+                                        toggled={true}
+                                        onClick={logState}
+                                    />
                                 </div>
                                 <div className="flex justify-between items-center">
-                                    <p className="md:text-xl text-base font-medium">
+                                    <p className="text-sm md:text-base font-medium">
                                         Eye care mode
                                     </p>
-                                    <PiToggleLeft />
+                                    <Toggle
+                                        toggled={true}
+                                        onClick={logState}
+                                    />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="ml-5 justify-end">
+                    <Link to="/settings" className="ml-5 self-start">
                         <AiOutlineSetting />{" "}
-                    </div>
+                    </Link>
                 </div>
             </div>
         </>
