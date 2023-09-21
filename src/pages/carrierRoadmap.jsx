@@ -9,9 +9,7 @@ import arrow1 from "../../public/arrowRight.svg";
 import arrow2 from "../../public/arrowCurve.svg";
 import arrow3 from "../../public/arrowDown.svg";
 
-
-
-export default function carrierRoadmap () {
+export default function carrierRoadmap() {
     return (
         <div className="frontMap-container">
             <h1>Roadmap</h1>
@@ -19,68 +17,69 @@ export default function carrierRoadmap () {
 
             <div className="frontImg-container">
                 <div className="Roadmap-container">
-                    <img src={carrierImg1} alt="Image" className="frontImg"/>
+                    <img src={carrierImg1} alt="Image" className="frontImg" />
 
                     <p className="carrier-text">Starting a Successful Carrier in Tech</p>
 
-                    <input type="text" placeholder="Oluwaben Akeem" className="name"/>
+                    <input type="text" placeholder="Oluwaben Akeem" className="name" />
 
-                    <img src={icon} alt="iconImg" className="icon">Frontend Development</img>
+                    <img src={icon} alt="iconImg" className="icon">
+                        Frontend Development
+                    </img>
                 </div>
 
-                <img src={arrow1} alt="arrowImg" className="path1"/>
+                <img src={arrow1} alt="arrowImg" className="path1" />
 
                 <div className="Roadmap-container">
-                    <img src={carrierImg2} alt="Image" className="frontImg"/>
+                    <img src={carrierImg2} alt="Image" className="frontImg" />
 
                     <p className="carrier-text">Starting a Successful Carrier in Tech</p>
 
-                    <input type="text" placeholder="Oluwaben Akeem" className="name"/>
+                    <input type="text" placeholder="Oluwaben Akeem" className="name" />
 
-                    <input type="text" placeholder="Frontend Development" className="name"/>
+                    <input type="text" placeholder="Frontend Development" className="name" />
                 </div>
 
-                <img src={arrow1} alt="arrowImg" className="path1"/>
+                <img src={arrow1} alt="arrowImg" className="path1" />
 
                 <div className="Roadmap-container">
-                    <img src={carrierImg3} alt="Image" className="frontImg"/>
+                    <img src={carrierImg3} alt="Image" className="frontImg" />
 
                     <p className="carrier-text">Starting a Successful Carrier in Tech</p>
 
-                    <input type="text" placeholder="Oluwaben Akeem" className="name"/>
+                    <input type="text" placeholder="Oluwaben Akeem" className="name" />
 
-                    <input type="text" placeholder="Frontend Development" className="name"/>
+                    <input type="text" placeholder="Frontend Development" className="name" />
                 </div>
 
-                <img src={arrow1} alt="arrowImg" className="path1"/>
+                <img src={arrow1} alt="arrowImg" className="path1" />
 
                 <div className="Roadmap-container">
-                    <img src={carrierImg4} alt="Image" className="frontImg"/>
+                    <img src={carrierImg4} alt="Image" className="frontImg" />
 
                     <p className="carrier-text">Starting a Successful Carrier in Tech</p>
 
-                    <input type="text" placeholder="Oluwaben Akeem" className="name"/>
+                    <input type="text" placeholder="Oluwaben Akeem" className="name" />
 
-                    <input type="text" placeholder="Frontend Development" className="name"/>
+                    <input type="text" placeholder="Frontend Development" className="name" />
                 </div>
 
-                <img src={arrow2} alt="arrowImg" className="path2"/>
+                <img src={arrow2} alt="arrowImg" className="path2" />
 
                 <h2>Projects</h2>
 
                 <div className="Roadmap-container">
-
                     <p className="carrier-text">Starting a Successful Carrier in Tech</p>
 
-                    <input type="text" placeholder="Project" className="name"/>
+                    <input type="text" placeholder="Project" className="name" />
 
-                    <img src={icon} alt="iconImg" className="icon">Frontend Development</img>
+                    <img src={icon} alt="iconImg" className="icon">
+                        Frontend Development
+                    </img>
                 </div>
 
-                <img src={arrow3} alt="arrowImg" className="path3"/>
-
+                <img src={arrow3} alt="arrowImg" className="path3" />
             </div>
         </div>
-
     );
 }
