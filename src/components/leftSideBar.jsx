@@ -2,12 +2,15 @@ import React from "react";
 import booksLabLogo from "/booksLab_logo.png";
 import { Tabs } from "../data/leftSideBarData";
 import { AiOutlineLogout } from "react-icons/ai";
+import { NavLink, useLocation } from "react-router-dom";
 import Button from "./button";
 
-const LeftSidebar = ({ active, setActive }) => {
-    const handleClick = (id) => {
-        setActive(id);
-    };
+const LeftSidebar = () => {
+
+    const location = useLocation();
+    // const handleClick = (id) => {
+    //     setActive(id);
+    // };
 
     return (
         <React.Fragment>
@@ -18,20 +21,22 @@ const LeftSidebar = ({ active, setActive }) => {
 
                 <div className="mt-[100px]">
                     {Tabs.map((data) => {
-                        const { id, name, Icon } = data;
+                        const { id, name, Icon, path } = data;
+                        const isActive = location.pathname === path;
                         return (
-                            <div
+                            <NavLink
                                 key={id}
-                                onClick={() => handleClick(id)}
+                                // onClick={() => setActive(id)}
+                                to={path}
                                 className={`mb-[25px] text-[1rem] mx-5 flex text-center text-[#191919] font-serif font-medium
-                              px-8 button cursor-pointer ${
-                                  active === id ? "button-active-style" : ""
-                              }`}
+                              px-8 button cursor-pointer 
+                              ${isActive ? "button-active-style" : ""}`}
+                            //   ${  active === id ? "button-active-style" : ""}
                             >
                                 <span className="me-4 text-[24px]">{Icon}</span>
                                 <button>{name}</button>
                                 {/* <Button className='text-black'>{name}</Button> */}
-                            </div>
+                            </NavLink>
                         );
                     })}
 
