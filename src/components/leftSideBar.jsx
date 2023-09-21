@@ -6,7 +6,6 @@ import { NavLink, useLocation } from "react-router-dom";
 import Button from "./button";
 
 const LeftSidebar = () => {
-
     const location = useLocation();
     // const handleClick = (id) => {
     //     setActive(id);
@@ -31,7 +30,7 @@ const LeftSidebar = () => {
                                 className={`mb-[25px] text-[1rem] mx-5 flex text-center text-[#191919] font-serif font-medium
                               px-8 button cursor-pointer 
                               ${isActive ? "button-active-style" : ""}`}
-                            //   ${  active === id ? "button-active-style" : ""}
+                                //   ${  active === id ? "button-active-style" : ""}
                             >
                                 <span className="me-4 text-[24px]">{Icon}</span>
                                 <button>{name}</button>
