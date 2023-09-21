@@ -35,7 +35,7 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    /* gap: 3rem; */
 }
 
 form div {
