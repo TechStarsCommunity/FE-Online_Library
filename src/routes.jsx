@@ -14,6 +14,7 @@ const BookCategories = lazy(() => import("./pages/bookCategories"));
 const OTPVerification = lazy(() => import("./pages/otpverification"));
 const Profile = lazy(() => import("./pages/Profile"));
 const Popularbooks = lazy(() => import("./pages/popularbooks"));
+const Onboarding = lazy(() => import("./pages/onboarding"));
 
 const BrowserRouter = createBrowserRouter([
     {
@@ -105,14 +106,16 @@ const BrowserRouter = createBrowserRouter([
             </React.Suspense>
         ),
     },
+
     {
-        path: "/bookcategories",
+        path: "/onboarding",
         element: (
             <React.Suspense fallback={<Loading />}>
-                <BookCategories />
+                <Onboarding />
             </React.Suspense>
         ),
     },
+
     {
         path: "/popularbooks",
         element: (
