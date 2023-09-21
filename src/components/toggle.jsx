@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const Toggle = ({ toggled, onClick }) => {
     const [isToggled, setToggled] = useState(toggled);
@@ -21,7 +21,9 @@ export const Toggle = ({ toggled, onClick }) => {
                 <div className="toggle-wrapper w-5 h-3 bg-[#525050] rounded-full p-1 transition duration-300 ease-in-out">
                     <div
                         className={`toggle-button w-2 h-2 bg-[#ffffff] rounded-full shadow-md transform ${
-                            isToggled ? 'translate-x-1.5 -translate-y-0.5' : '-translate-x-1 -translate-y-0.5'
+                            isToggled
+                                ? "translate-x-1.5 -translate-y-0.5"
+                                : "-translate-x-1 -translate-y-0.5"
                         } transition duration-300 ease-in-out`}
                     ></div>
                 </div>

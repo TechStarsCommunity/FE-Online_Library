@@ -4,12 +4,12 @@ import Button from "../components/button";
 import { AiOutlineSetting, AiOutlineEdit } from "react-icons/ai";
 import { PiToggleLeft } from "react-icons/pi";
 import { Link } from "react-router-dom";
-import { Toggle } from '../components/toggle'
+import { Toggle } from "../components/toggle";
 
 const Profile = () => {
-    const logState = state => {
-        console.log("Toggled:", state)
-    }
+    const logState = (state) => {
+        console.log("Toggled:", state);
+    };
 
     return (
         <>
@@ -25,7 +25,10 @@ const Profile = () => {
                                 alt="image"
                                 className=" absolute rounded-full h-2/4 bottom-2 "
                             />
-                            <Link to="/editprofile" className="flex text-white items-center absolute bottom-2 right-5">
+                            <Link
+                                to="/editprofile"
+                                className="flex text-white items-center absolute bottom-2 right-5"
+                            >
                                 <AiOutlineEdit /> Edit
                             </Link>
                         </div>
@@ -72,13 +75,13 @@ const Profile = () => {
                             </div>
                         </div>
                         <div className="flex justify-end">
-                        <Button
-                            borderVariant="noRadius"
-                            variant="primary"
-                            className="w-28 text-sm h-10 pb-3 text-black"
-                        >
-                            Edit Profile
-                        </Button>
+                            <Button
+                                borderVariant="noRadius"
+                                variant="primary"
+                                className="w-28 text-sm h-10 pb-3 text-black"
+                            >
+                                Edit Profile
+                            </Button>
                         </div>
                         <div className="flex justify-between flex-col md:flex-row gap-12 md:gap-52">
                             <div className="flex flex-col text-black">
@@ -92,26 +95,17 @@ const Profile = () => {
                                     <p className="text-sm md:text-base font-medium items-center">
                                         Email
                                     </p>
-                                    <Toggle
-                                        toggled={true}
-                                        onClick={logState}
-                                    />
+                                    <Toggle toggled={true} onClick={logState} />
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <p className="text-sm md:text-base font-medium">Sms</p>
-                                    <Toggle
-                                        toggled={true}
-                                        onClick={logState}
-                                    />
+                                    <Toggle toggled={true} onClick={logState} />
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <p className="text-sm md:text-base font-medium">
                                         Desktop notification
                                     </p>
-                                    <Toggle
-                                        toggled={true}
-                                        onClick={logState}
-                                    />
+                                    <Toggle toggled={true} onClick={logState} />
                                 </div>
                             </div>
                             <div className="flex flex-col text-black">
@@ -123,26 +117,17 @@ const Profile = () => {
                                 </p>
                                 <div className="flex justify-between items-center">
                                     <p className="text-sm md:text-base font-medium">Dark Mode</p>
-                                    <Toggle
-                                        toggled={true}
-                                        onClick={logState}
-                                    />
+                                    <Toggle toggled={true} onClick={logState} />
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <p className="text-sm md:text-base font-medium ">Light Mode</p>
-                                    <Toggle
-                                        toggled={true}
-                                        onClick={logState}
-                                    />
+                                    <Toggle toggled={true} onClick={logState} />
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <p className="text-sm md:text-base font-medium">
                                         Eye care mode
                                     </p>
-                                    <Toggle
-                                        toggled={true}
-                                        onClick={logState}
-                                    />
+                                    <Toggle toggled={true} onClick={logState} />
                                 </div>
                             </div>
                         </div>
