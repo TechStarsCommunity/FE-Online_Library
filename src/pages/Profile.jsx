@@ -13,11 +13,11 @@ const Profile = () => {
 
     return (
         <>
-            <div className="flex h-full  w-screen">
+            <div className="flex h-full w-screen">
                 <div className="hidden sm:block bg-[#DFF6FF] h-full py-4 fixed ">
                     <LeftSidebar />
                 </div>
-                <div className="flex w-screen sm:w-fit items-center p-10 sm:absolute sm:right-0 min-h-100vh sm:left-[15.6rem] bg-[#e6e6e6] ">
+                <div className="flex w-screen sm:w-fit items-center p-10 sm:absolute min-h-100vh sm:left-[15.6rem] bg-[#e6e6e6] ">
                     <div className="flex flex-col gap-5 justify-between">
                         <div className=" relative bg-cover bg-center bg-[url('/Header.jpg')] h-32 p-4 rounded-md">
                             <img
