@@ -7,79 +7,80 @@ import carrierImg4 from "../../public/carrierImg4.png";
 import icon from "../../public/frontendicon.svg";
 import arrow1 from "../../public/arrowRight.svg";
 import arrow2 from "../../public/arrowCurve.svg";
-import arrow3 from "../../public/arrowDown.svg";
+import arrow3 from "../../public/arrowDown.svg"; 
 
-export default function carrierRoadmap() {
+const Carrierroadmap = () => { 
     return (
-        <div className="frontMap-container">
+        <div className="FrontMap-container">
             <h1>Roadmap</h1>
             <h3>Frontend Roadmap</h3>
 
-            <div className="frontImg-container">
+            <div className="FrontImg-container">
                 <div className="Roadmap-container">
-                    <img src={carrierImg1} alt="Image" className="frontImg" />
+                    <img src={carrierImg1} alt="Image" className="FrontImg" />
 
-                    <p className="carrier-text">Starting a Successful Carrier in Tech</p>
+                    <p className="Carrier-text">Starting a Successful Carrier in Tech</p>
 
-                    <input type="text" placeholder="Oluwaben Akeem" className="name" />
+                    <input type="Text" placeholder="Oluwaben Akeem" className="Name" />
 
-                    <img src={icon} alt="iconImg" className="icon">
+                    <img src={icon} alt="Iconimg" className="Icon">
                         Frontend Development
                     </img>
                 </div>
 
-                <img src={arrow1} alt="arrowImg" className="path1" />
+                <img src={arrow1} alt="ArrowImg" className="Path1" />
 
                 <div className="Roadmap-container">
-                    <img src={carrierImg2} alt="Image" className="frontImg" />
+                    <img src={carrierImg2} alt="Image" className="FrontImg" />
+
+                    <p className="Carrier-text">Starting a Successful Carrier in Tech</p>
+
+                    <input type="Text" placeholder="Oluwaben Akeem" className="Name" />
+
+                    <input type="Text" placeholder="Frontend Development" className="Name" />
+                </div>
+
+                <img src={arrow1} alt="ArrowImg" className="Path1" />
+
+                <div className="Roadmap-container">
+                    <img src={carrierImg3} alt="Image" className="FrontImg" />
+
+                    <p className="Carrier-text">Starting a Successful Carrier in Tech</p>
+
+                    <input type="Text" placeholder="Oluwaben Akeem" className="Name" />
+
+                    <input type="Text" placeholder="Frontend Development" className="Name" />
+                </div>
+
+                <img src={arrow1} alt="ArrowImg" className="Path1" />
+
+                <div className="Roadmap-container">
+                    <img src={carrierImg4} alt="Image" className="FrontImg" />
 
                     <p className="carrier-text">Starting a Successful Carrier in Tech</p>
 
-                    <input type="text" placeholder="Oluwaben Akeem" className="name" />
+                    <input type="Text" placeholder="Oluwaben Akeem" className="Name" />
 
-                    <input type="text" placeholder="Frontend Development" className="name" />
+                    <input type="Text" placeholder="Frontend Development" className="Name" />
                 </div>
 
-                <img src={arrow1} alt="arrowImg" className="path1" />
-
-                <div className="Roadmap-container">
-                    <img src={carrierImg3} alt="Image" className="frontImg" />
-
-                    <p className="carrier-text">Starting a Successful Carrier in Tech</p>
-
-                    <input type="text" placeholder="Oluwaben Akeem" className="name" />
-
-                    <input type="text" placeholder="Frontend Development" className="name" />
-                </div>
-
-                <img src={arrow1} alt="arrowImg" className="path1" />
-
-                <div className="Roadmap-container">
-                    <img src={carrierImg4} alt="Image" className="frontImg" />
-
-                    <p className="carrier-text">Starting a Successful Carrier in Tech</p>
-
-                    <input type="text" placeholder="Oluwaben Akeem" className="name" />
-
-                    <input type="text" placeholder="Frontend Development" className="name" />
-                </div>
-
-                <img src={arrow2} alt="arrowImg" className="path2" />
+                <img src={arrow2} alt="ArrowImg" className="Path2" />
 
                 <h2>Projects</h2>
 
                 <div className="Roadmap-container">
-                    <p className="carrier-text">Starting a Successful Carrier in Tech</p>
+                    <p className="Carrier-text">Starting a Successful Carrier in Tech</p>
 
-                    <input type="text" placeholder="Project" className="name" />
+                    <input type="Text" placeholder="Project" className="Name" />
 
-                    <img src={icon} alt="iconImg" className="icon">
+                    <img src={icon} alt="IconImg" className="Icon">
                         Frontend Development
                     </img>
                 </div>
 
-                <img src={arrow3} alt="arrowImg" className="path3" />
+                <img src={arrow3} alt="ArrowImg" className="Path3" />
             </div>
         </div>
     );
-}
+};
+export default Carrierroadmap;

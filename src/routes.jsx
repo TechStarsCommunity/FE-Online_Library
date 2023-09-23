@@ -12,7 +12,7 @@ const About = lazy(() => import("./pages/about"));
 const Search = lazy(() => import("./pages/search"));
 const BookCategories = lazy(() => import("./pages/bookCategories"));
 const OTPVerification = lazy(() => import("./pages/otpverification"));
-const carrierRoadmap = lazy(() => import("./pages/carrierRoadmap"));
+const carrierRoadmap = lazy(() => import("./pages/Carrierroadmap"));
 
 const BrowserRouter = createBrowserRouter([
     {
@@ -105,7 +105,7 @@ const BrowserRouter = createBrowserRouter([
         ),
     },
     {
-        path: "/carrierRoadmap",
+        path: "/Carrierroadmap",
         element: (
             <React.Suspense fallback={<Loading />}>
                 <frontendRoadmap />
