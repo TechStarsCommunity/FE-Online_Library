@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/carrierRoadmap.css";
+import "../styles/carrierroadmap.css";
 import carrierImg1 from "../../public/carrierImg1.png";
 import carrierImg2 from "../../public/carrierImg2.png";
 import carrierImg3 from "../../public/carrierImg3.png";
