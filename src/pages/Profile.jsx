@@ -96,7 +96,7 @@ const Profile = () => {
                                     <p className="md:text-xl text-base font-medium">
                                         Desktop notification
                                     </p>
-                                    <ToogleSwitch/>
+                                    <ToogleSwitch />
                                 </div>
                             </div>
                             <div className="flex flex-col text-black">
@@ -108,7 +108,7 @@ const Profile = () => {
                                 </p>
                                 <div className="flex justify-between items-center">
                                     <p className="md:text-xl text-base font-medium">Dark Mode</p>
-                                    <ToogleSwitch/>
+                                    <ToogleSwitch />
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <p className="md:text-xl text-base font-medium ">Light Mode</p>
