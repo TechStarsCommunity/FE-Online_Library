@@ -7,9 +7,9 @@ import carrierImg4 from "../../public/carrierImg4.png";
 import icon from "../../public/frontendicon.svg";
 import arrow1 from "../../public/arrowRight.svg";
 import arrow2 from "../../public/arrowCurve.svg";
-import arrow3 from "../../public/arrowDown.svg"; 
+import arrow3 from "../../public/arrowDown.svg";
 
-const Carrierroadmap = () => { 
+const Carrierroadmap = () => {
     return (
         <div className="FrontMap-container">
             <h1>Roadmap</h1>
