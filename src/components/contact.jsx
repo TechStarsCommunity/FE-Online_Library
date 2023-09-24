@@ -5,7 +5,7 @@ const ContactComponent = (props) => {
     return (
         <React.Fragment>
             <section className={props.className}>
-                <div className="container mx-auto w-90% flex flex-wrap py-[24px] px-[48px]">
+                <div className="container mx-auto w-full flex flex-wrap py-[24px] px-10">
                     <div className=" w-full md:w-1/2">
                         <h1 className="text-[24px] md:text-[30px] text-[#001E50] font-bold lg:text-[36px] mb-16 mt-0">
                             Contact Us
@@ -14,14 +14,14 @@ const ContactComponent = (props) => {
                             <img src="/mail.png" alt="" className="w-12 h-12" />
                             <a
                                 href="mailto:techstarscommunity@gmail.com"
-                                className="text-[#727272] text-[24px]"
+                                className="text-[#727272] text-[18px]"
                             >
                                 bookslab@gmail.com
                             </a>
                         </div>
                         <div className="flex items-center space-x-4 mb-10">
                             <img src="/phone.png" alt="image of phone" className="w-12 h-12" />
-                            <a href="tel:+00018494724745" className="text-[#727272] text-[24px]">
+                            <a href="tel:+00018494724745" className="text-[#727272] text-[18px]">
                                 +000 184 947 24745
                             </a>
                         </div>
@@ -31,12 +31,21 @@ const ContactComponent = (props) => {
                                 alt="image of location"
                                 className="w-12 h-12"
                             />
-                            <a href="#" className="text-[#727272] text-[24px]">
+                            <a href="#" className="text-[#727272] text-[18px]">
                                 285 Office Address, LGA, State, Country
                             </a>
                         </div>
                         <div className="mt-12">
-                            <Button variant="primary"> Contact Us</Button>
+                            <Button
+                                children={"Contact us"}
+                                variant="primary"
+                                style={{
+                                    width: "150px",
+                                    borderRadius: "25px",
+                                    fontSize: "16px",
+                                    height: "50px",
+                                }}
+                            />
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">

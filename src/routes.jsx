@@ -12,6 +12,9 @@ const About = lazy(() => import("./pages/about"));
 const Search = lazy(() => import("./pages/search"));
 const BookCategories = lazy(() => import("./pages/bookCategories"));
 const OTPVerification = lazy(() => import("./pages/otpverification"));
+const Profile = lazy(() => import("./pages/Profile"));
+const Popularbooks = lazy(() => import("./pages/popularbooks"));
+const Onboarding = lazy(() => import("./pages/onboarding"));
 
 const BrowserRouter = createBrowserRouter([
     {
@@ -96,10 +99,28 @@ const BrowserRouter = createBrowserRouter([
         ),
     },
     {
-        path: "/bookcategories",
+        path: "/profile",
         element: (
             <React.Suspense fallback={<Loading />}>
-                <BookCategories />
+                <Profile />
+            </React.Suspense>
+        ),
+    },
+
+    {
+        path: "/onboarding",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <Onboarding />
+            </React.Suspense>
+        ),
+    },
+
+    {
+        path: "/popularbooks",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <Popularbooks />
             </React.Suspense>
         ),
     },
