@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/login.css";
-import { loginSchema } from "../config/schema";
+import { LoginSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
 import loginLogo from "/booksLab_logo.png";
+import Button from "../components/button";
+import Input from "../components/input";
 
 const Login = () => {
-    const { errors, register, handleSubmit } = useSubmit(loginSchema);
+    const { errors, register, handleSubmit } = useSubmit(LoginSchema);
 
     const onLogin = (data) => {
         console.log(data);
@@ -16,64 +18,49 @@ const Login = () => {
             <div className=" bg-white w-full">
                 <div className="flex h-screen items-center justify-between">
                     <div className="lg:mx-32 px-20 w-full">
-                        <h1 className="text-sky-950 md:text-4xl text-2xl font-semibold">Welcome Back</h1>
-                        <p className="text-black text-sm md:text-base font-normal">Sign in to continue</p>
+                        <h1 className="text-sky-950 md:text-4xl text-2xl font-semibold">
+                            Welcome Back
+                        </h1>
+                        <p className="text-black text-sm md:text-base font-normal">
+                            Sign in to continue
+                        </p>
                         <form onSubmit={handleSubmit(onLogin)}>
-                            <div className="mt-10">
-                                <label htmlFor="email" className=" text-lg">Email</label>
-                                <input
-                                    className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300"
-                                    type="text"
-                                    placeholder="tola001@gmail.com"
-                                    autoComplete="email"
-                                    {...register("email")}
-                                />
-                                {errors.email && (
-                                    <p
-                                        style={{ textTransform: "capitalize" }}
-                                        className="text-red-600"
-                                    >
-                                        {errors.email.message}
-                                    </p>
-                                )}
-                            </div>
-                            <div className="mt-10">
-                                <label htmlFor="password" className=" text-lg">Password</label>
-                                <input
-                                    className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300"
-                                    type="password"
-                                    placeholder="8+ characters"
-                                    autoComplete="current-password"
-                                    {...register("password")}
-                                />
-                                {errors.password && (
-                                    <p
-                                        style={{ textTransform: "capitalize" }}
-                                        className="text-red-600"
-                                    >
-                                        {errors.password.message}
-                                    </p>
-                                )}
-                            </div>
-                            <button
+                            <Input
+                                label="Email"
+                                name="email"
+                                type="email"
+                                register={register}
+                                errors={errors}
+                                autoComplete="email"
+                                placeholder="Email..."
+                            />
+                            <Input
+                                label="Password"
+                                name="password"
+                                type="password"
+                                register={register}
+                                errors={errors}
+                                placeholder="Password..."
+                                id="password"
+                            />
+                            <Button
+                                borderVariant="noRadius"
+                                variant="primary"
                                 type="submit"
-                                className="bg-gradient-to-r from-cyan-600 to-teal-400  text-white"
+                                className="w-full mt-14"
                             >
                                 Login
-                            </button>
+                            </Button>
                         </form>
                         <h5 className="text-lg md:text-xl font-medium">
                             Don{`'`}t have an Account?{" "}
-                            <a
-                                className="text-sky-950 text-sm lg:text-xl font-bold"
-                                href="/signup"
-                            >
+                            <a className="text-sky-950 text-sm lg:text-xl font-bold" href="/signup">
                                 Sign Up
                             </a>
                         </h5>
-                        <button className="bg-gradient-to-r from-cyan-600 to-teal-400  text-white">
+                        <Button borderVariant="noRadius" variant="primary" className="w-full mt-14">
                             Login as Admin
-                        </button>
+                        </Button>
                     </div>
                     <div className="hidden sm:flex h-screen bg-cover bg-center bg-[url('/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl basis-4/5 justify-self-end">
                         <div className="flex items-center justify-center w-full">

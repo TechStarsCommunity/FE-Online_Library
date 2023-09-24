@@ -10,7 +10,7 @@ const UploadContents = () => {
                 <div className="">
                     <h2 className="">Pending Approval</h2>
                     <div className="">
-                        <img src={"/image_icon.png"} alt="uploads img" />
+                        <img src={"/women.png"} alt="uploads img" />
                         <div className="">
                             <h4>Starting a successful Career in Tech</h4>
                             <h6>
@@ -24,7 +24,7 @@ const UploadContents = () => {
                                 }}
                             >
                                 <img
-                                    src={"/image_icon.png"}
+                                    src={"/women.png"}
                                     alt=""
                                     style={{
                                         width: "45px",
@@ -40,18 +40,18 @@ const UploadContents = () => {
                         </div>
                         <div className="s">
                             <div className="">
-                                <img src={"/image_icon.png"} alt="uploads img" />
+                                <img src={"/women.png"} alt="uploads img" />
                                 accept
                             </div>
                             <div className="">
-                                <img src={"/image_icon.png"} alt="uploads img" />
+                                <img src={"/women.png"} alt="uploads img" />
                                 reject
                             </div>
                         </div>
                     </div>
 
                     <div className="">
-                        <img src={"/image_icon.png"} alt="uploads img" />
+                        <img src={"/women.png"} alt="uploads img" />
                         <div className="">
                             <h4>Starting a successful Career in Tech</h4>
                             <h6>
@@ -60,18 +60,18 @@ const UploadContents = () => {
                         </div>
                         <div className="s">
                             <div className="">
-                                <img src={"/image_icon.png"} alt="uploads img" />
+                                <img src={"/women.png"} alt="uploads img" />
                                 accept
                             </div>
                             <div className="">
-                                <img src={"/image_icon.png"} alt="uploads img" />
+                                <img src={"/women.png"} alt="uploads img" />
                                 reject
                             </div>
                         </div>
                     </div>
 
                     <div className="">
-                        <img src={"/image_icon.png"} alt="uploads img" />
+                        <img src={"/women.png"} alt="uploads img" />
                         <div className="">
                             <h4>Starting a successful Career in Tech</h4>
                             <h6>
@@ -81,11 +81,11 @@ const UploadContents = () => {
 
                         <div className="s">
                             <div className="">
-                                <img src={"/image_icon.png"} alt="uploads img" />
+                                <img src={"/women.png"} alt="uploads img" />
                                 accept
                             </div>
                             <div className="">
-                                <img src={"/image_icon.png"} alt="uploads img" />
+                                <img src={"/women.png"} alt="uploads img" />
                                 reject
                             </div>
                         </div>

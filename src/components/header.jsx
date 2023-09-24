@@ -9,6 +9,7 @@ const Header = () => {
     const toggleMobileLinks = () => {
         setMobileLinksVisible(!mobileLinksVisible);
     };
+
     return (
         <React.Fragment>
             <header className="flex flex-row items-center justify-between gap-2.5 px-8 md:px-11 py-4 bg-white w-full z-[999]">

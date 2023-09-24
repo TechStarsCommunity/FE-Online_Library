@@ -8,10 +8,16 @@
 
 .lor {
     margin-top: 50px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: justified;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 48px;
     color: #000000;
@@ -20,7 +26,7 @@ h1 {
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 32px;
     color: #727272;
@@ -28,22 +34,23 @@ p {
     margin: 0px;
 }
 
-
-button {
-    margin-top: 6vh;
-    width: 150px;
-    height: 4vh;
-    background: #AFAFAF;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.6s;
+.row__options {
+    display: flex;
+    justify-content: space-between;
 }
 
-button:hover {
-    background: #858585;
+.row__icon {
+    font-size: 30px;
+    color: gray;
+    padding: 5px;
+}
+
+.row__stack {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.row::-webkit-scrollbar {
+    display: none !important ;
 }

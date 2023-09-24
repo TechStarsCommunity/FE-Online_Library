@@ -33,7 +33,7 @@ const AboutComponent = () => {
                             adventure and thrive in the ever-evolving tech world.
                         </p>
                     </div>
-                    <Button>Read More</Button>
+                    <Button variant="primary">Read More</Button>
                 </div>
             </div>
         </React.Fragment>
