@@ -1,25 +1,51 @@
 import React from "react";
-import LeftSidebar from "../components/leftSideBar";
+import "../styles/profile.css";
+import profileImg from "../../public/bgimage.png";
+import SettingSvg from "../../public/settingSvg";
 import Button from "../components/button";
-import { AiOutlineSetting, AiOutlineEdit } from "react-icons/ai";
-import { PiToggleLeft } from "react-icons/pi";
-import { Link } from "react-router-dom";
-import { Toggle } from "../components/toggle";
 
-const Profile = () => {
-    const logState = (state) => {
-        console.log("Toggled:", state);
-    };
-
+export default function Profile() {
     return (
-        <>
-            <div className="flex h-full w-screen">
-                <div className="hidden sm:block bg-[#DFF6FF] h-full py-4 fixed ">
-                    <LeftSidebar />
-                </div>
-            </div>
-        </>
-    );
-};
+        <div className="profile-container">
+            <section className="left-side">left</section>
+            <section className="right-side">
+                <div className="bg-container">
+                    <img src={profileImg} alt="bgImage" className="bg-image" />
 
-export default Profile;
+                    <p className="text">Edit your Infomatin</p>
+
+                    <form className="profile-form">
+                        <div className="input-container-row">
+                            <div className="inputContainer">
+                                <input placeholder="name" type="address" className="input" />
+                            </div>
+                            <div className="inputContainer">
+                                <input placeholder="Email" className="input" />
+                            </div>
+                            <div className="inputContainer position">
+                                <input placeholder="12345678" className="input number" />
+                                <div className="phone-drop">+123</div>
+                            </div>
+                        </div>
+
+                        <div className="input-container-column">
+                            <input placeholder="address" type="name" className="input" />
+                            <input placeholder="Email" type="gmail" className="input" />
+                            <input placeholder="12345678" type="phone" className="input" />
+                        </div>
+
+                        <div className="btn-container">
+                            <Button variant="primary" type="submit">
+                                DONE
+                            </Button>
+                        </div>
+                    </form>
+                </div>
+
+                <div className="setting">
+                    <SettingSvg />
+                </div>
+            </section>
+        </div>
+    );
+}
