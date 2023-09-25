@@ -80,7 +80,6 @@ select:focus {
 option[value="l"] {
     color: yellow;
 }
-
 input {
     height: 3.7rem;
     width: 90%;
@@ -99,7 +98,6 @@ input::placeholder {
 .btn-container {
     display: flex;
     flex-direction: column;
-
     gap: 1.5rem;
     width: 90%;
 }

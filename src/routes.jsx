@@ -1,7 +1,6 @@
 import React, { lazy } from "react";
 import Loading from "./components/loading";
 import { createBrowserRouter } from "react-router-dom";
-
 const Home = lazy(() => import("./pages/home"));
 const RoadMap = lazy(() => import("./pages/roadMap"));
 const Login = lazy(() => import("./pages/login"));
@@ -13,6 +12,8 @@ const About = lazy(() => import("./pages/about"));
 const Search = lazy(() => import("./pages/search"));
 const BookCategories = lazy(() => import("./pages/bookCategories"));
 const OTPVerification = lazy(() => import("./pages/otpverification"));
+const Popularbooks = lazy(() => import("./pages/popularbooks"));
+const Onboarding = lazy(() => import("./pages/onboarding"));
 
 const BrowserRouter = createBrowserRouter([
     {
@@ -45,6 +46,14 @@ const BrowserRouter = createBrowserRouter([
         element: (
             <React.Suspense fallback={<Loading />}>
                 <Uploads />
+            </React.Suspense>
+        ),
+    },
+    {
+        path: "/road-map",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <RoadMap />
             </React.Suspense>
         ),
     },
@@ -105,10 +114,28 @@ const BrowserRouter = createBrowserRouter([
         ),
     },
     {
-        path: "/bookcategories",
+        path: "/profile",
         element: (
             <React.Suspense fallback={<Loading />}>
-                <BookCategories />
+                <Profile />
+            </React.Suspense>
+        ),
+    },
+
+    {
+        path: "/onboarding",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <Onboarding />
+            </React.Suspense>
+        ),
+    },
+
+    {
+        path: "/popularbooks",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <Popularbooks />
             </React.Suspense>
         ),
     },

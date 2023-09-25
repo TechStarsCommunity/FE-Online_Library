@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/roadmap.css";
-// import Input from "../components/input";
 import Button from "../components/button";
 
 export default function RoadMap({ show, setShow }) {
@@ -38,14 +37,6 @@ export default function RoadMap({ show, setShow }) {
                             <option value="intermediate">Intermediate</option>
                             <option value="advanced">Advanced</option>
                         </select>
-                        {/* <input
-                            id="level"
-                            className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300 pl-6"
-                            type="text"
-                            placeholder="Select you stack"
-                            autoComplete="email"
-                            // {...register("email")}
-                        /> */}
                     </div>
                 </form>
                 <div className="btn-container">
