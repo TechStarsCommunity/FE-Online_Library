@@ -3,11 +3,14 @@ import "../styles/profile.css";
 import profileImg from "../../public/bgimage.png";
 import SettingSvg from "../../public/settingSvg";
 import Button from "../components/button";
+import LeftSidebar from "../components/leftSideBar";
 
 export default function Profile() {
     return (
         <div className="profile-container">
-            <section className="left-side">left</section>
+            <section className="left-side">
+                <LeftSidebar />
+            </section>
             <section className="right-side">
                 <div className="bg-container">
                     <img src={profileImg} alt="bgImage" className="bg-image" />
