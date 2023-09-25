@@ -1,8 +1,6 @@
 import React from "react";
 import "../styles/home.css";
 import { BsSearch } from "react-icons/bs";
-
-// change the name of the function to match the name of the file
 import Header from "../components/header";
 import Roadmap from "../components/roadmap";
 import AboutComponent from "../components/about";
@@ -15,20 +13,6 @@ import { Link } from "react-router-dom";
 const home = () => {
     return (
         <React.Fragment>
-            {/* Write Your Normal HTML Here */}
-            <section className="hero__section" id="top">
-                <div className="hero__section-details">
-                    <h1>BooksLab</h1>
-                    <div className="search-container">
-                        <BsSearch className="search-icon" />
-                        <input type="text" placeholder="Search for a book, category or author" />
-                        <button type="button" className="search-button">
-                            Search
-                        </button>
-                    </div>
-                    <h3>Your Virtual Gateway to Boundless Resources</h3>
-                </div>
-            </section>
             <Header />
             <main className="w-full">
                 <section className="hero__section">
@@ -52,13 +36,34 @@ const home = () => {
                                 alignItems: "center",
                                 justifyContent: "center",
                                 marginTop: "40px",
+                                gap: "12px",
                             }}
                         >
                             <Link to="/signup">
-                                <Button variant="primary">Get Started</Button>
+                                <Button
+                                    children={"Get Started"}
+                                    variant="primary"
+                                    style={{
+                                        maxWidth: "150px",
+                                        borderRadius: "25px",
+                                        fontSize: "16px",
+                                        height: "auto",
+                                        padding: "0.5em",
+                                    }}
+                                />
                             </Link>
                             <Link to="/login">
-                                <Button variant="secondary">Login</Button>
+                                <Button
+                                    children={"Login"}
+                                    variant="secondary"
+                                    style={{
+                                        maxWidth: "150px",
+                                        borderRadius: "25px",
+                                        fontSize: "16px",
+                                        height: "auto",
+                                        padding: "0.5em",
+                                    }}
+                                />
                             </Link>
                         </div>
                     </div>

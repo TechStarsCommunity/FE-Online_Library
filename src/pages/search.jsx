@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import SearchCard from "../components/searchCard";
+import "../styles/searchCard.css";
 import SearchAside from "../components/searchAside";
 import Footer from "../components/footer";
 
@@ -10,12 +11,8 @@ const Search = () => {
             <main className="w-full">
                 <Header />
                 <section className="flex bg-background">
-                    <div className="grid gap-5 flex-2">
+                    <div className="searchCardWidth">
                         <div className="w-full  grid gap-3">
-                            <SearchCard />
-                            <SearchCard />
-                            <SearchCard />
-                            <SearchCard />
                             <SearchCard />
                         </div>
                     </div>
@@ -25,8 +22,11 @@ const Search = () => {
                         </div>
                     </div>
                 </section>
-                <Footer style={{ background: "white"}}/>
+                <Footer style={{ background: "white" }} />
             </main>
+            <div className="footerColor">
+                <Footer />
+            </div>
         </React.Fragment>
     );
 };

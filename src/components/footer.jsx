@@ -16,7 +16,7 @@ const Footer = () => {
                             </div>
                             <p className="text-[13px] md:text-md lg:text-lg mt-4 font-medium ">
                                 {" "}
-                                Copyright { new Date().getFullYear() } BooksLab. All right reserved!
+                                Copyright {new Date().getFullYear()} BooksLab. All right reserved!
                             </p>
                         </div>
                         <p className="text-[17px] font-bold tracking-normal">
@@ -26,7 +26,7 @@ const Footer = () => {
                             <input
                                 type="text"
                                 placeholder="Email address"
-                                className="w-[75%] h-[40px] bg-transparent border-b-2 focus:outline-none focus:border-[#10B2F3] border-[#10B2F3]"
+                                className="w-[75%] h-[40px] bg-transparent border-b-4 outline-none border-b-[#10B2F3] border-transparent rounded-none px-2"
                             />
                             <button>
                                 <span className="material-symbols-outlined text-[#fff] bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] place-self-center p-2">

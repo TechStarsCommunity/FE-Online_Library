@@ -10,6 +10,7 @@ export default {
     },
     backgroundColor: {
       'background': '#dffcf4',
+      'transparent': 'rgba(0,0,0,0)'
     },
     extend: {},
   },

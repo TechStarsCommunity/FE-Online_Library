@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/login.css";
-import { loginSchema } from "../config/schema";
+import { LoginSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
 import loginLogo from "/booksLab_logo.png";
 import Button from "../components/button";
+import Input from "../components/input";
 
 const Login = () => {
-    const { errors, register, handleSubmit } = useSubmit(loginSchema);
+    const { errors, register, handleSubmit } = useSubmit(LoginSchema);
 
     const onLogin = (data) => {
         console.log(data);
@@ -16,7 +17,7 @@ const Login = () => {
         <React.Fragment>
             <div className=" bg-white w-full">
                 <div className="flex h-screen items-center justify-between">
-                    <div className="lg:mx-32 px-20 w-full">
+                    <div className="lg:mx-32 px-[20px] w-full">
                         <h1 className="text-sky-950 md:text-4xl text-2xl font-semibold">
                             Welcome Back
                         </h1>
@@ -24,46 +25,24 @@ const Login = () => {
                             Sign in to continue
                         </p>
                         <form onSubmit={handleSubmit(onLogin)}>
-                            <div className="mt-10">
-                                <label htmlFor="email" className=" text-lg">
-                                    Email
-                                </label>
-                                <input
-                                    className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300"
-                                    type="text"
-                                    placeholder="tola001@gmail.com"
-                                    autoComplete="email"
-                                    {...register("email")}
-                                />
-                                {errors.email && (
-                                    <p
-                                        style={{ textTransform: "capitalize" }}
-                                        className="text-red-600"
-                                    >
-                                        {errors.email.message}
-                                    </p>
-                                )}
-                            </div>
-                            <div className="mt-10">
-                                <label htmlFor="password" className=" text-lg">
-                                    Password
-                                </label>
-                                <input
-                                    className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300"
-                                    type="password"
-                                    placeholder="8+ characters"
-                                    autoComplete="current-password"
-                                    {...register("password")}
-                                />
-                                {errors.password && (
-                                    <p
-                                        style={{ textTransform: "capitalize" }}
-                                        className="text-red-600"
-                                    >
-                                        {errors.password.message}
-                                    </p>
-                                )}
-                            </div>
+                            <Input
+                                label="Email"
+                                name="email"
+                                type="email"
+                                register={register}
+                                errors={errors}
+                                autoComplete="email"
+                                placeholder="Email..."
+                            />
+                            <Input
+                                label="Password"
+                                name="password"
+                                type="password"
+                                register={register}
+                                errors={errors}
+                                placeholder="Password..."
+                                id="password"
+                            />
                             <Button
                                 borderVariant="noRadius"
                                 variant="primary"

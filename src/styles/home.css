@@ -14,9 +14,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 37.5rem;
+    /* width: 37.5rem; */
     height: 15.625rem;
     color: white;
+    width:100%;
 }
 
 .hero__section-details > h1 {
@@ -33,10 +34,10 @@
     background-color: #f5f5f5;
     border: 1px solid #ccc;
     border-radius: 3.125rem;
-    margin-bottom: 0.8125rem;
     padding-left: 1.25rem;
     height: 2.6875rem;
-    width: 100%;
+    width: 52%;
+    margin: 0 auto  0.8125rem;
 }
 
 .search-icon {
@@ -90,7 +91,7 @@ get-started-btn {
 /* Styles for screens with a maximum width of 48rem (e.g., tablets and smaller) */
 @media screen and (max-width: 48rem) {
     .hero__section-details {
-        width: 30rem;
+        /* width: 30rem; */
     }
 
     .search-container {
@@ -123,7 +124,7 @@ get-started-btn {
     }
 
     .hero__section-details {
-        width: 32.5rem;
+        /* width: 32.5rem; */
         height: auto;
     }
 

@@ -1,6 +1,4 @@
 import React from "react";
-
-// change the name of the function to match the name of the file
 import "../styles/header.css";
 import { BsList } from "react-icons/bs";
 import logo from "/booksLab_logo.png";
@@ -11,22 +9,9 @@ const Header = () => {
     const toggleMobileLinks = () => {
         setMobileLinksVisible(!mobileLinksVisible);
     };
+
     return (
         <React.Fragment>
-            <header>
-            <div className="header-logo-parent">
-                <img src={"../assets/booksLab_logo"} alt="" className="header-logo" />
-                </div>
-                <div className="header-links-parent">
-                    <ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Contact US</li>
-                    </ul>
-                </div>
-                <button className="">Get Started</button>
-                <button className="">Login</button>
-                </header>
             <header className="flex flex-row items-center justify-between gap-2.5 px-8 md:px-11 py-4 bg-white w-full z-[999]">
                 <div>
                     <img src={logo} alt="" className="max-w-[100%]  h-auto w-40" />
@@ -95,5 +80,4 @@ const Header = () => {
     );
 };
 
-// Also change the name of the function here
 export default Header;

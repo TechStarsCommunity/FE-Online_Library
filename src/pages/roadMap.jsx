@@ -3,7 +3,10 @@ import "../styles/roadmap.css";
 import Input from "../components/input";
 import Button from "../components/button";
 
-export default function RoadMap() {
+export default function RoadMap({ show, setShow }) {
+    const handleClick = () => {
+        setShow(true);
+    };
     return (
         <div className="roadmap-container">
             <section className="formContainer">
@@ -13,19 +16,22 @@ export default function RoadMap() {
                 </div>
                 <form>
                     <div>
-                        <label for="role">Select your role:</label>
-                        <select id="role" name="role">
-                            <option value="frontend">Frontend</option>
-                            <option value="backend">Backend</option>
-                            <option value="fullstack">Fullstack</option>
-                        </select>
+                        <label htmlFor="stack">Stack</label>
+                        <input
+                            id="stack"
+                            className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300 pl-6"
+                            type="text"
+                            placeholder="Select you stack"
+                            autoComplete="email"
+                            // {...register("email")}
+                        />
                     </div>
 
                     <div>
                         <label htmlFor="level">Level</label>
                         <input
                             id="level"
-                            className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300"
+                            className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300 pl-6"
                             type="text"
                             placeholder="Select you stack"
                             autoComplete="email"
@@ -40,7 +46,11 @@ export default function RoadMap() {
             </section>
 
             <section className="svgContainer">
-                <div>svg</div>
+                <button onClick={() => handleClick()} className="text-[#5B5B5B]">
+                    Switch to Book Categories
+                </button>
+
+                <img src="/Roadmap.png" alt="" />
             </section>
         </div>
     );
