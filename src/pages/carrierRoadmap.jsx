@@ -23,12 +23,11 @@ const Carrierroadmap = () => {
 
                     <input type="Text" placeholder="Oluwaben Akeem" className="Name" />
 
-                    <img src={icon} alt="Iconimg" className="Icon">
-                        Frontend Development
-                    </img>
-                </div>
+                    <img src={icon} alt="Iconimg" className="Icon"/>
+                    <p className="Frontend-text">Frontend Development</p>
+                    </div>
 
-                <img src={arrow1} alt="ArrowImg" className="Path1" />
+                    <img src={arrow1} alt="ArrowImg" className="Path1" />
 
                 <div className="Roadmap-container">
                     <img src={carrierImg2} alt="Image" className="FrontImg" />
@@ -37,7 +36,8 @@ const Carrierroadmap = () => {
 
                     <input type="Text" placeholder="Oluwaben Akeem" className="Name" />
 
-                    <input type="Text" placeholder="Frontend Development" className="Name" />
+                    <img src={icon} alt="Iconimg" className="Icon"/>
+                    <p className="Frontend-text">Frontend Development</p>
                 </div>
 
                 <img src={arrow1} alt="ArrowImg" className="Path1" />
@@ -61,7 +61,9 @@ const Carrierroadmap = () => {
 
                     <input type="Text" placeholder="Oluwaben Akeem" className="Name" />
 
-                    <input type="Text" placeholder="Frontend Development" className="Name" />
+                    <img src={icon} alt="Iconimg" className="Icon"/>
+                    <p className="Frontend-text">Frontend Development</p>
+
                 </div>
 
                 <img src={arrow2} alt="ArrowImg" className="Path2" />
@@ -73,9 +75,9 @@ const Carrierroadmap = () => {
 
                     <input type="Text" placeholder="Project" className="Name" />
 
-                    <img src={icon} alt="IconImg" className="Icon">
-                        Frontend Development
-                    </img>
+                    <img src={icon} alt="Iconimg" className="Icon"/>
+                    <p className="Frontend-text">HTML Test</p>
+
                 </div>
 
                 <img src={arrow3} alt="ArrowImg" className="Path3" />
