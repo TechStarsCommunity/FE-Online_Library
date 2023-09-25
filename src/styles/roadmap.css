@@ -63,6 +63,24 @@ label {
     line-height: normal;
 }
 
+select {
+    width: 90%;
+    height: 3.7rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--gradient, #10b2f3);
+    background-color: transparent;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+select:focus {
+    border: 2px solid var(--gradient, #10b2f3);
+}
+
+option[value="l"] {
+    color: yellow;
+}
+
 input {
     height: 3.7rem;
     width: 90%;
