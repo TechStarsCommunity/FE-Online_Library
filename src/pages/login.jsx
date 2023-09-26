@@ -17,7 +17,7 @@ const Login = () => {
         <React.Fragment>
             <div className=" bg-white w-full">
                 <div className="flex h-screen items-center justify-between">
-                    <div className="lg:mx-32 px-20 w-full">
+                    <div className="lg:mx-32 px-[20px] w-full">
                         <h1 className="text-sky-950 md:text-4xl text-2xl font-semibold">
                             Welcome Back
                         </h1>

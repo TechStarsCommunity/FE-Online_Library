@@ -21,6 +21,7 @@ export const Tabs = [
         id: 2,
         name: "Books",
         Icon: <GoBook />,
+        path: "/popularbooks",
         component: UploadContents,
     },
     {
@@ -39,12 +40,14 @@ export const Tabs = [
         id: 5,
         name: "Upload",
         Icon: <HiOutlineDocumentDownload />,
+        path: "/uploads",
         component: UploadContents,
     },
     {
         id: 6,
         name: "Profile",
         Icon: <BiSolidUserCircle />,
+        path: "/profile",
         component: ContactComponent,
     },
 ];
