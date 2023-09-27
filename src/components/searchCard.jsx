@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/searchCard.css";
 import Button from "../components/button";
-import { TechCareer } from "../data/search";
+import { TechCareer } from "../data/search"
+import ReactPaginate from 'react-paginate';
+import { BsArrowLeftShort, BsArrowRightShort} from 'react-icons/bs'
+
 
 const SearchCard = () => {
+    const [currentPage, setCurrentPage] = useState(0)
+    const perPage = 1;
+
+    const handlePageClick = (selectedPage) => {
+        setCurrentPage(selectedPage.selected);
+    };
+    
+    const offset = currentPage * perPage;
+    const pageCount = Math.ceil(TechCareer.length / perPage);
+    const currentPageData = TechCareer.slice(offset, offset + perPage);
+    
     return (
         <React.Fragment>
             <div className="flex items-center justify-between">
@@ -33,13 +47,13 @@ const SearchCard = () => {
                 </select>
             </div>
 
-            {TechCareer &&
-                TechCareer.map((techCareer) => {
+            {currentPageData &&
+                currentPageData.map((techCareer) => {
                     return (
-                        <div className="flex items-center justify-between bg-card">
+                        <div key={techCareer.id} className="flex items-center justify-between bg-card">
                             <img src="/techImage.svg" alt="" />
 
-                            <div className="" key={techCareer.id}>
+                            <div className="">
                                 <div className="flex">
                                     <strong>{techCareer.title}</strong>
                                     <br />
@@ -65,6 +79,21 @@ const SearchCard = () => {
                         </div>
                     );
                 })}
+
+                <ReactPaginate
+                    previousLabel={<BsArrowLeftShort />}
+                    nextLabel={<BsArrowRightShort />}
+                    breakLabel={'...'}
+                    pageCount={pageCount}
+                    marginPagesDisplayed={2}
+                    pageRangeDisplayed={5}
+                    onPageChange={handlePageClick}
+                    containerClassName={`flex justify-center items-center h-[3rem] mt-[4rem] gap-[1rem] mb-[7rem]`}
+                    previousClassName={`p-2 bg-[#6F6F6F]`}
+                    nextClassName={`p-2 bg-[#6F6F6F]`}
+                    pageClassName={`bg-[#fff] px-2`}
+                    activeClassName={'bg-[#616161]'}
+                />
         </React.Fragment>
     );
 };

@@ -23,6 +23,7 @@
         "react-hook-form": "^7.44.3",
         "react-icons": "^4.10.1",
         "react-multi-carousel": "^2.8.4",
+        "react-paginate": "^8.2.0",
         "react-query": "^3.39.3",
         "react-redux": "^8.0.7",
         "react-router-dom": "^6.11.2",
