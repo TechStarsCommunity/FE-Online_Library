@@ -5,6 +5,7 @@ import { AiOutlineSetting, AiOutlineEdit } from "react-icons/ai";
 import { PiToggleLeft } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { Toggle } from "../components/toggle";
+import editProfile from "../components/editProfile";
 
 const Profile = () => {
     const logState = (state) => {
@@ -26,7 +27,7 @@ const Profile = () => {
                                 className=" absolute rounded-full h-2/4 bottom-2 "
                             />
                             <Link
-                                to="/editprofile"
+                                to="/profile/editProfile"
                                 className="flex text-white items-center absolute bottom-2 right-5"
                             >
                                 <AiOutlineEdit /> Edit

@@ -15,8 +15,19 @@ const OTPVerification = lazy(() => import("./pages/otpverification"));
 const Profile = lazy(() => import("./pages/Profile"));
 const Popularbooks = lazy(() => import("./pages/popularbooks"));
 const Onboarding = lazy(() => import("./pages/onboarding"));
+const EditProfile = lazy(() => import("./components/editProfile"));
 
 const BrowserRouter = createBrowserRouter([
+    //route to editProfile from profile
+    {
+        path: "/profile/editProfile",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <EditProfile />
+            </React.Suspense>
+        ),
+    },    
+
     {
         path: "/",
         element: (
@@ -105,6 +116,7 @@ const BrowserRouter = createBrowserRouter([
                 <Profile />
             </React.Suspense>
         ),
+
     },
 
     {
