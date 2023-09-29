@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/roadmap.css";
-import Input from "../components/input";
 import Button from "../components/button";
 
 export default function RoadMap({ show, setShow }) {
@@ -17,26 +16,27 @@ export default function RoadMap({ show, setShow }) {
                 <form>
                     <div>
                         <label htmlFor="stack">Stack</label>
-                        <input
-                            id="stack"
-                            className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300 pl-6"
-                            type="text"
-                            placeholder="Select you stack"
-                            autoComplete="email"
-                            // {...register("email")}
-                        />
+                        <select id="stack" name="stack">
+                            <option value="" disabled selected>
+                                Select your stack
+                            </option>
+                            <option value="beginner">Frontend</option>
+                            <option value="intermediate">Backend</option>
+                            <option value="advanced">Fullstack</option>
+                            <option value="advanced">dev Ops</option>
+                        </select>
                     </div>
 
                     <div>
                         <label htmlFor="level">Level</label>
-                        <input
-                            id="level"
-                            className="focus:outline-none focus:border-teal-300 focus:ring-1 focus:ring-teal-300 pl-6"
-                            type="text"
-                            placeholder="Select you stack"
-                            autoComplete="email"
-                            // {...register("email")}
-                        />
+                        <select id="level" name="level" style={{ marginBottom: "2rem" }}>
+                            <option value="" disabled selected>
+                                Select your level
+                            </option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
                     </div>
                 </form>
                 <div className="btn-container">

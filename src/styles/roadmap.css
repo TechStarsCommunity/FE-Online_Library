@@ -20,6 +20,13 @@
     font-size: 3rem;
     font-weight: 600;
     line-height: normal;
+    margin-bottom: 0.2rem;
+}
+
+.container-detail p {
+    color: #5b5b5b;
+    font-family: Montserrat;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -35,6 +42,7 @@
 form {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     /* gap: 3rem; */
 }
 
@@ -45,6 +53,8 @@ form div {
 
 label {
     color: #000;
+    font-family: Inter;
+    margin-bottom: 0.2rem;
     font-family: Inter, Montserrat;
     margin-bottom: 0.8rem;
     font-size: 1.5rem;
@@ -53,6 +63,23 @@ label {
     line-height: normal;
 }
 
+select {
+    width: 90%;
+    height: 3.7rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--gradient, #10b2f3);
+    background-color: transparent;
+    padding: 0.5rem !important;
+    font-size: 1rem;
+}
+
+select:focus {
+    border: 2px solid var(--gradient, #10b2f3);
+}
+
+option[value="l"] {
+    color: yellow;
+}
 input {
     height: 3.7rem;
     width: 90%;
@@ -71,7 +98,7 @@ input::placeholder {
 .btn-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     width: 90%;
 }
 
@@ -112,12 +139,8 @@ input::placeholder {
         padding: 2rem;
     }
 
-    .btn-container {
-        padding-top: 50px;
-    }
-
     .container-detail p {
-        padding-bottom: 25px;
+        padding-bottom: 20px;
     }
 
     .svgContainer img {
@@ -130,10 +153,6 @@ input::placeholder {
     @media screen and (max-width: 992px) {
         .roadmap-container {
             padding: 2rem;
-        }
-
-        .btn-container {
-            padding-top: 50px;
         }
 
         .container-detail p {
