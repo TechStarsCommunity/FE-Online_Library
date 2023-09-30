@@ -1,0 +1,32 @@
+.FrontMap-container {
+    display: flex;
+    padding: 3rem;
+    background-color: white;
+    flex-direction: column;
+}
+
+.title1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.title2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.FrontImg-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2.5rem;
+    gap: 1.5rem;
+}
+
+.Path1 {
+    padding-bottom: 6.5rem;
+}
+
+.input {
+    display: flex;
+    gap: .5rem;
+}
