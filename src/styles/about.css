@@ -1,37 +1,36 @@
 .page {
     background-color: #ffffff;
     gap: 0px;
-    height: 100vh;
     width: 100%;
-    padding: 100px;
+    padding: 2rem 5rem;
 }
 
 .lor {
-    margin-top: 50px;
+    margin-top: 1rem;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: justified;
+    /* line-height: 1.5; */
+    text-align: justify;
 }
 
 h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 2.5rem;
     color: #000000;
-    padding-bottom: 0px;
-    margin: 0px;
+    margin-top: 2rem;
 }
 
-p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    color: #727272;
-    padding-top: 0px;
-    margin: 0px;
+.team-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .row__options {
@@ -40,17 +39,63 @@ p {
 }
 
 .row__icon {
-    font-size: 30px;
+    font-size: 1.5rem;
     color: gray;
-    padding: 5px;
+    padding: 0.2rem;
 }
 
 .row__stack {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 700;
-    margin: 10px 0px;
+    margin: 0.5rem 0;
 }
 
 .row::-webkit-scrollbar {
     display: none !important ;
+}
+
+/* Media queries for responsiveness */
+
+/* Styles for screens with a maximum width of 48rem (e.g., tablets and smaller) */
+@media screen and (max-width: 48rem) {
+    .page {
+        background-color: #ffffff;
+        gap: 0px;
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: #000000;
+        margin-top: 0.5rem;
+    }
+
+    .lor {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Styles for screens with a maximum width of 36rem (e.g., mobile phones) */
+@media screen and (max-width: 36rem) {
+    .page {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 1rem 1rem;
+    }
+
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #000000;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .lor {
+        font-size: 1rem;
+    }
 }
