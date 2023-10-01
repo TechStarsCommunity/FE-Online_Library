@@ -43,7 +43,6 @@ form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    /* gap: 3rem; */
 }
 
 form div {
@@ -64,36 +63,30 @@ label {
 }
 
 select {
+    appearance: none; /* Removes default appearance (not supported in all browsers) */
+    outline: none; /* Removes the outline when focused */
+    background-color: transparent;
     width: 90%;
     height: 3.7rem;
     border-radius: 0.5rem;
     border: 2px solid var(--gradient, #10b2f3);
-    background-color: transparent;
-    padding: 0.5rem !important;
+    padding: 1rem !important;
     font-size: 1rem;
+}
+
+select option {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px !important;
 }
 
 select:focus {
     border: 2px solid var(--gradient, #10b2f3);
 }
 
-option[value="l"] {
+/* option[value="l"] {
     color: yellow;
-}
-input {
-    height: 3.7rem;
-    width: 90%;
-    flex-shrink: 0;
-    border-radius: 0.5rem;
-    border: 1px solid var(--gradient, #10b2f3);
-    background: #fff;
-    padding-left: 2rem;
-}
-
-input::placeholder {
-    font: Montserrat;
-    font-size: 17px;
-}
+} */
 
 .btn-container {
     display: flex;
@@ -136,7 +129,19 @@ input::placeholder {
     .roadmap-container {
         flex-direction: column;
         align-items: center;
-        padding: 2rem;
+        /* padding: 2rem; */
+    }
+
+    select {
+        appearance: none; /* Removes default appearance (not supported in all browsers) */
+        outline: none; /* Removes the outline when focused */
+        background-color: transparent;
+        width: 90%;
+        height: 3.7rem;
+        border-radius: 0.5rem;
+        border: 2px solid var(--gradient, #10b2f3);
+        padding: 1rem !important;
+        font-size: 1rem;
     }
 
     .container-detail p {

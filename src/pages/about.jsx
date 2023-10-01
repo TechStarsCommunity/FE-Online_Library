@@ -34,8 +34,12 @@ const responsive = {
 };
 
 const About = () => {
+    // const dynamicBgColor = "#dffcf4";
+
     return (
         <React.Fragment>
+            <Header />
+
             <div className="page">
                 <h1> About BooksLab</h1>
                 <p className="lor">
@@ -90,9 +94,10 @@ const About = () => {
                 </p>
 
                 <div>
-                    <h1 className="team">Team</h1>
+                    <h1 className="team-title">Team</h1>
                 </div>
 
+                <h2>Product Manager</h2>
                 <Carousel responsive={responsive}>
                     {productManagers.map((members) => (
                         <AboutpageCard
@@ -103,6 +108,7 @@ const About = () => {
                     ))}
                 </Carousel>
 
+                <h2>Product Designers</h2>
                 <Carousel responsive={responsive}>
                     {teamDesigners.map((members) => (
                         <AboutpageCard
@@ -113,6 +119,7 @@ const About = () => {
                     ))}
                 </Carousel>
 
+                <h2>Frontend Developers</h2>
                 <Carousel responsive={responsive}>
                     {teamFrontend.map((members) => (
                         <AboutpageCard
@@ -123,6 +130,7 @@ const About = () => {
                     ))}
                 </Carousel>
 
+                <h2>Backend Developers</h2>
                 <Carousel responsive={responsive}>
                     {teamBackend.map((members) => (
                         <AboutpageCard
@@ -133,6 +141,7 @@ const About = () => {
                     ))}
                 </Carousel>
             </div>
+            <Footer bgColor={"#dffcf4"} />
         </React.Fragment>
     );
 };
