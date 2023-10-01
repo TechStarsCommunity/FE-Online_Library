@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "../styles/searchCard.css";
 import Button from "../components/button";
-import { TechCareer } from "../data/search"
-import ReactPaginate from 'react-paginate';
-import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs'
-
+import { TechCareer } from "../data/search";
+import ReactPaginate from "react-paginate";
+import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 
 const SearchCard = () => {
-    const [currentPage, setCurrentPage] = useState(0)
+    const [currentPage, setCurrentPage] = useState(0);
     const perPage = 5;
 
     const handlePageClick = (selectedPage) => {
@@ -41,7 +40,10 @@ const SearchCard = () => {
             {currentPageData &&
                 currentPageData.map((techCareer) => {
                     return (
-                        <div key={techCareer.id} className="flex items-center justify-between bg-card">
+                        <div
+                            key={techCareer.id}
+                            className="flex items-center justify-between bg-card"
+                        >
                             <img src="/techImage.svg" alt="" />
 
                             <div className="">
@@ -74,7 +76,7 @@ const SearchCard = () => {
             <ReactPaginate
                 previousLabel={<BsArrowLeftShort />}
                 nextLabel={<BsArrowRightShort />}
-                breakLabel={'...'}
+                breakLabel={"..."}
                 pageCount={pageCount}
                 marginPagesDisplayed={2}
                 pageRangeDisplayed={5}
@@ -83,7 +85,7 @@ const SearchCard = () => {
                 previousClassName={`p-2 bg-[#6F6F6F]`}
                 nextClassName={`p-2 bg-[#6F6F6F]`}
                 pageClassName={`bg-[#fff] px-2`}
-                activeClassName={'bg-[#616161]'}
+                activeClassName={"bg-[#616161]"}
             />
         </React.Fragment>
     );
