@@ -73,7 +73,7 @@ const home = () => {
             </main>
             <Roadmap />
             <AboutComponent />
-            <Review/>
+            <Review />
             <ContactComponent />
             <Footer bgColor="red" />
         </React.Fragment>
