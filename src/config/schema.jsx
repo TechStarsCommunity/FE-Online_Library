@@ -35,12 +35,12 @@ export const ContactSchema = yup.object().shape({
     message: yup.string().trim().required("Your Message Is Required"),
 });
 
-export const EditProfileSchema = yup.object().shape ({
+export const EditProfileSchema = yup.object().shape({
     name: yup.string().trim().required("Your name is required"),
-    email:yup
-    .string()
-    .trim()
-    .email()
-    .required("Your Email is required, ensure it is the correct format"),
-    message: yup.string().trim().required("Your message is required")
+    email: yup
+        .string()
+        .trim()
+        .email()
+        .required("Your Email is required, ensure it is the correct format"),
+    message: yup.string().trim().required("Your message is required"),
 });
