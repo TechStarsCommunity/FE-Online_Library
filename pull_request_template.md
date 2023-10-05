@@ -22,18 +22,10 @@ Please provide a brief description of the changes introduced by this pull reques
 
 Please provide a list of the main changes made in this pull request.
 
-
 ## Screenshots
 
-If applicable, add screenshots or GIFs to showcase the changes visually.
+Ensure you add screenshots or GIFs to showcase the changes visually.
 
-## Dependencies or File Changes
-
-Please list any new dependencies or files added or updated in this pull request.
-
-## Testing Instructions
-
-Please provide clear instructions on how to test the changes made in this pull request.
 
 ## Additional Notes
 

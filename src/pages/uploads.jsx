@@ -12,7 +12,7 @@ const Uploads = () => {
                 <div className="bg-[#DFF6FF] h-full px-0 py-4 fixed mx-0">
                     <LeftSidebar active={active} setActive={setActive} />
                 </div>
-                <div className="flex-grow absolute right-0 min-h-100vh left-[20rem]">
+                <div className="flex-grow absolute right-0 min-h-100vh left-[15.6rem]">
                     {activeTabInfo && <activeTabInfo.component />}
                 </div>
             </div>

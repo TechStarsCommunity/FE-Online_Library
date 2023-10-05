@@ -99,14 +99,16 @@ Thank you for considering contributing to our project! Here are the guidelines f
 
 5. Make the necessary changes and commit your changes:
 
-   ```
-   git add .
-   git commit -m "commit message"
-   ```
+    ```
+    git add .
+    git commit -m "commit message"
+    ```
+
 6. Make sure you run build:
-   ```
-   npm run build
-   ```
+
+    ```
+    npm run build
+    ```
 
 7. Push your changes to your branch:
 
@@ -116,8 +118,8 @@ Thank you for considering contributing to our project! Here are the guidelines f
 
 8. Create a pull request on the GitHub repository. Be sure to include a descriptive title and a detailed description of your changes.
 
-9.  Wait for a maintainer to review your changes and merge them into the develop branch.
-10.  PLEASE ENSURE YOU MAKE YOUR PULL REQUEST TO THE DEVELOP BRANCH, DON'T INTERACT WITH THE MASTER BRANCH.
+9. Wait for a maintainer to review your changes and merge them into the develop branch.
+10. PLEASE ENSURE YOU MAKE YOUR PULL REQUEST TO THE DEVELOP BRANCH, DON'T INTERACT WITH THE MASTER BRANCH.
 
 ### FIGMA LINK
 
