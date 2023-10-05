@@ -73,11 +73,15 @@ const Carrierroadmap = () => {
                         <input type="Text" placeholder="Frontend Development" className="Name" /> 
                     </div>
                 </div>
-            
+            </div>
 
+            <div className="project-arrow">
                 <img src={arrow2} alt="ArrowImg" className="Path2" />
 
                 <h2>Projects</h2>
+            </div>
+
+            <div className="last">
 
                 <div className="Roadmap-container">
                     <p className="Carrier-text">Starting a Successful Carrier in Tech</p>
