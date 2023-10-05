@@ -1,34 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import ReviewCard from "./reviewCard";
+import { myData } from "../data/reviewData";
 
 const Review = () => {
-    const myData = [
-        {
-            name: "Amanda",
-            stack: "Frontend",
-            comment:
-                "wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snl wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn",
-        },
-        {
-            name: "Kelechi",
-            stack: "Backend",
-            comment:
-                "wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snl wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn",
-        },
-        {
-            name: "Product",
-            stack: "Product",
-            comment:
-                "wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snl wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn",
-        },
-        {
-            name: "Hakeem",
-            stack: "Backend",
-            comment:
-                "wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snl wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn wjsglsgm anknk flg snlsgn",
-        },
-    ];
     const [activeData, setActiveData] = useState([myData[0], myData[1]]);
     const [currentIndex, setCurrentIndex] = useState(1);
 
