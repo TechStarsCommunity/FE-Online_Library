@@ -26,7 +26,7 @@ const BrowserRouter = createBrowserRouter([
                 <EditProfile />
             </React.Suspense>
         ),
-    },    
+    },
 
     {
         path: "/",
@@ -116,7 +116,6 @@ const BrowserRouter = createBrowserRouter([
                 <Profile />
             </React.Suspense>
         ),
-
     },
 
     {

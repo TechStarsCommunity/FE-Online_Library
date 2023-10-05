@@ -1,4 +1,19 @@
-.form-container {
-    display: flex;
-    padding: 10px;
+
+
+.edit-info {
+    width: 95%;
+    color: #10B2F3;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: auto;
+}
+@media screen and (max-width: 500px) {
+    .inline-input {
+        flex-direction: column;
+    }
+
+
 }
