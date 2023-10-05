@@ -25,7 +25,7 @@ const Carrierroadmap = () => {
 
                     <div className="input">
                         <img src={icon} alt="Iconimg" className="Icon" />
-                        <input type="Text" placeholder="Frontend Development" className="Name" /> 
+                        <input type="Text" placeholder="Frontend Development" className="Name" />
                     </div>
                 </div>
 
@@ -40,7 +40,7 @@ const Carrierroadmap = () => {
 
                     <div className="input">
                         <img src={icon} alt="Iconimg" className="Icon" />
-                        <input type="Text" placeholder="Frontend Development" className="Name" /> 
+                        <input type="Text" placeholder="Frontend Development" className="Name" />
                     </div>
                 </div>
 
@@ -51,11 +51,11 @@ const Carrierroadmap = () => {
 
                     <p className="Carrier-text">Starting a Successful Carrier in Tech</p>
 
-                    <input type="Text" placeholder="Oluwaben Akeem" className="Name" /> 
+                    <input type="Text" placeholder="Oluwaben Akeem" className="Name" />
 
                     <div className="input">
                         <img src={icon} alt="Iconimg" className="Icon" />
-                        <input type="Text" placeholder="Frontend Development" className="Name" /> 
+                        <input type="Text" placeholder="Frontend Development" className="Name" />
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@ const Carrierroadmap = () => {
 
                     <div className="input">
                         <img src={icon} alt="Iconimg" className="Icon" />
-                        <input type="Text" placeholder="Frontend Development" className="Name" /> 
+                        <input type="Text" placeholder="Frontend Development" className="Name" />
                     </div>
                 </div>
             </div>
@@ -82,7 +82,6 @@ const Carrierroadmap = () => {
             </div>
 
             <div className="last">
-
                 <div className="Roadmap-container">
                     <p className="Carrier-text">Starting a Successful Carrier in Tech</p>
 
@@ -90,7 +89,7 @@ const Carrierroadmap = () => {
 
                     <div className="input">
                         <img src={icon} alt="Iconimg" className="Icon" />
-                        <input type="Text" placeholder="HTML" className="Name" /> 
+                        <input type="Text" placeholder="HTML" className="Name" />
                     </div>
                 </div>
 
