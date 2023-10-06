@@ -1,41 +1,12 @@
 import React from "react";
 import Button from "../components/button";
-import { Link } from "react-router-dom";
 import CategoriesButton from "../components/categoriesButton";
+import { categoryNames } from "../data/categoryNames";
 
-const categoryNames = [
-    "Editor's Pick",
-    "Frontend Development",
-    "Product Design",
-    "Academic & Education",
-    "Biography",
-    "Children & Youth",
-    "Fiction & Literature",
-    "Religion",
-    "Lifestyle",
-    "Politics & Laws",
-    "Science & Research",
-    "Economics",
-    "Food",
-    "Marketing",
-    "Parenting",
-    "Relationships",
-    "Backend Development",
-    "Project Management",
-    "Arts & Design",
-    "Business & Career",
-    "Environment",
-    "Health & Fitness",
-    "Personal Growth",
-    "Tech",
-    "Entertainment",
-    "History",
-    "Motivation",
-    "Psychology",
-    "Sports",
-];
-
-const BookCategories = () => {
+const BookCategories = ({ show, setShow }) => {
+    const handleClick = () => {
+        setShow(false);
+    };
     return (
         <React.Fragment>
             <body className="p-16">
@@ -45,10 +16,9 @@ const BookCategories = () => {
                     </div>
                     <div className="flex justify-between mt-2">
                         <p className="text-[#5B5B5B]">Select your favorite Categories</p>
-                        <Link to="/">
-                            {" "}
-                            <p className="text-[#5B5B5B]">Switch to RoadMap</p>
-                        </Link>
+                        <button onClick={() => handleClick()} className="text-[#5B5B5B]">
+                            Switch to RoadMap
+                        </button>
                     </div>
                 </header>
                 <main>
@@ -64,7 +34,9 @@ const BookCategories = () => {
                             Continue
                         </Button>{" "}
                     </div>
-                    <p>Skip</p>
+                    <button onClick={() => handleClick()} className="text-[#5B5B5B]">
+                        Skip
+                    </button>
                 </footer>
             </body>
         </React.Fragment>

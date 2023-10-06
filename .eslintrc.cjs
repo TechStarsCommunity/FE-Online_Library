@@ -1,4 +1,3 @@
-/* eslint-env node */
 module.exports = {
     env: { browser: true, es2020: true },
     extends: [
@@ -8,11 +7,15 @@ module.exports = {
         "plugin:react-hooks/recommended",
         "eslint-config-prettier",
     ],
+    ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.js', 'tailwind.config.js', 'postcss.config.js'],
     parserOptions: { ecmaVersion: "latest", sourceType: "module" },
     settings: { react: { version: "18.2" } },
     plugins: ["react-refresh", "unicorn", "prettier"],
     rules: {
-        "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+        'react-refresh/only-export-components': [
+            'warn',
+            { allowConstantExport: true },
+        ],
         "unicorn/filename-case": [
             "warn",
             {
@@ -26,8 +29,11 @@ module.exports = {
         ],
         "prettier/prettier": "warn",
         "no-console": "warn",
-        "no-unused-vars": "warn",
-        "react/prop-types": "warn",
+        "no-unused-vars": [
+            "warn",
+            { varsIgnorePattern: 'React' },
+        ],
+        "react/prop-types": "off",
         "import/order": [
             "warn",
             {
