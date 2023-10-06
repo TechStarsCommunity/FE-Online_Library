@@ -15,6 +15,7 @@ const OTPVerification = lazy(() => import("./pages/otpverification"));
 const Profile = lazy(() => import("./pages/Profile"));
 const Popularbooks = lazy(() => import("./pages/popularbooks"));
 const Onboarding = lazy(() => import("./pages/onboarding"));
+const EditProfile = lazy(() => import("./components/editProfile"));
 
 const BrowserRouter = createBrowserRouter([
     {
@@ -91,14 +92,6 @@ const BrowserRouter = createBrowserRouter([
         ),
     },
     {
-        path: "*",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <Login />
-            </React.Suspense>
-        ),
-    },
-    {
         path: "/profile",
         element: (
             <React.Suspense fallback={<Loading />}>
@@ -106,7 +99,14 @@ const BrowserRouter = createBrowserRouter([
             </React.Suspense>
         ),
     },
-
+    {
+        path: "/profile/editProfile",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <EditProfile />
+            </React.Suspense>
+        ),
+    },
     {
         path: "/onboarding",
         element: (
@@ -115,12 +115,19 @@ const BrowserRouter = createBrowserRouter([
             </React.Suspense>
         ),
     },
-
     {
         path: "/popularbooks",
         element: (
             <React.Suspense fallback={<Loading />}>
                 <Popularbooks />
+            </React.Suspense>
+        ),
+    },
+    {
+        path: "*",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <Login />
             </React.Suspense>
         ),
     },

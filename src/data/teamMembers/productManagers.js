@@ -1,7 +1,7 @@
 export const productManagers = [
     {
         name: "Akeem Badmus",
-        title: "Community Lead",
-        image: "/productTeam1.png",
+        title: "Product Manager",
+        image: "/product_manager.png",
     },
 ];
