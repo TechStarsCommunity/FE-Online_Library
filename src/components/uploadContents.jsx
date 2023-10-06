@@ -4,7 +4,8 @@ import React from "react";
 // Define common styles in variables
 const inputStyles =
     "px-4 py-2 max-h-1/2 h-auto w-auto grow border-[#35EAB9] border focus:border-[#35EAB9] mb-[-2rem]";
-const buttonStyles = "bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] text-white p-[10px] rounded-lg mt-8";
+const buttonStyles =
+    "bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] text-white p-[10px] rounded-lg mt-8";
 
 const UploadContents = () => {
     return (
