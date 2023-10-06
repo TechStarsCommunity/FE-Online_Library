@@ -1,0 +1,185 @@
+.main {
+    font-family: Inter, Helvetica, sans-serif;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.otp-left-section {
+    display: flex;
+    align-items: center;
+    background: url("/authPage_bg.png");
+    background-size: cover;
+    object-fit: cover;
+    width: 40%;
+    height: 100vh;
+    border-radius: 0rem 2.75rem 2.75rem 0rem;
+}
+
+.imgg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    min-width: 100%;
+}
+
+.vector {
+    background-image: url("/booksLab_logo.png");
+    width: 15.625rem;
+    max-width: 100%;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+}
+
+
+.space {
+    padding: 8rem;
+}
+
+.otp-right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    align-content: center;
+}
+
+.head {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.026rem;
+    margin-bottom: 0.625rem;
+    color: rgba(0, 30, 80, 1);
+    white-space: nowrap;
+}
+.code-label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.816rem;
+    margin-top: 3.5rem;
+    color: rgba(0, 0, 0, 1);
+}
+
+.right-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.21rem;
+    margin-bottom: 3.75rem;
+    color: rgba(91, 91, 91, 1);
+    margin-bottom: 1.25rem;
+}
+
+.code-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 2.5rem 0;
+}
+
+.code {
+    caret-color: transparent;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 0.068rem solid #696969;
+    font-size: 1.5rem;
+    font-family: "Inter" sans-serif;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0.625rem;
+    text-align: center;
+    font-weight: 600;
+}
+.texts {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.816rem;
+    margin-bottom: 3.125rem;
+    text-align: right;
+    color: rgba(139, 139, 139, 1);
+}
+.text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.816rem;
+    margin: 2.5rem 0;
+    color: rgba(139, 139, 139, 1);
+}
+
+.btnn {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgba(0, 30, 80, 1);
+
+}
+
+@media (max-width: 600px) {
+    .code-container{
+        flex-wrap: wrap;
+    }
+    .code{
+        font-size: 1.5rem;
+        height: 1.5rem;
+        width: 6.25rem;
+        max-width: 1.063rem;
+        font-size: bold;
+    }
+    .otp-right-section{
+        align-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .space{
+        padding-left: 5rem;
+    }
+}
+
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.code:valid {
+    border-color: #696969 ;
+    box-shadow: 0 0.625rem 0.625rem -0.313rem;
+}
+
+
+.button {
+    width: 100%;
+    height: 9vh;
+    background: var(
+        --gradient,
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(135deg, #10b2f3 0%, #35eab9 100%)
+    );
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter" sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+@media (max-width: 768px) {
+    .otp-left-section{
+        display: none;
+    }
+    .vector {
+        display: none;
+    }
+    .imgg {
+        display: none;
+    }
+}

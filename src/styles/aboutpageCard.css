@@ -1,0 +1,25 @@
+.aboutpage__card-container {
+    flex: 0 0 auto;
+    margin-right: 35px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.card__image {
+    padding-bottom: 20px;
+    object-fit: cover;
+    height: 19rem;
+    width: 14rem;
+}
+
+.card__name {
+    font-size: 17px;
+    font-weight: 600;
+    color: gray;
+    padding-bottom: 5px;
+}
+
+.card__title {
+    font-size: 13px;
+    color: gray;
+}
