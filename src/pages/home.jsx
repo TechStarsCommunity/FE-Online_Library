@@ -8,6 +8,7 @@ import Footer from "../components/footer";
 import Button from "../components/button";
 import ContactComponent from "../components/contact";
 import TopCategoryV2 from "../components/topCategoryV2";
+import Review from "../components/review";
 import { Link } from "react-router-dom";
 
 const home = () => {
@@ -72,6 +73,7 @@ const home = () => {
             </main>
             <Roadmap />
             <AboutComponent />
+            <Review />
             <ContactComponent />
             <Footer bgColor="red" />
         </React.Fragment>

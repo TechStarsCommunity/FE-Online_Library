@@ -1,12 +1,7 @@
 export const productManagers = [
     {
-        name: "Aslam Dhikrullahi",
-        title: "Design Lead",
-        image: "/test_img1.jpg",
-    },
-    {
-        name: "Aslam Dhikrullahi",
-        title: "Design Lead",
-        image: "/test_img1.jpg",
+        name: "Akeem Badmus",
+        title: "Product Manager",
+        image: "/product_manager.png",
     },
 ];
