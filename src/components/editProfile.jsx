@@ -1,6 +1,6 @@
 import React from "react";
 import LeftSidebar from "../components/leftSideBar";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AiOutlineSetting } from "react-icons/ai";
 import Button from "./button";
 import Input from "../components/input";
