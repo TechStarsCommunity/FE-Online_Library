@@ -35,7 +35,7 @@ const topContent = [
     { id: 14, img: "/editor-image.svg", name: "Psychology" },
     { id: 15, img: "/editor-image.svg", name: "Sports" },
 ];
-import { topContent, topResult } from "../data/search";
+import { topContent, topResults } from "../data/search";
 
 const SearchAside = () => {
     return (
