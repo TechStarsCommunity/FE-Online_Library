@@ -101,6 +101,7 @@ const About = () => {
                 <Carousel responsive={responsive}>
                     {productManagers.map((members) => (
                         <AboutpageCard
+                            key={members.id}
                             name={members.name}
                             title={members.title}
                             image={members.image}
@@ -112,6 +113,7 @@ const About = () => {
                 <Carousel responsive={responsive}>
                     {teamDesigners.map((members) => (
                         <AboutpageCard
+                            key={members.id}
                             name={members.name}
                             title={members.title}
                             image={members.image}
@@ -123,6 +125,7 @@ const About = () => {
                 <Carousel responsive={responsive}>
                     {teamFrontend.map((members) => (
                         <AboutpageCard
+                            key={members.id}
                             name={members.name}
                             title={members.title}
                             image={members.image}
@@ -134,6 +137,7 @@ const About = () => {
                 <Carousel responsive={responsive}>
                     {teamBackend.map((members) => (
                         <AboutpageCard
+                            key={members.id}
                             name={members.name}
                             title={members.title}
                             image={members.image}
