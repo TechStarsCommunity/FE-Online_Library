@@ -8,8 +8,16 @@ export const teamFrontend = [
         name: "Olaiya Heritage J.",
         title: "Frontend Developer",
         image: "/frontendTeam2.png",
-        title: "Frontend Lead",
-        image: "/frontend/frontend_lead.png",
+    },
+    {
+        name: "Gabriel Ogbu",
+        title: "Frontend Developer",
+        image: "/frontendTeam3.png",
+    },
+    {
+        name: "Hafiz Salam",
+        title: "Frontend Developer",
+        image: "/frontendTeam4.png",
     },
     {
         name: "Temitope Akinsunmade",
@@ -60,5 +68,10 @@ export const teamFrontend = [
         name: "Isaac Olowookere",
         title: "Frontend Developer",
         image: "/frontendTeam14.png",
+    },
+    {
+        name: "Ugonna Ezeabara Jude",
+        title: "Frontend Developer",
+        image: "/frontendTeam15.jpg",
     },
 ];
