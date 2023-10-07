@@ -1,12 +1,14 @@
-import { IoMdCloudUpload } from "react-icons/io";
 import React from "react";
+import { useState } from "react";
+import { MdCloudUpload } from "react-icons/md";
 
-// Define common styles in variables
+// Define styles for input and button
 const inputStyles =
-    "px-4 py-2 max-h-1/2 h-auto w-auto grow border-[#35EAB9] border focus:border-[#35EAB9] mb-[-2rem]";
+    "px-4 py-2 max-h-1/2 h-auto w-full md:w-auto grow border-[#35EAB9] border focus:border-[#35EAB9] mb-[-2rem]";
 const buttonStyles =
     "bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] text-white p-[10px] rounded-lg mt-8";
 
+//major function
 const UploadContents = () => {
     return (
         <div className="py-8">
@@ -19,13 +21,15 @@ const UploadContents = () => {
                 <SelectField label="Status" />
                 <AuthorField />
                 <AuthorField isCredits />
-                <div>
-                    <IoMdCloudUpload className="text-[#10B2F3]" />
+                <div className="flex w-full gap-5 flex-row">
+                    <Uploader bookCover accept=".jpg, .png" id="img" />
+                    <Uploader accept=".pdf" id="pdf" />
                 </div>
             </form>
         </div>
     );
 };
+// components sections
 
 const FormField = ({ label, placeholder }) => (
     <div className="mb-4">
@@ -83,4 +87,43 @@ const AuthorField = ({ isCredits }) => (
     </div>
 );
 
+function Uploader({ bookCover, accept, id }) {
+    const [image, setImage] = useState(null); //no image initially
+    const [fileName, setFileName] = useState();
+    return (
+        <div className="w-full">
+            <p>{bookCover ? "Upload book cover" : "Upload book Manuscript"}</p>
+            {/* when the div is clicked, you can also upload the image */}
+            <div
+                className="border rounded-lg border-[#10B2F3] flex flex-col cursor-pointer justify-center items-center w-full h-[200px]"
+                onClick={() => document.getElementById(id).click()}
+            >
+                {/* it gets the file name we are uploading and displays it */}
+                <input
+                    type="file"
+                    accept={accept}
+                    hidden
+                    id={id}
+                    onChange={({ target: { files } }) => {
+                        files[0] && setFileName(files[0].name);
+                        if (files) {
+                            setImage(URL.createObjectURL(files[0]));
+                        }
+                    }}
+                />
+                {/* display image otherwise icon */}
+                {image ? (
+                    <img src={img} width={150} height={150} alt={fileName} />
+                ) : (
+                    <>
+                        <MdCloudUpload color="#10B2F3" size={60} />
+                        <p className="font-bold">
+                            {bookCover ? "Upload jpg or png" : "Upload pdf"}
+                        </p>
+                    </>
+                )}
+            </div>
+        </div>
+    );
+}
 export default UploadContents;
