@@ -42,7 +42,7 @@ const SearchAside = () => {
         <React.Fragment>
             <div className="flex gap-8 flex-row items-center text-[.9rem] font-normal mr-[1.5rem] mt-[5rem]">
                 <div className="flex flex-col gap-2 ml-8 w-[40%]">
-                    {topResult.map((item) => (
+                    {topResults.map((item) => (
                         <div className="flex gap-6" key={item.id}>
                             <div className="">
                                 <img src={item.img} alt="alt" className="w-[2.2rem] h-[2.2rem]" />
