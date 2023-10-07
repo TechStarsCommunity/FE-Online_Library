@@ -1,6 +1,6 @@
-import React, {useState, useEffect}from "react";
+import React, { useState, useEffect } from "react";
 import { MdCloudUpload } from "react-icons/md";
-import Thumbnail from 'react-thumbnail-generator';
+import Thumbnail from "react-thumbnail-generator";
 
 // Define styles for input and button
 const inputStyles =
@@ -87,9 +87,8 @@ const AuthorField = ({ isCredits }) => (
     </div>
 );
 
-
 function Uploader({ bookCover, accept, id }) {
-    const [fileData, setFileData] = useState({ fileName: '', imageURL: null });
+    const [fileData, setFileData] = useState({ fileName: "", imageURL: null });
 
     const handleFileChange = (e) => {
         const file = e.target.files[0];
@@ -110,32 +109,22 @@ function Uploader({ bookCover, accept, id }) {
 
     return (
         <div className="w-full space-y-2">
-            <p>{bookCover ? 'Upload book cover' : 'Upload book Manuscript'}</p>
+            <p>{bookCover ? "Upload book cover" : "Upload book Manuscript"}</p>
             <div
                 className="border rounded-lg border-[#10B2F3] flex flex-col cursor-pointer justify-center items-center w-full h-[200px]"
                 onClick={() => document.getElementById(id).click()}
             >
-                <input
-                    type="file"
-                    accept={accept}
-                    hidden
-                    id={id}
-                    onChange={handleFileChange}
-                />
+                <input type="file" accept={accept} hidden id={id} onChange={handleFileChange} />
                 {fileData.imageURL ? (
                     <div>
-                        <img
-                            src={fileData.imageURL}
-                            width={100}
-                            alt={fileData.fileName}
-                        />
+                        <img src={fileData.imageURL} width={100} alt={fileData.fileName} />
                         <p>{fileData.fileName}</p>
                     </div>
                 ) : (
                     <>
                         <MdCloudUpload color="#10B2F3" size={60} />
                         <p className="font-bold">
-                            {bookCover ? 'Upload jpg or png' : 'Upload pdf'}
+                            {bookCover ? "Upload jpg or png" : "Upload pdf"}
                         </p>
                     </>
                 )}
@@ -143,6 +132,5 @@ function Uploader({ bookCover, accept, id }) {
         </div>
     );
 }
-
 
 export default UploadContents;

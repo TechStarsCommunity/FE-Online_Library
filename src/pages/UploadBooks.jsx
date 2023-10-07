@@ -5,11 +5,11 @@ import LeftSidebar from "../components/leftSideBar";
 const UploadBooks = () => {
     return (
         <React.Fragment>
-           <div className="">
-           <LeftSidebar />
-           <h1>Upload your book</h1>
-           <p>Name</p>
-           </div>
+            <div className="">
+                <LeftSidebar />
+                <h1>Upload your book</h1>
+                <p>Name</p>
+            </div>
         </React.Fragment>
     );
 };

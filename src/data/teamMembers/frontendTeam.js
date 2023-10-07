@@ -73,5 +73,4 @@ export const teamFrontend = [
         title: "Frontend Developer",
         image: "/frontend/adeyemo_frontend.png",
     },
-
 ];
