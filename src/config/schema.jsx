@@ -15,3 +15,23 @@ export const signUpSchema = yup.object().shape({
         .oneOf([yup.ref("password"), undefined], "Passwords Don't Match")
         .required(),
 });
+
+export const ContactSchema = yup.object().shape({
+    name: yup.string().trim().required("Your Name Is Required"),
+    email: yup
+        .string()
+        .trim()
+        .email()
+        .required("Your Email is Required, ensure it is the Correct Format"),
+    message: yup.string().trim().required("Your Message Is Required"),
+});
+
+export const EditProfileSchema = yup.object().shape({
+    name: yup.string().trim().required("Your name is required"),
+    email: yup
+        .string()
+        .trim()
+        .email()
+        .required("Your Email is required, ensure it is the correct format"),
+    message: yup.string().trim().required("Your message is required"),
+});

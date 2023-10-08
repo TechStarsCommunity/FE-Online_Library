@@ -36,7 +36,8 @@
 
 
 .space {
-    padding: 8rem;
+    padding: 3rem;
+    margin: 0 auto;
 }
 
 .otp-right-section {
@@ -90,7 +91,8 @@
     border: 0.068rem solid #696969;
     font-size: 1.5rem;
     font-family: "Inter" sans-serif;
-    width: 4.5rem;
+    width: 3.0rem;
+    /* max-width: 4.5rem; */
     height: 4.5rem;
     margin: 0.625rem;
     text-align: center;
@@ -127,9 +129,9 @@
     }
     .code{
         font-size: 1.5rem;
-        height: 1.5rem;
+        height: 3rem;
         width: 6.25rem;
-        max-width: 1.063rem;
+        /* max-width: 1.063rem; */
         font-size: bold;
     }
     .otp-right-section{
@@ -139,7 +141,7 @@
 
 @media (max-width: 400px) {
     .space{
-        padding-left: 5rem;
+        padding-left: 2rem;
     }
 }
 

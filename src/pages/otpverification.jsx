@@ -35,7 +35,7 @@ const OTPVerification = () => {
 
                             <div className="container">
                                 <h2 className="code-label">Code</h2>
-                                <div className="code.container">
+                                <div className="flex flex-row flex-wrap">
                                     <input
                                         type="number"
                                         className="code"
