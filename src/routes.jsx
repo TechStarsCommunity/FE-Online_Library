@@ -13,7 +13,6 @@ const Search = lazy(() => import("./pages/search"));
 const BookCategories = lazy(() => import("./pages/bookCategories"));
 const OTPVerification = lazy(() => import("./pages/otpverification"));
 const Carrierroadmap = lazy(() => import("./pages/carrierRoadmap"));
-const Profile = lazy(() => import("./pages/Profile"));
 const Popularbooks = lazy(() => import("./pages/popularbooks"));
 const Onboarding = lazy(() => import("./pages/onboarding"));
 const EditProfile = lazy(() => import("./components/editProfile"));
