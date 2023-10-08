@@ -6,6 +6,7 @@ import { RxDashboard } from "react-icons/rx";
 import { SiGumroad } from "react-icons/si";
 import UploadContents from "../components/uploadContents";
 import RoadMap from "./../components/roadmap";
+import BookDetails from "./../components/book";
 import ContactComponent from "../components/contact";
 import YourLibrary from "../components/yourLibrary";
 import React from "react";
@@ -21,8 +22,7 @@ export const Tabs = [
         id: 2,
         name: "Books",
         Icon: <GoBook />,
-        path: "/popularbooks",
-        component: UploadContents,
+        component: BookDetails,
     },
     {
         id: 3,

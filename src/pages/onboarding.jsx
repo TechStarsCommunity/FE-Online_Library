@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BookCategories from "./bookCategories";
-import RoadMap from "./roadMap";
+import RoadMap from "./roadmap";
 
 const Onboarding = () => {
     // const [active, setActive] = useState(1);

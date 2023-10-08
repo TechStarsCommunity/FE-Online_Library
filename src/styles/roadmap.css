@@ -20,6 +20,13 @@
     font-size: 3rem;
     font-weight: 600;
     line-height: normal;
+    margin-bottom: 0.2rem;
+}
+
+.container-detail p {
+    color: #5b5b5b;
+    font-family: Montserrat;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -35,7 +42,7 @@
 form {
     display: flex;
     flex-direction: column;
-    /* gap: 3rem; */
+    gap: 2rem;
 }
 
 form div {
@@ -45,6 +52,8 @@ form div {
 
 label {
     color: #000;
+    font-family: Inter;
+    margin-bottom: 0.2rem;
     font-family: Inter, Montserrat;
     margin-bottom: 0.8rem;
     font-size: 1.5rem;
@@ -53,25 +62,36 @@ label {
     line-height: normal;
 }
 
-input {
-    height: 3.7rem;
+select {
+    appearance: none; /* Removes default appearance (not supported in all browsers) */
+    outline: none; /* Removes the outline when focused */
+    background-color: transparent;
     width: 90%;
-    flex-shrink: 0;
+    height: 3.7rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--gradient, #10b2f3);
-    background: #fff;
-    padding-left: 2rem;
+    border: 2px solid var(--gradient, #10b2f3);
+    padding: 1rem !important;
+    font-size: 1rem;
 }
 
-input::placeholder {
-    font: Montserrat;
-    font-size: 17px;
+select option {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px !important;
 }
+
+select:focus {
+    border: 2px solid var(--gradient, #10b2f3);
+}
+
+/* option[value="l"] {
+    color: yellow;
+} */
 
 .btn-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     width: 90%;
 }
 
@@ -109,15 +129,23 @@ input::placeholder {
     .roadmap-container {
         flex-direction: column;
         align-items: center;
-        padding: 2rem;
+        /* padding: 2rem; */
     }
 
-    .btn-container {
-        padding-top: 50px;
+    select {
+        appearance: none; /* Removes default appearance (not supported in all browsers) */
+        outline: none; /* Removes the outline when focused */
+        background-color: transparent;
+        width: 90%;
+        height: 3.7rem;
+        border-radius: 0.5rem;
+        border: 2px solid var(--gradient, #10b2f3);
+        padding: 1rem !important;
+        font-size: 1rem;
     }
 
     .container-detail p {
-        padding-bottom: 25px;
+        padding-bottom: 20px;
     }
 
     .svgContainer img {
@@ -130,10 +158,6 @@ input::placeholder {
     @media screen and (max-width: 992px) {
         .roadmap-container {
             padding: 2rem;
-        }
-
-        .btn-container {
-            padding-top: 50px;
         }
 
         .container-detail p {
