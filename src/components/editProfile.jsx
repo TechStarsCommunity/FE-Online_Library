@@ -11,7 +11,7 @@ const editProfile = () => {
     const { errors, register, handleSubmit } = useSubmit(EditProfileSchema);
 
     const processData = (data) => {
-        console.log(data);
+        console.log(data)
     };
 
     return (
