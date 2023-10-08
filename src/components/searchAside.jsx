@@ -1,6 +1,6 @@
 import React from "react";
 
-const topResult = [
+const topResults = [
     { id: 1, img: "/editor-image.svg", name: "Editor's Pick" },
     { id: 2, img: "/editor-image.svg", name: "Frontend Development" },
     { id: 3, img: "/editor-image.svg", name: "Product Design" },
