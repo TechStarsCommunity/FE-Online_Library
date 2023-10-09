@@ -18,16 +18,6 @@ const Onboarding = lazy(() => import("./pages/onboarding"));
 const EditProfile = lazy(() => import("./components/editProfile"));
 
 const BrowserRouter = createBrowserRouter([
-    //route to editProfile from profile
-    {
-        path: "/profile/editProfile",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <EditProfile />
-            </React.Suspense>
-        ),
-    },
-
     {
         path: "/",
         element: (
@@ -102,14 +92,6 @@ const BrowserRouter = createBrowserRouter([
         ),
     },
     {
-        path: "*",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <Login />
-            </React.Suspense>
-        ),
-    },
-    {
         path: "/profile",
         element: (
             <React.Suspense fallback={<Loading />}>
@@ -117,7 +99,14 @@ const BrowserRouter = createBrowserRouter([
             </React.Suspense>
         ),
     },
-
+    {
+        path: "/profile/editProfile",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <EditProfile />
+            </React.Suspense>
+        ),
+    },
     {
         path: "/onboarding",
         element: (
@@ -126,12 +115,19 @@ const BrowserRouter = createBrowserRouter([
             </React.Suspense>
         ),
     },
-
     {
         path: "/popularbooks",
         element: (
             <React.Suspense fallback={<Loading />}>
                 <Popularbooks />
+            </React.Suspense>
+        ),
+    },
+    {
+        path: "*",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <Login />
             </React.Suspense>
         ),
     },

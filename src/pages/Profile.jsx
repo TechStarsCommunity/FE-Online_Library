@@ -43,6 +43,7 @@ const Profile = () => {
                                         </p>
                                     </div>
                                     <div className="flex flex-col">
+                                        <p className="text-sky-500 text-lg font-medium">Username</p>
                                         <p className="text-sky-500 text-lg font-medium">Location</p>
                                         <p className="md:text-xl text-base font-medium py-3">
                                             @akeem_123star
@@ -96,6 +97,11 @@ const Profile = () => {
                                     <p className="text-sm md:text-base font-medium items-center">
                                         Email
                                     </p>
+                                    <Toggle toggled={true} onClick={logState} />
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-sm md:text-base font-medium">Sms</p>
+                                    <Toggle toggled={true} onClick={logState} />
                                     <PiToggleLeft />
                                 </div>
                                 <div className="flex justify-between items-center">
@@ -106,6 +112,7 @@ const Profile = () => {
                                     <p className="text-sm md:text-base font-medium">
                                         Desktop notification
                                     </p>
+                                    <Toggle toggled={true} onClick={logState} />
                                     <PiToggleLeft />
                                 </div>
                             </div>
@@ -117,6 +124,12 @@ const Profile = () => {
                                     Change you view booklab{" "}
                                 </p>
                                 <div className="flex justify-between items-center">
+                                    <p className="text-sm md:text-base font-medium">Dark Mode</p>
+                                    <Toggle toggled={true} onClick={logState} />
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <p className="text-sm md:text-base font-medium ">Light Mode</p>
+                                    <Toggle toggled={true} onClick={logState} />
                                     <p className="md:text-xl text-base font-medium">Dark Mode</p>
                                     <PiToggleLeft />
                                 </div>
@@ -128,6 +141,7 @@ const Profile = () => {
                                     <p className="text-sm md:text-base font-medium">
                                         Eye care mode
                                     </p>
+                                    <Toggle toggled={true} onClick={logState} />
                                     <PiToggleLeft />
                                 </div>
                             </div>

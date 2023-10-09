@@ -1,76 +1,77 @@
 export const teamFrontend = [
     {
         name: "Christian Enyia",
-        title: "Frontend Lead",
-        image: "/frontend/frontend_lead.png",
+        title: "Frontend Development Lead",
+        image: "/frontendTeam1.png",
     },
     {
-        name: "Olaiya Heritage J",
+        name: "Olaiya Heritage J.",
         title: "Frontend Developer",
-        image: "/frontend/heritage_frontend.png",
+        image: "/frontendTeam2.png",
     },
     {
         name: "Gabriel Ogbu",
         title: "Frontend Developer",
-        image: "/frontend/gabriel_frontend.png",
+        image: "/frontendTeam3.png",
     },
     {
         name: "Hafiz Salam",
         title: "Frontend Developer",
-        image: "/frontend/salam_frontend.png",
+        image: "/frontendTeam4.png",
     },
-
     {
         name: "Temitope Akinsunmade",
         title: "Frontend Developer",
-        image: "/frontend/temitope_frontend.png",
+        image: "/frontendTeam5.png",
     },
-
     {
         name: "Simon Chukwuebuka",
         title: "Frontend Developer",
-        image: "/frontend/simon_frontend.png",
+        image: "/frontendTeam6.png",
     },
-
-    {
-        name: "Melvin Renish",
-        title: "Frontend Developer",
-        image: "/frontend/renish_frontend.png",
-    },
-
-    {
-        name: "Isaac Olowookere",
-        title: "Frontend Developer",
-        image: "/frontend/isaac_frontend.png",
-    },
-
     {
         name: "Blessing Eno",
         title: "Frontend Developer",
-        image: "/frontend/blessing_frontend.png",
+        image: "/frontendTeam7.png",
     },
-
     {
-        name: "Hamzat Abdul-muizz",
+        name: "Abraham Atanda",
         title: "Frontend Developer",
-        image: "/frontend/abdulmuiz_frontend.png",
+        image: "/frontendTeam9.png",
     },
-
-    {
-        name: "Michael Okorie Chinedu",
-        title: "Frontend Developer",
-        image: "/frontend/mickie_frontend.png",
-    },
-
     {
         name: "Fatunwase Sakirat",
         title: "Frontend Developer",
-        image: "/frontend/sakirat_frontend.png",
+        image: "/backendTeam2.png",
     },
-
     {
         name: "Stephen Adeyemo",
         title: "Frontend Developer",
-        image: "/frontend/adeyemo_frontend.png",
+        image: "/frontendTeam10.png",
+    },
+    {
+        name: "Michael Okorie Chinedu",
+        title: "Frontend Developer",
+        image: "/frontendTeam11.png",
+    },
+    {
+        name: "Melvin Renish",
+        title: "Frontend Developer",
+        image: "/frontendTeam12.png",
+    },
+    {
+        name: "Hamzat Abdul-muizz",
+        title: "Frontend Developer",
+        image: "frontendTeam13.png",
+    },
+    {
+        name: "Isaac Olowookere",
+        title: "Frontend Developer",
+        image: "/frontendTeam14.png",
+    },
+    {
+        name: "Ugonna Ezeabara Jude",
+        title: "Frontend Developer",
+        image: "/frontendTeam15.jpg",
     },
 ];
