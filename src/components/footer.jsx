@@ -8,6 +8,7 @@ const Footer = ({ bgColor }) => {
 
     return (
         <React.Fragment>
+        <div className="py-5 px-2 bg-[#dffcf4] m-0 w-full">
             <img src="/logo.png" alt="" />
             <footer
                 className={`bg-[${bgColor}]  pt-[2rem] sm:pt-[5rem] pl-3 pb-[100px] sm:pl-12 overflow-x-hidden`}
@@ -118,6 +119,7 @@ const Footer = ({ bgColor }) => {
                             <p className="text-center">2023 BooksLab. All right reserved!</p>
                         </div> */}
             </footer>
+            </div>
         </React.Fragment>
     );
 };
