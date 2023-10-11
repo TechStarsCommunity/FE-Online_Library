@@ -80,6 +80,5 @@ export const teamFrontend = [
         name: "Stephen Adeyemo",
         title: "Frontend Developer",
         image: "/frontend/adeyemo_frontend.png",
-
     },
 ];
