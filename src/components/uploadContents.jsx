@@ -1,6 +1,6 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MdCloudUpload } from "react-icons/md";
+import Thumbnail from "react-thumbnail-generator";
 
 // Define styles for input and button
 const inputStyles =
@@ -11,7 +11,7 @@ const buttonStyles =
 //major function
 const UploadContents = () => {
     return (
-        <div className="py-8">
+        <div className="p-8">
             <h2 className="font-bold text-2xl py-4">Upload your book</h2>
             <form method="post" className="w-full max-w-[90%]">
                 <FormField label="Name" placeholder="album" />
@@ -68,7 +68,7 @@ const SelectField = ({ label }) => (
 const AuthorField = ({ isCredits }) => (
     <div>
         <label htmlFor={isCredits ? "credits" : "author"} className="text-base mb-[-2rem]">
-            {isCredits ? "Credits" : "Author"}
+            {isCredits ? "Credits" : "Authors name"}
         </label>
         <div className="flex gap-4 flex-row items-center h-auto">
             <input
@@ -88,32 +88,38 @@ const AuthorField = ({ isCredits }) => (
 );
 
 function Uploader({ bookCover, accept, id }) {
-    const [image, setImage] = useState(null); //no image initially
-    const [fileName, setFileName] = useState();
+    const [fileData, setFileData] = useState({ fileName: "", imageURL: null });
+
+    const handleFileChange = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            setFileData({
+                fileName: file.name,
+                imageURL: URL.createObjectURL(file),
+            });
+        }
+    };
+    useEffect(() => {
+        return () => {
+            if (fileData.fileURL) {
+                URL.revokeObjectURL(fileData.fileURL);
+            }
+        };
+    }, [fileData.imageURL]);
+
     return (
-        <div className="w-full">
+        <div className="w-full space-y-2">
             <p>{bookCover ? "Upload book cover" : "Upload book Manuscript"}</p>
-            {/* when the div is clicked, you can also upload the image */}
             <div
                 className="border rounded-lg border-[#10B2F3] flex flex-col cursor-pointer justify-center items-center w-full h-[200px]"
                 onClick={() => document.getElementById(id).click()}
             >
-                {/* it gets the file name we are uploading and displays it */}
-                <input
-                    type="file"
-                    accept={accept}
-                    hidden
-                    id={id}
-                    onChange={({ target: { files } }) => {
-                        files[0] && setFileName(files[0].name);
-                        if (files) {
-                            setImage(URL.createObjectURL(files[0]));
-                        }
-                    }}
-                />
-                {/* display image otherwise icon */}
-                {image ? (
-                    <img src={img} width={150} height={150} alt={fileName} />
+                <input type="file" accept={accept} hidden id={id} onChange={handleFileChange} />
+                {fileData.imageURL ? (
+                    <div>
+                        <img src={fileData.imageURL} width={100} alt={fileData.fileName} />
+                        <p>{fileData.fileName}</p>
+                    </div>
                 ) : (
                     <>
                         <MdCloudUpload color="#10B2F3" size={60} />
@@ -126,4 +132,5 @@ function Uploader({ bookCover, accept, id }) {
         </div>
     );
 }
+
 export default UploadContents;
