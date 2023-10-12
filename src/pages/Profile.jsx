@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import LeftSidebar from "../components/leftSideBar";
 import Button from "../components/button";
 import { AiOutlineSetting, AiOutlineEdit } from "react-icons/ai";
@@ -6,8 +6,15 @@ import { PiToggleLeft } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { Toggle } from "../components/toggle";
 import editProfile from "../components/editProfile";
+import { IoIosMenu } from "react-icons/io";
 
 const Profile = () => {
+    const [sidebarVisible, setSidebarVisible] = useState(true);
+
+    const toogleSidebar = () => {
+        setSidebarVisible(!sidebarVisible);
+    };
+
     const logState = (state) => {
         console.log("Toggled:", state);
     };
@@ -15,10 +22,27 @@ const Profile = () => {
     return (
         <>
             <div className="flex h-full w-screen">
-                <div className="hidden sm:block bg-[#DFF6FF] h-full py-4 fixed ">
-                    <LeftSidebar />
-                </div>
-                <div className="flex w-screen sm:w-fit items-center p-10 sm:absolute min-h-100vh sm:left-[15.6rem] bg-[#e6e6e6] ">
+                <button
+                    className="transition-transform duration-300 transform hover:scale-110"
+                    onClick={toogleSidebar}
+                >
+                    <IoIosMenu
+                        style={{
+                            fontSize: "40px",
+                            color: "gray",
+                            marginTop: "40px",
+                            marginLeft: "20px",
+                        }}
+                    />
+                </button>
+
+                {sidebarVisible && (
+                    <div className="hidden sm:block bg-[#DFF6FF] h-full py-4 fixed ">
+                        <LeftSidebar />
+                    </div>
+                )}
+
+                <div className="flex w-screen sm:w-fit items-center p-10 sm:absolute min-h-100vh sm:left-[20.6rem] bg-[#e6e6e6] ">
                     <div className="flex flex-col gap-5 justify-between">
                         <div className=" relative bg-cover bg-center bg-[url('/Header.jpg')] h-32 p-4 rounded-md">
                             <img

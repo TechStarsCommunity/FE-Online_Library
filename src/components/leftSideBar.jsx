@@ -1,22 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import booksLabLogo from "/booksLab_logo.png";
 import { Tabs } from "../data/leftSideBarData";
 import { AiOutlineLogout } from "react-icons/ai";
+import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { NavLink, useLocation } from "react-router-dom";
 import Button from "./button";
 
 const LeftSidebar = () => {
     const location = useLocation();
+    const [sidebarOpen, setSidebarOpen] = useState(true);
+
+    const toogleSidebar = () => {
+        setSidebarOpen(!sidebarOpen);
+    };
+
     // const handleClick = (id) => {
     //     setActive(id);
     // };
 
     return (
         <React.Fragment>
-            <div className="relative bg-black h-full max-w-[20rem]">
-                <h1 className="mt-[50px] mb-[50px] mx-auto w-[60%]">
-                    <img src={booksLabLogo} alt="Logo" />
-                </h1>
+            <div
+                className={`relative h-full w-80 ${
+                    sidebarOpen ? "" : "hidden"
+                } transition-all duration-300 ease-in-out`}
+            >
+                <div className="flex justify-between ">
+                    <h1 className="mt-[50px] mb-[50px] ml-5 w-[60%]">
+                        <img src={booksLabLogo} alt="Logo" />
+                    </h1>
+
+                    <button
+                        className="pr-3 transition-transform duration-300 transform hover:scale-110"
+                        onClick={toogleSidebar}
+                    >
+                        {sidebarOpen ? (
+                            <IoIosClose style={{ fontSize: "40px", color: "gray" }} />
+                        ) : (
+                            <IoIosMenu style={{ fontSize: "40px", color: "gray" }} />
+                        )}
+                    </button>
+                </div>
 
                 <div className="mt-[100px]">
                     {Tabs.map((data) => {
