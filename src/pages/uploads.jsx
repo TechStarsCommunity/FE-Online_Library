@@ -48,5 +48,4 @@ const Uploads = () => {
         </React.Fragment>
     );
 };
-
 export default Uploads;
