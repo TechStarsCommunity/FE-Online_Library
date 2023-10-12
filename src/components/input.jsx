@@ -59,7 +59,6 @@ const Input = memo(
                         className={`input ${
                             disabled === true ? "cursor-not-allowed" : "cursor-text"
                         }`}
-                        {...props}
                     />
                     {type === "password" && (
                         <span

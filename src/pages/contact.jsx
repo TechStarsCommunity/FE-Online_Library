@@ -16,17 +16,17 @@ const Contact = () => {
 
     return (
         <React.Fragment>
-            <Header />
-            <ContactComponent className={"bg-[#dffcf4]"} />
-            <section className="mx-auto w-full py-[24px] px-[48px]">
-                <h1 className="text-[24px] md:text-[30px] my-[20px] text-[#001E50] font-bold lg:text-[36px]">
+            <Header className="p-4" />
+            <ContactComponent className="bg-[#dffcf4]" />
+            <section className="mx-auto p-4 md:p-12 lg:p-24">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl my-4 text-[#001E50] font-bold ml-4">
                     Send us a message
                 </h1>
                 <form
                     onSubmit={handleSubmit(onSubmit)}
-                    className="grid grid-flow-row-dense grid-cols-2 gap-2 my-12"
+                    className="mx-4 grid grid-cols-1 md:grid-cols-2 gap-4 my-4 md:my-0"
                 >
-                    <div className="col-span-1 mr-auto w-[90%]">
+                    <div className="w-full">
                         <Input
                             label="Name"
                             name="name"
@@ -46,8 +46,8 @@ const Contact = () => {
                             placeholder="Email..."
                         />
                     </div>
-                    <div className="col-span-1 flex flex-col gap-2 ml-auto w-[90%]">
-                        <label htmlFor="message" className="text-sm md:text-lg text-[#001E50]">
+                    <div className="w-full">
+                        <label htmlFor="message" className="text-base md:text-lg text-[#001E50]">
                             Message
                         </label>
                         <textarea
@@ -59,12 +59,12 @@ const Contact = () => {
                             {...(errors.message && { style: { border: "1px solid red" } })}
                         ></textarea>
                         {errors.message && (
-                            <span role="alert" className="text-sm text-red-700 capitalize">
+                            <span role="alert" className="text-base text-red-700 capitalize">
                                 {errors.message.message}
                             </span>
                         )}
                     </div>
-                    <Button variant="primary" style={{ width: "15rem", marginTop: "-5rem" }}>
+                    <Button variant="primary" className="w-full">
                         Submit
                     </Button>
                 </form>
