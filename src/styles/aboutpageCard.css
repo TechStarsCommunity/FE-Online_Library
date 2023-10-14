@@ -3,20 +3,22 @@
     margin-right: 35px;
     margin-top: 20px;
     margin-bottom: 50px;
+    max-width: 100%;
+    height: auto;
 }
 
 .card__image {
     padding-bottom: 20px;
     object-fit: cover;
     height: 19rem;
-    width: 100%;
+    max-width: 100%;
 }
 
 .card__name {
     font-size: 17px;
     font-weight: 600;
     color: gray;
-    padding-bottom: 5px;
+    padding-bottom: 10px 0;
 }
 
 .card__title {
@@ -27,6 +29,41 @@
 
 
 /* Media queries for responsiveness */
+
+/* Styles for screens with a maximum width of 768px (e.g., tablets) */
+@media screen and (max-width: 768px) {
+    .aboutpage__card-container {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card__name {
+        font-size: 16px; 
+        font-weight: 600;
+        color: gray;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        /* border: 3px solid red; */
+    }
+
+    .card__title {
+        margin-top: -10px;
+        font-size: 18px; 
+        font-weight: 500;
+        color: gray;
+    }
+
+    .card__image {
+        object-fit: cover;
+        height: auto;
+        max-width: 100%;
+    }
+}
 
 
 /* Styles for screens with a maximum width of 36rem (e.g., mobile phones) */
@@ -55,7 +92,7 @@
         margin-bottom: -11px;
         object-fit: contain;
         height: 19rem;
-        width: 20rem;
+        width: 100%;
         
     }
 
