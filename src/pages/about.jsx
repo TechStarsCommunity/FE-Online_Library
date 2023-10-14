@@ -120,16 +120,15 @@ const About = () => {
                 </Carousel>
 
                 <h2 className="stack">Frontend Developers</h2>
-                    <Carousel responsive={responsive}>
-                        {teamFrontend.map((members) => (
-                            <AboutpageCard
-                                name={members.name}
-                                title={members.title}
-                                image={members.image}
-                            />
-                        ))}
-                    </Carousel>
-                
+                <Carousel responsive={responsive}>
+                    {teamFrontend.map((members) => (
+                        <AboutpageCard
+                            name={members.name}
+                            title={members.title}
+                            image={members.image}
+                        />
+                    ))}
+                </Carousel>
 
                 <h2>Backend Developers</h2>
                 <Carousel responsive={responsive}>
