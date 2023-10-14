@@ -9,7 +9,7 @@
     padding-bottom: 20px;
     object-fit: cover;
     height: 19rem;
-    width: 14rem;
+    width: 100%;
 }
 
 .card__name {
@@ -22,4 +22,41 @@
 .card__title {
     font-size: 13px;
     color: gray;
+}
+
+
+
+/* Media queries for responsiveness */
+
+
+/* Styles for screens with a maximum width of 36rem (e.g., mobile phones) */
+@media screen and (max-width: 36rem) {
+    .aboutpage__card-container {
+        flex: 0 0 auto;
+        margin-right:10px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        height: 19rem;
+        width: 20rem;
+        border: none;
+    }
+
+    .card__name{
+        text-align: center;
+        font-weight: 800;
+    }
+    
+    .card__title{
+        text-align: center;
+        font-weight: 500;
+        margin-top: -10px;
+    }
+    .card__image {
+        margin-bottom: -11px;
+        object-fit: contain;
+        height: 19rem;
+        width: 20rem;
+        
+    }
+
 }

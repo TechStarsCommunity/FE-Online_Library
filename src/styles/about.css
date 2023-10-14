@@ -36,6 +36,7 @@ h2 {
 .row__options {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .row__icon {
@@ -97,5 +98,11 @@ h2 {
 
     .lor {
         font-size: 1rem;
+    }
+
+    .stack{
+        /* border: 2px solid blue; */
+        font-size: 1.4rem;
+        font-weight: 800;
     }
 }

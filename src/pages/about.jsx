@@ -60,7 +60,7 @@ const About = () => {
                     features of BooksLab is the roadmap feature. Our Roadmap is designed to guide
                     users from being a beginner to advanced in their chosen tech field. Whether
                     you're interested in web development, data science, cybersecurity, or any other
-                    tech field, our Roadmap will help yopu develop a clear path to success. Our
+                    tech field, our Roadmap will help you develop a clear path to success. Our
                     Roadmap is regularly updated with the latest trends and technologies, ensuring
                     that users have access to the most up-to-date information.
                 </p>
@@ -119,16 +119,17 @@ const About = () => {
                     ))}
                 </Carousel>
 
-                <h2>Frontend Developers</h2>
-                <Carousel responsive={responsive}>
-                    {teamFrontend.map((members) => (
-                        <AboutpageCard
-                            name={members.name}
-                            title={members.title}
-                            image={members.image}
-                        />
-                    ))}
-                </Carousel>
+                <h2 className="stack">Frontend Developers</h2>
+                    <Carousel responsive={responsive}>
+                        {teamFrontend.map((members) => (
+                            <AboutpageCard
+                                name={members.name}
+                                title={members.title}
+                                image={members.image}
+                            />
+                        ))}
+                    </Carousel>
+                
 
                 <h2>Backend Developers</h2>
                 <Carousel responsive={responsive}>
