@@ -11,7 +11,7 @@ const editProfile = () => {
     const { errors, register, handleSubmit } = useSubmit(EditProfileSchema);
 
     const processData = (data) => {
-        console.log(data)
+        console.log(data);
     };
 
     return (
@@ -42,19 +42,18 @@ const editProfile = () => {
                                 <Input
                                     id="name"
                                     name="name"
-                                    type="name"
+                                    type="text"
                                     register={register}
                                     errors={errors}
-                                    autoComplete="name"
+                                    disabled="false"
                                     placeholder="Akeem"
                                 />
                                 <Input
                                     id="username"
                                     name="username"
-                                    type="name"
+                                    type="text"
                                     register={register}
                                     errors={errors}
-                                    autoComplete="name"
                                     placeholder="@akeem_123star"
                                 />
                                 <Input

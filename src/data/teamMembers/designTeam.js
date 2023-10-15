@@ -1,42 +1,32 @@
 export const teamDesigners = [
     {
+        id: 1,
         name: "Aslam Dhikrullahi",
         title: "Design Lead",
         image: "/designTeam1.png",
     },
     {
-        name: "Opata Ebubechukwu",
+        id: 2,
+        name: "Aslam Dhikrullahi",
         title: "Design Lead",
         image: "/designTeam2.png",
     },
     {
-        name: "Ojieh Miracle",
-        title: "Product Designer",
-        image: "/designTeam3.png",
+        id: 3,
+        name: "Aslam Dhikrullahi",
+        title: "Design Lead",
+        image: "/test_img1.jpg",
     },
     {
-        name: "Amaefule Ogechi Anthonia",
-        title: "Product Designer",
-        image: "/designTeam4.png",
+        id: 4,
+        name: "Aslam Dhikrullahi",
+        title: "Design Lead",
+        image: "/test_img1.jpg",
     },
     {
-        name: "Samuel Lawal",
-        title: "Product Designer",
-        image: "/designTeam5.png",
-    },
-    {
-        name: "Onile Ismail",
-        title: "Product Designer",
-        image: "/designTeam6.png",
-    },
-    {
-        name: "Chinaza Rita Odilo",
-        title: "Product Designer",
-        image: "/designTeam7.png",
-    },
-    {
-        name: "Chiamaka Confidence Nwankwo",
-        title: "Product Designer",
-        image: "/designTeam8.png",
+        id: 5,
+        name: "Aslam Dhikrullahi",
+        title: "Design Lead",
+        image: "/test_img1.jpg",
     },
 ];

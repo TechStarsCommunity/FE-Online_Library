@@ -44,3 +44,11 @@ export const EditProfileSchema = yup.object().shape({
         .required("Your Email is required, ensure it is the correct format"),
     message: yup.string().trim().required("Your message is required"),
 });
+
+export const OTPVerificationSchema = yup.object().shape({
+    otp: yup
+        .string()
+        .trim()
+        .required("OTP is required")
+        .matches(/^[0-9]\d{6}$/, "OTP must be a 6-digit number"),
+});

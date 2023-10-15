@@ -1,14 +1,13 @@
 import React from "react";
 import "../styles/verification.css";
 import Button from "../components/button";
-import { SignUpSchema } from "../config/schema";
+import { OTPVerificationSchema, SignUpSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
 import Input from "../components/input";
 import { Link } from "react-router-dom";
 
 const OTPVerification = () => {
-    const { errors, register, handleSubmit } = useSubmit(SignUpSchema);
-
+    const { errors, register, handleSubmit } = useSubmit(OTPVerificationSchema);
     const onSubmit = (data) => {
         console.log(data);
     };
@@ -33,14 +32,22 @@ const OTPVerification = () => {
                             <div className="container">
                                 <h2 className="code-label">Code</h2>
                                 <div className="code.container">
-                                    <div className="flex flex-row flex-wrap">
+                                    <div className="flex flex-row flex-wrap" >
+                                        <input
+                                            type="number"
+                                            className="code"
+                                            placeholder="0"
+                                            maxLength={1}
+                                            register={register}
+                                        />
+
                                         <input
                                             type="number"
                                             className="code"
                                             placeholder="0"
                                             min="0"
                                             max="9"
-                                            required
+                                            register={register}
                                         />
                                         <input
                                             type="number"
@@ -48,7 +55,7 @@ const OTPVerification = () => {
                                             placeholder="0"
                                             min="0"
                                             max="9"
-                                            required
+                                            register={register}
                                         />
                                         <input
                                             type="number"
@@ -56,7 +63,7 @@ const OTPVerification = () => {
                                             placeholder="0"
                                             min="0"
                                             max="9"
-                                            required
+                                            register={register}
                                         />
                                         <input
                                             type="number"
@@ -64,7 +71,7 @@ const OTPVerification = () => {
                                             placeholder="0"
                                             min="0"
                                             max="9"
-                                            required
+                                            register={register}
                                         />
                                         <input
                                             type="number"
@@ -72,15 +79,7 @@ const OTPVerification = () => {
                                             placeholder="0"
                                             min="0"
                                             max="9"
-                                            required
-                                        />
-                                        <input
-                                            type="number"
-                                            className="code"
-                                            placeholder="0"
-                                            min="0"
-                                            max="9"
-                                            required
+                                            register={register}
                                         />
                                     </div>
                                 </div>
@@ -89,11 +88,11 @@ const OTPVerification = () => {
                                 Didn't receive a code? <button className="btnn">Resend</button>
                             </p>
 
-                            <Link to="/">
+                            
                                 <button type="submit" className="button">
                                     Continue
                                 </button>{" "}
-                            </Link>
+                    
                             <p className="text">
                                 wrong email? <button className="btnn">Reset</button>
                             </p>
