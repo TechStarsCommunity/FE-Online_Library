@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../components/button";
 import CategoriesButton from "../components/categoriesButton";
 import { categoryNames } from "../data/categoryNames";
+import { Link } from "react-router-dom";
 
 const BookCategories = ({ show, setShow }) => {
     const handleClick = () => {
@@ -30,13 +31,17 @@ const BookCategories = ({ show, setShow }) => {
                 </main>
                 <footer className="flex justify-between">
                     <div className="w-2/5">
-                        <Button borderVariant="noRadius" variant="primary">
-                            Continue
-                        </Button>{" "}
+                        <Link to="/road-map">
+                            <Button borderVariant="noRadius" variant="primary">
+                                Continue
+                            </Button>{" "}
+                        </Link>
                     </div>
-                    <button onClick={() => handleClick()} className="text-[#5B5B5B]">
-                        Skip
-                    </button>
+                    <Link to="/road-map">
+                        <button onClick={() => handleClick()} className="text-[#5B5B5B]">
+                            Skip
+                        </button>
+                    </Link>
                 </footer>
             </body>
         </React.Fragment>
