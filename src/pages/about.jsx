@@ -24,7 +24,11 @@ const responsive = {
         items: 4.5,
     },
     tablet: {
-        breakpoint: { max: 1024, min: 464 },
+        breakpoint: { max: 1024, min: 768 },
+        items: 3,
+    },
+    largeMobile: {
+        breakpoint: { max: 768, min: 464 },
         items: 2,
     },
     mobile: {
@@ -60,7 +64,7 @@ const About = () => {
                     features of BooksLab is the roadmap feature. Our Roadmap is designed to guide
                     users from being a beginner to advanced in their chosen tech field. Whether
                     you're interested in web development, data science, cybersecurity, or any other
-                    tech field, our Roadmap will help yopu develop a clear path to success. Our
+                    tech field, our Roadmap will help you develop a clear path to success. Our
                     Roadmap is regularly updated with the latest trends and technologies, ensuring
                     that users have access to the most up-to-date information.
                 </p>
@@ -121,7 +125,7 @@ const About = () => {
                     ))}
                 </Carousel>
 
-                <h2>Frontend Developers</h2>
+                <h2 className="stack">Frontend Developers</h2>
                 <Carousel responsive={responsive}>
                     {teamFrontend.map((members) => (
                         <AboutpageCard
