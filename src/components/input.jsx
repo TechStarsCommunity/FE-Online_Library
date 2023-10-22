@@ -18,7 +18,7 @@ const Input = memo(
                     <label
                         htmlFor={name}
                         className={`text-sm md:text-lg ${
-                            disabled === true ? "text-red-600" : "text-[#001E50]"
+                            disabled === true ? "text-red-600" : "text-slate-800"
                         }`}
                     >
                         {label}
@@ -59,7 +59,6 @@ const Input = memo(
                         className={`input ${
                             disabled === true ? "cursor-not-allowed" : "cursor-text"
                         }`}
-                        style={style}
                     />
                     {type === "password" && (
                         <span

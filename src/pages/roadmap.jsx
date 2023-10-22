@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/roadmap.css";
 import Button from "../components/button";
+import { Link } from "react-router-dom";
 
 export default function RoadMap({ show, setShow }) {
+    const [selectedStack, setSelectedStack] = useState("");
+    const [selectedLevel, setSelectedLevel] = useState("");
+
     const handleClick = () => {
         setShow(true);
     };
+
+    const handleStackChange = (e) => {
+        setSelectedStack(e.target.value);
+    };
+
+    const handleLevelChange = (e) => {
+        setSelectedLevel(e.target.value);
+    };
+
     return (
         <div className="roadmap-container">
             <section className="formContainer">
@@ -16,8 +29,13 @@ export default function RoadMap({ show, setShow }) {
                 <form>
                     <div>
                         <label htmlFor="stack">Stack</label>
-                        <select id="stack" name="stack">
-                            <option value="" disabled selected>
+                        <select
+                            id="stack"
+                            name="stack"
+                            value={selectedStack}
+                            onChange={handleStackChange}
+                        >
+                            <option value="" disabled>
                                 Select your stack
                             </option>
                             <option value="beginner">Frontend</option>
@@ -29,8 +47,14 @@ export default function RoadMap({ show, setShow }) {
 
                     <div>
                         <label htmlFor="level">Level</label>
-                        <select id="level" name="level" style={{ marginBottom: "2rem" }}>
-                            <option value="" disabled selected>
+                        <select
+                            id="level"
+                            name="level"
+                            style={{ marginBottom: "2rem" }}
+                            value={selectedLevel}
+                            onChange={handleLevelChange}
+                        >
+                            <option value="" disabled>
                                 Select your level
                             </option>
                             <option value="beginner">Beginner</option>
@@ -40,8 +64,10 @@ export default function RoadMap({ show, setShow }) {
                     </div>
                 </form>
                 <div className="btn-container">
-                    <Button className="btn-skip">Skip</Button>
-                    <Button variant="primary">Continue</Button>
+                    <Link to="/onboarding">
+                        <Button className="btn-skip">Skip</Button>
+                        <Button variant="primary">Continue</Button>
+                    </Link>
                 </div>
             </section>
 

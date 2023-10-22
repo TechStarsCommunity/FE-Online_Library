@@ -15,7 +15,7 @@ const Login = () => {
 
     return (
         <React.Fragment>
-            <div className=" bg-white w-full">
+            <div className=" bg-white">
                 <div className="flex h-screen items-center justify-between">
                     <div className="lg:mx-32 px-[20px] w-full">
                         <h1 className="text-sky-950 md:text-4xl text-2xl font-semibold">
@@ -62,9 +62,15 @@ const Login = () => {
                             Login as Admin
                         </Button>
                     </div>
-                    <div className="hidden sm:flex h-screen bg-cover bg-center bg-[url('/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl basis-4/5 justify-self-end">
-                        <div className="flex items-center justify-center w-full">
-                            <img src={loginLogo} alt="logo" className="w-1/3" />
+                </div>
+
+                <div className="hidden sm:flex h-full  bg-cover bg-center bg-[url('/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl ml-[9vw]">
+                    <div className="flex items-center justify-center w-full">
+                        <img src={loginLogo} alt="logo" className="w-1/3" />
+                        <div className="hidden sm:flex h-screen bg-cover bg-center bg-[url('/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl basis-4/5 justify-self-end">
+                            <div className="flex items-center justify-center w-full">
+                                <img src={loginLogo} alt="logo" className="w-1/3" />
+                            </div>
                         </div>
                     </div>
                 </div>
