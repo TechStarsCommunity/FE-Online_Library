@@ -3,14 +3,12 @@ import { Link } from "react-router-dom";
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 import Logo from "/booksLab_logo.png";
 
-const Footer = ({ bgColor }) => {
-    // const defaultBgColor = "#35EAB9";
-
+const Footer = () => {
     return (
         <React.Fragment>
             <img src="/logo.png" alt="" />
             <footer
-                className={`bg-[${bgColor}]  pt-[2rem] sm:pt-[5rem] pl-3 pb-[100px] sm:pl-12 overflow-x-hidden`}
+                className="bg-[#35EAB91F]  pt-[2rem] sm:pt-[5rem] pl-3 pb-[100px] sm:pl-12 overflow-x-hidden"
             >
                 <div className="lg:flex  g-x-12">
                     <div className="md:basis-1/3 lg:basis-1/2 mb-[1rem] col-start-1 col-end-2 sm:my-[10px] md:text-start text-center">

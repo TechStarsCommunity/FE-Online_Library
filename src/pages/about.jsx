@@ -149,7 +149,7 @@ const About = () => {
                     ))}
                 </Carousel>
             </div>
-            <Footer bgColor={"#dffcf4"} />
+            <Footer />
         </React.Fragment>
     );
 };
