@@ -4,16 +4,6 @@ import LeftSidebar from "../components/leftSideBar";
 import { Tabs } from "../data/leftSideBarData";
 import { IoIosMenu } from "react-icons/io";
 
-// new
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import Dashboard from './pages/Dashboard.jsx';
-import BookCategories from "./bookCategories";
-import YourLibrary from "../components/yourLibrary";
-import RoadMap from "../components/roadmap";
-import UploadBooks from "./UploadBooks";
-import Profile from "./Profile";
-
-
 const Uploads = () => {
     const [active, setActive] = useState(1);
     const [sidebarVisible, setSidebarVisible] = useState(true);
@@ -25,8 +15,8 @@ const Uploads = () => {
     };
 
     return (
-        <>
-            <React.Fragment>
+        <React.Fragment>
+            <div className="flex">
                 <div className="flex">
                     <button
                         className="transition-transform duration-300 transform hover:scale-110"
@@ -41,6 +31,7 @@ const Uploads = () => {
                             }}
                         />
                     </button>
+
                     {sidebarVisible && (
                         <div
                             className={`bg-[#DFF6FF] h-full px-0 py-4 fixed mx-0 transition-all duration-300 ease-in-out ${
@@ -50,15 +41,13 @@ const Uploads = () => {
                             <LeftSidebar active={active} setActive={setActive} />
                         </div>
                     )}
-                    <div className="flex-grow absolute right-0 min-h-100vh left-[20.6rem] pl-10">
-                        {activeTabInfo && <activeTabInfo.component />}
-                    </div>
                 </div>
-            </React.Fragment>
 
-            
-     
-        </>
+                <div className="flex-grow min-h-100vh absolute right-0 left-[15.6rem] ml-16">
+                    {activeTabInfo && <activeTabInfo.component />}
+                </div>
+            </div>
+        </React.Fragment>
     );
 };
 export default Uploads;

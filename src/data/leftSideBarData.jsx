@@ -22,6 +22,7 @@ export const Tabs = [
         id: 2,
         name: "Books",
         Icon: <GoBook />,
+        path: "/popularbooks",
         component: BookDetails,
     },
     {
