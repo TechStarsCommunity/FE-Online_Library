@@ -39,10 +39,16 @@ const Review = () => {
                 ))}
             </div>
             <div className="flex items-center gap-6 absolute right-[20px] bottom-0 p-[10px]">
-                <button className={`${page === 1 ? "text-[#8F8F8F]" : "text-[#000"}`} onClick={handlePrev} disabled={page === 1}>
+                <button
+                    className={`${page === 1 ? "text-[#8F8F8F]" : "text-[#000"}`}
+                    onClick={handlePrev}
+                    disabled={page === 1}
+                >
                     <AiOutlineLeft size={20} />
                 </button>
-                <button className={`${isDisabled ? "text-[#8F8F8F]" : "text-[#000"}`} onClick={handleNext}
+                <button
+                    className={`${isDisabled ? "text-[#8F8F8F]" : "text-[#000"}`}
+                    onClick={handleNext}
                     disabled={isDisabled}
                 >
                     <AiOutlineRight size={20} />

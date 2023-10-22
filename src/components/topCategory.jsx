@@ -74,7 +74,11 @@ const TopCategory = () => {
 
                     <div className="w-[50%] flex gap-[5px] justify-center">
                         {categories.map((_, index) => (
-                            <Dot key={index} active={index === currentIndex} handleClick={() => handleBtnClick(index)} />
+                            <Dot
+                                key={index}
+                                active={index === currentIndex}
+                                handleClick={() => handleBtnClick(index)}
+                            />
                         ))}
                     </div>
                     <BsArrowRightCircleFill
