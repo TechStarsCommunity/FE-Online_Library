@@ -10,7 +10,7 @@ const BookCategories = ({ show, setShow }) => {
     };
     return (
         <React.Fragment>
-            <body className="p-16">
+            <div className="p-16">
                 <header>
                     <div>
                         <h1 className="font-semibold text-4xl">Book Categories</h1>
@@ -43,7 +43,7 @@ const BookCategories = ({ show, setShow }) => {
                         </button>
                     </Link>
                 </footer>
-            </body>
+            </div>
         </React.Fragment>
     );
 };

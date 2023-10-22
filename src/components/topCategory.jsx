@@ -4,13 +4,14 @@ import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from "react-icons/bs";
 import { categories } from "../data/category";
 
 // a separate Dot component for the dots
-const Dot = ({ active }) => (
-    <div
+const Dot = ({ active, handleClick }) => (
+    <button
         className={`w-[15px] h-[15px] rounded-full ${active ? "bg-[#10B2F3]" : "bg-[#ffffff]"}`}
-    ></div>
+        onClick={handleClick}
+    ></button>
 );
 
-const TopCategoryV2 = () => {
+const TopCategory = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const currentCategory = categories[currentIndex];
 
@@ -24,6 +25,10 @@ const TopCategoryV2 = () => {
         if (currentIndex > 0) {
             setCurrentIndex(currentIndex - 1);
         }
+    };
+
+    const handleBtnClick = (index) => {
+        setCurrentIndex(index);
     };
 
     return (
@@ -69,7 +74,11 @@ const TopCategoryV2 = () => {
 
                     <div className="w-[50%] flex gap-[5px] justify-center">
                         {categories.map((_, index) => (
-                            <Dot key={index} active={index === currentIndex} />
+                            <Dot
+                                key={index}
+                                active={index === currentIndex}
+                                handleClick={() => handleBtnClick(index)}
+                            />
                         ))}
                     </div>
                     <BsArrowRightCircleFill
@@ -86,4 +95,4 @@ const TopCategoryV2 = () => {
     );
 };
 
-export default TopCategoryV2;
+export default TopCategory;
