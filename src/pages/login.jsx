@@ -15,7 +15,7 @@ const Login = () => {
 
     return (
         <React.Fragment>
-            <div className=" bg-white w-full">
+            <div className=" bg-white">
                 <div className="flex h-screen items-center justify-between">
                     <div className="lg:mx-32 px-[20px] w-full">
                         <h1 className="text-sky-950 md:text-4xl text-2xl font-semibold">
