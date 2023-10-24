@@ -1,4 +1,5 @@
 import React from "react";
+import user from "/user.jpg"
 
 const ReviewCard = ({ comment, userName, stack }) => {
     return (
@@ -6,7 +7,7 @@ const ReviewCard = ({ comment, userName, stack }) => {
             <div className="flex items-center gap-[15px] rounded-md w-full">
                 <div className="w-[50px] h-[50px] rounded-[50%] bg-[grey]">
                     <img
-                        src="http://localhost:5174/contact_us_illustration.png"
+                        src={user}
                         alt=""
                         className="w-full h-full"
                     />

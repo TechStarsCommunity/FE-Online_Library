@@ -4,16 +4,46 @@ import "../styles/home.css";
 import Button from "../components/button";
 import LeftSidebar from "../components/leftSideBar";
 import { Link } from "react-router-dom";
+import { IoIosMenu } from "react-icons/io";
 
 const Popularbooks = () => {
+    const [sidebarVisible, setSidebarVisible] = useState(true);
+
+    const toogleSidebar = () => {
+        setSidebarVisible(!sidebarVisible);
+    };
+
     return (
         <>
             <div className="flex w-screen">
-                <div className="hidden sm:block bg-[#DFF6FF] h-full py-4 fixed ">
-                    <LeftSidebar />
+                <div className="flex">
+                    <button
+                        className="transition-transform duration-300 transform hover:scale-110"
+                        onClick={toogleSidebar}
+                    >
+                        <IoIosMenu
+                            style={{
+                                fontSize: "40px",
+                                color: "gray",
+                                marginTop: "40px",
+                                marginLeft: "20px",
+                            }}
+                        />
+                    </button>
+
+                    {sidebarVisible && (
+                        <div
+                            className={`bg-[#DFF6FF] h-full px-0 py-4 fixed mx-0 transition-all duration-300 ease-in-out ${
+                                sidebarVisible ? "left-0" : "-left-[20.6rem]"
+                            }`}
+                        >
+                            <LeftSidebar />
+                        </div>
+                    )}
                 </div>
-                <div className="flex flex-col w-screen sm:w-fit items-center text-center p-10 sm:absolute sm:right-0 min-h-100vh sm:left-[15.6rem] bg-[#FAFDFF]">
-                    <div className="">
+
+                <div className="flex flex-col w-screen sm:w-fit items-center text-center p-10 sm:absolute sm:right-0 min-h-100vh sm:left-[20.6rem] bg-[#FAFDFF]">
+                    <div className="sm:absolute">
                         <div
                             className="search-container drop-shadow-md border-0"
                             style={{ border: "0", background: "#FFFFFF" }}

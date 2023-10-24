@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { MdCloudUpload } from "react-icons/md";
-import Thumbnail from "react-thumbnail-generator";
 
 // Define styles for input and button
 const inputStyles =
