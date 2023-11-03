@@ -1,27 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import ReviewCard from "./reviewCard";
 import { myData } from "../data/reviewData";
 
+const perPage = 2;
+
 const Review = () => {
-    const [activeData, setActiveData] = useState([myData[0], myData[1]]);
-    const [currentIndex, setCurrentIndex] = useState(1);
+    const [data, setData] = useState(myData);
+    const [page, setPage] = useState(1);
+    const skip = page * perPage - perPage;
+    const isDisabled = page === Math.ceil(data.length / perPage);
 
-    const increaseIndex = () => {
-        if (currentIndex + 2 <= myData.length) {
-            setCurrentIndex(currentIndex + 2);
+    const handleNext = () => {
+        if (!isDisabled) {
+            setPage((page) => page + 1);
         }
     };
 
-    const decreaseIndex = () => {
-        if (currentIndex > 1) {
-            setCurrentIndex(currentIndex - 2);
+    const handlePrev = () => {
+        if (page > 1) {
+            setPage((page) => page - 1);
         }
     };
-
-    useEffect(() => {
-        setActiveData([myData[currentIndex - 1], myData[currentIndex]]);
-    }, [currentIndex]);
 
     return (
         <div className="w-full p-[40px] bg-[#F3FEFB] relative grid gap-[10px]">
@@ -29,7 +29,7 @@ const Review = () => {
                 What our BooksLab readers have to say
             </h1>
             <div className="w-full grid md:grid-cols-2 gap-[25px] grid-cols-1 mb-[20px]">
-                {activeData.map((data, index) => (
+                {data.slice(skip, skip + perPage).map((data, index) => (
                     <ReviewCard
                         key={index}
                         comment={data.comment}
@@ -38,13 +38,21 @@ const Review = () => {
                     />
                 ))}
             </div>
-            <div className="flex items-center gap-[25px] absolute right-[20px] bottom-0 p-[10px]">
-                <div className="bg-[#000] rounded-[50%] p-[5px] text-[#fff]">
-                    <AiOutlineLeft size={25} onClick={increaseIndex} />
-                </div>
-                <div className="bg-[#000] rounded-[50%] p-[5px] text-[#fff]">
-                    <AiOutlineRight size={25} onClick={decreaseIndex} />
-                </div>
+            <div className="flex items-center gap-6 absolute right-[20px] bottom-0 p-[10px]">
+                <button
+                    className={`${page === 1 ? "text-[#8F8F8F]" : "text-[#000"}`}
+                    onClick={handlePrev}
+                    disabled={page === 1}
+                >
+                    <AiOutlineLeft size={20} />
+                </button>
+                <button
+                    className={`${isDisabled ? "text-[#8F8F8F]" : "text-[#000"}`}
+                    onClick={handleNext}
+                    disabled={isDisabled}
+                >
+                    <AiOutlineRight size={20} />
+                </button>
             </div>
         </div>
     );

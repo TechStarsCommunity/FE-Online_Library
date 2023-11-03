@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../components/button";
 import CategoriesButton from "../components/categoriesButton";
 import { categoryNames } from "../data/categoryNames";
+import { Link } from "react-router-dom";
 
 const BookCategories = ({ show, setShow }) => {
     const handleClick = () => {
@@ -9,7 +10,7 @@ const BookCategories = ({ show, setShow }) => {
     };
     return (
         <React.Fragment>
-            <body className="p-16">
+            <div className="p-16">
                 <header>
                     <div>
                         <h1 className="font-semibold text-4xl">Book Categories</h1>
@@ -30,15 +31,19 @@ const BookCategories = ({ show, setShow }) => {
                 </main>
                 <footer className="flex justify-between">
                     <div className="w-2/5">
-                        <Button borderVariant="noRadius" variant="primary">
-                            Continue
-                        </Button>{" "}
+                        <Link to="/road-map">
+                            <Button borderVariant="noRadius" variant="primary">
+                                Continue
+                            </Button>{" "}
+                        </Link>
                     </div>
-                    <button onClick={() => handleClick()} className="text-[#5B5B5B]">
-                        Skip
-                    </button>
+                    <Link to="/road-map">
+                        <button onClick={() => handleClick()} className="text-[#5B5B5B]">
+                            Skip
+                        </button>
+                    </Link>
                 </footer>
-            </body>
+            </div>
         </React.Fragment>
     );
 };

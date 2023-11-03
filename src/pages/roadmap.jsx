@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/roadmap.css";
 import Button from "../components/button";
+import { Link } from "react-router-dom";
 
 export default function RoadMap({ show, setShow }) {
     const [selectedStack, setSelectedStack] = useState("");
@@ -63,8 +64,10 @@ export default function RoadMap({ show, setShow }) {
                     </div>
                 </form>
                 <div className="btn-container">
-                    <Button className="btn-skip">Skip</Button>
-                    <Button variant="primary">Continue</Button>
+                    <Link to="/onboarding">
+                        <Button className="btn-skip">Skip</Button>
+                        <Button variant="primary">Continue</Button>
+                    </Link>
                 </div>
             </section>
 
