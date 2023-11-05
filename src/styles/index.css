@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.input {
+/* .input {
     @apply p-1 md:p-2 rounded text-lg border outline-none placeholder:text-slate-500 placeholder:text-sm md:placeholder:text-lg focus:border-[#35EAB9] w-full;
 }
 
 .button-active-style{
     @apply bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] py-4 px-6 rounded-full text-white font-bold border-none outline-none;
-}
+} */
