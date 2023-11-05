@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { MdCloudUpload } from "react-icons/md";
-import Thumbnail from "react-thumbnail-generator";
 
 // Define styles for input and button
 const inputStyles =
@@ -101,8 +100,8 @@ function Uploader({ bookCover, accept, id }) {
     };
     useEffect(() => {
         return () => {
-            if (fileData.fileURL) {
-                URL.revokeObjectURL(fileData.fileURL);
+            if (fileData.imageURL) {
+                URL.revokeObjectURL(fileData.imageURL);
             }
         };
     }, [fileData.imageURL]);
