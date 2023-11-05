@@ -2,7 +2,7 @@ import React, { useState, memo } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const Input = memo(
-    ({ label, name, placeholder, type, register, errors, autoComplete, disabled, style, className, onChange, value, maxLength, ref}) => {
+    ({ label, name, placeholder, type, register, errors, autoComplete, disabled, style }) => {
         const [inputType, setInputType] = useState(type);
 
         const toggleInputType = () => {
@@ -18,7 +18,7 @@ const Input = memo(
                     <label
                         htmlFor={name}
                         className={`text-sm md:text-lg ${
-                            disabled === true ? "text-red-600" : "text-[#001E50]"
+                            disabled === true ? "text-red-600" : "text-slate-800"
                         }`}
                     >
                         {label}
@@ -58,12 +58,7 @@ const Input = memo(
                         placeholder={placeholder}
                         className={`input ${
                             disabled === true ? "cursor-not-allowed" : "cursor-text"
-                        } ${className}`}
-                        style={style}
-                        onChange={onChange}
-                        value={value}
-                        maxLength={maxLength}
-                        ref={ref}
+                        }`}
                     />
                     {type === "password" && (
                         <span
