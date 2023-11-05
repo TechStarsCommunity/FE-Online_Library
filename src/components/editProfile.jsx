@@ -38,7 +38,7 @@ const editProfile = () => {
                             className="w-full flex flex-row flex-wrap"
                             onSubmit={handleSubmit(processData)}
                         >
-                            <div className="flex flex-row gap-10 mx-auto mb-10 w-full justify-between px-5">
+                            <div className="flex flex-row gap-10 mx-auto mb-10 w-full justify-between px-5 sm:max-w-md:flex-col">
                                 <Input
                                     id="name"
                                     name="name"
@@ -66,18 +66,24 @@ const editProfile = () => {
                                     placeholder="Enter your phone number"
                                 />
                             </div>
-                            <input
-                                className="w-full mb-10 px-1"
-                                placeholder="Victoria Island Lagos State Nigeria."
-                                type="address"
-                                id="address"
-                            />
-                            <input
-                                className="w-full mb-10 px-1"
-                                placeholder="akeem123star@gmail.com"
-                                type="email"
-                                id="email"
-                            />
+                            <div className="flex flex-col w-full">
+                                <Input
+                                    className="w-full mb-10 px-1"
+                                    placeholder="Victoria Island Lagos State Nigeria."
+                                    type="address"
+                                    id="address"
+                                    register={register}
+                                    errors={errors}
+                                />
+                                <Input
+                                    className="w-full mb-10 px-1"
+                                    placeholder="akeem123star@gmail.com"
+                                    type="email"
+                                    id="email"
+                                    register={register}
+                                    errors={errors}
+                                />
+                            </div>
                             <select className="h-[55px] w-full rounded-xl mb-10 px-1">
                                 <option>Select level</option>
                                 <option></option>
