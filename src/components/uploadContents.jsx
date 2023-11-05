@@ -100,8 +100,8 @@ function Uploader({ bookCover, accept, id }) {
     };
     useEffect(() => {
         return () => {
-            if (fileData.fileURL) {
-                URL.revokeObjectURL(fileData.fileURL);
+            if (fileData.imageURL) {
+                URL.revokeObjectURL(fileData.imageURL);
             }
         };
     }, [fileData.imageURL]);
