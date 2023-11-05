@@ -35,7 +35,7 @@ const ContactComponent = (props) => {
                                 285 Office Address, LGA, State, Country
                             </a>
                         </div>
-                        <div className="mt-12">
+                        <div className="mt-12 flex items-center gap-4">
                             <Button
                                 children={"Contact us"}
                                 variant="primary"
@@ -45,6 +45,7 @@ const ContactComponent = (props) => {
                                     fontSize: "16px",
                                     height: "50px",
                                 }}
+                                to="#contact-form"
                             />
                         </div>
                     </div>
