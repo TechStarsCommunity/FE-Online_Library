@@ -25,6 +25,7 @@ const Contact = () => {
                 <form
                     onSubmit={handleSubmit(onSubmit)}
                     className="mx-4 grid grid-cols-1 md:grid-cols-2 gap-4 my-4 md:my-0"
+                    id="contact-form"
                 >
                     <div className="w-full">
                         <Input

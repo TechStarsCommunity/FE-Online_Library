@@ -23,11 +23,11 @@ const editProfile = () => {
                 <div className="flex flex-row bg-[#e6e6e6] relative">
                     <div className="flex flex-col gap-[52px] mx-auto p-10">
                         <div className="w-full">
-                            <div className="w-full mx-auto h-[130px] mb-20 relative rounded-xl bg-[url('/Header.jpg')] bg-cover bg-center">
+                            <div className="w-full mx-auto h-[8rem] mb-20 relative rounded-xl bg-[url('/Header.jpg')] bg-cover bg-center">
                                 <img
                                     src="/women.png"
                                     alt="profile image"
-                                    className="absolute bottom-0 left-0 w-[50px] h-[50px] rounded-full m-2"
+                                    className="absolute bottom-0 left-0 w-3rem] h-[3rem] rounded-full m-2"
                                 />
                             </div>
                             <p className="w-full text-[#10B2F3] mx-auto text-xl font-Montserrat font-medium px-5">
@@ -38,14 +38,13 @@ const editProfile = () => {
                             className="w-full flex flex-row flex-wrap"
                             onSubmit={handleSubmit(processData)}
                         >
-                            <div className="flex flex-row gap-10 mx-auto mb-10 w-full justify-between px-5 sm:max-w-md:flex-col">
+                            <div className="flex flex-row gap-10 mx-auto mb-10 w-full justify-between px-5">
                                 <Input
                                     id="name"
                                     name="name"
                                     type="text"
                                     register={register}
                                     errors={errors}
-                                    disabled="false"
                                     placeholder="Akeem"
                                 />
                                 <Input
@@ -66,7 +65,7 @@ const editProfile = () => {
                                     placeholder="Enter your phone number"
                                 />
                             </div>
-                            <div className="flex flex-col w-full">
+                            <div className="w-full flex">
                                 <Input
                                     className="w-full mb-10 px-1"
                                     placeholder="Victoria Island Lagos State Nigeria."
@@ -76,7 +75,7 @@ const editProfile = () => {
                                     errors={errors}
                                 />
                                 <Input
-                                    className="w-full mb-10 px-1"
+                                    className="w-full mb-10 p-3"
                                     placeholder="akeem123star@gmail.com"
                                     type="email"
                                     id="email"
@@ -84,7 +83,7 @@ const editProfile = () => {
                                     errors={errors}
                                 />
                             </div>
-                            <select className="h-[55px] w-full rounded-xl mb-10 px-1">
+                            <select className="h-[3.4rem] w-full rounded-xl mb-10 px-1">
                                 <option>Select level</option>
                                 <option></option>
                             </select>

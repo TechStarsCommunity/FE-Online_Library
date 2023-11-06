@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/button.css";
 
-const Button = ({ children, variant, borderVariant, className, style }) => {
+const Button = ({ children, variant, borderVariant, to, className, style }) => {
     let buttonClass = "btn"; // Default class
 
     if (variant === "primary") {
@@ -16,9 +17,17 @@ const Button = ({ children, variant, borderVariant, className, style }) => {
         buttonClass += ` ${className}`;
     }
     return (
-        <button className={buttonClass} style={style}>
-            {children}
-        </button>
+        <>
+            {to ? (
+                <Link className={buttonClass} style={style} to={to}>
+                    {children}
+                </Link>
+            ) : (
+                <button className={buttonClass} style={style}>
+                    {children}
+                </button>
+            )}
+        </>
     );
 };
 

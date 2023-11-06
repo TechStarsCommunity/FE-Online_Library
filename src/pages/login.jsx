@@ -15,16 +15,21 @@ const Login = () => {
 
     return (
         <React.Fragment>
-            <div className=" bg-white">
-                <div className="flex h-screen items-center justify-between">
-                    <div className="lg:mx-32 px-[20px] w-full">
-                        <h1 className="text-sky-950 md:text-4xl text-2xl font-semibold">
-                            Welcome Back
-                        </h1>
-                        <p className="text-black text-sm md:text-base font-normal">
-                            Sign in to continue
-                        </p>
-                        <form onSubmit={handleSubmit(onLogin)}>
+            <main className="main bg-white flex gap-12 py-8 px-4 md:py-0 md:px-0">
+                <section className="w-[98%] md:w-[60%] m-auto full md:h-3/4">
+                    <form
+                        onSubmit={handleSubmit(onLogin)}
+                        className="flex flex-col items-center justify-center sm:pl-6"
+                    >
+                        <div className="w-full max-w-[30rem] grid grid-cols-1 gap-4 mb-6 md:mb-12">
+                            <h1 className="text-sky-950 md:text-4xl text-2xl font-semibold">
+                                Welcome Back
+                            </h1>
+                            <p className="text-black text-sm md:text-base font-normal">
+                                Sign in to continue
+                            </p>
+                        </div>
+                        <div className="w-full max-w-[30rem] grid grid-cols-1 gap-4">
                             <Input
                                 label="Email"
                                 name="email"
@@ -41,40 +46,45 @@ const Login = () => {
                                 register={register}
                                 errors={errors}
                                 placeholder="Password..."
-                                id="password"
                             />
+                        </div>
+                        <Button
+                            borderVariant="noRadius"
+                            variant="primary"
+                            type="submit"
+                            className="w-full mt-6 max-w-[30rem]"
+                        >
+                            Login
+                        </Button>
+                        <div className="w-full max-w-[30rem] grid grid-cols-1 gap-4">
+                            <h5 className="text-sm lg:text-xl font-medium">
+                                Don{`'`}t have an Account?{" "}
+                                <a
+                                    className="text-sky-950 text-sm lg:text-xl font-bold"
+                                    href="/signup"
+                                >
+                                    Sign Up
+                                </a>
+                            </h5>
                             <Button
                                 borderVariant="noRadius"
                                 variant="primary"
-                                type="submit"
-                                className="w-full mt-14"
+                                className="w-full mt-8 md:mt-12 max-w-[30rem]"
                             >
-                                Login
+                                Login as Admin
                             </Button>
-                        </form>
-                        <h5 className="text-lg md:text-xl font-medium">
-                            Don{`'`}t have an Account?{" "}
-                            <a className="text-sky-950 text-sm lg:text-xl font-bold" href="/signup">
-                                Sign Up
-                            </a>
-                        </h5>
-                        <Button borderVariant="noRadius" variant="primary" className="w-full mt-14">
-                            Login as Admin
-                        </Button>
-                    </div>
-                </div>
-
-                <div className="hidden sm:flex h-full  bg-cover bg-center bg-[url('/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl ml-[9vw]">
-                    <div className="flex items-center justify-center w-full">
-                        <img src={loginLogo} alt="logo" className="w-1/3" />
-                        <div className="hidden sm:flex h-screen bg-cover bg-center bg-[url('/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl basis-4/5 justify-self-end">
-                            <div className="flex items-center justify-center w-full">
-                                <img src={loginLogo} alt="logo" className="w-1/3" />
-                            </div>
                         </div>
-                    </div>
+                    </form>
+                </section>
+
+                <div className="hidden md:grid place-items-center h-screen bg-cover bg-center bg-[url('/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl max-w-[20rem] lg:max-w-[30rem] w-full">
+                    <img
+                        src={loginLogo}
+                        alt="logo"
+                        className="w-full max-w-[10rem] lg:max-w-[15rem] h-10"
+                    />
                 </div>
-            </div>
+            </main>
         </React.Fragment>
     );
 };
