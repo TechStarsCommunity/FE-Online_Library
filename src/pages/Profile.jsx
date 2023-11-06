@@ -57,7 +57,7 @@ const Profile = () => {
                                 className=" rounded-full h-2/4 bottom-2"
                             />
                             <Link
-                                to="/profile/editProfile"
+                                to={editProfile}
                                 className="flex text-white items-center absolute bottom-2 right-5"
                             >
                                 <AiOutlineEdit /> Edit
@@ -109,13 +109,15 @@ const Profile = () => {
                         </div>
 
                         <div className="flex justify-end">
-                            <Button
-                                borderVariant="noRadius"
-                                variant="primary"
-                                className="w-28 text-sm h-10 pb-3 text-black"
-                            >
-                                Edit Profile
-                            </Button>
+                            <Link to={`editProfile`}>
+                                <Button
+                                    borderVariant="noRadius"
+                                    variant="primary"
+                                    className="w-28 text-sm h-10 pb-3 text-black"
+                                >
+                                    Edit Profile
+                                </Button>
+                            </Link>
                         </div>
 
                         <div className="flex justify-between flex-col md:flex-row gap-12 md:gap-52">

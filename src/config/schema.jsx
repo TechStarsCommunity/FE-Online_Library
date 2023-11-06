@@ -36,13 +36,11 @@ export const ContactSchema = yup.object().shape({
 });
 
 export const EditProfileSchema = yup.object().shape({
-    name: yup.string().trim().required("Your name is required"),
-    email: yup
-        .string()
-        .trim()
-        .email()
-        .required("Your Email is required, ensure it is the correct format"),
-    message: yup.string().trim().required("Your message is required"),
+    name: yup.string().trim().required("Your Name is required"),
+    username: yup.string().trim().required("Your Username is required"),
+    phone: yup.number().required("Your Number is required"),
+    address: yup.string().trim().required("Your Address is required"),
+    email: yup.string().trim().email().required("Your Email is required"),
 });
 
 export const OTPVerificationSchema = yup.object().shape({
