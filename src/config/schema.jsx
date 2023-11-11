@@ -34,11 +34,13 @@ export const ContactSchema = yup.object().shape({
         .required("Your Email is Required, ensure it is the Correct Format"),
     message: yup.string().trim().required("Your Message Is Required"),
 });
-export const  UploadBookSchema = yup.object().shape({
+export const UploadBookSchema = yup.object().shape({
     Name: yup.string().required("Please provide a valid name."),
-    Description: yup.string().required("Don't leave the book description empty. Share a brief summary."),
+    Description: yup
+        .string()
+        .required("Don't leave the book description empty. Share a brief summary."),
     Category: yup.string().required("Please select a category for your book."),
     Level: yup.string().required("Specify the content level for your book."),
     Status: yup.string().required("Please indicate the book's status"),
     Author: yup.string().required("Author is required"),
-  });
+});

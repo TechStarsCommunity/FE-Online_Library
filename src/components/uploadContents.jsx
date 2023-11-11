@@ -76,26 +76,29 @@ const UploadContents = () => {
                     onChange={(e) => setFormData({ ...formData, Description: e.target.value })}
                     error={validationErrors.Description} // Pass the validation error as a prop
                 />
-                <SelectField label="Category" 
-                error={validationErrors.Category} 
-                value={formData.Category}
-                onChange={(e) => setFormData({ ...formData, Category: e.target.value })}
+                <SelectField
+                    label="Category"
+                    error={validationErrors.Category}
+                    value={formData.Category}
+                    onChange={(e) => setFormData({ ...formData, Category: e.target.value })}
                 />
-                <SelectField label="Level" 
-                error={validationErrors.Level}
-                value={formData.Level}
-                onChange={(e) => setFormData({ ...formData, Level: e.target.value })}
-                 />
-                <SelectField label="Status" 
-                error={validationErrors.Status}
-                value={formData.Status}
-                onChange={(e) => setFormData({ ...formData, Status: e.target.value })}
-                 />
-                <AuthorField 
-                error={validationErrors.Author}
-                value={formData.Author}
-                onChange={(e) => setFormData({ ...formData, Author: e.target.value })}
-                 />
+                <SelectField
+                    label="Level"
+                    error={validationErrors.Level}
+                    value={formData.Level}
+                    onChange={(e) => setFormData({ ...formData, Level: e.target.value })}
+                />
+                <SelectField
+                    label="Status"
+                    error={validationErrors.Status}
+                    value={formData.Status}
+                    onChange={(e) => setFormData({ ...formData, Status: e.target.value })}
+                />
+                <AuthorField
+                    error={validationErrors.Author}
+                    value={formData.Author}
+                    onChange={(e) => setFormData({ ...formData, Author: e.target.value })}
+                />
                 <AuthorField isCredits />
 
                 <div className="flex w-full gap-5 flex-row">
