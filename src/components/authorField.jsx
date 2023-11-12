@@ -11,7 +11,7 @@ const AuthorField = ({ isCredits, error, value, onChange }) => (
                 id={isCredits ? "credits" : "author"}
                 name={isCredits ? "credits" : "author"} // Add the name attribute
                 placeholder={isCredits ? "Author1" : "John Doe"}
-                className={inputStyles + " w-auto mb-0"}
+                className={inputStyles + " w-3/5 mt-1"}
                 value={value}
                 onChange={onChange}
             />

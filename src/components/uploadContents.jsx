@@ -20,7 +20,7 @@ import FormField from "./formField";
 export const inputStyles =
     "px-4 py-2 max-h-1/2 h-auto w-full md:w-auto grow border-[#35EAB9] border focus:border-[#35EAB9] mb-[-2rem]";
 export const buttonStyles =
-    "bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] text-white p-[10px] rounded-lg mt-8";
+    "bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] text-white md:p-[10px] p-2 rounded-lg mt-8 text-xs md:text-base";
 
 //-------major functions-------
 const UploadContents = () => {
@@ -101,7 +101,7 @@ const UploadContents = () => {
                 />
                 <AuthorField isCredits />
 
-                <div className="flex w-full gap-5 flex-row">
+                <div className="flex flex-col md:flex-row w-full gap-5">
                     <Uploader bookCover accept=".jpg, .png" id="img" />
                     <Uploader accept=".pdf" id="pdf" />
                 </div>
