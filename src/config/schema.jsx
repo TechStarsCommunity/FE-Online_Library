@@ -34,6 +34,7 @@ export const ContactSchema = yup.object().shape({
         .required("Your Email is Required, ensure it is the Correct Format"),
     message: yup.string().trim().required("Your Message Is Required"),
 });
+
 export const UploadBookSchema = yup.object().shape({
     Name: yup.string().required("Please provide a valid name."),
     Description: yup
@@ -43,4 +44,15 @@ export const UploadBookSchema = yup.object().shape({
     Level: yup.string().required("Specify the content level for your book."),
     Status: yup.string().required("Please indicate the book's status"),
     Author: yup.string().required("Author is required"),
+
+
+export const EditProfileSchema = yup.object().shape({
+    name: yup.string().trim().required("Your name is required"),
+    email: yup
+        .string()
+        .trim()
+        .email()
+        .required("Your Email is required, ensure it is the correct format"),
+    message: yup.string().trim().required("Your message is required"),
+
 });

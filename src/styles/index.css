@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .input {
-    @apply p-1 md:p-2 rounded text-lg border outline-none placeholder:text-slate-500 placeholder:text-sm md:placeholder:text-lg focus:border-[#35EAB9] w-full;
+    @apply p-1 md:p-2 rounded text-lg border outline-none placeholder:text-black-70 placeholder:text-sm md:placeholder:text-lg focus:border-[#35EAB9] w-full;
 }
 
 .button-active-style{

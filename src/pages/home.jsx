@@ -7,7 +7,8 @@ import AboutComponent from "../components/about";
 import Footer from "../components/footer";
 import Button from "../components/button";
 import ContactComponent from "../components/contact";
-import TopCategoryV2 from "../components/topCategoryV2";
+import TopCategory from "../components/topCategory";
+import Review from "../components/review";
 import { Link } from "react-router-dom";
 
 const home = () => {
@@ -68,10 +69,11 @@ const home = () => {
                         </div>
                     </div>
                 </section>
-                <TopCategoryV2 />
+                <TopCategory />
             </main>
             <Roadmap />
             <AboutComponent />
+            <Review />
             <ContactComponent />
             <Footer />
         </React.Fragment>

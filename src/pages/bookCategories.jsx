@@ -1,54 +1,25 @@
 import React from "react";
 import Button from "../components/button";
-import { Link } from "react-router-dom";
 import CategoriesButton from "../components/categoriesButton";
+import { categoryNames } from "../data/categoryNames";
+import { Link } from "react-router-dom";
 
-const categoryNames = [
-    "Editor's Pick",
-    "Frontend Development",
-    "Product Design",
-    "Academic & Education",
-    "Biography",
-    "Children & Youth",
-    "Fiction & Literature",
-    "Religion",
-    "Lifestyle",
-    "Politics & Laws",
-    "Science & Research",
-    "Economics",
-    "Food",
-    "Marketing",
-    "Parenting",
-    "Relationships",
-    "Backend Development",
-    "Project Management",
-    "Arts & Design",
-    "Business & Career",
-    "Environment",
-    "Health & Fitness",
-    "Personal Growth",
-    "Tech",
-    "Entertainment",
-    "History",
-    "Motivation",
-    "Psychology",
-    "Sports",
-];
-
-const BookCategories = () => {
+const BookCategories = ({ show, setShow }) => {
+    const handleClick = () => {
+        setShow(false);
+    };
     return (
         <React.Fragment>
-            <body className="p-16">
+            <div className="p-16">
                 <header>
                     <div>
                         <h1 className="font-semibold text-4xl">Book Categories</h1>
                     </div>
                     <div className="flex justify-between mt-2">
                         <p className="text-[#5B5B5B]">Select your favorite Categories</p>
-                        <Link to="/">
-                            {" "}
-                            <p className="text-[#5B5B5B]">Switch to RoadMap</p>
-                        </Link>
+                        <button onClick={() => handleClick()} className="text-[#5B5B5B]">
+                            Switch to RoadMap
+                        </button>
                     </div>
                 </header>
                 <main>
@@ -60,13 +31,19 @@ const BookCategories = () => {
                 </main>
                 <footer className="flex justify-between">
                     <div className="w-2/5">
-                        <Button borderVariant="noRadius" variant="primary">
-                            Continue
-                        </Button>{" "}
+                        <Link to="/road-map">
+                            <Button borderVariant="noRadius" variant="primary">
+                                Continue
+                            </Button>{" "}
+                        </Link>
                     </div>
-                    <p>Skip</p>
+                    <Link to="/road-map">
+                        <button onClick={() => handleClick()} className="text-[#5B5B5B]">
+                            Skip
+                        </button>
+                    </Link>
                 </footer>
-            </body>
+            </div>
         </React.Fragment>
     );
 };

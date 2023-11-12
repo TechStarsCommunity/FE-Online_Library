@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../styles/uploads.css";
 import LeftSidebar from "../components/leftSideBar";
 import { Tabs } from "../data/leftSideBarData";
+
 import { MdMenu, MdClose } from "react-icons/md";
 
 const Uploads = () => {
@@ -90,5 +91,4 @@ const Uploads = () => {
         </React.Fragment>
     );
 };
-
 export default Uploads;

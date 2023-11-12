@@ -20,7 +20,7 @@ const Header = () => {
                     <ul className="md:flex hidden flex-row gap-2.5 my-0 mx-auto">
                         <li>
                             <a
-                                href="#"
+                                href="/"
                                 className="active text-sm  lg:text-[17px] ease-in duration-300 hover:scale-[1.1]"
                             >
                                 Home
@@ -28,7 +28,7 @@ const Header = () => {
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="/about"
                                 className="text-sm lg:text-[17px]  ease-in duration-300 hover:scale-[1.1]"
                             >
                                 About
@@ -36,7 +36,7 @@ const Header = () => {
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="/contact"
                                 className="text-sm lg:text-[17px]  ease-in duration-300 hover:scale-[1.1]"
                             >
                                 Contact Us
@@ -44,12 +44,12 @@ const Header = () => {
                         </li>
                     </ul>
                     <div className="inline-flex flex-row gap-2.5 items-center">
-                        <Link to="signup">
+                        <Link to="/signup">
                             <button className="get-started-btn hidden md:block py-1.5 px-2.5 rounded-[3.125rem] text-white cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  border-none ease-in duration-300 hover:scale-[1.1]">
                                 Get Started
                             </button>
                         </Link>
-                        <Link to="login">
+                        <Link to="/login">
                             <button className=" border-[#10b2f3] border-solid border py-1.5 px-2.5 rounded-[3.125rem]  outline-none cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  text-[#10b2f3] bg-white ease-in duration-300 hover:scale-[1.1]">
                                 Login
                             </button>
@@ -65,10 +65,10 @@ const Header = () => {
                                 <a href="/" className="active mobile-links">
                                     Home
                                 </a>
-                                <a href="/" className="mobile-links">
+                                <a href="/about" className="mobile-links">
                                     About
                                 </a>
-                                <a href="/" className="mobile-links">
+                                <a href="/contact" className="mobile-links">
                                     Contact Us
                                 </a>
                             </nav>

@@ -1,0 +1,19 @@
+/* categoriesButton.css */
+.button {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3.75rem;
+    color: #8a8a8a;
+    transition: all 0.3s ease;
+    border: 2px solid #8a8a8a;
+}
+
+.button:hover {
+    background-color: #cfcdcd;
+}
+
+.button.clicked {
+    color: #1ca782;
+    border: 2px solid #3ce2b6;
+    background-color: #d1fff3;
+}

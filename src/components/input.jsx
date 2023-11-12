@@ -2,7 +2,20 @@ import React, { useState, memo } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const Input = memo(
-    ({ label, name, placeholder, type, register, errors, autoComplete, disabled, style }) => {
+    ({
+        label,
+        name,
+        placeholder,
+        type,
+        register,
+        errors,
+        autoComplete,
+        disabled,
+        style,
+        maxWidth,
+        conWidth,
+        conMargin,
+    }) => {
         const [inputType, setInputType] = useState(type);
 
         const toggleInputType = () => {
@@ -13,47 +26,25 @@ const Input = memo(
         };
 
         return (
-            <div className="flex flex-col gap-2 mb-4 md:mb-8">
+            <div className="flex flex-col" style={{ width: conWidth, margin: conMargin }}>
                 {label && (
                     <label
                         htmlFor={name}
-                        className={`text-sm md:text-lg ${
-                            disabled === true ? "text-red-600" : "text-[#001E50]"
+                        className={`text-sm md:text-lg mb-0 ${
+                            disabled === true ? "text-red-600" : "text-slate-800"
                         }`}
                     >
                         {label}
                     </label>
                 )}
-                <div className="relative w-full">
+                <div className="relative w-full" style={{ maxWidth: maxWidth }}>
                     <input
                         type={inputType}
                         id={name}
-                        {...register(
-                            name,
-                            { required: true },
-                            type === "password" && {
-                                minLength: {
-                                    value: 8,
-                                    message: "Password must be at least 8 characters",
-                                },
-                            },
-                            type === "email" && {
-                                pattern: {
-                                    value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2, 3})+$/,
-                                    message: "Invalid email address",
-                                },
-                            },
-                        )}
+                        {...register(name, { required: true })}
                         aria-invalid={errors[name] ? "true" : "false"}
                         autoSave="true"
                         autoCorrect="on"
-                        spellCheck={
-                            name !== "password"
-                                ? "true"
-                                : name !== "confirmPassword"
-                                ? "true"
-                                : "false"
-                        }
                         autoComplete={autoComplete}
                         placeholder={placeholder}
                         className={`input ${
