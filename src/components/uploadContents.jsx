@@ -1,135 +1,119 @@
-import React, { useState, useEffect } from "react";
-import { MdCloudUpload } from "react-icons/md";
 
-// Define styles for input and button
-const inputStyles =
+import React, { useState } from "react";
+import { UploadBookSchema } from "../config/schema";
+import Uploader from "./Uploader";
+import SelectField from "./selectField";
+import AuthorField from "./authorField";
+import FormField from "./formField";
+
+
+// const fileFormatSchema = Yup.object().shape({
+//   file: Yup.mixed()
+//     .test("fileFormat", "Invalid file format", (value) => {
+//       if (!value) return true;
+//       const acceptedFormats = [".jpg", ".png", ".pdf"];
+//       const fileExtension = value.name.split(".").pop().toLowerCase();
+//       return acceptedFormats.includes("." + fileExtension);
+//     })
+//     .required("File is required"),
+// });
+
+// --------Styles for input and button--------
+export const inputStyles =
     "px-4 py-2 max-h-1/2 h-auto w-full md:w-auto grow border-[#35EAB9] border focus:border-[#35EAB9] mb-[-2rem]";
-const buttonStyles =
-    "bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] text-white p-[10px] rounded-lg mt-8";
+export const buttonStyles =
+    "bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] text-white md:p-[10px] p-2 rounded-lg mt-8 text-xs md:text-base";
 
-//major function
+//-------major functions-------
 const UploadContents = () => {
+    const [formData, setFormData] = useState({
+        Name: "",
+        Description: "",
+        Category: "",
+        Level: "",
+        Status: "",
+        Author: "",
+        Credits: "",
+    });
+
+    const [validationErrors, setValidationErrors] = useState({});
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            await UploadBookSchema.validate(formData, { abortEarly: false });
+            console.log("Form is valid. You can submit.");
+            // Clear any previous validation errors
+            setValidationErrors({});
+        } catch (errors) {
+            const errorsObject = {};
+
+            errors.inner.forEach((error) => {
+                errorsObject[error.path] = error.message;
+            });
+
+            setValidationErrors(errorsObject);
+        }
+    };
+
     return (
         <div className="p-8">
             <h2 className="font-bold text-2xl py-4">Upload your book</h2>
-            <form method="post" className="w-full max-w-[90%]">
-                <FormField label="Name" placeholder="album" />
-                <FormField label="Description" placeholder="a brief summary about this book" />
-                <SelectField label="Category" />
-                <SelectField label="Level" />
-                <SelectField label="Status" />
-                <AuthorField />
+            <form method="post" className="w-full max-w-[90%]" onSubmit={handleSubmit}>
+                {/* Name Field */}
+                <FormField
+                    label="Name"
+                    placeholder="album"
+                    value={formData.Name}
+                    onChange={(e) => setFormData({ ...formData, Name: e.target.value })}
+                    error={validationErrors.Name}
+                />
+
+                {/* Description Field */}
+                <FormField
+                    label="Description"
+                    placeholder="a brief summary about this book"
+                    value={formData.Description}
+                    onChange={(e) => setFormData({ ...formData, Description: e.target.value })}
+                    error={validationErrors.Description} // Pass the validation error as a prop
+                />
+                <SelectField
+                    label="Category"
+                    error={validationErrors.Category}
+                    value={formData.Category}
+                    onChange={(e) => setFormData({ ...formData, Category: e.target.value })}
+                />
+                <SelectField
+                    label="Level"
+                    error={validationErrors.Level}
+                    value={formData.Level}
+                    onChange={(e) => setFormData({ ...formData, Level: e.target.value })}
+                />
+                <SelectField
+                    label="Status"
+                    error={validationErrors.Status}
+                    value={formData.Status}
+                    onChange={(e) => setFormData({ ...formData, Status: e.target.value })}
+                />
+                <AuthorField
+                    error={validationErrors.Author}
+                    value={formData.Author}
+                    onChange={(e) => setFormData({ ...formData, Author: e.target.value })}
+                />
                 <AuthorField isCredits />
-                <div className="flex w-full gap-5 flex-row">
+
+                <div className="flex flex-col md:flex-row w-full gap-5">
                     <Uploader bookCover accept=".jpg, .png" id="img" />
                     <Uploader accept=".pdf" id="pdf" />
                 </div>
+
+                <button type="submit" className={buttonStyles}>
+                    Submit
+                </button>
             </form>
         </div>
     );
 };
-// components sections
-
-const FormField = ({ label, placeholder }) => (
-    <div className="mb-4">
-        <label htmlFor={label.toLowerCase()} className="text-base mb-0">
-            {label}
-        </label>
-        <input
-            type="text"
-            id={label.toLowerCase()}
-            placeholder={placeholder}
-            className={inputStyles}
-        />
-    </div>
-);
-
-const SelectField = ({ label }) => (
-    <div className="mb-4">
-        <label htmlFor={label.toLowerCase()} className="text-base mb-0">
-            {label}
-        </label>
-        <select
-            id={label.toLowerCase()}
-            name={label.toLowerCase()}
-            className={inputStyles + " rounded-lg text-[grey]"}
-        >
-            <option value="" disabled>
-                --select {label.toLowerCase()}
-            </option>
-            <option value="Education">Education</option>
-            <option value="Tech">Tech</option>
-            <option value="Comedy">Comedy</option>
-        </select>
-    </div>
-);
-
-const AuthorField = ({ isCredits }) => (
-    <div>
-        <label htmlFor={isCredits ? "credits" : "author"} className="text-base mb-[-2rem]">
-            {isCredits ? "Credits" : "Authors name"}
-        </label>
-        <div className="flex gap-4 flex-row items-center h-auto">
-            <input
-                type="text"
-                id={isCredits ? "credits" : "author"}
-                name={isCredits ? "credits" : "author"}
-                placeholder={isCredits ? "Author1" : "John Doe"}
-                className={inputStyles + " w-auto mb-0"}
-            />
-            <div>
-                <button className={buttonStyles}>
-                    {isCredits ? "Add Author" : "Use profile name"}
-                </button>
-            </div>
-        </div>
-    </div>
-);
-
-function Uploader({ bookCover, accept, id }) {
-    const [fileData, setFileData] = useState({ fileName: "", imageURL: null });
-
-    const handleFileChange = (e) => {
-        const file = e.target.files[0];
-        if (file) {
-            setFileData({
-                fileName: file.name,
-                imageURL: URL.createObjectURL(file),
-            });
-        }
-    };
-    useEffect(() => {
-        return () => {
-            if (fileData.imageURL) {
-                URL.revokeObjectURL(fileData.imageURL);
-            }
-        };
-    }, [fileData.imageURL]);
-
-    return (
-        <div className="w-full space-y-2">
-            <p>{bookCover ? "Upload book cover" : "Upload book Manuscript"}</p>
-            <div
-                className="border rounded-lg border-[#10B2F3] flex flex-col cursor-pointer justify-center items-center w-full h-[200px]"
-                onClick={() => document.getElementById(id).click()}
-            >
-                <input type="file" accept={accept} hidden id={id} onChange={handleFileChange} />
-                {fileData.imageURL ? (
-                    <div>
-                        <img src={fileData.imageURL} width={100} alt={fileData.fileName} />
-                        <p>{fileData.fileName}</p>
-                    </div>
-                ) : (
-                    <>
-                        <MdCloudUpload color="#10B2F3" size={60} />
-                        <p className="font-bold">
-                            {bookCover ? "Upload jpg or png" : "Upload pdf"}
-                        </p>
-                    </>
-                )}
-            </div>
-        </div>
-    );
-}
 
 export default UploadContents;
