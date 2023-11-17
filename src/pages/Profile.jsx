@@ -109,7 +109,7 @@ const Profile = () => {
                         </div>
 
                         <div className="flex justify-end">
-                            <Link to={`editProfile`}>
+                            <Link to="editProfile">
                                 <Button
                                     borderVariant="noRadius"
                                     variant="primary"

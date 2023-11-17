@@ -20,6 +20,7 @@ const Input = memo(
         ref,
         value,
         maxLength,
+        onKeyUp,
     }) => {
         const [inputType, setInputType] = useState(type);
 
@@ -60,6 +61,7 @@ const Input = memo(
                         value={value}
                         maxLength={maxLength}
                         ref={ref}
+                        onKeyUp={onKeyUp}
                     />
                     {type === "password" && (
                         <span

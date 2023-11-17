@@ -99,6 +99,7 @@ const BrowserRouter = createBrowserRouter([
             </React.Suspense>
         ),
     },
+
     {
         path: "/profile/editProfile",
         element: (
@@ -107,6 +108,7 @@ const BrowserRouter = createBrowserRouter([
             </React.Suspense>
         ),
     },
+
     {
         path: "/onboarding",
         element: (

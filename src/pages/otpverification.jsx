@@ -10,37 +10,30 @@ const OTPVerification = () => {
     const { errors, register, handleSubmit } = useSubmit(OTPVerificationSchema);
     // Number of otp input fields
     const numOfOtp = 6;
-    const [otp, setOtp] = useState(new Array(numOfOtp).fill(""));
+    const [otp, setOtp] = useState(new Array(numOfOtp).fill());
     const [otpError, setOtpError] = useState(null);
     const otpBoxRef = useRef([]);
 
-    const handleChange = (value, index) => {
-        let newArr = [...otp];
-        newArr[index] = value;
-        setOtp(newArr);
-
-        if (value && (index < numOfOtp - 1)) {
-            otpBoxRef.current[index + 1].focus();
+    const handleChange = (e, index) => {
+        if (e.key >= 0 && e.key <= 9) {
+            otp[index].value = " ";
+            setTimeout(() => otp[index + 1].focus);
         }
     };
 
-    const otpInput = Array(numOfOtp)
-        .fill()
-        .map((digit, index) => (
-            <Input
-                key={index}
-                name="otp"
-                type="number"
-                value={digit}
-                register={register}
-                autoComplete="off"
-                errors={errors}
-                className="code"
-                maxLength={1}
-                ref={(references) => (otpBoxRef.current[index] = references)}
-                onChange={(e) => handleChange(e.target.value, index)}
-            />
-        ));
+    const otpInput = Array(6).fill().map((index) => (
+        <Input
+            key={index}
+            name="otp"
+            type="number"
+            register={register}
+            errors={errors}
+            className="code"
+            maxLength={1}
+            onChange={setOtp}
+            onKeyUp={(e) => handleChange(e.target.value, index)}
+        />
+    ));
     const onSubmit = (data) => {
         console.log(data);
     };
