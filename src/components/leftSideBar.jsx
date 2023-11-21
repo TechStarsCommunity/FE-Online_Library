@@ -10,7 +10,7 @@ const LeftSidebar = () => {
     const location = useLocation();
     const [sidebarOpen, setSidebarOpen] = useState(true);
 
-    const toogleSidebar = () => {
+    const toogleSidebar = (e) => {
         setSidebarOpen(!sidebarOpen);
     };
 
@@ -22,7 +22,7 @@ const LeftSidebar = () => {
                         <img src={booksLabLogo} alt="Logo" />
                     </h1>
 
-                    <button
+                    <Button
                         className="pr-3 transition-transform duration-300 transform hover:scale-110"
                         onClick={toogleSidebar}
                     >
@@ -31,7 +31,7 @@ const LeftSidebar = () => {
                         ) : (
                             <IoIosMenu style={{ fontSize: "40px", color: "gray" }} />
                         )}
-                    </button>
+                    </Button>
                 </div>
 
                 <div className="mt-[100px]">

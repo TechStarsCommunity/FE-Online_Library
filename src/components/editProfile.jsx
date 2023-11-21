@@ -1,4 +1,4 @@
-import React from "react";
+import { React, Fragment } from "react";
 import LeftSidebar from "../components/leftSideBar";
 import { Link } from "react-router-dom";
 import { AiOutlineSetting } from "react-icons/ai";
@@ -6,22 +6,36 @@ import Button from "./button";
 import Input from "../components/input";
 import { EditProfileSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
+import { useState } from "react";
 
 const editProfile = () => {
     const { errors, register, handleSubmit } = useSubmit(EditProfileSchema);
+    const [leftBarOpen, setLeftBarOpen] = useState(true);
 
     const processData = (data) => {
         console.log(data);
     };
 
+    function openNav() {
+        setLeftBarOpen((prev) => !prev);
+    }
+
     return (
-        <>
+        <Fragment>
             <section className="flex w-full h-full">
-                <div className="w-1/5 bg-[#DFF6FF]">
-                    <LeftSidebar />
+                {leftBarOpen && (
+                    <div className={`w-1/5 bg-[#DFF6FF]`}>
+                        <LeftSidebar />
+                    </div>
+                )}
+                <div className="flex flex-row bg-[#e6e6e6] relative w-full">
+                <div onClick={openNav} className="self-start">
+                    <div className="border border-slate-950 px-2 m-1"></div>
+                    <div className="border border-slate-950 px-2 m-1"></div>
+                    <div className="border border-slate-950 px-2 m-1"></div>
                 </div>
-                <div className="flex flex-row bg-[#e6e6e6] relative">
                     <div className="flex flex-col gap-[3rem]] mx-auto p-10">
+                        
                         <div className="w-full">
                             <div className="w-full mx-auto h-[8rem] mb-20 relative rounded-xl bg-[url('/Header.jpg')] bg-cover bg-center">
                                 <img
@@ -106,7 +120,7 @@ const editProfile = () => {
                     </div>
                 </div>
             </section>
-        </>
+        </Fragment>
     );
 };
 export default editProfile;

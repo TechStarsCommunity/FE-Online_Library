@@ -11,7 +11,7 @@ import { IoIosMenu } from "react-icons/io";
 const Profile = () => {
     const [sidebarVisible, setSidebarVisible] = useState(true);
 
-    const toogleSidebar = () => {
+    const toggleSidebar = () => {
         setSidebarVisible(!sidebarVisible);
     };
 
@@ -25,7 +25,7 @@ const Profile = () => {
                 <div className="flex">
                     <button
                         className="transition-transform duration-300 transform hover:scale-110"
-                        onClick={toogleSidebar}
+                        onClick={toggleSidebar}
                     >
                         <IoIosMenu
                             style={{
