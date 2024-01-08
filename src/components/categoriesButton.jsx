@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/categoriesButton.css";
 
-function CategoriesButton({ initialText }) {
+const CategoriesButton = ({ initialText }) => {
     const [isClicked, setIsClicked] = useState(false);
 
     const handleClick = () => {
@@ -15,6 +15,6 @@ function CategoriesButton({ initialText }) {
             {initialText}
         </button>
     );
-}
+};
 
 export default CategoriesButton;

@@ -9,7 +9,6 @@ import RoadMap from "./../components/roadmap";
 import BookDetails from "./../components/book";
 import ContactComponent from "../components/contact";
 import YourLibrary from "../components/yourLibrary";
-import React from "react";
 
 export const Tabs = [
     {

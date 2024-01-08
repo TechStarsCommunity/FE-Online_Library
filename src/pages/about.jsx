@@ -1,17 +1,13 @@
-import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import "../styles/about.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+import AboutPageCard from "../components/aboutpageCard";
 import { productManagers } from "../data/teamMembers/productManagers";
 import { teamDesigners } from "../data/teamMembers/designTeam";
 import { teamFrontend } from "../data/teamMembers/frontendTeam";
 import { teamBackend } from "../data/teamMembers/backendTeam";
-
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import AboutpageCard from "../components/aboutpageCard";
 
 const responsive = {
     superLargeDesktop: {
@@ -38,10 +34,8 @@ const responsive = {
 };
 
 const About = () => {
-    // const dynamicBgColor = "#dffcf4";
-
     return (
-        <React.Fragment>
+        <>
             <Header />
 
             <div className="page">
@@ -104,7 +98,7 @@ const About = () => {
                 <h2>Product Manager</h2>
                 <Carousel responsive={responsive}>
                     {productManagers.map((members) => (
-                        <AboutpageCard
+                        <AboutPageCard
                             key={members.id}
                             name={members.name}
                             title={members.title}
@@ -116,7 +110,7 @@ const About = () => {
                 <h2>Product Designers</h2>
                 <Carousel responsive={responsive}>
                     {teamDesigners.map((members) => (
-                        <AboutpageCard
+                        <AboutPageCard
                             key={members.id}
                             name={members.name}
                             title={members.title}
@@ -128,7 +122,7 @@ const About = () => {
                 <h2 className="stack">Frontend Developers</h2>
                 <Carousel responsive={responsive}>
                     {teamFrontend.map((members) => (
-                        <AboutpageCard
+                        <AboutPageCard
                             key={members.id}
                             name={members.name}
                             title={members.title}
@@ -140,7 +134,7 @@ const About = () => {
                 <h2>Backend Developers</h2>
                 <Carousel responsive={responsive}>
                     {teamBackend.map((members) => (
-                        <AboutpageCard
+                        <AboutPageCard
                             key={members.id}
                             name={members.name}
                             title={members.title}
@@ -150,7 +144,7 @@ const About = () => {
                 </Carousel>
             </div>
             <Footer />
-        </React.Fragment>
+        </>
     );
 };
 

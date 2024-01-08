@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { iconData, iconData2 } from "../data/roadmapicons";
 
 const RoadMap = () => {
@@ -16,43 +16,37 @@ const RoadMap = () => {
     };
 
     return (
-        <React.Fragment>
-            <div className="bg-[#FFFFFF] w-full p-12">
-                <div className="text-center sm:text-left left-0 top-0 text-sky-950 text-5xl font-bold leading-normal">
-                    Roadmap
-                </div>
-                <div className="sm:flex mt-20 gap-20 lg:gap-40">
-                    {icons.map(({ id, show }) => (
-                        <div
-                            key={id}
-                            className="flex-shrink flex flex-col items-center "
-                            onClick={() => toggleIcon2(id)}
-                        >
-                            {show ? (
-                                iconData2[id - 1].images.map((image, index) => (
-                                    <div key={index} className="mt-5 text-center ">
-                                        <a
-                                            href={image.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            <div className="flex flex-col items-center justify-center ">
-                                                <img src={image.src} alt={image.title} />
-                                                <p className="mt-1 text-sky-950 text-base font-semibold capitalize leading-normal">
-                                                    {image.title}
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                ))
-                            ) : (
-                                <img src={iconData[id - 1].src} alt="" />
-                            )}
-                        </div>
-                    ))}
-                </div>
+        <div className="bg-[#FFFFFF] w-full p-12">
+            <div className="text-center sm:text-left left-0 top-0 text-sky-950 text-5xl font-bold leading-normal">
+                Roadmap
             </div>
-        </React.Fragment>
+            <div className="sm:flex mt-20 gap-20 lg:gap-40">
+                {icons.map(({ id, show }) => (
+                    <div
+                        key={id}
+                        className="flex-shrink flex flex-col items-center "
+                        onClick={() => toggleIcon2(id)}
+                    >
+                        {show ? (
+                            iconData2[id - 1].images.map((image, index) => (
+                                <div key={index} className="mt-5 text-center ">
+                                    <a href={image.url} target="_blank" rel="noopener noreferrer">
+                                        <div className="flex flex-col items-center justify-center ">
+                                            <img src={image.src} alt={image.title} />
+                                            <p className="mt-1 text-sky-950 text-base font-semibold capitalize leading-normal">
+                                                {image.title}
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            ))
+                        ) : (
+                            <img src={iconData[id - 1].src} alt="" />
+                        )}
+                    </div>
+                ))}
+            </div>
+        </div>
     );
 };
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import ReviewCard from "./reviewCard";
 import { myData } from "../data/reviewData";

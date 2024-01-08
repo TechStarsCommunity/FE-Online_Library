@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import "../styles/roadmap.css";
 import Button from "../components/button";
-import { Link } from "react-router-dom";
 
-export default function RoadMap({ show, setShow }) {
+const RoadMap = ({ show, setShow }) => {
     const [selectedStack, setSelectedStack] = useState("");
     const [selectedLevel, setSelectedLevel] = useState("");
 
@@ -80,4 +80,6 @@ export default function RoadMap({ show, setShow }) {
             </section>
         </div>
     );
-}
+};
+
+export default RoadMap;

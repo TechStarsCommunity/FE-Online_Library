@@ -1,11 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 import Logo from "/booksLab_logo.png";
 
 const Footer = () => {
     return (
-        <React.Fragment>
+        <>
             <img src="/logo.png" alt="" />
             <footer className="bg-[#35EAB91F]  pt-[2rem] sm:pt-[5rem] pl-3 pb-[100px] sm:pl-12 overflow-x-hidden">
                 <div className="lg:flex  g-x-12">
@@ -114,7 +113,7 @@ const Footer = () => {
                             <p className="text-center">2023 BooksLab. All right reserved!</p>
                         </div> */}
             </footer>
-        </React.Fragment>
+        </>
     );
 };
 

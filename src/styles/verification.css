@@ -34,7 +34,6 @@
     background-repeat: no-repeat;
 }
 
-
 .space {
     padding: 3rem;
     margin: 0 auto;
@@ -91,7 +90,7 @@
     border: 0.068rem solid #696969;
     font-size: 1.5rem;
     font-family: "Inter" sans-serif;
-    width: 3.0rem;
+    width: 3rem;
     /* max-width: 4.5rem; */
     height: 4.5rem;
     margin: 0.625rem;
@@ -120,27 +119,26 @@
     text-decoration: none;
     font-weight: 700;
     color: rgba(0, 30, 80, 1);
-
 }
 
 @media (max-width: 600px) {
-    .code-container{
+    .code-container {
         flex-wrap: wrap;
     }
-    .code{
+    .code {
         font-size: 1.5rem;
         height: 3rem;
         width: 6.25rem;
         /* max-width: 1.063rem; */
         font-size: bold;
     }
-    .otp-right-section{
+    .otp-right-section {
         align-content: center;
     }
 }
 
 @media (max-width: 400px) {
-    .space{
+    .space {
         padding-left: 2rem;
     }
 }
@@ -151,10 +149,9 @@
 }
 
 .code:valid {
-    border-color: #696969 ;
+    border-color: #696969;
     box-shadow: 0 0.625rem 0.625rem -0.313rem;
 }
-
 
 .button {
     width: 100%;
@@ -175,7 +172,7 @@
 }
 
 @media (max-width: 768px) {
-    .otp-left-section{
+    .otp-left-section {
         display: none;
     }
     .vector {

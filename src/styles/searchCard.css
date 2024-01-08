@@ -1,9 +1,9 @@
-.searchCardWidth{
+.searchCardWidth {
     width: 70%;
     padding-left: 30px;
     padding-top: 20px;
 }
-.bg-card{
+.bg-card {
     background-color: #fff;
     padding: 0px 10px;
 }
@@ -86,7 +86,7 @@
     font-weight: 500;
 }
 
-get-started-btn {
+.get-started-btn {
     background: var(
         --gradient,
         linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
@@ -131,12 +131,11 @@ get-started-btn {
 .btn-radius {
     border-radius: 5px;
 }
-.resultFound{
+.resultFound {
     display: flex;
     padding: 15px 0px;
-
 }
-.footerColor{
+.footerColor {
     background-color: #fff;
 }
 @media (max-width: 475px) {
