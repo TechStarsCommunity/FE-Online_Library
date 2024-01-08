@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-
+import { useState, useEffect } from "react";
 import { MdCloudUpload } from "react-icons/md";
 
 function Uploader({ bookCover, accept, id, error }) {

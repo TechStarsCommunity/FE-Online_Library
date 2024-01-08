@@ -1,7 +1,6 @@
-import React from "react";
 import "../styles/aboutpageCard.css";
 
-const AboutpageCard = ({ name, title, image }) => {
+const AboutPageCard = ({ name, title, image }) => {
     return (
         <div className="aboutpage__card-container">
             <img src={image} alt="user-image" className="card__image" />
@@ -11,4 +10,4 @@ const AboutpageCard = ({ name, title, image }) => {
     );
 };
 
-export default AboutpageCard;
+export default AboutPageCard;

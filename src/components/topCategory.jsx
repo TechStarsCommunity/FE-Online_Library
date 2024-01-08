@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Button from "./button";
+import { useState } from "react";
 import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from "react-icons/bs";
+import Button from "./button";
 import { categories } from "../data/category";
 
 // a separate Dot component for the dots
@@ -44,7 +44,7 @@ const TopCategory = () => {
                                 {currentCategory.description}
                             </p>
                         </div>
-                        <div className=" md:w-1/2 w-full  h-1/4 ">
+                        <div className="md:w-1/2 w-full h-1/4">
                             <Button
                                 children={"Learn More"}
                                 variant="primary"

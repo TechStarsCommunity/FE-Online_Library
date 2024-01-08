@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import "../styles/searchCard.css";
 import Button from "../components/button";
 import { TechCareer } from "../data/search";
 import ReactPaginate from "react-paginate";
-import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 
 const SearchCard = () => {
     const [currentPage, setCurrentPage] = useState(0);
@@ -18,7 +18,7 @@ const SearchCard = () => {
     const currentPageData = TechCareer.slice(offset, offset + perPage);
 
     return (
-        <React.Fragment>
+        <>
             <div className="flex items-center justify-between">
                 <div className="search-container">
                     <input type="text" placeholder="Search for a book, category or author" />
@@ -33,7 +33,7 @@ const SearchCard = () => {
                     <option value="">Sort By</option>
                     <option value="Latest">Latest</option>
                     <option value="Old To New">Old To New</option>
-                    <option value="Techniclity">Techniclity</option>
+                    <option value="Technicality">Technicality</option>
                 </select>
             </div>
 
@@ -87,7 +87,7 @@ const SearchCard = () => {
                 pageClassName={`bg-[#fff] px-2`}
                 activeClassName={"bg-[#616161]"}
             />
-        </React.Fragment>
+        </>
     );
 };
 

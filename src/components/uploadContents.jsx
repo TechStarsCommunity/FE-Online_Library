@@ -1,20 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { UploadBookSchema } from "../config/schema";
 import Uploader from "./Uploader";
 import SelectField from "./selectField";
 import AuthorField from "./authorField";
 import FormField from "./formField";
-
-// const fileFormatSchema = Yup.object().shape({
-//   file: Yup.mixed()
-//     .test("fileFormat", "Invalid file format", (value) => {
-//       if (!value) return true;
-//       const acceptedFormats = [".jpg", ".png", ".pdf"];
-//       const fileExtension = value.name.split(".").pop().toLowerCase();
-//       return acceptedFormats.includes("." + fileExtension);
-//     })
-//     .required("File is required"),
-// });
 
 // --------Styles for input and button--------
 export const inputStyles =

@@ -1,4 +1,3 @@
-import React from "react";
 import user from "/user.jpg";
 
 const ReviewCard = ({ comment, userName, stack }) => {

@@ -1,6 +1,6 @@
-import React from "react";
-import "../styles/home.css";
+import { Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import "../styles/home.css";
 import Header from "../components/header";
 import Roadmap from "../components/roadmap";
 import AboutComponent from "../components/about";
@@ -9,11 +9,10 @@ import Button from "../components/button";
 import ContactComponent from "../components/contact";
 import TopCategory from "../components/topCategory";
 import Review from "../components/review";
-import { Link } from "react-router-dom";
 
-const home = () => {
+const Home = () => {
     return (
-        <React.Fragment>
+        <>
             <Header />
             <main className="w-full">
                 <section className="hero__section">
@@ -76,8 +75,8 @@ const home = () => {
             <Review />
             <ContactComponent />
             <Footer />
-        </React.Fragment>
+        </>
     );
 };
 
-export default home;
+export default Home;

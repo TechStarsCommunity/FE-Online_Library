@@ -2,12 +2,12 @@ import { inputStyles } from "./uploadContents";
 
 const SelectField = ({ label, error, value, onChange }) => (
     <div className="mb-4">
-        <label htmlFor={label.toLowerCase()} className="text-base mb-0">
+        <label htmlFor={label} className="text-base mb-0">
             {label}
         </label>
         <select
-            id={label.toLowerCase()}
-            name={label.toLowerCase()} // Add the name attribute
+            id={label}
+            name={label}
             className={inputStyles + " rounded-lg text-[grey]"}
             value={value}
             onChange={onChange}

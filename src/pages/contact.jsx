@@ -1,4 +1,3 @@
-import React from "react";
 import ContactComponent from "../components/contact";
 import Header from "../components/header";
 import Footer from "../components/footer";
@@ -15,7 +14,7 @@ const Contact = () => {
     };
 
     return (
-        <React.Fragment>
+        <>
             <Header className="p-4" />
             <ContactComponent className="bg-[#dffcf4]" />
             <section className="mx-auto p-4 md:p-12 lg:p-24">
@@ -71,7 +70,7 @@ const Contact = () => {
                 </form>
             </section>
             <Footer />
-        </React.Fragment>
+        </>
     );
 };
 

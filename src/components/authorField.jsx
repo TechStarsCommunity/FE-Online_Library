@@ -9,7 +9,7 @@ const AuthorField = ({ isCredits, error, value, onChange }) => (
             <input
                 type="text"
                 id={isCredits ? "credits" : "author"}
-                name={isCredits ? "credits" : "author"} // Add the name attribute
+                name={isCredits ? "credits" : "author"}
                 placeholder={isCredits ? "Author1" : "John Doe"}
                 className={inputStyles + " w-3/5 mt-1"}
                 value={value}

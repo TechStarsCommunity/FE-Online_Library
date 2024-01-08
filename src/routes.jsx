@@ -1,33 +1,23 @@
 import React, { lazy } from "react";
 import Loading from "./components/loading";
 import { createBrowserRouter } from "react-router-dom";
-import RoadMap from "./pages/roadmap";
 
 const Home = lazy(() => import("./pages/home"));
 const Login = lazy(() => import("./pages/login"));
-const Signup = lazy(() => import("./pages/signup"));
+const SignUp = lazy(() => import("./pages/signup"));
 const Uploads = lazy(() => import("./pages/uploads"));
 const Contact = lazy(() => import("./pages/contact"));
 const About = lazy(() => import("./pages/about"));
 const Search = lazy(() => import("./pages/search"));
-const BookCategories = lazy(() => import("./pages/bookCategories"));
 const OTPVerification = lazy(() => import("./pages/otpverification"));
 const Profile = lazy(() => import("./pages/Profile"));
-const Popularbooks = lazy(() => import("./pages/popularbooks"));
+const PopularBooks = lazy(() => import("./pages/popularbooks"));
 const Onboarding = lazy(() => import("./pages/onboarding"));
 const EditProfile = lazy(() => import("./components/editProfile"));
+const RoadMap = lazy(() => import("./pages/roadmap"));
+const Error404 = lazy(() => import("./components/404"));
 
 const BrowserRouter = createBrowserRouter([
-    //route to editProfile from profile
-    {
-        path: "/profile/editProfile",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <EditProfile />
-            </React.Suspense>
-        ),
-    },
-
     {
         path: "/",
         element: (
@@ -36,6 +26,14 @@ const BrowserRouter = createBrowserRouter([
             </React.Suspense>
         ),
         errorElement: <div>Error 404</div>,
+    },
+    {
+        path: "/profile/editProfile",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <EditProfile />
+            </React.Suspense>
+        ),
     },
     {
         path: "/login",
@@ -49,7 +47,7 @@ const BrowserRouter = createBrowserRouter([
         path: "/signup",
         element: (
             <React.Suspense fallback={<Loading />}>
-                <Signup />
+                <SignUp />
             </React.Suspense>
         ),
     },
@@ -102,14 +100,6 @@ const BrowserRouter = createBrowserRouter([
         ),
     },
     {
-        path: "*",
-        element: (
-            <React.Suspense fallback={<Loading />}>
-                <Login />
-            </React.Suspense>
-        ),
-    },
-    {
         path: "/profile",
         element: (
             <React.Suspense fallback={<Loading />}>
@@ -117,7 +107,6 @@ const BrowserRouter = createBrowserRouter([
             </React.Suspense>
         ),
     },
-
     {
         path: "/onboarding",
         element: (
@@ -126,12 +115,19 @@ const BrowserRouter = createBrowserRouter([
             </React.Suspense>
         ),
     },
-
     {
         path: "/popularbooks",
         element: (
             <React.Suspense fallback={<Loading />}>
-                <Popularbooks />
+                <PopularBooks />
+            </React.Suspense>
+        ),
+    },
+    {
+        path: "*",
+        element: (
+            <React.Suspense fallback={<Loading />}>
+                <Error404 />
             </React.Suspense>
         ),
     },

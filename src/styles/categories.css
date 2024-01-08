@@ -1,4 +1,4 @@
-.categriesHeader {
+.categoriesHeader {
     color: var(--primary, #001e50);
     font-family: Montserrat;
 }
@@ -7,17 +7,17 @@
     display: none;
 }
 
-.categriesHeader p {
+.categoriesHeader p {
     color: var(--secondary, #8d8d8d);
 }
 
-.categriesHeader h2 {
+.categoriesHeader h2 {
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
 }
 
-.categriesHeader h3 {
+.categoriesHeader h3 {
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -37,7 +37,6 @@
     height: 250px;
     border-radius: 15px;
 }
-
 
 @media (max-width: 562px) {
     .myCollapse {
