@@ -1,11 +1,9 @@
-
 import React, { useState } from "react";
 import { UploadBookSchema } from "../config/schema";
 import Uploader from "./Uploader";
 import SelectField from "./selectField";
 import AuthorField from "./authorField";
 import FormField from "./formField";
-
 
 // const fileFormatSchema = Yup.object().shape({
 //   file: Yup.mixed()
