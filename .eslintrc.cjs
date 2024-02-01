@@ -5,6 +5,7 @@ module.exports = {
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
         "plugin:react-hooks/recommended",
+        "plugin:@tanstack/eslint-plugin-query/recommended",
         "eslint-config-prettier",
     ],
     ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.js', 'tailwind.config.js', 'postcss.config.js'],

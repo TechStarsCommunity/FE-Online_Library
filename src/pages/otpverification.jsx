@@ -1,12 +1,25 @@
+import { useNavigate, Link } from "react-router-dom";
+import PinInput from "react-pin-input";
+import { useVerifyEmailMutation } from "@/services/mutation/auth";
 import "../styles/verification.css";
-import { SignUpSchema } from "../config/schema";
-import useSubmit from "../hooks/useSubmit";
 
 const OTPVerification = () => {
-    const { errors, register, handleSubmit } = useSubmit(SignUpSchema);
+    const navigate = useNavigate();
+    const { mutateAsync: verifyEmail } = useVerifyEmailMutation();
 
-    const onSubmit = (data) => {
-        console.log(data);
+    const onSubmit = async (value) => {
+        try {
+            const response = await verifyEmail({ otp: value });
+            if (!response) {
+                return;
+            }
+            SuccessToast(response?.message);
+            navigate("/");
+        } catch (error) {
+            console.log(error);
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -17,7 +30,7 @@ const OTPVerification = () => {
                 </div>
             </div>
             <div className="space">
-                <form onSubmit={handleSubmit(onSubmit)} className="right-section">
+                <form onSubmit={(e) => onSubmit(e)} className="right-section">
                     <div className="container">
                         <div>
                             <h2 className="head">Verification</h2>
@@ -25,65 +38,29 @@ const OTPVerification = () => {
                         </div>
                         <div className="container">
                             <h2 className="code-label">Code</h2>
-                            <div className="flex flex-row flex-wrap">
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
-                                <input
-                                    type="number"
-                                    className="code"
-                                    placeholder="0"
-                                    min="0"
-                                    max="9"
-                                    required
-                                />
-                            </div>
+                            <PinInput
+                                length={6}
+                                initialValue=""
+                                secret
+                                secretDelay={100}
+                                focus
+                                onChange={(value, index) => {}}
+                                type="numeric"
+                                inputMode="number"
+                                style={{ padding: "10px" }}
+                                inputStyle={{ borderColor: "#35eab9" }}
+                                inputFocusStyle={{ borderColor: "#10b2f3" }}
+                                onComplete={(value, index) => onSubmit(value)}
+                                autoSelect={true}
+                                regexCriteria={/^[ A-Za-z0-9_@./#&+-]*$/}
+                            />
                         </div>
                         <p className="texts">
                             Didn't receive a code? <button className="btnn">Resend</button>
                         </p>
-                        <button type="submit" className="button">
-                            Continue
-                        </button>{" "}
+
                         <p className="text">
-                            wrong email? <button className="btnn">Reset</button>
+                            wrong email? <Link to="/signup">Reset</Link>
                         </p>
                     </div>
                 </form>

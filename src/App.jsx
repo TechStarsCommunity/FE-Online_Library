@@ -1,17 +1,27 @@
-import React from "react";
 import { RouterProvider } from "react-router-dom";
+import { QueryClient } from "@tanstack/react-query";
+import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client";
+import { ToastContainer } from "react-toastify";
+import { createIDBPersister } from "./persister";
 import BrowserRouter from "./routes";
-import { ErrorBoundary } from "react-error-boundary";
-import ErrorFallback from "./components/errorFallback.jsx";
 
-function App() {
+const App = () => {
+    const queryClient = new QueryClient({
+        defaultOptions: {
+            queries: {
+                gcTime: 1000 * 60 * 60 * 24 * 7, // 7 days
+            },
+        },
+    });
+
+    const persister = createIDBPersister("reactQuery");
+
     return (
-        <React.Fragment>
-            <ErrorBoundary fallback={<ErrorFallback />}>
-                <RouterProvider router={BrowserRouter} />
-            </ErrorBoundary>
-        </React.Fragment>
+        <PersistQueryClientProvider client={queryClient} persistOptions={{ persister }}>
+            <RouterProvider router={BrowserRouter} />
+            <ToastContainer theme="colored" />
+        </PersistQueryClientProvider>
     );
-}
+};
 
 export default App;
