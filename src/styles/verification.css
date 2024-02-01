@@ -91,7 +91,6 @@
     font-size: 1.5rem;
     font-family: "Inter" sans-serif;
     width: 3rem;
-    /* max-width: 4.5rem; */
     height: 4.5rem;
     margin: 0.625rem;
     text-align: center;
@@ -129,7 +128,6 @@
         font-size: 1.5rem;
         height: 3rem;
         width: 6.25rem;
-        /* max-width: 1.063rem; */
         font-size: bold;
     }
     .otp-right-section {

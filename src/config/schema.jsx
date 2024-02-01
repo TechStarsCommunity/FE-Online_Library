@@ -16,7 +16,7 @@ export const SignUpSchema = object().shape({
         .email()
         .required("Your Email is Required, ensure it is the Correct Format"),
     password: string().trim().min(8).required(),
-    confirmPassword: string()
+    confirm_password: string()
         .trim()
         .oneOf([ref("password"), undefined], "Passwords Don't Match")
         .required(),

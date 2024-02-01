@@ -1,14 +1,34 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useLoginMutation } from "../services/mutation/auth";
 import { LoginSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
 import loginLogo from "/booksLab_logo.png";
 import Button from "../components/button";
 import Input from "../components/input";
+import { SuccessToast } from "@/utils/toast";
 
 const Login = () => {
+    const navigate = useNavigate();
+    const [loading, setLoading] = useState(false);
+    const { mutateAsync: loginUser } = useLoginMutation();
+
     const { errors, register, handleSubmit } = useSubmit(LoginSchema);
 
-    const onLogin = (data) => {
-        console.log(data);
+    const onLogin = async (data) => {
+        setLoading(true);
+        try {
+            const response = await loginUser(data);
+            if (!response) {
+                return;
+            }
+            SuccessToast("Login Successful");
+            navigate("/");
+        } catch (error) {
+            console.log(error);
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -35,6 +55,7 @@ const Login = () => {
                             errors={errors}
                             autoComplete="email"
                             placeholder="Email..."
+                            id="email"
                         />
                         <Input
                             label="Password"
@@ -43,6 +64,8 @@ const Login = () => {
                             register={register}
                             errors={errors}
                             placeholder="Password..."
+                            id="current-password"
+                            autoComplete="current-password"
                         />
                     </div>
                     <Button
@@ -50,6 +73,7 @@ const Login = () => {
                         variant="primary"
                         type="submit"
                         className="w-full mt-6 max-w-[30rem]"
+                        isLoading={loading}
                     >
                         Login
                     </Button>

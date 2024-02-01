@@ -1,15 +1,35 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useRegisterMutation } from "@/services/mutation/auth";
 import "../styles/signup.css";
 import Button from "../components/button";
 import { SignUpSchema } from "../config/schema";
 import useSubmit from "../hooks/useSubmit";
 import Input from "../components/input";
+import { SuccessToast } from "@/utils/toast";
 
 const SignUp = () => {
+    const navigate = useNavigate();
+    const [loading, setLoading] = useState(false);
+    const { mutateAsync: registerUser } = useRegisterMutation();
+
     const { errors, register, handleSubmit } = useSubmit(SignUpSchema);
 
-    const onSubmit = (data) => {
-        console.log(data);
+    const onSubmit = async (data) => {
+        setLoading(true);
+        try {
+            const response = await registerUser(data);
+            if (!response) {
+                return;
+            }
+
+            SuccessToast(response?.message);
+            navigate("/auth-otp");
+        } catch (error) {
+            console.log(error);
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -40,6 +60,7 @@ const SignUp = () => {
                     register={register}
                     errors={errors}
                     placeholder="Username..."
+                    autoComplete="username"
                 />
                 <Input
                     label="Email"
@@ -60,23 +81,24 @@ const SignUp = () => {
                             register={register}
                             errors={errors}
                             placeholder="Password..."
-                            id="password"
+                            id="new-password"
+                            autoComplete="new-password"
                         />
                     </div>
                     <div className="w-full">
                         <Input
                             label=" Confirm Password"
-                            name="confirmPassword"
+                            name="confirm_password"
                             type="password"
                             register={register}
                             errors={errors}
                             autoComplete="new-password"
                             placeholder="Confirm Password..."
-                            id="confirmPassword"
+                            id="new_password"
                         />
                     </div>
                 </div>
-                <Button borderVariant="noRadius" variant="primary">
+                <Button borderVariant="noRadius" variant="primary" isLoading={loading}>
                     Sign Up
                 </Button>{" "}
                 <h5 className="mb-8">
