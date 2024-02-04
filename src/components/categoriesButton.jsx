@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import "../styles/categoriesButton.css";
 
 const CategoriesButton = ({ initialText }) => {

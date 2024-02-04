@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
-import "../styles/home.css";
-import Header from "../components/header";
-import Roadmap from "../components/roadmap";
+import { Link } from "react-router-dom";
+
 import AboutComponent from "../components/about";
-import Footer from "../components/footer";
-import Button from "../components/button";
 import ContactComponent from "../components/contact";
-import TopCategory from "../components/topCategory";
+import Footer from "../components/footer";
+import Header from "../components/header";
 import Review from "../components/review";
+import Roadmap from "../components/roadmap";
+import TopCategory from "../components/topCategory";
+import "../styles/home.css";
 
 const Home = () => {
     return (
@@ -39,31 +39,29 @@ const Home = () => {
                                 gap: "12px",
                             }}
                         >
-                            <Link to="/signup">
-                                <Button
-                                    children={"Get Started"}
-                                    variant="primary"
-                                    style={{
-                                        maxWidth: "150px",
-                                        borderRadius: "25px",
-                                        fontSize: "16px",
-                                        height: "auto",
-                                        padding: "0.5em",
-                                    }}
-                                />
+                            <Link
+                                to="/signup"
+                                style={{
+                                    maxWidth: "150px",
+                                    borderRadius: "25px",
+                                    fontSize: "16px",
+                                    height: "auto",
+                                    padding: "0.5em",
+                                }}
+                            >
+                                Get Started
                             </Link>
-                            <Link to="/login">
-                                <Button
-                                    children={"Login"}
-                                    variant="secondary"
-                                    style={{
-                                        maxWidth: "150px",
-                                        borderRadius: "25px",
-                                        fontSize: "16px",
-                                        height: "auto",
-                                        padding: "0.5em",
-                                    }}
-                                />
+                            <Link
+                                to="/login"
+                                style={{
+                                    maxWidth: "150px",
+                                    borderRadius: "25px",
+                                    fontSize: "16px",
+                                    height: "auto",
+                                    padding: "0.5em",
+                                }}
+                            >
+                                Login
                             </Link>
                         </div>
                     </div>

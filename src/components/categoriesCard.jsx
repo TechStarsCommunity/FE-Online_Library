@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import "../styles/categoriesCard.css";
 
 const CategoriesCard = ({ src, title, description }) => {

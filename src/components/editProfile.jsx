@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
 import { AiOutlineSetting } from "react-icons/ai";
-import LeftSidebar from "../components/leftSideBar";
+import { Link } from "react-router-dom";
+
 import Button from "./button";
-import Input from "../components/input";
 import { EditProfileSchema } from "../config/schema";
+import Input from "../components/input";
+import LeftSidebar from "../components/leftSideBar";
 import useSubmit from "../hooks/useSubmit";
 
-const editProfile = () => {
+const EditProfile = () => {
     const { errors, register, handleSubmit } = useSubmit(EditProfileSchema);
 
     const processData = (data) => {
@@ -100,4 +101,4 @@ const editProfile = () => {
         </section>
     );
 };
-export default editProfile;
+export default EditProfile;

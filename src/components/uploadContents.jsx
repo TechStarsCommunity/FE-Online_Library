@@ -1,14 +1,13 @@
 import { useState } from "react";
-import { UploadBookSchema } from "../config/schema";
-import Uploader from "./Uploader";
-import SelectField from "./selectField";
+
 import AuthorField from "./authorField";
 import FormField from "./formField";
+import SelectField from "./selectField";
+import { UploadBookSchema } from "../config/schema";
+import Uploader from "./uploader";
 
-// --------Styles for input and button--------
-export const inputStyles =
-    "px-4 py-2 max-h-1/2 h-auto w-full md:w-auto grow border-[#35EAB9] border focus:border-[#35EAB9] mb-[-2rem]";
-export const buttonStyles =
+// --------Styles for button--------
+const buttonStyles =
     "bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] text-white md:p-[10px] p-2 rounded-lg mt-8 text-xs md:text-base";
 
 //-------major functions-------

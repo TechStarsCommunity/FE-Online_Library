@@ -1,5 +1,6 @@
-import { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { useState } from "react";
+
 import ReviewCard from "./reviewCard";
 import { myData } from "../data/reviewData";
 

@@ -11,12 +11,9 @@ module.exports = {
     ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.js', 'tailwind.config.js', 'postcss.config.js'],
     parserOptions: { ecmaVersion: "latest", sourceType: "module" },
     settings: { react: { version: "18.2" } },
-    plugins: ["react-refresh", "unicorn", "prettier"],
+    plugins: ["react-refresh", "prettier", "unicorn"],
     rules: {
-        'react-refresh/only-export-components': [
-            'warn',
-            { allowConstantExport: true },
-        ],
+        'react-refresh/only-export-components': 'warn',
         "unicorn/filename-case": [
             "warn",
             {
@@ -35,15 +32,12 @@ module.exports = {
             { varsIgnorePattern: 'React' },
         ],
         "react/prop-types": "off",
-        "import/order": [
-            "warn",
-            {
-                groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
-                alphabetize: {
-                    order: "asc",
-                    caseInsensitive: true,
-                },
-            },
-        ],
+        "sort-imports": ["error", {
+            "ignoreCase": false,
+            "ignoreDeclarationSort": false,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["all", "multiple", "single", "none"],
+            "allowSeparatedGroups": true
+        }]
     },
 };

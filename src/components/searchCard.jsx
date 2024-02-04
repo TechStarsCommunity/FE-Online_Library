@@ -1,9 +1,10 @@
-import { useState } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import "../styles/searchCard.css";
+import ReactPaginate from "react-paginate";
+import { useState } from "react";
+
 import Button from "../components/button";
 import { TechCareer } from "../data/search";
-import ReactPaginate from "react-paginate";
+import "../styles/searchCard.css";
 
 const SearchCard = () => {
     const [currentPage, setCurrentPage] = useState(0);

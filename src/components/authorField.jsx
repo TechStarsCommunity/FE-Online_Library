@@ -1,4 +1,4 @@
-import { inputStyles, buttonStyles } from "./uploadContents";
+import { buttonStyles, inputStyles } from "./uploadContents";
 
 const AuthorField = ({ isCredits, error, value, onChange }) => (
     <div>

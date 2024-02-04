@@ -1,4 +1,4 @@
-const frontendIcon2 = [
+export const frontendIcon2 = [
     {
         id: 1,
         src: "/frontendicon.svg",
@@ -35,7 +35,7 @@ const frontendIcon2 = [
     },
 ];
 
-const backendIcon2 = [
+export const backendIcon2 = [
     {
         id: 1,
         src: "/backendicon.svg",
@@ -72,7 +72,7 @@ const backendIcon2 = [
     },
 ];
 
-const designIcon2 = [
+export const designIcon2 = [
     {
         id: 1,
         src: "/designicon.svg",
@@ -109,7 +109,7 @@ const designIcon2 = [
     },
 ];
 
-const writerIcon2 = [
+export const writerIcon2 = [
     {
         id: 1,
         src: "/writericon.svg",
@@ -146,7 +146,7 @@ const writerIcon2 = [
     },
 ];
 
-const dataanalysisIcon2 = [
+export const dataanalysisIcon2 = [
     {
         id: 1,
         src: "/dataanalysisicon.svg",

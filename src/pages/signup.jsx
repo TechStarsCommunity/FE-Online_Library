@@ -1,12 +1,13 @@
-import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useRegisterMutation } from "@/services/mutation/auth";
-import "../styles/signup.css";
+import { useState } from "react";
+
 import Button from "../components/button";
-import { SignUpSchema } from "../config/schema";
-import useSubmit from "../hooks/useSubmit";
 import Input from "../components/input";
+import { SignUpSchema } from "../config/schema";
 import { SuccessToast } from "@/utils/toast";
+import { useRegisterMutation } from "@/services/mutation/auth";
+import useSubmit from "../hooks/useSubmit";
+import "../styles/signup.css";
 
 const SignUp = () => {
     const navigate = useNavigate();

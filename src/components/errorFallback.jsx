@@ -1,5 +1,6 @@
-import { useState } from "react";
 import { isRouteErrorResponse, useNavigate, useRouteError } from "react-router-dom";
+import { useState } from "react";
+
 import "../styles/errorFallback.css";
 
 const ErrorFallback = () => {

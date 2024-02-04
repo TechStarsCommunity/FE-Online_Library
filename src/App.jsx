@@ -1,9 +1,11 @@
-import { RouterProvider } from "react-router-dom";
-import { QueryClient } from "@tanstack/react-query";
+/* eslint-disable unicorn/filename-case */
 import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client";
+import { QueryClient } from "@tanstack/react-query";
+import { RouterProvider } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import { createIDBPersister } from "./persister";
+
 import BrowserRouter from "./routes";
+import { createIDBPersister } from "./persister";
 
 const App = () => {
     const queryClient = new QueryClient({

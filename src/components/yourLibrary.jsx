@@ -1,6 +1,6 @@
-import { ReaderProfile } from "../data/yourLibrary";
-import { BookRead } from "../data/yourLibrary";
 import { Authors } from "../data/yourLibrary";
+import { BookRead } from "../data/yourLibrary";
+import { ReaderProfile } from "../data/yourLibrary";
 
 const YourLibrary = () => {
     return (
@@ -8,7 +8,7 @@ const YourLibrary = () => {
             {ReaderProfile &&
                 ReaderProfile.map((readerProfile) => {
                     return (
-                        <div className="profile">
+                        <div className="profile" key={readerProfile.id}>
                             <div
                                 className="flex item-center justify-between py-10"
                                 key={readerProfile.id}
@@ -34,7 +34,7 @@ const YourLibrary = () => {
                 {BookRead &&
                     BookRead.map((bookRead) => {
                         return (
-                            <div>
+                            <div key={bookRead.id}>
                                 <div
                                     className="flex item-center justify-between bookRead"
                                     key={bookRead.id}
@@ -59,7 +59,7 @@ const YourLibrary = () => {
                 {Authors &&
                     Authors.map((authors) => {
                         return (
-                            <div className="auth">
+                            <div className="auth" key={authors.id}>
                                 <div className="flex item-center justify-between" key={authors.id}>
                                     <img src={authors.authorImage} alt="alt" className="book" />
                                     <br />

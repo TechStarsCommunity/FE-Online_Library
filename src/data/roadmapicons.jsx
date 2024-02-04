@@ -1,25 +1,25 @@
-import frontendIcon from "../assets/frontendicon.svg";
-import backendIcon from "../assets/backendicon.svg";
-import designIcon from "../assets/designicon.svg";
-import writerIcon from "../assets/writericon.svg";
-import dataanalysisIcon from "../assets/dataanalysisicon.svg";
-import arrow1 from "../assets/Arrow 1.svg";
-import html from "../assets/Html.svg";
-import arrow2 from "../assets/Arrow 2.svg";
-import css1 from "../assets/CSS3.svg";
-import python2 from "../assets/Python.svg";
-import django2 from "../assets/Django.svg";
-import mysql2 from "../assets/Mysql.svg";
+import AdvancedWriting from "../assets/AdvancedWriting.svg";
+import Analytics from "../assets/Analytics.svg";
+import CopyWriting from "../assets/CopyWriting.svg";
 import DesignBasics from "../assets/DesignBasics.svg";
+import JavaScript from "../assets/js.svg";
+import arrow1 from "../assets/Arrow 1.svg";
+import arrow2 from "../assets/Arrow 2.svg";
+import backendIcon from "../assets/backendicon.svg";
+import css1 from "../assets/CSS3.svg";
+import dataanalysisIcon from "../assets/dataanalysisicon.svg";
+import designIcon from "../assets/designicon.svg";
+import django2 from "../assets/Django.svg";
+import frontendIcon from "../assets/frontendicon.svg";
+import html from "../assets/Html.svg";
+import mysql2 from "../assets/Mysql.svg";
+import python2 from "../assets/Python.svg";
 import uiDesign from "../assets/UIDesign.svg";
 import uxinterface from "../assets/Uxinterface.svg";
+import writerIcon from "../assets/writericon.svg";
 import writingIcon from "../assets/Writing.svg";
-import AdvancedWriting from "../assets/AdvancedWriting.svg";
-import CopyWriting from "../assets/CopyWriting.svg";
-import Analytics from "../assets/Analytics.svg";
-import JavaScript from "../assets/js.svg";
 
-const frontendIcon2 = [
+export const frontendIcon2 = [
     {
         id: 1,
         src: frontendIcon,
@@ -55,7 +55,8 @@ const frontendIcon2 = [
         url: "/roadmap/html",
     },
 ];
-const backendIcon2 = [
+
+export const backendIcon2 = [
     {
         id: 1,
         src: backendIcon,
@@ -91,7 +92,8 @@ const backendIcon2 = [
         url: "/roadmap/html",
     },
 ];
-const designIcon2 = [
+
+export const designIcon2 = [
     {
         id: 1,
         src: designIcon,
@@ -127,7 +129,8 @@ const designIcon2 = [
         url: "/roadmap/html",
     },
 ];
-const writerIcon2 = [
+
+export const writerIcon2 = [
     {
         id: 1,
         src: writerIcon,
@@ -163,7 +166,8 @@ const writerIcon2 = [
         url: "/roadmap/html",
     },
 ];
-const dataanalysisIcon2 = [
+
+export const dataanalysisIcon2 = [
     {
         id: 1,
         src: dataanalysisIcon,

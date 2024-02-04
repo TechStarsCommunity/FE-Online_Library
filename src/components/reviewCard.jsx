@@ -5,7 +5,7 @@ const ReviewCard = ({ comment, userName, stack }) => {
         <div className="w-full grid gap-[25px] p-[20px] rounded-md bg-[#fff] relative">
             <div className="flex items-center gap-[15px] rounded-md w-full">
                 <div className="w-[50px] h-[50px] rounded-[50%] bg-[grey]">
-                    <img src={user} alt="" className="w-full h-full" />
+                    <img src={user} alt="user" className="w-full h-full" />
                 </div>
                 <div className="w-full">
                     <p className="text-base font-bold">{userName}</p>

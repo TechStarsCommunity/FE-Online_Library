@@ -1,13 +1,18 @@
-import { useNavigate, Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import PinInput from "react-pin-input";
+import { useState } from "react";
+
+import { SuccessToast } from "@/utils/toast";
 import { useVerifyEmailMutation } from "@/services/mutation/auth";
 import "../styles/verification.css";
 
 const OTPVerification = () => {
+    const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
     const { mutateAsync: verifyEmail } = useVerifyEmailMutation();
 
     const onSubmit = async (value) => {
+        setLoading(true);
         try {
             const response = await verifyEmail({ otp: value });
             if (!response) {
@@ -56,7 +61,7 @@ const OTPVerification = () => {
                             />
                         </div>
                         <p className="texts">
-                            Didn't receive a code? <button className="btnn">Resend</button>
+                            Didn&apos;t receive a code? <button className="btnn">Resend</button>
                         </p>
 
                         <p className="text">

@@ -1,10 +1,11 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import { IoIosMenu } from "react-icons/io";
-import "../styles/home.css";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
 import Button from "../components/button";
 import LeftSidebar from "../components/leftSideBar";
+import "../styles/home.css";
 
 const PopularBooks = () => {
     const [sidebarVisible, setSidebarVisible] = useState(true);

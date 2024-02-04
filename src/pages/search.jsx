@@ -1,7 +1,7 @@
-import Header from "../components/header";
-import SearchCard from "../components/searchCard";
-import SearchAside from "../components/searchAside";
 import Footer from "../components/footer";
+import Header from "../components/header";
+import SearchAside from "../components/searchAside";
+import SearchCard from "../components/searchCard";
 import "../styles/searchCard.css";
 
 const Search = () => {
