@@ -35,7 +35,6 @@ const ContactComponent = (props) => {
                     </div>
                     <div className="mt-12 flex items-center gap-4">
                         <Button
-                            children={"Contact us"}
                             variant="primary"
                             style={{
                                 width: "150px",
@@ -44,7 +43,9 @@ const ContactComponent = (props) => {
                                 height: "50px",
                             }}
                             to="#contact-form"
-                        />
+                        >
+                            Contact us
+                        </Button>
                     </div>
                 </div>
                 <div className="w-full md:w-1/2">

@@ -1,13 +1,14 @@
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import "../styles/about.css";
-import Header from "../components/header";
-import Footer from "../components/footer";
+
 import AboutPageCard from "../components/aboutpageCard";
+import Footer from "../components/footer";
+import Header from "../components/header";
 import { productManagers } from "../data/teamMembers/productManagers";
+import { teamBackend } from "../data/teamMembers/backendTeam";
 import { teamDesigners } from "../data/teamMembers/designTeam";
 import { teamFrontend } from "../data/teamMembers/frontendTeam";
-import { teamBackend } from "../data/teamMembers/backendTeam";
+import "react-multi-carousel/lib/styles.css";
+import "../styles/about.css";
 
 const responsive = {
     superLargeDesktop: {
@@ -57,8 +58,8 @@ const About = () => {
                     Apart from the access to Books from various aspect of life, one of the unique
                     features of BooksLab is the roadmap feature. Our Roadmap is designed to guide
                     users from being a beginner to advanced in their chosen tech field. Whether
-                    you're interested in web development, data science, cybersecurity, or any other
-                    tech field, our Roadmap will help you develop a clear path to success. Our
+                    you&apos;re interested in web development, data science, cybersecurity, or any
+                    other tech field, our Roadmap will help you develop a clear path to success. Our
                     Roadmap is regularly updated with the latest trends and technologies, ensuring
                     that users have access to the most up-to-date information.
                 </p>

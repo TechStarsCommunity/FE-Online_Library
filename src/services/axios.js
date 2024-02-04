@@ -1,6 +1,7 @@
 import Axios from "axios";
-import URLS from "./urls";
+
 import { ErrorToast } from "@/utils/toast";
+import URLS from "./urls";
 
 const axios = Axios.create({
     baseURL: URLS.API_URL,
@@ -25,7 +26,6 @@ axios.interceptors.request.use(axiosConfigurator);
 axios.interceptors.response.use(
     (response) => response,
     async (error) => {
-        console.log("axios error", error);
         const errMsg =
             error?.response?.data?.detail || error?.response?.data?.error || error?.message;
         if (error.code === "ERR_NETWORK") {

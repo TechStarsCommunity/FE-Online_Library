@@ -1,8 +1,10 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import { BsList } from "react-icons/bs";
-import "../styles/header.css";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
 import logo from "/booksLab_logo.png";
+import "../styles/header.css";
+
 const Header = () => {
     const [mobileLinksVisible, setMobileLinksVisible] = useState(false);
     const toggleMobileLinks = () => {

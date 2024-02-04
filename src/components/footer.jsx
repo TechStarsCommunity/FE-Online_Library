@@ -1,5 +1,5 @@
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 import Logo from "/booksLab_logo.png";
 
 const Footer = () => {

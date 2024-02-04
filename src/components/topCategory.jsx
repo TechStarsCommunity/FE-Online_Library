@@ -1,5 +1,6 @@
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { useState } from "react";
-import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from "react-icons/bs";
+
 import Button from "./button";
 import { categories } from "../data/category";
 
@@ -46,7 +47,6 @@ const TopCategory = () => {
                         </div>
                         <div className="md:w-1/2 w-full h-1/4">
                             <Button
-                                children={"Learn More"}
                                 variant="primary"
                                 style={{
                                     width: "150px",
@@ -54,7 +54,9 @@ const TopCategory = () => {
                                     fontSize: "14px",
                                     height: "50px",
                                 }}
-                            />
+                            >
+                                Learn More
+                            </Button>
                         </div>
                     </div>
                     <div className="hidden md:flex">

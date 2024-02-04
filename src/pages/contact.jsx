@@ -1,9 +1,9 @@
-import ContactComponent from "../components/contact";
-import Header from "../components/header";
-import Footer from "../components/footer";
 import Button from "../components/button";
-import Input from "../components/input";
+import ContactComponent from "../components/contact";
 import { ContactSchema } from "../config/schema";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import Input from "../components/input";
 import useSubmit from "../hooks/useSubmit";
 
 const Contact = () => {

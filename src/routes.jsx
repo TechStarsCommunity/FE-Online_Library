@@ -1,6 +1,7 @@
-import React, { lazy } from "react";
-import Loading from "./components/loading";
+import { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
+
+import Loading from "./components/loading";
 
 const Home = lazy(() => import("./pages/home"));
 const Login = lazy(() => import("./pages/login"));
@@ -21,114 +22,114 @@ const BrowserRouter = createBrowserRouter([
     {
         path: "/",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <Home />
-            </React.Suspense>
+            </Suspense>
         ),
         errorElement: <div>Error 404</div>,
     },
     {
         path: "/profile/editProfile",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <EditProfile />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "/login",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <Login />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "/signup",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <SignUp />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "/uploads",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <Uploads />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "/road-map",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <RoadMap />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "/contact",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <Contact />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "/about",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <About />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "/search",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <Search />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "/auth-otp",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <OTPVerification />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "/profile",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <Profile />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "/onboarding",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <Onboarding />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "/popularbooks",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <PopularBooks />
-            </React.Suspense>
+            </Suspense>
         ),
     },
     {
         path: "*",
         element: (
-            <React.Suspense fallback={<Loading />}>
+            <Suspense fallback={<Loading />}>
                 <Error404 />
-            </React.Suspense>
+            </Suspense>
         ),
     },
 ]);

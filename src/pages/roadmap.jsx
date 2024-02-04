@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "../styles/roadmap.css";
+
 import Button from "../components/button";
+import "../styles/roadmap.css";
 
 const RoadMap = ({ show, setShow }) => {
     const [selectedStack, setSelectedStack] = useState("");

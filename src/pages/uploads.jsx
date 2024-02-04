@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
-import { MdMenu, MdClose } from "react-icons/md";
+import { MdClose, MdMenu } from "react-icons/md";
+import { useEffect, useState } from "react";
+
 import LeftSidebar from "../components/leftSideBar";
 import { Tabs } from "../data/leftSideBarData";
 

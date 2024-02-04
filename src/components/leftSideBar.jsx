@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { AiOutlineLogout } from "react-icons/ai";
-import { IoIosMenu, IoIosClose } from "react-icons/io";
+import { IoIosClose, IoIosMenu } from "react-icons/io";
 import { NavLink, useLocation } from "react-router-dom";
+import { AiOutlineLogout } from "react-icons/ai";
 import { Tabs } from "../data/leftSideBarData";
+import { useState } from "react";
+
 import booksLabLogo from "/booksLab_logo.png";
 
 const LeftSidebar = () => {

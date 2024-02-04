@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { AiOutlineEdit, AiOutlineSetting } from "react-icons/ai";
+import { IoIosMenu } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { PiToggleLeft } from "react-icons/pi";
-import { IoIosMenu } from "react-icons/io";
-import { AiOutlineSetting, AiOutlineEdit } from "react-icons/ai";
-import LeftSidebar from "../components/leftSideBar";
+import { useState } from "react";
+
 import Button from "../components/button";
+import LeftSidebar from "../components/leftSideBar";
 
 const Profile = () => {
     const [sidebarVisible, setSidebarVisible] = useState(true);

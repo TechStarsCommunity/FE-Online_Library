@@ -1,4 +1,8 @@
-import { inputStyles, buttonStyles } from "./uploadContents";
+// --------Styles for input and button--------
+const inputStyles =
+    "px-4 py-2 max-h-1/2 h-auto w-full md:w-auto grow border-[#35EAB9] border focus:border-[#35EAB9] mb-[-2rem]";
+const buttonStyles =
+    "bg-gradient-to-r from-[#10B2F3] to-[#35EAB9] text-white md:p-[10px] p-2 rounded-lg mt-8 text-xs md:text-base";
 
 const AuthorField = ({ isCredits, error, value, onChange }) => (
     <div>
