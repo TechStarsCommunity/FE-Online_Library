@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "lint": "eslint --fix src --ext js,jsx --report-unused-disable-directives --max-warnings 30",
+        "lint": "eslint --fix src --ext js,jsx --report-unused-disable-directives --max-warnings 14",
         "preview": "vite preview",
         "format": "prettier --write src/**/*.{js,jsx}",
         "start": "serve -s dist",
