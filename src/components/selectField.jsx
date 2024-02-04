@@ -1,4 +1,6 @@
-import { inputStyles } from "./uploadContents";
+// --------Styles for input--------
+const inputStyles =
+    "px-4 py-2 max-h-1/2 h-auto w-full md:w-auto grow border-[#35EAB9] border focus:border-[#35EAB9] mb-[-2rem]";
 
 const SelectField = ({ label, error, value, onChange }) => (
     <div className="mb-4">
