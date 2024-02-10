@@ -5,9 +5,9 @@ import Button from "../components/button";
 import Input from "../components/input";
 import { LoginSchema } from "../config/schema";
 import { SuccessToast } from "@/utils/toast";
-import loginLogo from "/booksLab_logo.png";
 import { useLoginMutation } from "../services/mutation/auth";
 import useSubmit from "../hooks/useSubmit";
+import "../styles/login.css";
 
 const Login = () => {
     const navigate = useNavigate();
@@ -26,7 +26,7 @@ const Login = () => {
             SuccessToast("Login Successful");
             navigate("/");
         } catch (error) {
-            console.log(error);
+            console.log(error); /* Unexpected console statement */
         } finally {
             setLoading(false);
         }
@@ -34,20 +34,20 @@ const Login = () => {
 
     return (
         <main className="main bg-white flex gap-12 py-8 px-4 md:py-0 md:px-0">
-            <section className="w-[98%] md:w-[60%] m-auto full md:h-3/4">
+            <section className="w-[100%] md:w-[60%] m-auto full md:h-3/4">
                 <form
                     onSubmit={handleSubmit(onLogin)}
-                    className="flex flex-col items-center justify-center sm:pl-6"
+                    className="flex flex-col items-center justify-center pl-8 max-xl:pt-20 max-md:w-auto sm:pt-18 md"
                 >
-                    <div className="w-full max-w-[30rem] grid grid-cols-1 gap-4 mb-6 md:mb-12">
-                        <h1 className="text-sky-950 md:text-4xl text-2xl font-semibold">
+                    <div className="w-[100%] max-w-[45rem] grid grid-cols-1 gap-4 mb-6 pt-0 md:mb-12">
+                        <h1 className="text-sky-950 md:text-4xl text-2xl font-bold">
                             Welcome Back
                         </h1>
                         <p className="text-black text-sm md:text-base font-normal">
                             Sign in to continue
                         </p>
                     </div>
-                    <div className="w-full max-w-[30rem] grid grid-cols-1 gap-4">
+                    <div className="w-full py-8 max-w-[45rem] grid grid-cols-1 gap-4">
                         <Input
                             label="Email"
                             name="email"
@@ -73,12 +73,12 @@ const Login = () => {
                         borderVariant="noRadius"
                         variant="primary"
                         type="submit"
-                        className="w-full mt-6 max-w-[30rem]"
+                        className="w-full mt-6 max-w-[45rem]"
                         isLoading={loading}
                     >
                         Login
                     </Button>
-                    <div className="w-full max-w-[30rem] grid grid-cols-1 gap-4">
+                    <div className="w-full max-w-[45rem] grid grid-cols-1 gap-4">
                         <h5 className="text-sm lg:text-xl font-medium">
                             Don{`'`}t have an Account?{" "}
                             <a className="text-sky-950 text-sm lg:text-xl font-bold" href="/signup">
@@ -88,20 +88,17 @@ const Login = () => {
                         <Button
                             borderVariant="noRadius"
                             variant="primary"
-                            className="w-full mt-8 md:mt-12 max-w-[30rem]"
+                            className="w-full mt-8 md:mt-12 max-w-[45rem]"
                         >
                             Login as Admin
                         </Button>
                     </div>
                 </form>
             </section>
-
-            <div className="hidden md:grid place-items-center h-screen bg-cover bg-center bg-[url('/loginImage.svg')] rounded-tl-3xl rounded-bl-3xl max-w-[20rem] lg:max-w-[30rem] w-full">
-                <img
-                    src={loginLogo}
-                    alt="logo"
-                    className="w-full max-w-[10rem] lg:max-w-[15rem] h-10"
-                />
+            <div className="right">
+                <div className="image">
+                <div className="vectors"></div>
+                </div>
             </div>
         </main>
     );
