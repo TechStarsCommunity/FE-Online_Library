@@ -73,13 +73,13 @@ const Login = () => {
                         borderVariant="noRadius"
                         variant="primary"
                         type="submit"
-                        className="w-full mt-6 max-w-[45rem]"
+                        className="w-full mt-6 max-w-[45rem] pd-3"
                         isLoading={loading}
                     >
                         Login
                     </Button>
                     <div className="w-full max-w-[45rem] grid grid-cols-1 gap-4">
-                        <h5 className="text-sm lg:text-xl font-medium">
+                        <h5 className="text-sm lg:text-xl font-medium pt-3">
                             Don{`'`}t have an Account?{" "}
                             <a className="text-sky-950 text-sm lg:text-xl font-bold" href="/signup">
                                 Sign Up
@@ -97,7 +97,7 @@ const Login = () => {
             </section>
             <div className="right">
                 <div className="image">
-                <div className="vectors"></div>
+                    <div className="vectors"></div>
                 </div>
             </div>
         </main>
