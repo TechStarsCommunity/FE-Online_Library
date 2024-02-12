@@ -13,49 +13,49 @@ export const BookRead = [
         bookReadImage: "/bookRead 1.png",
         title: "Starting a successful Career in Tech",
         name: "Oluwaben Akeem",
-        category: "/categoryIcon.png"
+        category: "/categoryIcon.png",
     },
     {
         id: 2,
         bookReadImage: "/bookRead 2.svg",
         title: "Starting a successful Career in Tech",
         name: "Oluwaben Akeem",
-        category: "/categoryIcon.png"
+        category: "/categoryIcon.png",
     },
     {
         id: 3,
         bookReadImage: "/bookRead 3.svg",
         title: "Starting a successful Career in Tech",
         name: "Oluwaben Akeem",
-        category: "/categoryIcon.png"
+        category: "/categoryIcon.png",
     },
     {
         id: 4,
         bookReadImage: "/bookRead 7.svg",
         title: "Starting a successful Career in Tech",
         name: "Oluwaben Akeem",
-        category: "/categoryIcon.png"
+        category: "/categoryIcon.png",
     },
     {
         id: 5,
         bookReadImage: "/bookRead 5.svg",
         title: "Starting a successful Career in Tech",
         name: "Oluwaben Akeem",
-        category: "/categoryIcon.png"
+        category: "/categoryIcon.png",
     },
     {
         id: 6,
         bookReadImage: "/bookRead 6.svg",
         title: "Starting a successful Career in Tech",
         name: "Oluwaben Akeem",
-        category: "/categoryIcon.png"
+        category: "/categoryIcon.png",
     },
     {
         id: 7,
         bookReadImage: "/bookRead 7.svg",
         title: "Starting a successful Career in Tech",
         name: "Oluwaben Akeem",
-        category: "/categoryIcon.png"
+        category: "/categoryIcon.png",
     },
 ];
 
