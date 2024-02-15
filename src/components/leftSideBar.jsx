@@ -5,6 +5,7 @@ import { Tabs } from "../data/leftSideBarData";
 import { useState } from "react";
 
 import booksLabLogo from "/booksLab_logo.png";
+import Button from "./button";
 
 const LeftSidebar = () => {
     const location = useLocation();
@@ -46,7 +47,7 @@ const LeftSidebar = () => {
                             ${isActive ? "button-active-style" : ""}`}
                         >
                             <span className="me-4 text-[24px]">{Icon}</span>
-                            <button>{name}</button>
+                            <Button>{name}</Button>
                         </NavLink>
                     );
                 })}
