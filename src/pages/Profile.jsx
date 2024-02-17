@@ -62,7 +62,7 @@ const Profile = () => {
                             width: "7rem",
                             fontSize: "0.875rem",
                             padding: "0.75rem",
-                            textColor: "black",
+                            color: "black",
                         }}
                     >
                         Edit Profile
