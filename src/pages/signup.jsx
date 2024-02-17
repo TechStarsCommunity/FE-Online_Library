@@ -34,14 +34,14 @@ const SignUp = () => {
     };
 
     return (
-        <main className="main lg:pr-[5%]">
+        <main className="main lg:pr-[8%]">
             <section className="left-section">
                 <div className="imgg">
                     <div className="vector"></div>
                 </div>
             </section>
             <form onSubmit={handleSubmit(onSubmit)} className="mx-auto w-[90%] max-w-[60rem] mt-8">
-                <div className="hdngs">
+                <div>
                     <h2>WELCOME TO BOOKSLAB</h2>
                     <p>Register your account</p>
                 </div>
@@ -73,7 +73,7 @@ const SignUp = () => {
                     placeholder="Email..."
                 />
                 {/* container for passwords */}
-                <div className="w-full flex flex-col md:flex-row justify-between gap-[5%] items-center">
+                <div className="w-full flex flex-col md:flex-row justify-between gap-[5%] pb-6 items-center">
                     <div className="w-full">
                         <Input
                             label="Password"
