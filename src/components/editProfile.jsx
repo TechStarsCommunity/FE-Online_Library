@@ -15,10 +15,7 @@ const EditProfile = () => {
     };
 
     return (
-        <section className="flex w-full h-full">
-            <div className="w-1/5 bg-[#DFF6FF]">
-                <LeftSidebar />
-            </div>
+        <section className="flex w-full min-h-lvh">
             <div className="flex flex-row bg-[#e6e6e6] relative">
                 <div className="flex flex-col gap-[52px] mx-auto p-10">
                     <div className="w-full">
