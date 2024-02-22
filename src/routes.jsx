@@ -15,7 +15,7 @@ const OTPVerification = lazy(() => import("./pages/otpverification"));
 const Profile = lazy(() => import("./pages/Profile"));
 const PopularBooks = lazy(() => import("./pages/popularbooks"));
 const Onboarding = lazy(() => import("./pages/onboarding"));
-
+const EditProfile = lazy(() => import("./components/editProfile"));
 const RoadMap = lazy(() => import("./pages/roadmap"));
 const Error404 = lazy(() => import("./components/404"));
 
@@ -99,6 +99,14 @@ const BrowserRouter = createBrowserRouter([
         element: (
             <Suspense fallback={<Loading />}>
                 <Profile />
+            </Suspense>
+        ),
+    },
+    {
+        path: "/profile/editProfile",
+        element: (
+            <Suspense fallback={<Loading />}>
+                <EditProfile />
             </Suspense>
         ),
     },
