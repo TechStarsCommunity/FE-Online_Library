@@ -1,5 +1,3 @@
-// eslint-disable-next-line unicorn/filename-case
-// eslint-disable-next-line unicorn/filename-case
 import { AiOutlineEdit, AiOutlineSetting } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { PiToggleLeft } from "react-icons/pi";

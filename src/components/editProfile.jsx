@@ -39,7 +39,7 @@ const EditProfile = () => {
                         <AiOutlineEdit /> Edit
                     </Link>
                 </div>
-                <p className="w-full text-[#10B2F3] mx-auto text-xl font-Montserrat font-medium my-8">
+                <p className="w-full text-[#10B2F3] mx-auto text-xl font-Montserrat font-medium my-4">
                     Edit your information
                 </p>
                 <form className="w-full flex flex-col">
