@@ -73,7 +73,7 @@
 }
 
 .hero__section-details > h3 {
-    font-size: 0.9375rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -110,6 +110,12 @@ get-started-btn {
 
     .hero__section-details > h1 {
         font-size: 1.25rem;
+    }
+
+    /* making the get-started-btn visible on small screen */
+    .btn-parent .get-started-btn {
+        display: block;
+        width: 100px;
     }
 }
 
