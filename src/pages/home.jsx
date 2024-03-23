@@ -39,29 +39,15 @@ const Home = () => {
                                 gap: "12px",
                             }}
                         >
-                            <Link
-                                to="/signup"
-                                style={{
-                                    maxWidth: "150px",
-                                    borderRadius: "25px",
-                                    fontSize: "16px",
-                                    height: "auto",
-                                    padding: "0.5em",
-                                }}
-                            >
-                                Get Started
+                            <Link to="/signup">
+                                <button className="get-started-btn hidden md:block py-1.5 px-2.5 rounded-[3.125rem] text-white cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  border-none ease-in duration-300 hover:scale-[1.1]">
+                                    Get Started
+                                </button>
                             </Link>
-                            <Link
-                                to="/login"
-                                style={{
-                                    maxWidth: "150px",
-                                    borderRadius: "25px",
-                                    fontSize: "16px",
-                                    height: "auto",
-                                    padding: "0.5em",
-                                }}
-                            >
-                                Login
+                            <Link to="/login">
+                                <button className=" border-[#10b2f3] border-solid border py-1.5 px-2.5 rounded-[3.125rem]  outline-none cursor-pointer w-[4.25rem] md:w-[6.25rem] md:h-full  text-[#10b2f3] bg-white ease-in duration-300 hover:scale-[1.1]">
+                                    Login
+                                </button>
                             </Link>
                         </div>
                     </div>

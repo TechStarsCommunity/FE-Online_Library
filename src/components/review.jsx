@@ -29,7 +29,7 @@ const Review = () => {
             <h1 className="text-[24px] md:text-[30px] my-[20px] text-[#203A66] font-bold lg:text-[36px]">
                 What our BooksLab readers have to say
             </h1>
-            <div className="w-full grid md:grid-cols-2 gap-[25px] grid-cols-1 mb-[20px]">
+            <div className="w-full  grid md:grid-cols-2 gap-[25px] grid-cols-1 mb-[20px]">
                 {data.slice(skip, skip + perPage).map((data, index) => (
                     <ReviewCard
                         key={index}
