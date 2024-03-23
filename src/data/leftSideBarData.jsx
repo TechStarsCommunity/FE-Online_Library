@@ -1,7 +1,7 @@
 import { BiSolidUserCircle } from "react-icons/bi";
 import { GoBook } from "react-icons/go";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
-import { LiaBookSolid } from "react-icons/lia";
+// import { LiaBookSolid } from "react-icons/lia";
 import { RxDashboard } from "react-icons/rx";
 import { SiGumroad } from "react-icons/si";
 
@@ -9,7 +9,7 @@ import BookDetails from "./../components/book";
 import ContactComponent from "../components/contact";
 import RoadMap from "./../components/roadmap";
 import UploadContents from "../components/uploadContents";
-import YourLibrary from "../components/yourLibrary";
+// import YourLibrary from "../components/yourLibrary";
 
 export const Tabs = [
     {
@@ -25,12 +25,12 @@ export const Tabs = [
         path: "/popularbooks",
         component: BookDetails,
     },
-    {
-        id: 3,
-        name: "Your Library",
-        Icon: <LiaBookSolid />,
-        component: YourLibrary,
-    },
+    // {
+    //     id: 3,
+    //     name: "Your Library",
+    //     Icon: <LiaBookSolid />,
+    //     component: YourLibrary,
+    // },
     {
         id: 4,
         name: "Roadmap",
