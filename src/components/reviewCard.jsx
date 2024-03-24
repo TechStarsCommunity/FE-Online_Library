@@ -2,7 +2,7 @@ import user from "/user.jpg";
 
 const ReviewCard = ({ comment, userName, stack }) => {
     return (
-        <div className=" grid gap-[25px] p-[20px] rounded-md bg-[#fff] relative outline">
+        <div className=" color-[blue] grid gap-[24px] p-[20px] rounded-md bg-[#fff] relative  border-[#10b2f3] border-[4px]  ">
             <div className="flex items-center gap-[15px] rounded-md w-full ">
                 <div className="w-[50px] h-[50px] rounded-[50%] bg-[grey]">
                     <img src={user} alt="user" className="w-full h-full" />
