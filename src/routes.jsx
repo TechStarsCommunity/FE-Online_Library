@@ -7,6 +7,7 @@ const Home = lazy(() => import("./pages/home"));
 const Login = lazy(() => import("./pages/login"));
 const SignUp = lazy(() => import("./pages/signup"));
 const Uploads = lazy(() => import("./pages/uploads"));
+const YourLibrary = lazy(() => import("./components/yourLibrary"));
 const Contact = lazy(() => import("./pages/contact"));
 const About = lazy(() => import("./pages/about"));
 const Search = lazy(() => import("./pages/search"));
@@ -28,14 +29,7 @@ const BrowserRouter = createBrowserRouter([
         ),
         errorElement: <div>Error 404</div>,
     },
-    {
-        path: "/profile/editProfile",
-        element: (
-            <Suspense fallback={<Loading />}>
-                <EditProfile />
-            </Suspense>
-        ),
-    },
+
     {
         path: "/login",
         element: (
@@ -109,6 +103,14 @@ const BrowserRouter = createBrowserRouter([
         ),
     },
     {
+        path: "/profile/editProfile",
+        element: (
+            <Suspense fallback={<Loading />}>
+                <EditProfile />
+            </Suspense>
+        ),
+    },
+    {
         path: "/onboarding",
         element: (
             <Suspense fallback={<Loading />}>
@@ -129,6 +131,14 @@ const BrowserRouter = createBrowserRouter([
         element: (
             <Suspense fallback={<Loading />}>
                 <Error404 />
+            </Suspense>
+        ),
+    },
+    {
+        path: "/yourLibrary",
+        element: (
+            <Suspense fallback={<Loading />}>
+                <YourLibrary />
             </Suspense>
         ),
     },
